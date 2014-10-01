@@ -1,0 +1,2 @@
+D:\SJP\CodeBase\SJP\CommandAndControl\CommandAndControlAgentService\obj\Debug\CommandAndControlAgentService.csprojResolveAssemblyReference.cache
+D:\SJP\CodeBase\SJP\CommandAndControl\CommandAndControlAgentService\obj\Debug\CommandAndControlAgentService.csproj.GenerateResource.Cache

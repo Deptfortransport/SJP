@@ -1,0 +1,6 @@
+D:\SJP\CodeBase\SJP\Common\bin\Debug\sjp.common.dll
+D:\SJP\CodeBase\SJP\Common\bin\Debug\sjp.common.pdb
+D:\SJP\CodeBase\SJP\Common\bin\Debug\sjp.common.dll.CodeAnalysisLog.xml
+D:\SJP\CodeBase\SJP\Common\bin\Debug\sjp.common.dll.lastcodeanalysissucceeded
+D:\SJP\CodeBase\SJP\Common\obj\Debug\sjp.common.dll
+D:\SJP\CodeBase\SJP\Common\obj\Debug\sjp.common.pdb

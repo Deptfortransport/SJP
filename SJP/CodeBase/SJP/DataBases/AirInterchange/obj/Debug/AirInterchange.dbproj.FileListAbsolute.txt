@@ -1,0 +1,9 @@
+D:\SJP\CodeBase\SJP\Databases\AirInterchange\sql\debug\AirInterchange_Script.PreDeployment.sql
+D:\SJP\CodeBase\SJP\Databases\AirInterchange\sql\debug\AirInterchange_Script.PostDeployment.sql
+D:\SJP\CodeBase\SJP\Databases\AirInterchange\sql\debug\AirInterchange_Database.sqlsettings
+D:\SJP\CodeBase\SJP\Databases\AirInterchange\sql\debug\AirInterchange_Database.sqldeployment
+D:\SJP\CodeBase\SJP\Databases\AirInterchange\sql\debug\AirInterchange_Database.sqlcmdvars
+D:\SJP\CodeBase\SJP\Databases\AirInterchange\sql\debug\AirInterchange.deploymanifest
+D:\SJP\CodeBase\SJP\Databases\AirInterchange\sql\debug\AirInterchange.dbschema
+D:\SJP\CodeBase\SJP\Databases\AirInterchange\sql\debug\SJPServerDatabase.dbschema
+D:\SJP\CodeBase\SJP\Databases\AirInterchange\obj\Debug\AirInterchange.dbschema

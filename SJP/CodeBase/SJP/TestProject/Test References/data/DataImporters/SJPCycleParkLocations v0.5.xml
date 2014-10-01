@@ -1,0 +1,861 @@
+<?xml version="1.0"?>
+<SJPCycleParkLocations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.transportdirect.info/SJPCycleParkLocations SJPCycleParkLocations.xsd"
+    xmlns="http://www.transportdirect.info/SJPCycleParkLocations"
+    xmlns:nap="http://www.naptan.org.uk/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:oda="http://www.london2012.com/">
+    
+    <!--
+        CHANGES IN V0.2
+            - Amended map links to be PDFs
+        
+        CHANGES IN V0.3
+            - Amnded Olympic Park data
+            - Added Excel
+            - Added North Greenwich Arena & Royal Artillery Barracks
+            - Added London Venues
+            - Added Out of London Venues
+            - Added Football Venues
+            
+        CHANGES IN V0.4
+            - Removed Cycle Parks at Central London venues
+            - Removed James Wolfe Primary School for Greenwich Park
+            
+        CHANGES IN V0.5
+            - removed Cycle Parks at City of Coventry and St James Park (Newcastle)
+            - amended cycle parks at Hampden Park, Millennium Stadium and Old Trafford
+    -->
+    
+    <!-- OLYMPIC PARK -->
+    <OlympicVenue>
+        <VenueName>Olympic Park</VenueName>
+        <VenueNaPTAN>8100OPK</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.London2012.com/maps/OlympicParkCycleParking.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>OPKCYC01</CycleParkID>
+            <CycleParkName>Olympic Park Western Cycle Parking (Victoria Park)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>536833</Easting>
+                <Northing>184345</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>536833</Easting>
+                <Northing>184345</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:10:00</WalkToGateDuration>
+                <VenueEntranceGate>8100OPKgW</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <CycleParkMapURL>https://www.London2012.com/maps/CYC001.pdf</CycleParkMapURL>
+            <NumberOfSpaces>4000</NumberOfSpaces>
+            <AvailabilityConditions>
+                <AvailabilityCondition>
+                    <AvailabilityID>OPK_AO_001a</AvailabilityID>
+                    <FromDate>2012-07-28</FromDate>
+                    <ToDate>2012-08-12</ToDate>
+                    <DaysOfWeek>Everyday</DaysOfWeek>
+                    <DailyOpeningTime>07:00:00</DailyOpeningTime>
+                    <DailyClosingTime>23:00:00</DailyClosingTime>
+                </AvailabilityCondition>
+                <AvailabilityCondition>
+                    <AvailabilityID>OPK_AP_001b</AvailabilityID>
+                    <FromDate>2012-08-30</FromDate>
+                    <ToDate>2012-09-05</ToDate>
+                    <DaysOfWeek>Everyday</DaysOfWeek>
+                    <DailyOpeningTime>07:00:00</DailyOpeningTime>
+                    <DailyClosingTime>23:00:00</DailyClosingTime>
+                </AvailabilityCondition>
+            </AvailabilityConditions>
+        </OlympicCyclePark>
+        <OlympicCyclePark>
+            <CycleParkID>OPKCYC02</CycleParkID>
+            <CycleParkName>Olympic Park Northern Cycle Parking (NSTM)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>537030</Easting>
+                <Northing>185837</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>537030</Easting>
+                <Northing>185837</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:05:00</WalkToGateDuration>
+                <VenueEntranceGate>8100OPKgN</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>2000</NumberOfSpaces>
+            <AvailabilityConditions>
+                <AvailabilityCondition>
+                    <AvailabilityID>OPK_AO_002a</AvailabilityID>
+                    <FromDate>2012-07-28</FromDate>
+                    <ToDate>2012-08-12</ToDate>
+                    <DaysOfWeek>Everyday</DaysOfWeek>
+                    <DailyOpeningTime>07:00:00</DailyOpeningTime>
+                    <DailyClosingTime>23:00:00</DailyClosingTime>
+                </AvailabilityCondition>
+                <AvailabilityCondition>
+                    <AvailabilityID>OPK_AP_002b</AvailabilityID>
+                    <FromDate>2012-08-30</FromDate>
+                    <ToDate>2012-09-05</ToDate>
+                    <DaysOfWeek>Everyday</DaysOfWeek>
+                    <DailyOpeningTime>07:00:00</DailyOpeningTime>
+                    <DailyClosingTime>23:00:00</DailyClosingTime>
+                </AvailabilityCondition>
+            </AvailabilityConditions>
+        </OlympicCyclePark>
+        <OlympicCyclePark>
+            <CycleParkID>OPKCYC03</CycleParkID>
+            <CycleParkName>Olympic Park Southern Cycle Parking (SSTM)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>538648</Easting>
+                <Northing>183451</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>538648</Easting>
+                <Northing>183451</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:05:00</WalkToGateDuration>
+                <VenueEntranceGate>8100OPKgS</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>800</NumberOfSpaces>
+            <AvailabilityConditions>
+                <AvailabilityCondition>
+                    <AvailabilityID>OPK_AO_003a</AvailabilityID>
+                    <FromDate>2012-07-28</FromDate>
+                    <ToDate>2012-08-12</ToDate>
+                    <DaysOfWeek>Everyday</DaysOfWeek>
+                    <DailyOpeningTime>07:00:00</DailyOpeningTime>
+                    <DailyClosingTime>23:00:00</DailyClosingTime>
+                </AvailabilityCondition>
+                <AvailabilityCondition>
+                    <AvailabilityID>OPK_AP_003b</AvailabilityID>
+                    <FromDate>2012-08-30</FromDate>
+                    <ToDate>2012-09-05</ToDate>
+                    <DaysOfWeek>Everyday</DaysOfWeek>
+                    <DailyOpeningTime>07:00:00</DailyOpeningTime>
+                    <DailyClosingTime>23:00:00</DailyClosingTime>
+                </AvailabilityCondition>
+            </AvailabilityConditions>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- RIVER ZONE VENUES -->
+    <!-- EXCEL -->
+    <OlympicVenue>
+        <VenueName>ExCeL</VenueName>
+        <VenueNaPTAN>8100EXL</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-excel-o.pdf</VenueCycleParkingMapURL>        
+        <OlympicCyclePark>
+            <CycleParkID>EXLCY01</CycleParkID>
+            <CycleParkName>Excel London 2012 event Cycle Parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>540011</Easting>
+                <Northing>180681</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>540011</Easting>
+                <Northing>180681</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:10:00</WalkToGateDuration>
+                <VenueEntranceGate>8100EXLgEntr</VenueEntranceGate>
+                <WalkFromGateDuration>00:25:00</WalkFromGateDuration>
+                <VenueExitGate>8100EXLgExit</VenueExitGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>400</NumberOfSpaces>
+            <AvailabilityConditions>
+                <AvailabilityCondition>
+                    <AvailabilityID>OPK_AO_003</AvailabilityID>
+                    <FromDate>2012-07-28</FromDate>
+                    <ToDate>2012-08-12</ToDate>
+                    <DaysOfWeek>Everyday</DaysOfWeek>
+                    <DailyOpeningTime>07:30:00</DailyOpeningTime>   <!-- Note closing time after midnight! -->
+                    <DailyClosingTime>00:30:00</DailyClosingTime>
+                </AvailabilityCondition>
+            </AvailabilityConditions>        
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- GREENWICH PARK -->
+    <OlympicVenue>
+        <VenueName>Greenwich Park</VenueName>
+        <VenueNaPTAN>8100GRP</VenueNaPTAN>
+        <VenueCycleParkingMapURL>http://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-greenwich-park-o.pdf</VenueCycleParkingMapURL>
+        <!-- REMOVED 7 JUN 2011 -->
+        <!--
+        <OlympicCyclePark>
+            <CycleParkID>GRPCYC01</CycleParkID>
+            <CycleParkName>Greenwich Park London 2012 event cycle parking (James Wolfe Primary School)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>538146</Easting>
+                <Northing>177496</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>538146</Easting>
+                <Northing>177496</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:06:00</WalkToGateDuration>
+                <VenueEntranceGate>8100GRPgGNW</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>250</NumberOfSpaces>
+        </OlympicCyclePark>
+        -->        
+        <OlympicCyclePark>
+            <CycleParkID>GRPCYC02</CycleParkID>
+            <CycleParkName>Greenwich Park London 2012 event cycle parking (Old Naval College)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>538660</Easting>
+                <Northing>178032</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>538660</Easting>
+                <Northing>178032</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:12:00</WalkToGateDuration>
+                <VenueEntranceGate>8100GRPgGNW</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>100</NumberOfSpaces>
+        </OlympicCyclePark>        
+        <OlympicCyclePark>
+            <CycleParkID>GRPCYC03_BH1</CycleParkID>
+            <CycleParkName>Blackheath</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>539319</Easting>
+                <Northing>176470</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>539319</Easting>
+                <Northing>176470</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:12:00</WalkToGateDuration>
+                <VenueEntranceGate>8100GRPgBKH1</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+            <AvailabilityConditions>
+                <AvailabilityCondition>
+                    <AvailabilityID>GRP_AO_003</AvailabilityID>
+                    <FromDate>2012-07-28</FromDate>
+                    <ToDate>2012-07-31</ToDate>
+                    <DaysOfWeek>Everyday</DaysOfWeek>
+                    <DailyOpeningTime>06:00:00</DailyOpeningTime>
+                    <DailyClosingTime>22:00:00</DailyClosingTime>
+                </AvailabilityCondition>
+            </AvailabilityConditions>
+        </OlympicCyclePark>        
+        <OlympicCyclePark>
+            <CycleParkID>GRPCYC03_BH6</CycleParkID>
+            <CycleParkName>Blackheath</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>539319</Easting>
+                <Northing>176470</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>539319</Easting>
+                <Northing>176470</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:30:00</WalkToGateDuration>
+                <VenueEntranceGate>8100GRPgBKH6</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+            <AvailabilityConditions>
+                <AvailabilityCondition>
+                    <AvailabilityID>GRP_AO_004</AvailabilityID>
+                    <FromDate>2012-08-02</FromDate>
+                    <ToDate>2012-08-12</ToDate>
+                    <DaysOfWeek>Everyday</DaysOfWeek>
+                    <DailyOpeningTime>06:00:00</DailyOpeningTime>
+                    <DailyClosingTime>22:00:00</DailyClosingTime>
+                </AvailabilityCondition>
+            </AvailabilityConditions>
+        </OlympicCyclePark>        
+    </OlympicVenue>    
+    
+    <!-- NORTH GREENWICH ARENA -->
+    <OlympicVenue>
+        <VenueName>North Greenwich Arena</VenueName>
+        <VenueNaPTAN>8100NGA</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-north-greenwich-arena-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>NGACY01</CycleParkID>
+            <CycleParkName>North Greenwich Arena 2012 event cycle parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>539247</Easting>
+                <Northing>179522</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>539247</Easting>
+                <Northing>179522</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:10:00</WalkToGateDuration>
+                <VenueEntranceGate>8100NGAgEntr</VenueEntranceGate>
+                <WalkFromGateDuration>00:15:00</WalkFromGateDuration>
+                <VenueExitGate>8100NGAgExit</VenueExitGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+
+    <!-- ROYAL ARTILLERY BARRACKS -->
+    <OlympicVenue>
+        <VenueName>Royal Artillery Barracks</VenueName>
+        <VenueNaPTAN>8100RAB</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-royal-artillery-barracks-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>RABCY01</CycleParkID>
+            <CycleParkName>Royal Artillery Barracks 2012 event cycle parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>543069</Easting>
+                <Northing>177550</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>543069</Easting>
+                <Northing>177550</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:10:00</WalkToGateDuration>
+                <VenueEntranceGate>8100RABg0</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>150</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- LONDON VENUES -->
+    <!-- EARLS COURT -->
+    <OlympicVenue>
+        <VenueName>Earls Court</VenueName>
+        <VenueNaPTAN>8100EAR</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-earls-court-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>EARCY01</CycleParkID>
+            <CycleParkName>Earls Court London 2012 event cycle parking (St. Cuthberts with St. Matthias Primary school)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>525482</Easting>
+                <Northing>178280</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>525482</Easting>
+                <Northing>178280</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:12:00</WalkToGateDuration>
+                <VenueEntranceGate>8100EARgEntr</VenueEntranceGate>
+                <WalkFromGateDuration>00:06:00</WalkFromGateDuration>
+                <VenueExitGate>8100EARgExit</VenueExitGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>400</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- LORDS CRICKET GROUND -->
+    <OlympicVenue>
+        <VenueName>Lords Cricket Ground</VenueName>
+        <VenueNaPTAN>8100LCG</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-lords-cricket-ground-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>LCGCY01</CycleParkID>
+            <CycleParkName>Lords Cricket Ground 2012 event cycle parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>527200</Easting>
+                <Northing>182867</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>527200</Easting>
+                <Northing>182867</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:06:00</WalkToGateDuration>
+                <VenueEntranceGate>8100LCGg0</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>100</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- WIMBLEDON -->
+    <OlympicVenue>
+        <VenueName>Wimbledon</VenueName>
+        <VenueNaPTAN>8100WIM</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-wimbledon-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>WIMCY01</CycleParkID>
+            <CycleParkName>Wimbledon AELTC 2012 event cycle parking (Wimbledon Cricket club)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>524424</Easting>
+                <Northing>172165</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>524424</Easting>
+                <Northing>172165</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:08:00</WalkToGateDuration>
+                <VenueEntranceGate>8100WIMgC</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>500</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+       
+    <!-- HORSE GUARDS PARADE : REMOVED 7 JUN 2011 -->
+    <!-- 
+    <OlympicVenue>
+        <VenueName>Horse Guards Parade</VenueName>
+        <VenueNaPTAN>8100HGP</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-horse-guards-parade-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>HGPCY01</CycleParkID>
+            <CycleParkName>Horse Guards Parade 2012 event cycle parking 1</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>529657</Easting>
+                <Northing>179775</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>529657</Easting>
+                <Northing>179775</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:05:00</WalkToGateDuration>
+                <VenueEntranceGate>8100HGPgInS</VenueEntranceGate>
+                <WalkFromGateDuration>00:10:00</WalkFromGateDuration>
+                <VenueExitGate>8100HGPgOutS</VenueExitGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+        </OlympicCyclePark>
+        <OlympicCyclePark>
+            <CycleParkID>HGPCY02</CycleParkID>
+            <CycleParkName>Horse Guards Parade 2012 event cycle parking 2</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>529902</Easting>
+                <Northing>180209</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>529902</Easting>
+                <Northing>180209</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:06:00</WalkToGateDuration>
+                <VenueEntranceGate>8100HGPgInN</VenueEntranceGate>
+                <WalkFromGateDuration>00:05:00</WalkFromGateDuration>
+                <VenueExitGate>8100HGPgOutN</VenueExitGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>    
+    -->
+    
+    <!-- THE MALL : REMOVED 7 JUN 2011 -->
+    <!-- 
+        <OlympicVenue>
+        <VenueName>The Mall</VenueName>
+        <VenueNaPTAN>8100MAL</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-the-mall-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>MALCY01</CycleParkID>
+            <CycleParkName>The Mall 2012 event cycle parking 1</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>529657</Easting>
+                <Northing>179775</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>529657</Easting>
+                <Northing>179775</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:08:00</WalkToGateDuration>
+                <VenueEntranceGate>8100HGPgS</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+        </OlympicCyclePark>
+        <OlympicCyclePark>
+            <CycleParkID>MALCY01</CycleParkID>
+            <CycleParkName>The Mall 2012 event cycle parking 2</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>529209</Easting>
+                <Northing>179849</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>529209</Easting>
+                <Northing>179849</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:10:00</WalkToGateDuration>
+                <VenueEntranceGate>8100HGPgN</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+        </OlympicCyclePark>        
+    </OlympicVenue>    
+    -->
+    
+    <!-- HYDE PARK : REMOVED 7 JUN 2011 -->
+    <!-- 
+        <OlympicVenue>
+        <VenueName>Hyde Park</VenueName>
+        <VenueNaPTAN>8100HPK</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-hyde-park-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>HYDCY01</CycleParkID>
+            <CycleParkName>Hyde Park 2012 event cycle parking 1</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>527936</Easting>
+                <Northing>179957</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>527936</Easting>
+                <Northing>179957</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:10:00</WalkToGateDuration>
+                <VenueEntranceGate>8100HYDg0</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+        </OlympicCyclePark>
+        <OlympicCyclePark>
+            <CycleParkID>HYDCY01</CycleParkID>
+            <CycleParkName>Hyde Park 2012 event cycle parking 2</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>527123</Easting>
+                <Northing>180752</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>527123</Easting>
+                <Northing>180752</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:15:00</WalkToGateDuration>
+                <VenueEntranceGate>8100HYDg0</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    -->
+    
+    <!-- WEMBLEY ARENA -->
+    <OlympicVenue>
+        <VenueName>Wembley Arena</VenueName>
+        <VenueNaPTAN>8100WEA</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-wembley-arena-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>WEACY01</CycleParkID>
+            <CycleParkName>Wembley Arena 2012 event cycle parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>518981</Easting>
+                <Northing>185512</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>518981</Easting>
+                <Northing>185512</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:06:00</WalkToGateDuration>
+                <VenueEntranceGate>8100WEAgEntr</VenueEntranceGate>
+                <WalkFromGateDuration>00:06:00</WalkFromGateDuration>
+                <VenueExitGate>8100WEAgExit</VenueExitGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>500</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+        
+    <!-- OUT OF LONDON VENUES -->
+    <!-- LEE VALLEY -->
+    <OlympicVenue>
+        <VenueName>Lee Valley White Water Centre</VenueName>
+        <VenueNaPTAN>8100LVC</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-lee-valley-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>LVCCY01</CycleParkID>
+            <CycleParkName>Lee Valley White Water Centre 2012 event cycle parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>537257</Easting>
+                <Northing>200753</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>537257</Easting>
+                <Northing>200753</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:05:00</WalkToGateDuration>
+                <VenueEntranceGate>8100LVCg0</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>300</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- HADLEIGH FARM -->
+    <OlympicVenue>
+        <VenueName>Hadleigh Farm</VenueName>
+        <VenueNaPTAN>8100HAD</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-hadleigh-farm-o.pdf</VenueCycleParkingMapURL>        
+        <OlympicCyclePark>
+            <CycleParkID>HADCY01</CycleParkID>
+            <CycleParkName>Hadleigh Farm 2012 event cycle parking (northern)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>580899</Easting>
+                <Northing>186900</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>580899</Easting>
+                <Northing>186900</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:10:00</WalkToGateDuration>
+                <VenueEntranceGate>8100HADg0</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>300</NumberOfSpaces>
+        </OlympicCyclePark>
+        <OlympicCyclePark>
+            <CycleParkID>HADCY02</CycleParkID>
+            <CycleParkName>Hadleigh Farm 2012 event cycle parking (southern)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>580753</Easting>
+                <Northing>185782</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>580753</Easting>
+                <Northing>185782</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:15:00</WalkToGateDuration>
+                <VenueEntranceGate>8100HADg0</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>400</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- ETON DORNEY -->
+    <OlympicVenue>
+        <VenueName>Eton Dorney</VenueName>
+        <VenueNaPTAN>8100ETD</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-eton-dorney-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>ETDCY01</CycleParkID>
+            <CycleParkName>Eton Dorney 2012 event cycle parking (Windsor Racecourse)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>494916</Easting>
+                <Northing>177455</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>494916</Easting>
+                <Northing>177455</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:06:00</WalkToGateDuration>
+                <VenueEntranceGate>8100ETDgTHub</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>400</NumberOfSpaces>
+        </OlympicCyclePark>
+        <OlympicCyclePark>
+            <CycleParkID>ETDCY02</CycleParkID>
+            <CycleParkName>Eton Dorney 2012 event cycle parking (Big Meadow)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>4492368</Easting>
+                <Northing>178790</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>4492368</Easting>
+                <Northing>178790</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:05:00</WalkToGateDuration>
+                <VenueEntranceGate>8100ETDgN</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>600</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- WEYMOUTH AND PORTLAND -->
+    <OlympicVenue>
+        <VenueName>Weymouth and Portland</VenueName>
+        <VenueNaPTAN>8100WAP</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-weymouth-portland-o.pdf</VenueCycleParkingMapURL>
+        <!-- This particular cycle park is for The Esplanade which is non-ticketed and therefore has no gate or venue!
+        <OlympicCyclePark>
+            <CycleParkID>WAPCY01</CycleParkID>
+            <CycleParkName>Weymouth 2012 event cycle parking (Park Street)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>367858</Easting>
+                <Northing>079311</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>367858</Easting>
+                <Northing>079311</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration></WalkToGateDuration>
+                <VenueEntranceGate></VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>500</NumberOfSpaces>
+        </OlympicCyclePark>
+        -->
+        <OlympicCyclePark>
+            <CycleParkID>WAPCY02</CycleParkID>
+            <CycleParkName>Weymouth 2012 event cycle parking 2 (Cove Steps)</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>368092</Easting>
+                <Northing>078531</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>368092</Easting>
+                <Northing>078531</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:10:00</WalkToGateDuration>
+                <VenueEntranceGate>8100WAPg0</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>150</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    
+    <!-- FOOTBALL VENUES -->
+    <!-- WEMBLEY STADIUM -->
+    <OlympicVenue>
+        <VenueName>Wembley Stadium</VenueName>
+        <VenueNaPTAN>8100WEM</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-wembley-stadium-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>WEMCY01</CycleParkID>
+            <CycleParkName>Wembley Wembley Stadium 2012 event cycle parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>518981</Easting>
+                <Northing>185512</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>518981</Easting>
+                <Northing>185512</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:11:00</WalkToGateDuration>
+                <VenueEntranceGate>8100WEM</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>500</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- MILLENNIUM STADIUM -->
+    <OlympicVenue>
+        <VenueName>Millennium Stadium</VenueName>
+        <VenueNaPTAN>8100MIL</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-millennium-stadium-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>MILCY01</CycleParkID>
+            <CycleParkName>Millennium Stadium 2012 event cycle parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>317542</Easting>
+                <Northing>176633</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>317542</Easting>
+                <Northing>176633</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:10:00</WalkToGateDuration>
+                <VenueEntranceGate>8100MIL</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- HAMPDEN PARK -->
+    <OlympicVenue>
+        <VenueName>Hampden Park</VenueName>
+        <VenueNaPTAN>8100HAM</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-hampden-park-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>HAMCY01</CycleParkID>
+            <CycleParkName>Hampden Park Stadium 2012 event cycle parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>259255</Easting>
+                <Northing>661612</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>259255</Easting>
+                <Northing>661612</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:05:00</WalkToGateDuration>
+                <VenueEntranceGate>8100HAM</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>150</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- OLD TRAFFORD -->
+    <OlympicVenue>
+        <VenueName>Old Trafford</VenueName>
+        <VenueNaPTAN>8100OLD</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-old-trafford-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>OLDCY01</CycleParkID>
+            <CycleParkName>Old Trafford Stadium 2012 event cycle parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>380955</Easting>
+                <Northing>396304</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>380955</Easting>
+                <Northing>396304</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:05:00</WalkToGateDuration>
+                <VenueEntranceGate>8100OLD</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    
+    <!-- CITY OF COVENTRY STADIUM : REMOVED 9 JUN 2011 -->
+    <!-- 
+    <OlympicVenue>
+        <VenueName>City of Coventry Stadium</VenueName>
+        <VenueNaPTAN>8100COV</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-city-of-coventry-stadium-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>COVCY01</CycleParkID>
+            <CycleParkName>City of Coventry Stadium 2012 event cycle parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>434253</Easting>
+                <Northing>283486</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>434253</Easting>
+                <Northing>283486</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:05:00</WalkToGateDuration>
+                <VenueEntranceGate>8100COV</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>200</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    -->
+        
+    <!-- ST JAMES PARK (NEWCASTLE) : REMOVED 9 JUN 2011 -->
+    <!--
+    <OlympicVenue>
+        <VenueName>St James Park (Newcastle)</VenueName>
+        <VenueNaPTAN>8100SJP</VenueNaPTAN>
+        <VenueCycleParkingMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-st-james-park-o.pdf</VenueCycleParkingMapURL>
+        <OlympicCyclePark>
+            <CycleParkID>SJPCY01</CycleParkID>
+            <CycleParkName>St. James Park Stadium 2012 event cycle parking</CycleParkName>
+            <CycleFromCoordinate>
+                <Easting>424363</Easting>
+                <Northing>564482</Northing>
+            </CycleFromCoordinate>
+            <CycleToCoordinate>
+                <Easting>424363</Easting>
+                <Northing>564482</Northing>
+            </CycleToCoordinate>
+            <VenueGatesToBeUsed>
+                <WalkToGateDuration>00:05:00</WalkToGateDuration>
+                <VenueEntranceGate>8100SJP</VenueEntranceGate>
+            </VenueGatesToBeUsed>
+            <NumberOfSpaces>150</NumberOfSpaces>
+        </OlympicCyclePark>
+    </OlympicVenue>
+    -->
+
+</SJPCycleParkLocations>

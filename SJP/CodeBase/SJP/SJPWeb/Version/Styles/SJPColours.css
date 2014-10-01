@@ -1,0 +1,395 @@
+﻿/* Buttons */
+.sjpContent input.btnSmallerPink, .sjpContent input.btnSmallPink
+{
+    color: #FFFFFF;
+}
+.sjpContent input.btnMediumPink
+{
+    color: #FFFFFF;
+}
+.sjpContent input.btnLargePink
+{
+    color: #FFFFFF;
+}
+
+div#MainContent input.linkButton
+{
+    color: #007BCC;
+}
+div#MainContent input.linkButtonPink
+{
+    color: #DF0094;
+}
+
+/* Separators */
+div#MainContent div.sjpSeparator
+{
+}
+
+/* Labels */
+.sjpContent .error
+{
+    color: #DF0094;
+}
+.sjpContent .warning
+{
+    color: #DF0094;
+}
+
+/* Journey Planner Input */
+div#page-2012 div.journeyplannerinput div#MainContent
+{
+   background-color: #F2F2F2;
+}
+
+div.sjpHeading
+{
+    background-color: #DE0094;
+    color: #FFFFFF;
+}
+
+.locationRow .locationBox
+{
+    border-color: #CFCFCF;
+}
+/* Location Suggest */
+div#MainContent ul.locationSuggestList
+{
+   border-color: #CFCFCF;
+   background-color:white;
+}
+div#MainContent ul.locationSuggestList li.locationSuggestListItem a
+{
+    color: #4C4C4C;   
+}
+div#MainContent ul.locationSuggestList li.locationSuggestSelectedItem
+{
+    background-color:#009aff;
+    color:#ffffff;
+}
+
+div#MainContent ul.locationSuggestList li.locationSuggestSelectedItem a
+{
+     color:#ffffff;
+}
+
+div#MainContent div.locationControl span.ambiguityinfo
+{
+    color:#DF0094;
+}
+
+/* Calendar Tabs */
+div#page-2012 #BlogCalendar table td.selected
+{
+    background-color: #0079ce;
+    color: #FFFFFF;
+}
+
+div#page-2012 #BlogCalendar table td.disabled
+{
+   color: #c0c0c0;
+}
+
+div#page-2012 #BlogCalendar table td.day:hover
+{
+     background-color: #0079ce;
+     color: #FFFFFF;
+}
+
+/* Event Calendar */
+div#MainContent .eventDateTime div.datetime div.datebox .display{
+    background-color:#fff;
+    color :#4C4C4C;
+    border-color: #CFCFCF;
+}
+
+div#MainContent div.eventDate div.journeyTime div.row, div#MainContent div.eventDate div.journeyTime div.toggle,
+div#MainContent div.eventDate div.journeyTime div.row div.toggle input.linkButton
+{
+    background-color: #ffffff;
+   
+}
+
+div#MainContent div.eventDate div.journeyTime div.arrive, div#MainContent div.eventDate div.journeyTime div.return
+{
+    border-color: #F2F2F2;
+}
+
+div#MainContent div.eventDateTime div.journeyTime div.active
+{
+   border-color: #F2F2F2;
+   background-color: #F2F2F2;
+}
+
+div#MainContent div.eventDateTime div.journeyTime div.active div.row
+{
+     background-color: #F2F2F2;
+}
+
+input.dateEntry
+{
+    border-color: #CFCFCF;
+    color: #4C4C4C;
+}
+
+/* Journey Options Tabs */
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li
+{
+    border-bottom-color: #CCCCCC;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li input,
+#PageContent div.sjp_jo_tab .sjp_tab_headers ul li a
+{
+    color: #FFFFFF;    
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.active
+{
+    color: #FFFFFF;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.active input,
+#PageContent div.sjp_jo_tab .sjp_tab_headers ul li.active a
+{
+    color: #FFFFFF;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers .sjp_tab_highlight
+{
+    background-color: #CCCCCC;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers .sjp_tab_highlight div
+{
+    background-color: #DF0094;    
+}
+
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.active div.processMessage
+{
+    background-color: #DEDEDE;
+}
+
+/* Journey Summary Heading */
+div.journeySummary div.header, 
+div.stopEventResult div.header 
+{
+    border-bottom-color: #0098EE;
+}
+
+div.journeySummary div.header div.journeyDirection, 
+div.stopEventResult div.header div.journeyDirection
+{
+    color: #FFFFFF;
+}
+
+/** --------------- Journey Summary    --------------- **/
+div#MainContent div.journeySummary div.summary input.replanButton,
+div#MainContent div.stopEventResult div.summary input.replanButton
+{
+    border-color: #cccccc;
+}
+div.journeySummary table.legSummary tr.detailsRow div.rowDetail
+{
+    border-color: #c0c0c0;
+}
+div.journeySummary table.legSummary tr.odd,
+div.stopEventResult table.stopEventResultTable tr.odd
+{
+    background-color: #eeeeee;
+}
+div.journeySummary table.legSummary tr.selected
+{
+    background-color: #108AFF;
+    color: #ffffff;
+}
+
+/* Car details and Cycle details legs */
+div.journeySummary div.leg div.legCar div.carLeg div.summary,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.summary
+{
+    background-color: #eeeeee;
+}
+div.journeySummary div.leg div.legCar div.carLeg div.detail,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail
+{
+    border-color: #c0c0c0;
+}
+
+/* drop downs */
+.selectbox .display{
+    background-color:#fff;
+    color :#4C4C4C;
+    border-color: #CFCFCF;
+}
+.selectbox .display.active
+{
+    border-color:#7b7d83;
+}
+.selectbox.focused .display .text
+{
+    background-color:#009aff;
+    color:#ffffff;
+}
+.selectbox.items{
+  background:#fff;
+  border-color:  #CFCFCF;
+}
+.selectbox.items li>.item
+{
+    color:#4C4C4C;
+}
+.selectbox.items li.selected>.item
+{
+    background-color: #DE0094;
+    color:#ffffff;
+}
+.selectbox.items li.hover>.item
+{
+    background-color:#009aff;
+    color:#ffffff;
+}
+
+#PageContent a.ui-selectmenu
+{
+    color: #4c4c4c;
+}
+
+/* Non Javascript - Calendar - start */
+div#MainContent #sjp-calendar-tabs ul.tabbed-headers li input.monthTab
+{
+    color: #007BCC;   
+}
+div#MainContent #sjp-calendar-tabs #BlogCalendar table td input
+{
+    color: #4C4C4C;
+}
+div#MainContent #sjp-calendar-tabs #BlogCalendar table td.selected input
+{
+    color: #ffffff;
+}
+div#MainContent #sjp-calendar-tabs #BlogCalendar table td.disabled input
+{
+    color: #c0c0c0;
+}
+
+/* Non Javascript - Calendar - end */
+
+/* CheckBoxes */
+span.checkbox span.disabled
+{
+    color: #848284;
+}
+
+/* DateEntry */
+div#MainContent .eventDateTime div.datetime div.datebox input.dateEntry
+{
+    border-color: #CFCFCF;
+}
+
+/* Travel news page */
+div.tnItem div.body div.status
+{
+   color: #ACACAC;
+}
+div.tnItem div.body .highlight
+{
+   color: #DF0094;
+}
+div.travelnews div.odd
+{
+    background-color: #DFDFDF;
+}
+div#MainContent div.travelnews div.severity div.active
+{
+    border-bottom-color: #009AE7;
+}
+
+/* -- SJP right hand side box --*/
+div#page-2012 div.sidebar-right-2012 div.sjp-stp-side-box h2 {
+    color: #ffffff;
+}
+
+div#page-2012 div.sidebar-right-2012 div.sjp-stp-side-box h2 a, div#page-2012 div.sidebar-right-2012 div.sjp-stp-side-box h2 a:hover
+{
+    color: #ffffff;
+}
+
+div#page-2012 div.sidebar-right-2012 .sjp-stp-side-box-content div.sjp-stp-side-box-go-button div.link a.submit
+{
+    color: #ffffff;
+}
+
+/* -- SJP London Underground color code -- */
+.bakerloo { background-color: #AE6118 ; color: #ffffff; }
+.central { background-color: #E41F1F ; color: #ffffff; }
+.circle { background-color: #F8D42D ; color: #ffffff; }
+.district { background-color: #00A575 ; color: #ffffff; }
+.jubilee { background-color: #8F989E ; color: #ffffff; }
+.metropolitan { background-color: #893267 ; color: #ffffff; }
+.northern { background-color: #000000 ; color: #ffffff; }
+.piccadilly { background-color: #0450A1 ; color: #ffffff; }
+.victoria { background-color: #009FE0 ; color: #ffffff; }
+.waterlooandcity { background-color: #70C3CE ; color: #113B92; }
+.dlr { background-color: #00BBB4 ; color: #ffffff; }
+.hammersmithandcity {background-color:#E899A8; color:#113B92;}
+
+
+/* Detail leg Retail handoff links and the journey web note links */
+div.travelNotesLink, #PageContent a.bookTicketInfo
+{
+    color: 	#007BCC;
+}
+
+#PageContent a.bookTicketLink
+{
+    color: #DE0094;
+}
+
+/* Top Tips */
+div#page-2012 div#top-tips {
+    border-bottom-color: #0098FE;
+}
+
+div#page-2012 div#top-tips {
+    background-color: #F2F2F2;
+}
+
+/* Generic Promo Widget */
+div#page-2012 .sidebar-right-2012 div.stp-side-box h2.blue {
+    background-color: #0098FE !important;
+}
+
+div#page-2012 .sidebar-right-2012 div.stp-side-box h2.blue a {
+    color: #ffffff;
+}
+
+.stp-side-box-content {
+    background-color: #F2F2F2;
+}
+div#page-2012 div.sidebar-right-2012 div.stp-side-box div.angle-button-image div.link a
+{
+    color: #ffffff;
+}
+
+/* Travel News widget */
+div#page-2012 div.sidebar-right-2012 div.sjp-stp-side-box div.travelNewsWidget div.navigation
+{
+    color: #ffffff;
+}
+
+/* date time input - disabled css */
+div.return input.dateEntry[disabled='disabled'], div.return div.dateSelect input.disabled
+{
+    background-color: #D4D0C8;
+}
+
+.selectbox.disabled .display{background-color: #D4D0C8;color: #999;}
+
+/* Further Accessibility page */
+div.stopSelection
+{
+    background-color: #F2F2F2;
+}
+
+/* Debug */
+.debug
+{
+    color: #00BA9C;
+    font-size: 10px;
+}

@@ -1,0 +1,53 @@
+/* windows device - 320px wide*/
+.buttonBlue, .buttonMag {margin-left:42px;background-size:235px;}
+div.headerBack a.topNavRight,div.headerBack input.topNavRight{width:150px;}
+div.mobiledetail div.headerBack a.topNavRight, div.mobiledetail div.headerBack input.topNavRight{width:165px;}
+
+div.locationsDiv .locationControl input.locationInput{border-right:1px solid #aaaaaa;}
+div.venues a.venuesLink{padding:7px 10px 7px 9px;}
+#venuespage fieldset div.ui-grid-a label{font-size:0.9em;min-height:38px;}
+#venuespage fieldset div.ui-grid-a .ui-block-a{float:left;width:45%;}
+#venuespage fieldset div.ui-grid-a .ui-block-b{float:left;width:45%;}
+
+div.locationsDiv .locationControl div.ambiguityrow select{padding-top:3px}
+div.nowSelect{width:45px;}
+div.accessibilityStops div.ui-select div.ui-btn{width:90% !important;}
+
+div.journeySummary #results ul .ui-grid-b .ui-block-a{width:48%;}
+div.journeySummary #results ul .ui-grid-b .ui-block-b{width:30%;}
+div.journeySummary #results ul .ui-grid-b .ui-block-c{width:auto;}
+
+div.legsDetail div.leg{font-size:0.78em;}
+div.legsDetail div.leg div.columnMap{font-size:1.2em;}
+.statusInfo{max-width:200px;}
+
+/* Journey leg rows - row 1 */
+div.legsDetail div.leg div.row div.row1 div.columnEmpty{width:0px;}
+div.legsDetail div.leg div.row div.row1 div.columnTime{width:68px;}
+div.legsDetail div.leg div.row div.row1 div.columnNode{width:20px;}
+div.legsDetail div.leg div.row div.row1 div.columnLocation{width:190px !important;}
+/* Journey leg rows - row 2 */
+div.legsDetail div.leg div.row div.row2 div.columnMode{width:63px;margin-left:5px;}
+div.legsDetail div.leg div.row div.row2 div.columnEmpty{width:0px;}
+div.legsDetail div.leg div.row div.row2 div.columnLine{width:20px;}
+div.legsDetail div.leg div.row div.row2 div.columnDetail,.legsDetail .columnLocation{width:190px !important;}
+
+div.menuZoom #zoomin {display:none;}
+div.menuZoom #zoomout {display:none;}
+
+/* Travel news */
+div.travelNews div.news .ui-block-b{width:75%;}
+div.undergroundStatus div.undergroundNews .statusColour{width:43%;}
+div.undergroundStatus div.undergroundNews .statusInfo{width:47%;}
+
+/* Map */
+.mapContainer{height:300px;}
+.map{height:300px;}
+.copyrightfront{top:374px;}
+.copyrightback{top:375px;}
+
+/*temp*/
+.navWrap .colNavFirst{width:60%;}
+.navWrap .colNavSecond{width:38%;}
+.navWrap .colNavFirst2{width:47%;}
+.navWrap .colNavSecond2{width:53%;}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SJPGazetteer" Class="SJPGazetteerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=SJPGazetteer;Integrated Security=True;Pooling=False" SettingsObjectName="SJP.Common.LocationJsGenerator.Properties.Settings" SettingsPropertyName="SJPGazetteerConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SJPNonPostcodeLocations" Member="SJPNonPostcodeLocations">
+    <Type Name="SJPNonPostcodeLocation">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DATASETID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ParentID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Naptan" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LocalityID" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Easting" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Northing" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="NearestTOID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NearestPointE" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NearestPointN" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

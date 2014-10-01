@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode pageId="Homepage" url="http://www.london2012.com" title="Homepage" resourceKey="London2012.Homepage">
+    <siteMapNode url="http://www.london2012.com/visiting/" title="Visiting in 2012" resourceKey="London2012.Visiting">
+      <siteMapNode url="http://www.london2012.com/visiting/getting-to-the-games/" title="Getting to the Games" resourceKey="London2012.Getting">
+        <siteMapNode url="http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/" title="Plan your travel" resourceKey="London2012.Planning">
+
+          <siteMapNode pageId="Default" url="~/Default.aspx" title="Default" resourceKey="Pages.Default" />
+          <siteMapNode pageId="JourneyPlannerInput" url="~/Pages/JourneyPlannerInput.aspx" title="Journey Planner" resourceKey="Pages.JourneyPlannerInput">
+            <siteMapNode pageId="AccessibilityOptions" url="~/Pages/AccessibilityOptions.aspx" title="Accessibility Options" resourceKey="Pages.AccessibilityOptions" />
+            <siteMapNode pageId="JourneyLocations" url="~/Pages/JourneyLocations.aspx" title="Journey Locations" resourceKey="Pages.JourneyLocations" />
+            <siteMapNode pageId="JourneyOptions" url="~/Pages/JourneyOptions.aspx" title="Journey Options" resourceKey="Pages.JourneyOptions" />
+            <siteMapNode pageId="PrintableJourneyOptions" url="~/Pages/PrintableJourneyOptions.aspx" title="Journey Options" resourceKey="Pages.PrintableJourneyOptions" />
+            <siteMapNode pageId="CycleJourneyGPXDownload" url="~/Pages/CycleJourneyGPXDownload.aspx" title="Journey Options" resourceKey="Pages.CycleJourneyGPXDownload" />
+            <siteMapNode pageId="Retailers" url="~/Pages/Retailers.aspx" title="Retailers" resourceKey="Pages.Retailers" />
+            <siteMapNode pageId="RetailerHandoff" url="~/Pages/RetailerHandoff.aspx" title="Retailers" resourceKey="Pages.RetailerHandoff" />
+            <siteMapNode pageId="MapBing" url="~/Pages/Map1.aspx" title="Map" resourceKey="Pages.MapBing" />
+            <siteMapNode pageId="PrintableMapBing" url="~/Pages/PrintableMap1.aspx" title="Printable Cycle Map" resourceKey="Pages.PrintableMapBing" />
+            <siteMapNode pageId="MapGoogle" url="~/Pages/Map2.aspx" title="Map" resourceKey="Pages.MapGoogle" />
+            
+            <siteMapNode pageId="Error" url="~/Pages/ErrorPage.aspx" title="Error" resourceKey="Pages.Error" />
+            <siteMapNode pageId="Sorry" url="~/Pages/SorryPage.aspx" title="Sorry" resourceKey="Pages.Sorry" />
+            <siteMapNode pageId="PageNotFound" url="~/Pages/PageNotFound.aspx" title="Page Not Found" resourceKey="Pages.PageNotFound" />
+          
+          </siteMapNode>
+          <siteMapNode pageId="TravelNews" url="~/Pages/TravelNews.aspx" title="Travel News" resourceKey="Pages.TravelNews" />
+
+          <siteMapNode pageId="Login" url="http://www.london2012.com/settings/login.php" title="Login / Sign up" resourceKey="London2012.Login" />
+          <siteMapNode pageId="Contact" url="http://www.london2012.com/contact-us.php" title="Contact us" resourceKey="London2012.Contact" />
+          <siteMapNode pageId="Sitemap" url="http://www.london2012.com/sitemap.php" title="Sitemap" resourceKey="London2012.Sitemap" />
+
+          <!-- transfers to mobile -->
+          <siteMapNode pageId="MobileDefault" url="http://m.travel.london2012.com/Default.aspx" title="Spectator journey planner" resourceKey="Pages.MobileDefault" />
+          <siteMapNode pageId="MobileInput" url="http://m.travel.london2012.com/Input.aspx" title="Spectator journey planner" resourceKey="Pages.MobileInput" />
+          <siteMapNode pageId="MobileTravelNews" url="http://m.travel.london2012.com/TravelNews.aspx" title="Spectator journey planner" resourceKey="Pages.MobileTravelNews" />
+          <siteMapNode pageId="MobileSummary" url="http://m.travel.london2012.com/Summary.aspx" title="Spectator journey planner" resourceKey="Pages.MobileTravelNews" /> 
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

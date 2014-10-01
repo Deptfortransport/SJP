@@ -1,0 +1,2 @@
+D:\SJP\CodeBase\SJP\VenueIncidents\obj\x86\Debug\VenueIncidents.csprojResolveAssemblyReference.cache
+D:\SJP\CodeBase\SJP\VenueIncidents\obj\x86\Debug\VenueIncidents.csproj.GenerateResource.Cache

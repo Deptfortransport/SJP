@@ -1,0 +1,9 @@
+D:\SJP\CodeBase\SJP\Databases\PermanentPortal\sql\debug\PermanentPortal_Script.PreDeployment.sql
+D:\SJP\CodeBase\SJP\Databases\PermanentPortal\sql\debug\PermanentPortal_Script.PostDeployment.sql
+D:\SJP\CodeBase\SJP\Databases\PermanentPortal\sql\debug\PermanentPortal_Database.sqlsettings
+D:\SJP\CodeBase\SJP\Databases\PermanentPortal\sql\debug\PermanentPortal_Database.sqldeployment
+D:\SJP\CodeBase\SJP\Databases\PermanentPortal\sql\debug\PermanentPortal_Database.sqlcmdvars
+D:\SJP\CodeBase\SJP\Databases\PermanentPortal\sql\debug\PermanentPortal.deploymanifest
+D:\SJP\CodeBase\SJP\Databases\PermanentPortal\sql\debug\PermanentPortal.dbschema
+D:\SJP\CodeBase\SJP\Databases\PermanentPortal\sql\debug\SJPServerDatabase.dbschema
+D:\SJP\CodeBase\SJP\Databases\PermanentPortal\obj\Debug\PermanentPortal.dbschema

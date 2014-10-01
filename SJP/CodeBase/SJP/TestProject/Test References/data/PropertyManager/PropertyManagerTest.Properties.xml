@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+  <property name="propertyservice.refreshrate" GID="" AID="">1000</property>
+  <property name="propertyservice.version" GID="" AID="">1</property>
+  <property name="DefaultDB" GID="TestGroup" AID="TestApp">Server=.\SQLExpress;Initial Catalog=SJPConfiguration;Trusted_Connection=true;</property>
+  <property name="CurrentTestClass" GID="TestGroup" AID="TestApp">PropertyValidatorTest</property>
+  <property name="CurrentTestClassNegative" GID="TestGroup" AID="TestApp">PropertyValidatorTestNegativeabcd</property>
+  <property name="ProviderAssembly" GID="TestGroup" AID="TestApp">sjp.testproject</property>
+  <property name="ProviderAssemblyNotFound" GID="TestGroup" AID="TestApp">sjp.common.propertymanager.propertyprovidersABC</property>
+  <property name="ProviderAssemblyBadFormat" GID="TestGroup" AID="TestApp">TestLib</property>
+  <property name="LengthTest" GID="TestGroup" AID="TestApp">ABCDE</property>
+  <property name="TestExistMandatory" GID="TestGroup" AID="TestApp">ABCDE</property>
+  <property name="TestExistUndefinedError" GID="TestGroup" AID="TestApp">ABCDE</property>
+  <property name="EnumProperty" GID="TestGroup" AID="TestApp">DefaultDB</property>
+</lookup>

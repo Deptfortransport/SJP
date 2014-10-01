@@ -1,0 +1,61 @@
+﻿/* android device - 240px wide*/
+.buttonBlue, .buttonMag {margin-left:22px;background-size:180px;}
+div.headerBack a.topNavLeft,div.headerBack input.topNavLeft{font-size:0.7em;width:105px;background-position:2px 12px !important;padding:5px 0px 0px 15px;}
+div.headerBack a.topNavRight,div.headerBack input.topNavRight{font-size:0.7em;width:130px;padding:10px 5px 0px 0px;}
+div.mobiledetail div.headerBack a.topNavLeft, div.mobiledetail div.headerBack input.topNavLeft{padding:10px 0px 0px 15px;}
+div.mobiletravelnews div.headerBack a.topNavLeft, div.mobiletravelnews div.headerBack input.topNavLeft{padding:10px 0px 0px 15px;width:150px;}
+div.mobilemap div.headerBack a.topNavLeft, div.mobilemap div.headerBack input.topNavLeft{padding:10px 0px 0px 15px;width:150px;}
+
+div.locationsDiv{width:200px;}
+div.locationsDiv .locationControl input.locationInput{width:133px;}
+div.locationsDiv .locationControl span[role=application] input{width:107px;}
+div.venues a.venuesLink{padding:7px 4px;width:50px;}
+#venuespage fieldset div.ui-grid-a label{font-size:0.9em;min-height:38px;}
+#venuespage fieldset div.ui-grid-a .ui-block-a{float:left;width:90%;}
+#venuespage fieldset div.ui-grid-a .ui-block-b{float:left;width:90%;}
+
+div.locationsDiv .locationControl div.ambiguityrow select{padding-top:3px}
+div.locationParkRow{width:223px;}
+div.nowSelect{width:45px;}
+div.accessibilityOptionsRow div.accessibilityOptions{width:231px;}
+div.accessibilityOptions fieldset label{width:190px;}
+div.accessibilityStops div.ui-select div.ui-btn{width:90% !important;}
+div.journeyTypeRow div.cycling{width:231px;}
+div.journeyTypeRow div.cycling fieldset label{width:190px;}
+
+div.journeySummary #navresults .earlier, div.journeySummary #navresults .later{font-size:0.8em;width:40px;background:none #e6007e !important;padding:2px 3px;}
+div.journeySummary #results ul .ui-grid-b .ui-block-a{width:90%;}
+div.journeySummary #results ul .ui-grid-b .ui-block-b{width:40%;}
+div.journeySummary #results ul .ui-grid-b .ui-block-c{width:40%;}
+
+div.legsDetail div.leg{font-size:0.78em;}
+div.legsDetail div.leg div.columnMap{font-size:1.1em;}
+.statusInfo{max-width:200px;}
+
+/* Journey leg rows - row 1 */
+div.legsDetail div.leg div.row div.row1 div.columnEmpty{width:0px;}
+div.legsDetail div.leg div.row div.row1 div.columnTime{width:45px;}
+div.legsDetail div.leg div.row div.row1 div.columnNode{width:20px;}
+div.legsDetail div.leg div.row div.row1 div.columnLocation{width:150px !important;}
+/* Journey leg rows - row 2 */
+div.legsDetail div.leg div.row div.row2 div.columnMode{width:45px;overflow:hidden;}
+div.legsDetail div.leg div.row div.row2 div.columnMode img{max-width:45px;}
+div.legsDetail div.leg div.row div.row2 div.columnEmpty{width:0px;}
+div.legsDetail div.leg div.row div.row2 div.columnLine{width:20px;}
+div.legsDetail div.leg div.row div.row2 div.columnDetail,.legsDetail .columnLocation{width:150px !important;}
+
+/* travel news */
+div.travelNews div.news .ui-block-b{width:65%;}
+div.undergroundStatus div.undergroundNews .statusColour{width:43%;}
+div.undergroundStatus div.undergroundNews .statusInfo{width:47%;}
+
+/* Map */
+.mapContainer{height:250px;}
+.map{height:250px;}
+.copyrightfront{top:324px;}
+.copyrightback{top:325px;}
+
+/*temp*/
+.navWrap .colNavFirst{width:90%;}
+.navWrap .colNavSecond{width:90%;}
+.navWrap ul {margin:5px 0px;}

@@ -1,0 +1,32 @@
+﻿LocationJSGenerator
+---------------------------
+
+-- Properties
+-- JSFolder.SJPWeb : folder where the scripts will be generated for the SJPWeb application
+-- JSFolder.SJPMobile : folder where the scripts will be generated for the SJPMobile application
+-- ScriptName : Name of the script to start with
+-- AliasFile : File where the aliases are loaded. This property should be empty if there isn't any alias file otherwise error will ge generated.
+-- GazetteerDB : Gazetteer database connection string
+
+------------------------------------------
+-- Default Generation of the Script --
+-----------------------------------------
+
+To run it without setting the version just run the exe. This should generate javascript files in the location specified by
+the property JSFolder. The script will be generated with name in the format of <ScriptName>_<YYYYMMDD>_<Alphabet>.js
+
+
+----------------------------------------------
+-- Generating Scripts with specific version --
+----------------------------------------------
+
+To Generate the script with specific version, pass the version or 'v' as argument as shown here
+
+LocationJsGenerator /version 0
+
+or 
+
+LocationJsGenerator /v 0
+
+The script will be generated with name in the format of <ScriptName>_<version>_<Alphabet>.js
+

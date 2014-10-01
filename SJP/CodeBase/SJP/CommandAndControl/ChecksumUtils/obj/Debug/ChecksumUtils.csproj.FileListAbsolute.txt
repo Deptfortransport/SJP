@@ -1,0 +1,6 @@
+D:\SJP\CodeBase\SJP\CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.dll
+D:\SJP\CodeBase\SJP\CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.pdb
+D:\SJP\CodeBase\SJP\CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.dll.CodeAnalysisLog.xml
+D:\SJP\CodeBase\SJP\CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.dll.lastcodeanalysissucceeded
+D:\SJP\CodeBase\SJP\CommandAndControl\ChecksumUtils\obj\Debug\ChecksumHelper.dll
+D:\SJP\CodeBase\SJP\CommandAndControl\ChecksumUtils\obj\Debug\ChecksumHelper.pdb

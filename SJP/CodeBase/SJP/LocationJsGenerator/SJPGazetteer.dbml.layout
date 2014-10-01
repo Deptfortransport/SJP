@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SJPGazetteer">
+  <DataContextMoniker Name="/SJPGazetteerDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ea0a3992-9582-42c6-a722-3a8b8d42ac29" absoluteBounds="4.125, 1.75, 2, 2.9039737955729166">
+      <DataClassMoniker Name="/SJPGazetteerDataContext/SJPNonPostcodeLocation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d490d1a-48f1-4bbf-a705-3338dca355cf" absoluteBounds="4.14, 2.21, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

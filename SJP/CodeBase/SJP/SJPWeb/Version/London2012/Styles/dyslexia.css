@@ -1,0 +1,68 @@
+div#Page{font-size:1.4em !important;}
+div#header-2012 div#main-header-2012-content{background:url('../images/presentation/header-dyslexia-bg.png') no-repeat left top !important;background:url('../images/presentation/header-dyslexia-bg.gif') no-repeat left top;}
+div#header-2012 div#header-list-container ul#accessibility-styles-list{background-color:#F8F4DA !important;}
+div#feature-margin-bottom,
+ul#font-size-list{display:none !important;}
+div#Content a{color:#0000EE;}
+body,
+h1,h2,h3,h4,h5,h6,
+div#top-content-2012 div.feature-content h1{color:#000000 !important;}
+div#Page{background-color:#F6F2D3 !important;border:1px solid #C4C4C4;}
+.snippet,
+.tabbed-content,
+div#page-2012 div.subscribe-blog-2012,
+div.blog-quote-2012,
+div.homepage-2012-content-container{}
+h1,h2,h3,h4,h5,h6,
+.snippet,
+div.blog-quote-2012,
+div#flash-logo,
+div#flash-logo-home,
+div#Content div.grey div.content,
+div#page-2012 div.tabbed-content,
+div#MainContent div.landing-child,
+div#footer-2012 ul#footer-2012-main-link-bar,
+div#top-content-2012 div#feature-content-container div.feature-content-text,
+div#top-content-2012 div#feature-content-container div#pager,
+div#homepage-2012-content div.homepage-2012-content-container div#countdown-container,
+div#page-2012 div#sidebar-right-2012 div.grey-header-long,
+div#page-2012 #BlogCalendar div,
+div#page-2012 #BlogCalendar table th,div#page-2012 #BlogCalendar table td,
+div#page-2012 div#content-left-2012 div.events-search-results-2012 div.events-pagination,
+div.events-search-results-2012 div.event-search-result table.event-search-header td.event-subheading{background:none !important;}
+div#sidebar-left-2012 ul#consistent-links,
+div#page-2012 div.grey div.snippet-header,
+div#page-2012 div#sidebar-right-2012 div.grey,
+div#page-2012 div#sidebar-right-2012 div.blue,
+div#page-2012 div#MainContent div.background-box,
+a.bottom-link,
+div#page-2012 div#wide-content-2012 div#image-gallery-container{background-color:transparent !important;}
+div#sidebar-right-2012 div.normal-tabbed-behaviour ul.tabbed-headers li{display:none;}
+div#sidebar-right-2012 div.normal-tabbed-behaviour ul.tabbed-headers li.current{display:inline;}
+div#sidebar-right-2012 div.three-tabs ul.tabbed-headers li{display:inline;}
+ul#tagCloudList li,
+ul#tag-cloud-list li{float:none !important;display:block !important;font-size:1em !important;margin-bottom:5px !important;}
+ul#tagCloudList li h4{display:none !important;}
+/* Possible solution remove tabs */
+div#page-2012 div.tabbed-content,
+div#page-2012 div.homepage-2012-content-container div.tabbed-content,
+div#page-2012 div.tabbed-content ul.tabbed-headers li a.medium,
+div#page-2012 div.tabbed-content ul.tabbed-headers li a,
+div#page-2012 div.tabbed-content ul.tabbed-headers li.current a,
+div#page-2012 div.tabbed-content ul.tabbed-headers li a.small,
+div#page-2012 div.tabbed-content ul.tabbed-headers li.current a.small,
+div#page-2012 div.tabbed-content ul.tabbed-headers li a.extra-small,
+div#page-2012 div.tabbed-content ul.tabbed-headers li.current a.extra-small,
+div#page-2012 div.tabbed-content ul.tabbed-headers li.current a.medium,
+div#page-2012 div.tabbed-content ul.tabbed-headers li a.medium{background:none !important;}
+div#page-2012 div.tabbed-content ul.tabbed-headers li a.medium,
+div#page-2012 div.tabbed-content ul.tabbed-headers li a,
+div#page-2012 div.tabbed-content ul.tabbed-headers li.current a,
+div#page-2012 div.tabbed-content ul.tabbed-headers li a.small,
+div#page-2012 div.tabbed-content ul.tabbed-headers li.current a.small,
+div#page-2012 div.tabbed-content ul.tabbed-headers li a.extra-small,
+div#page-2012 div.tabbed-content ul.tabbed-headers li.current a.extra-small,
+div#page-2012 div.tabbed-content ul.tabbed-headers li.current a.medium,
+div#page-2012 div.tabbed-content ul.tabbed-headers li a.medium{width:auto !important;border-top:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;padding:5px !important;}
+div#calendar-tabs ul.tabbed-headers{margin-left:40px !important;}
+#section-home #feature-content-container .content-container { height: 290px !important; }

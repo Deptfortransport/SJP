@@ -1,0 +1,5 @@
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2011-04-26 13:02:40
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2011-04-26 13:02:40 W3SVC1 OVS3 10.96.38.83 GET /SJPWeb/Version/London2012/images/icons/header-drop-down-icon-over.gif - 80 - 10.93.154.10 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10.5;+rv:2.0)+Gecko/20100101+Firefox/4.0 ASP.NET_SessionId=v2vhrh45pwy2qwbesv231m3l;+__utma=72248141.1379406566.1303820142.1303820142.1303820142.1;+__utmc=72248141;+__utmz=72248141.1303820142.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none);+SJP=O=NG9+1LA&TYO=Postcode&D=8100NGA&TYD=Venue&DTO=20110426T1230Z&DTR=20110426T1600Z&R=False&PM=PublicTransport&UID=v2vhrh45pwy2qwbesv231m3l&LP=JourneyOptions&DT=20110426T1226Z http://ovs3/SJPWeb/Version/London2012/Styles/main.css ovs3 200 0 0 1236 841 171

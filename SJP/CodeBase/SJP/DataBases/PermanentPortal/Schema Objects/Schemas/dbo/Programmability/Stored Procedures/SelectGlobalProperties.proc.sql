@@ -1,0 +1,8 @@
+﻿
+-- SelectGlobalProperties
+CREATE PROCEDURE SelectGlobalProperties
+AS
+SELECT PNAME, PVALUE
+FROM PROPERTIES P
+WHERE P.AID = '<DEFAULT>'
+AND P.GID = '<DEFAULT>'

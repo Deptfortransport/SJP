@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CommandAndControl" Class="MonitoringResultsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=CommandAndControl;Integrated Security=True;Pooling=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CommandAndControlConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SJPChecksumMonitoringResults" Member="SJPChecksumMonitoringResults">
+    <Type Name="SJPChecksumMonitoringResult">
+      <Column Name="MonitoringItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SJP_Server" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ValueAtCheck" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IsInRed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SJPDatabaseMonitoringResults" Member="SJPDatabaseMonitoringResults">
+    <Type Name="SJPDatabaseMonitoringResult">
+      <Column Name="MonitoringItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SJP_Server" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ValueAtCheck" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IsInRed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SJPFileMonitoringResults" Member="SJPFileMonitoringResults">
+    <Type Name="SJPFileMonitoringResult">
+      <Column Name="MonitoringItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SJP_Server" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ValueAtCheck" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="FullFilePath" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="FileCreatedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FileModifiedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FileSize" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="FileProductVersion" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="IsInRed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SJPWMIMonitoringResults" Member="SJPWMIMonitoringResults">
+    <Type Name="SJPWMIMonitoringResult">
+      <Column Name="MonitoringItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SJP_Server" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ValueAtCheck" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IsInRed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetLatestMonitoringResults" Method="GetLatestMonitoringResults">
+    <ElementType Name="GetLatestMonitoringResultsResult">
+      <Column Name="SJP_Server" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MonitorType" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="MonitoringItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ValueAtCheck" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IsInRed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetLatestMonitoringResultsFiltered" Method="GetLatestMonitoringResultsFiltered">
+    <Parameter Name="WhereClauseIn" Parameter="whereClauseIn" Type="System.String" DbType="VarChar(500)" />
+    <ElementType Name="GetLatestMonitoringResultsFilteredResult">
+      <Column Name="SJP_Server" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MonitorType" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="MonitoringItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CheckTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ValueAtCheck" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="IsInRed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

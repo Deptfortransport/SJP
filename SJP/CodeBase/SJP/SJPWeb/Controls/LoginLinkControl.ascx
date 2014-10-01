@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LoginLinkControl.ascx.cs" Inherits="SJP.UserPortal.SJPWeb.Controls.LoginLinkControl" %>
+<asp:HyperLink ID="loginLink" runat="server" EnableViewState="false"></asp:HyperLink>

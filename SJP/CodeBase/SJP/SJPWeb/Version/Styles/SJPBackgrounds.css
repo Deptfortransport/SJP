@@ -1,0 +1,268 @@
+﻿/* Buttons */
+.sjpContent input.btnSmallerPink
+{
+    background: url("./../images/presentation/button-pink-smaller.png") no-repeat scroll 0 4px transparent;
+}
+
+.sjpContent input.btnSmallPink
+{
+    background: url("./../images/presentation/button-pink-small.png") no-repeat scroll 0 4px transparent;
+}
+.sjpContent input.btnMediumPink
+{
+    background: url("./../images/presentation/button-pink-medium.png") no-repeat scroll 0 4px transparent;
+}
+.sjpContent input.btnLargePink
+{
+    background: url("./../images/presentation/button-pink-large.png") no-repeat scroll 0 4px transparent;
+}
+
+.sjpContent input.btnLargePink[disabled]
+{
+    background: url("./../images/presentation/button-pink-large-disabled.png") no-repeat scroll 0 4px transparent;
+}
+
+.sjpContent input.btnMediumPink[disabled]
+{
+    background: url("./../images/presentation/button-pink-medium-disabled.png") no-repeat scroll 0 4px transparent;
+}
+
+.sjpContent input.btnSmallPink[disabled]
+{
+    background: url("./../images/presentation/button-pink-small-disabled.png") no-repeat scroll 0 4px transparent;
+}
+
+div#MainContent input.linkButton
+{
+    background: none repeat scroll 0 0 transparent;
+}
+
+/* Journey Planner Input */
+div.sjpHeading
+{
+    background: url("./../images/presentation/diagonalHead.png") no-repeat scroll 0px 0px #FFFFFF;
+}
+
+/* Journey Options Tabs */
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.pjTab
+{
+    background : url("./../images/tabs/Blue_Grey_Tabs_1_large.png") no-repeat scroll 0px 2px transparent;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.rsTab
+{
+    background : url("./../images/tabs/blue_grey_tabs_1.png") no-repeat scroll 0px 2px transparent;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.prTab
+{
+    background : url("./../images/tabs/blue_grey_tabs_1.png") no-repeat scroll 0px 2px transparent;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.bbTab
+{
+    background : url("./../images/tabs/blue_grey_tabs_1.png") no-repeat scroll 0px 2px transparent;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.cyTab
+{
+    background : url("./../images/tabs/Blue_Grey_Tabs_1_small.png") no-repeat scroll 0px 2px transparent;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li input
+{
+    background: none repeat scroll 0 0 transparent;
+}
+
+/* Event Date Control */
+div.eventDate div.journeyTime div.row, div.eventDate div.journeyTime div.row div.toggle dinput.linkButton
+{
+    background: none repeat scroll 0 0 #F2F2F2;
+}
+div.eventDate div.calendarSection 
+{
+    background: url("./../images/tabs/tabs-bg_vertical.gif") no-repeat scroll left top transparent;
+}
+
+/* drop downs */
+
+.selectbox .display .arrow_btn
+{
+   background: url("./../images/arrows/drop_arrow_down.png") no-repeat scroll 0px -2px;
+}
+.selectbox .display.active .arrow_btn
+{
+    background: url("./../images/arrows/drop_arrow_down.png") no-repeat scroll 0px -47px;
+    -moz-box-shadow:inset 0 0 1px 1px #9eb0ba;
+    -webkit-box-shadow:inset 0 0 1px 1px #9eb0ba;
+}
+
+a.ui-state-default .ui-icon-triangle-1-s
+{
+   background: url("./../images/arrows/drop_arrow_down.png") no-repeat scroll 0px -2px;
+}
+
+a.ui-state-hover .ui-icon-triangle-1-s, a.ui-state-focus .ui-icon-triangle-1-s, a.ui-state-active .ui-icon-triangle-1-s
+{
+    background: url("./../images/arrows/drop_arrow_down.png") no-repeat scroll 0px -47px;
+    -moz-box-shadow:inset 0 0 1px 1px #9eb0ba;
+    -webkit-box-shadow:inset 0 0 1px 1px #9eb0ba;
+}
+
+
+div#MainContent .selectbox ul li, div#MainContent ul.selectbox li 
+{
+    background: none;
+}
+
+/* Check Boxes */
+span.checkbox span.box div
+{
+    background: url("./../images/presentation/checkbox.gif") no-repeat scroll 0 0px transparent; 
+}
+span.checkbox span.box div.disabled
+{
+    background-position: 0 -25px;
+}
+span.checkbox span.checked div
+{
+     background-position: 0 -50px;
+}
+span.checkbox span.checked div.disabled
+{
+     background-position: 0 -75px;
+}
+
+/* Non Javascript - Calendar - start */
+div#MainContent #sjp-calendar-tabs ul.tabbed-headers li input.monthTab
+{
+     background: url("../images/tabs/small-grey.png") no-repeat scroll -1px 0 transparent;
+}
+
+div#MainContent #sjp-calendar-tabs ul.tabbed-headers li.current input.monthTab
+{
+     background: url("../images/tabs/small-white.png") no-repeat scroll -1px 0 transparent;
+}
+
+div#MainContent #sjp-calendar-tabs #BlogCalendar table td input
+{
+    background: none;
+   
+}
+
+
+/* Non Javascript - Calendar - end */
+
+/* AutoSuggest */
+div#MainContent ul.locationSuggestList li.locationSuggestListItem
+{
+    background-image: none;
+}
+
+
+/* Journey Summary Heading */
+div.journeySummary div.header, 
+div.stopEventResult div.header
+{
+    background: url("./../images/tabs/Tab_blue_Tall.png") no-repeat scroll 0px 0px transparent;
+}
+
+/* Generic javascript right down arrow */
+div#MainContent .js_arrow_btn{
+   background: url("./../images/arrows/arrow_left_down.png") no-repeat scroll 0px -2px;
+}
+div#MainContent div.journeySummary div.leg div.row div.row2 div.columnDetail div.js_arrow_btn
+{
+   background: url("./../images/arrows/arrow_left_down_small.png") no-repeat scroll 0px -1px;    
+}
+
+/* Arrow button on the further accessibility needs */
+div#MainContent input.js_accessiblity_btn{
+   background: url("./../images/arrows/arrow_left_down.png") no-repeat scroll 0px -4px;
+}
+
+/* Travel News Page */
+div#MainContent div.travelnews div.severity div.severityHeading .js_arrow_btn
+{
+    background: url("./../images/arrows/arrow_left_down.png") no-repeat scroll 0 -2px;
+}
+div#MainContent div.travelnews div.severity div.active .js_arrow_btn
+{
+    background: url("./../images/arrows/arrow_left_down.png") no-repeat scroll 0 -47px;
+}
+div#MainContent div.tnItem
+{
+    background: url(../images/presentation/dotted-border-grey.gif) repeat-x left bottom;
+}
+.sjpContent div.travelnews div.impact div.impactHeading .js_arrow_btn
+{
+    background: url("./../images/arrows/arrow_left_down.png") no-repeat scroll 0 -2px;
+}
+.sjpContent div.travelnews div.impact div.active .js_arrow_btn
+{
+    background: url("./../images/arrows/arrow_left_down.png") no-repeat scroll 0 -47px;
+}
+
+/* -- SJP right hand side box --*/
+div#page-2012 div.sidebar-right-2012 div.sjp-stp-side-box h2
+{
+    background: url("./../images/tabs/Tab_pink_medium.png") no-repeat scroll left top #DE008C;
+}
+div#page-2012 div.sidebar-right-2012 div.sjp-stp-side-box div.travelNewsWidget div.travelNewsWidgetHeader h2
+{
+    background: none;
+}
+div#page-2012 div.sidebar-right-2012 div.sjp-stp-side-box div.travelNewsWidget div.travelNewsWidgetHeader
+{
+    background: url("./../images/tabs/Tab_blue_medium.png") no-repeat scroll left top #DE008C;
+}
+div#page-2012 div.sidebar-right-2012 div.sjp-stp-side-box div.venueMapsWidget h2
+{
+     background: url("./../images/tabs/Tab_pink_medium.png") no-repeat scroll left top #DE008C !important;
+}
+div#page-2012 div.sidebar-right-2012 .sjp-stp-side-box-content
+{
+    background: url("./../images/presentation/sidebar-bg.gif") repeat-y scroll left bottom #F2F2F2;
+}
+div#page-2012 div.sidebar-right-2012 .sjp-stp-side-box-content div.sjp-stp-side-box-go-button div.link
+{
+     background: url("./../images/presentation/stp-button-pink.png") no-repeat scroll 0 0 transparent;  
+}
+div#page-2012 div.sidebar-right-2012 .sjp-stp-side-box-content div.tnHeadlinesContainer ul.travelNewsHeadlines li.item
+{
+    background: url("../images/presentation/dotted-border-grey.gif") repeat-x scroll left bottom transparent;
+}
+
+/* Printer friendly */
+div#MainContent div.printerFriendly input.linkButton, div#MainContent div.printerFriendly a
+{
+    background: url("../images/presentation/print_icon.gif") no-repeat scroll left top transparent;
+}
+
+/* Top Tips */
+div#Content div#top-tips div.slider
+{
+    background: url("../London2012/images/travel-planning/light-bulb.gif") no-repeat scroll 7px 7px transparent !important;
+}
+
+div#page-2012 div#top-tips
+{
+    background: none repeat scroll 0 0 #F2F2F2;
+}
+
+/* Generic Promo Widget */
+div#page-2012 .sidebar-right-2012 div.stp-side-box h2.blue
+{
+    background-image: url("../images/presentation/stp-sidebar-blue.gif") !important;
+}
+div#page-2012 div.sidebar-right-2012 div.stp-side-box div.angle-button-image div.link 
+{
+    background: url("./../images/presentation/stp-button-blue.png") no-repeat scroll 0 0 transparent;
+}
+
+/* external links */
+.externalLink
+{
+    background: url("../images/presentation/link_external_blue.gif") no-repeat scroll right top transparent;
+}
+
+
+
+
+
+

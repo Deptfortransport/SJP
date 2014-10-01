@@ -1,0 +1,17 @@
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.userportal.stateserver.dll
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.userportal.stateserver.pdb
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.userportal.stateserver.dll.CodeAnalysisLog.xml
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.userportal.stateserver.dll.lastcodeanalysissucceeded
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.common.dll
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.common.eventlogging.dll
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.common.propertymanager.dll
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.common.extenders.dll
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.common.servicediscovery.dll
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.common.pdb
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.common.eventlogging.pdb
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.common.propertymanager.pdb
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.common.extenders.pdb
+D:\SJP\CodeBase\SJP\StateServer\bin\Debug\sjp.common.servicediscovery.pdb
+D:\SJP\CodeBase\SJP\StateServer\obj\Debug\StateServer.csprojResolveAssemblyReference.cache
+D:\SJP\CodeBase\SJP\StateServer\obj\Debug\sjp.userportal.stateserver.dll
+D:\SJP\CodeBase\SJP\StateServer\obj\Debug\sjp.userportal.stateserver.pdb

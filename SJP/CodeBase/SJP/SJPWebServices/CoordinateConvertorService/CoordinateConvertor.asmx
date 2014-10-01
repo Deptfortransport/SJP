@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="CoordinateConvertor.asmx.cs" Class="SJP.WebService.CoordinateConvertorService.CoordinateConvertor" %>

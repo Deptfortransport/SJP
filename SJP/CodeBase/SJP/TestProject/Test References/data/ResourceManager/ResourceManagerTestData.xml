@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentData>
+  <Content>
+  <Content GroupId="1" CultureCode="en" ControlName="General" PropertyName="AccessibilityOpitons.LblTo.Text" ContentValue="To" />
+  <Content GroupId="1" CultureCode="en" ControlName="General" PropertyName="AccessibilityOptions.Accessibility.RequireSpecialAssistance.Text" ContentValue="does not have routes with special assistance." />
+  <Content GroupId="1" CultureCode="en" ControlName="General" PropertyName="AccessibilityOptions.Accessibility.RequireStepFreeAccess.Text" ContentValue="does not include step free routes." />
+  <Content GroupId="1" CultureCode="en" ControlName="General" PropertyName="AccessibilityOptions.AccessibilityPlanJourneyInfo.Text" ContentValue="To plan a journey to fully meet your requested accessibility needs, please choose a starting point with this facilities from the list below." />
+  <Content GroupId="1" CultureCode="en" ControlName="General" PropertyName="AccessibilityOptions.AdminAreaList.DefaultItem.Text" ContentValue="Select county" />
+  <Content GroupId="1" CultureCode="en" ControlName="General" PropertyName="AccessibilityOptions.Back.Text" ContentValue="&amp;lt; Back" />
+  <Content GroupId="1" CultureCode="en" ControlName="General" PropertyName="AccessibilityOptions.Back.ToolTip" ContentValue="Back" />
+  <Content GroupId="1" CultureCode="en" ControlName="General" PropertyName="AccessibilityOptions.DistrictList.DefaultItem.Text" ContentValue="Select London borough" />
+  <Content GroupId="1" CultureCode="en" ControlName="General" PropertyName="AccessibilityOptions.GNATList.DefaultItem.Text" ContentValue="Select your stop" />
+  <Content GroupId="1" CultureCode="en" ControlName="General" PropertyName="AccessibilityOptions.Heading.Text" ContentValue="Select your accessible stop" />
+    <Content GroupId="1" CultureCode="fr" ControlName="General" PropertyName="AccessibilityOpitons.LblTo.Text" ContentValue="Le To" />
+
+  </Content>
+  <ContentGroup>
+    <ContentGroup GroupId="1" Name="General" />
+    <ContentGroup GroupId="2" Name="Sitemap" />
+    <ContentGroup GroupId="3" Name="JourneyOutput" />
+    <ContentGroup GroupId="4" Name="Analytics" />
+  </ContentGroup>
+</ContentData>

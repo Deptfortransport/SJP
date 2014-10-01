@@ -1,0 +1,252 @@
+﻿.sjpContent .bold
+{
+    font-weight: bold;
+}
+/* Buttons */
+.sjpContent input.btnSmallerPink, 
+.sjpContent input.btnSmallPink
+{
+    font-size: 1.05em;
+    font-weight: bold;
+}
+.sjpContent input.btnMediumPink
+{
+    font-size: 1.05em;
+    font-weight: bold;
+}
+.sjpContent input.btnLargePink
+{
+    font-size: 1.05em;
+    font-weight: bold;
+}
+.sjpContent input.btnLargePink[disabled],
+.sjpContent input.btnMediumPink[disabled],
+.sjpContent input.btnSmallPink[disabled],
+.sjpContent input.btnSmallerPink[disabled]
+{
+    text-decoration:none;
+    font-weight:normal;
+}
+
+/* Error messages panel */
+.sjpContent div.contentMessages
+{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.sjpContent div.mainSection div.contentMessages
+{
+    font-size: 1.0em;   
+    font-weight: bold;
+}
+
+/* Event Calendar */
+.sjpContent .eventDateTime div.datetime div.datebox .display
+{
+    font-weight: normal;
+}
+
+.sjpContent .eventDateTime div.datetime div.datebox
+{
+    font-family:arial;font-size:1em;
+}
+
+/* Non Javascript - Calendar - start */
+.sjpContent #sjp-calendar-tabs ul.tabbed-headers li input.monthTab
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Locations */
+ul.ui-selectmenu-menu li
+{
+    font-size:0.7em;
+}
+ul.ui-selectmenu-menu .ui-selectmenu-group .ui-selectmenu-group-label
+{
+    font-size:0.6em;
+}
+ul.ui-selectmenu-menu .ui-selectmenu-group ul li
+{
+    font-size:0.6em;
+}
+
+/* Location Suggest */
+#articleBody .sjpContent ul.locationSuggestList li.locationSuggestListItem
+{
+    font-size: 0.8em;
+}
+
+/* Journey Options Tabs */
+.sjpContent  div.sjp_jo_tab .sjp_tab_headers ul li input
+{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.sjpContent  div.sjp_jo_tab .sjp_tab_headers ul li a
+{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* drop downs */
+/* applied to original <select> to hide */
+/* always visible styles */
+.selectbox
+{
+    font-family:arial;
+    font-size:1em;
+}
+.selectbox .display
+{
+    font-weight:normal;
+}
+/* dropdown styles */
+.selectbox.items
+{
+  font-family:arial;
+  font-size:1em;  
+}
+/* optgroup styles */
+.selectbox.items .optgroup>.label
+{
+    font-weight:bold;
+}
+
+/* Journey Summary */
+div.journeySummary div.header
+{
+    font-size:1.1em;
+    font-weight: 400;
+}
+div.journeySummary div.header div.journeyDirection, 
+div.stopEventResult div.header div.journeyDirection
+{
+    font-size: 1.26em;
+    font-weight: bold;
+}
+.mapbing div.header div.journeyDirection,
+.printablemapbing div.header div.journeyDirection
+{
+    font-size: 1.48em;
+    font-weight: bold;
+}
+.mapbing div.journeyHeading {font-size:1.18em;}
+.printablemapbing div.journeyHeading {font-size:1.18em;}
+div.journeySummary div.leg div.row div.timeArrive,
+div.journeySummary div.leg div.row div.timeDepart
+{
+    font-size:0.8em;
+}
+div.journeySummary div.leg div.row div.columnMode,
+div.journeySummary div.leg div.row div.columnDetail
+{
+    font-size:0.9em;
+}
+div.journeySummary div.leg div.legCar div.carLeg div.detail table,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail table
+{
+    font-size:0.9em;
+}
+div.journeySummary div.leg div.row div.row1 div.accessibleLinkDiv
+{
+    font-size:0.9em;
+}
+div.detailNotes
+{
+    font-size:0.7em;
+}
+div.journeySummary div.leg div.legCar div.carLeg div.detail table .mwayLabel,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail table .mwayLabel,
+span.servicenumber
+{
+    font-weight: bold;
+}
+.sjpContent div.printerFriendly input.linkButton, 
+.sjpContent div.printerFriendly
+{
+    font-size: 0.9em;
+}
+
+/* Map Bing */
+.mapbing .cycleHeader
+{
+    font-size: 1.43em;
+}
+.mapbing .sjpContent div.printerFriendly input.linkButton
+{
+    font-size: 1.3em;
+}
+.mapbing .mapLegend,
+.printablemapbing .mapLegend
+{
+    font-size: 1.07em;
+}
+/* Map Google */
+.mapgoogle .mapContainer
+{
+    font-size: 0.8em;    
+}
+
+/* Travel News Page */
+.sjpContent div.travelnews div.severity div.severityHeading
+{
+    font-size: 1.36em;
+    font-weight: bold;
+}
+.sjpContent div.travelnews div.impact div.impactHeading
+{
+    font-size: 1.36em;
+    font-weight: bold;
+}
+
+.sjpContent div.travelnews div.severity div.tnContainer span.severity
+{
+    font-weight: bold;
+}
+.sjpContent div.travelnews span.travelAdvice
+{
+    font-weight: bold;
+}
+div.tnItem div.body div.status,
+div.tnItem div.body .highlight
+{
+    font-weight: bold;
+}
+.sjpContent div.tnItem div.body div.summary input.linkButton
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Journey Locations */
+div.JourneyLocations div.preferredParks span.label,
+div.JourneyLocations div.parkAndRideTimeSlot span.label, 
+div.JourneyLocations div.typeOfRoute span.label, 
+div.JourneyLocations div.serviceRoutes span.label
+{
+    font-size: 1.1em;
+}
+
+/* Detail leg Retail handoff links and the journey web note links */
+a.travelNotesLink, a.bookTicketInfo, a.bookTicketLink
+{
+    font-size: 1.0em;
+}
+
+/* Further Accessibility page */
+div.mapInfo
+{
+    font-weight: bold;
+}
+div.stopSelection .accissibleStopType, 
+div.stopSelection .stopSelectInfo
+{
+    font-weight: bold;
+}
+
+div.selectedJourney div.row span.label
+{
+    font-weight: bold;
+}

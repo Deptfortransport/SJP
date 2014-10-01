@@ -1,0 +1,3757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="1.1" DspName="Microsoft.Data.Schema.Sql.Sql100DatabaseSchemaProvider" CollationLcid="2057" CollationCaseSensitive="False">
+	<Header>
+		<CustomData Category="ModelCapability">
+			<Metadata Name="ModelCapability" Value="Default" />
+		</CustomData>
+		<CustomData Category="ClrTypesDbSchema" Type="DbSchema">
+			<Metadata Name="ClrTypesDbSchema" Value="True" />
+		</CustomData>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="100" />
+		</CustomData>
+		<CustomData Category="Permissions" Type="XmlPermissions">
+			<Metadata Name="FileName" Value="D:\SJP\CODEBASE\SJP\DATABASES\COMMANDANDCONTROL\PROPERTIES\DATABASE.SQLPERMISSIONS" />
+		</CustomData>
+		<CustomData Category="Reference" Type="DbSchema">
+			<Metadata Name="FileName" Value="D:\SJP\CODEBASE\SJP\DATABASES\SJPSERVERDATABASE\SQL\DEBUG\SJPSERVERDATABASE.DBSCHEMA" />
+			<Metadata Name="LogicalName" Value="SJPServerDatabase.dbschema" />
+			<Metadata Name="ExternalParts" Value="[master]" />
+		</CustomData>
+	</Header>
+	<Model>
+		<Element Type="ISql100DatabaseOptions">
+			<Property Name="Collation" Value="Latin1_General_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="RecoveryMode" Value="1" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISqlRoleMembership">
+			<Relationship Name="Member">
+				<Entry>
+					<References Name="[SJP_User]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Role">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[db_datareader]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISqlRoleMembership">
+			<Relationship Name="Member">
+				<Entry>
+					<References Name="[SJP_User]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Role">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[db_datawriter]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Route" Name="[AutoCreatedLocal]">
+			<Property Name="Address" Value="LOCAL" />
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddChangeNotificationTable]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	-- Add tables that didn't previously exist
+	IF NOT EXISTS (SELECT * FROM [dbo].[ChangeNotification]
+						   WHERE [table] = @table)
+		BEGIN
+			INSERT INTO [dbo].[ChangeNotification] ([table], [version])
+				 VALUES (@table, 1)
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddChangeNotificationTable].[@table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Version]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddChangeNotificationTable].[@table]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="334" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[AddChangeNotificationTable]&#xD;&#xA;&#x9;@table varchar(100) &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddUpdateChecksumMonitoringItem]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	IF EXISTS (SELECT * FROM [ChecksumMonitoringItems] 
+					 WHERE [ItemID] = @ItemId)
+
+		--Update the configured monitoring item if it already exists		
+		BEGIN
+			UPDATE [ChecksumMonitoringItems] 	 
+					 SET [CheckInterval] = @CheckInterval, [Enabled] = @Enabled, 
+					 [ChecksumRootPath] = @ChecksumRootPath , [ExtensionsToIgnore] = @ExtensionsToIgnore, 
+					 [RedCondition] = @RedCondition, [Description] = @Description
+					 WHERE [ItemID] = @ItemId
+		END
+	ELSE
+		--Insert the monitoring item
+		BEGIN
+			SET IDENTITY_INSERT [dbo].[ChecksumMonitoringItems] ON
+
+		    INSERT INTO [dbo].[ChecksumMonitoringItems] 
+			([ItemID],[CheckInterval],[Enabled],[Description],[ChecksumRootPath],[ExtensionsToIgnore],[RedCondition]) 
+			VALUES (@ItemId,@CheckInterval,@Enabled,@Description,@ChecksumRootPath,@ExtensionsToIgnore,@RedCondition)
+
+			SET IDENTITY_INSERT [dbo].[ChecksumMonitoringItems] OFF
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[ItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateChecksumMonitoringItem].[@ItemId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateChecksumMonitoringItem].[@CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateChecksumMonitoringItem].[@Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[ChecksumRootPath]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateChecksumMonitoringItem].[@ChecksumRootPath]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[ExtensionsToIgnore]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateChecksumMonitoringItem].[@ExtensionsToIgnore]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[RedCondition]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateChecksumMonitoringItem].[@RedCondition]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateChecksumMonitoringItem].[@Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[ItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateChecksumMonitoringItem].[@ItemId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateChecksumMonitoringItem].[@CheckInterval]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateChecksumMonitoringItem].[@Enabled]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateChecksumMonitoringItem].[@Description]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateChecksumMonitoringItem].[@ChecksumRootPath]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateChecksumMonitoringItem].[@ExtensionsToIgnore]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateChecksumMonitoringItem].[@RedCondition]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="CreateOffset" Value="2" />
+				<Property Name="Length" Value="1172" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="&#xD;&#xA;CREATE PROCEDURE [dbo].[AddUpdateChecksumMonitoringItem]&#xD;&#xA;(&#x9;@ItemId int, @CheckInterval int, @Enabled bit, @Description varchar(200), &#xD;&#xA;&#x9;@ChecksumRootPath varchar(300), @ExtensionsToIgnore varchar(200), @RedCondition varchar(200) )&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddUpdateDatabaseMonitoringItem]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	IF EXISTS (SELECT * FROM [DatabaseMonitoringItems] 
+					 WHERE [ItemID] = @ItemId)
+
+		--Update the configured monitoring item if it already exists		
+		BEGIN
+			UPDATE [DatabaseMonitoringItems] 	 
+					 SET [CheckInterval] = @CheckInterval, [Enabled] = @Enabled,[SQLHelperDatabaseTarget] = @SQLHelperDatabaseTarget,
+					 [SQLQuery] = @SQLQuery, [RedCondition] = @RedCondition,[Description] = @Description
+					 WHERE [ItemID] = @ItemId
+		END
+	ELSE
+		--Insert the monitoring item
+		BEGIN
+			SET IDENTITY_INSERT [dbo].[DatabaseMonitoringItems] ON
+
+		    INSERT INTO [dbo].[DatabaseMonitoringItems] 
+			([ItemID],[CheckInterval],[Enabled],[Description],[SQLHelperDatabaseTarget],[SQLQuery],[RedCondition]) 
+			VALUES (@ItemId,@CheckInterval,@Enabled,@Description,@SQLHelperDatabaseTarget,@SQLQuery,@RedCondition)
+
+			SET IDENTITY_INSERT [dbo].[DatabaseMonitoringItems] OFF
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[ItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@ItemId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[SQLHelperDatabaseTarget]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@SQLHelperDatabaseTarget]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[SQLQuery]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@SQLQuery]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[RedCondition]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@RedCondition]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[ItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@ItemId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@CheckInterval]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@Enabled]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@Description]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@SQLHelperDatabaseTarget]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@SQLQuery]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateDatabaseMonitoringItem].[@RedCondition]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="CreateOffset" Value="2" />
+				<Property Name="Length" Value="1145" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="&#xD;&#xA;CREATE PROCEDURE [dbo].[AddUpdateDatabaseMonitoringItem]&#xD;&#xA;(&#x9;@ItemId int, @CheckInterval int, @Enabled bit, @Description varchar(200), &#xD;&#xA;&#x9;@SQLHelperDatabaseTarget varchar(200), @SQLQuery varchar(300), @RedCondition varchar(200) )&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddUpdateFileMonitoringItem]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	IF EXISTS (SELECT * FROM [FileMonitoringItems] 
+					 WHERE [ItemID] = @ItemId)
+
+		--Update the configured monitoring item if it already exists		
+		BEGIN
+			UPDATE [FileMonitoringItems] 	 
+					 SET [CheckInterval] = @CheckInterval, [Enabled] = @Enabled, 
+					 [FullFilePath] = @FullFilePath, [RedCondition] = @RedCondition, [Description] = @Description
+					 WHERE [ItemID] = @ItemId
+		END
+	ELSE
+
+		--Insert the monitoring item
+		BEGIN
+			SET IDENTITY_INSERT [dbo].[FileMonitoringItems] ON
+
+		    INSERT INTO [dbo].[FileMonitoringItems] 
+			([ItemID],[CheckInterval],[Enabled],[Description],[FullFilePath],[RedCondition]) 
+			VALUES (@ItemId,@CheckInterval,@Enabled,@Description,@FullFilePath,@RedCondition)
+
+			SET IDENTITY_INSERT [dbo].[FileMonitoringItems] OFF
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[ItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateFileMonitoringItem].[@ItemId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateFileMonitoringItem].[@CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateFileMonitoringItem].[@Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[FullFilePath]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateFileMonitoringItem].[@FullFilePath]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[RedCondition]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateFileMonitoringItem].[@RedCondition]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateFileMonitoringItem].[@Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[ItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateFileMonitoringItem].[@ItemId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateFileMonitoringItem].[@CheckInterval]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateFileMonitoringItem].[@Enabled]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateFileMonitoringItem].[@Description]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateFileMonitoringItem].[@FullFilePath]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateFileMonitoringItem].[@RedCondition]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1000" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[AddUpdateFileMonitoringItem]&#xD;&#xA;(&#x9;@ItemId int, @CheckInterval int, @Enabled bit, @Description varchar(200), &#xD;&#xA;&#x9;@FullFilePath varchar(300), @RedCondition varchar(200) )&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddUpdateWMIMonitoringItem]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	IF EXISTS (SELECT * FROM [WMIMonitoringItems] 
+					 WHERE [ItemID] = @ItemId)
+		--Update the configured monitoring item if it already exists		
+		BEGIN
+			UPDATE [WMIMonitoringItems] 
+					 SET [CheckInterval] = @CheckInterval, [Enabled] = @Enabled, 
+					 [WQLQuery] = @WQLQuery , [RedCondition] = @RedCondition, [Description] = @Description
+					 WHERE [ItemID] = @ItemId
+		END
+	ELSE
+		--Insert the monitoring item
+		BEGIN
+			SET IDENTITY_INSERT [dbo].[WMIMonitoringItems] ON
+
+		    INSERT INTO [dbo].[WMIMonitoringItems] 
+			([ItemID],[CheckInterval],[Enabled],[Description],[WQLQuery],[RedCondition]) 
+			VALUES (@ItemId,@CheckInterval,@Enabled,@Description,@WQLQuery,@RedCondition)
+
+			SET IDENTITY_INSERT [dbo].[WMIMonitoringItems] OFF
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[ItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateWMIMonitoringItem].[@ItemId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateWMIMonitoringItem].[@CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateWMIMonitoringItem].[@Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[WQLQuery]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateWMIMonitoringItem].[@WQLQuery]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[RedCondition]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateWMIMonitoringItem].[@RedCondition]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateWMIMonitoringItem].[@Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[ItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateWMIMonitoringItem].[@ItemId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateWMIMonitoringItem].[@CheckInterval]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateWMIMonitoringItem].[@Enabled]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateWMIMonitoringItem].[@Description]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateWMIMonitoringItem].[@WQLQuery]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateWMIMonitoringItem].[@RedCondition]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="969" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[AddUpdateWMIMonitoringItem]&#xD;&#xA;(&#x9;@ItemId int, @CheckInterval int, @Enabled bit, @Description varchar(200), &#xD;&#xA;&#x9;@WQLQuery varchar(300), @RedCondition varchar(200) )&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ChangeNotification]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChangeNotification].[Version]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChangeNotification].[Table]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ChecksumMonitoringItems]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChecksumMonitoringItems].[ItemID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChecksumMonitoringItems].[ChecksumRootPath]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChecksumMonitoringItems].[CheckInterval]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChecksumMonitoringItems].[Enabled]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChecksumMonitoringItems].[ExtensionsToIgnore]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChecksumMonitoringItems].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChecksumMonitoringItems].[RedCondition]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[DatabaseMonitoringItems]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[DatabaseMonitoringItems].[ItemID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[DatabaseMonitoringItems].[CheckInterval]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[DatabaseMonitoringItems].[Enabled]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[DatabaseMonitoringItems].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[DatabaseMonitoringItems].[SQLHelperDatabaseTarget]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[DatabaseMonitoringItems].[SQLQuery]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[DatabaseMonitoringItems].[RedCondition]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[FileMonitoringItems]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[FileMonitoringItems].[ItemID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[FileMonitoringItems].[CheckInterval]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[FileMonitoringItems].[Enabled]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[FileMonitoringItems].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[FileMonitoringItems].[FullFilePath]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[FileMonitoringItems].[RedCondition]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_SJPChecksumMonitoringResults_ChecksumMonitoringItems]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[ItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_SJPDatabaseMonitoringResults_DatabaseMonitoringItems]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[ItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_SJPFileMonitoringResults_FileMonitoringItems]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[ItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_SJPWMIMonitoringResults_WMIMonitoringItems]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[ItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetChangeTable]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	  SELECT [Table], [Version] 
+	    FROM [dbo].[ChangeNotification]
+	ORDER BY [Table]
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Version]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="146" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetChangeTable]&#xD;&#xA;&#x9;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetChecksumMonitoringItems]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+SELECT [ItemID]
+      ,[ChecksumRootPath]
+      ,[CheckInterval]
+      ,[Enabled]
+      ,[Description]
+	  ,[ExtensionsToIgnore]
+      ,[RedCondition]
+  FROM [dbo].[ChecksumMonitoringItems]
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[ItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[ChecksumRootPath]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[ExtensionsToIgnore]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems].[RedCondition]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="264" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetChecksumMonitoringItems]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetDatabaseMonitoringItems]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+SELECT [ItemID]
+      ,[CheckInterval]
+      ,[Enabled]
+      ,[Description]
+      ,[SQLHelperDatabaseTarget]
+      ,[SQLQuery]
+      ,[RedCondition]
+  FROM [dbo].[DatabaseMonitoringItems]
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[ItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[SQLHelperDatabaseTarget]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[SQLQuery]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems].[RedCondition]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="264" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetDatabaseMonitoringItems]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetFileMonitoringItems]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+SELECT [ItemID]
+      ,[CheckInterval]
+      ,[Enabled]
+      ,[Description]
+      ,[FullFilePath]
+      ,[RedCondition]
+  FROM [dbo].[FileMonitoringItems]
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[ItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[FullFilePath]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems].[RedCondition]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="226" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetFileMonitoringItems]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetLatestMonitoringResults]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+
+SELECT [SJP_Server],'CHECKSUM' as MonitorType, [MonitoringItemID],
+[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+FROM [dbo].[SJPChecksumMonitoringResults] A
+ WHERE EXISTS(SELECT *
+				FROM (SELECT [SJP_Server], [MonitoringItemID], MAX([CheckTime]) AS [MaxCheckTime]
+		              FROM [dbo].[SJPChecksumMonitoringResults]
+		             GROUP BY [SJP_Server], [MonitoringItemID]) B
+		       WHERE B.MaxCheckTime = A.CheckTime AND B.MonitoringItemID = A.MonitoringItemID)
+
+UNION
+
+SELECT [SJP_Server],'DATABASE' as MonitorType, [MonitoringItemID],
+[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+FROM [dbo].[SJPDatabaseMonitoringResults] A
+ WHERE EXISTS(SELECT *
+				FROM (SELECT [SJP_Server], [MonitoringItemID], MAX([CheckTime]) AS [MaxCheckTime]
+		              FROM [dbo].[SJPDatabaseMonitoringResults]
+		             GROUP BY [SJP_Server], [MonitoringItemID]) B
+		       WHERE B.MaxCheckTime = A.CheckTime AND B.MonitoringItemID = A.MonitoringItemID)
+
+UNION
+
+SELECT [SJP_Server],'FILE' as MonitorType, [MonitoringItemID],
+[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+FROM [dbo].[SJPFileMonitoringResults] A
+ WHERE EXISTS(SELECT *
+				FROM (SELECT [SJP_Server], [MonitoringItemID], MAX([CheckTime]) AS [MaxCheckTime]
+		              FROM [dbo].[SJPFileMonitoringResults]
+		             GROUP BY [SJP_Server], [MonitoringItemID]) B
+		       WHERE B.MaxCheckTime = A.CheckTime AND B.MonitoringItemID = A.MonitoringItemID)
+
+UNION
+
+SELECT [SJP_Server],'WMI' as MonitorType, [MonitoringItemID],
+[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+FROM [dbo].[SJPWMIMonitoringResults] A
+ WHERE EXISTS(SELECT *
+				FROM (SELECT [SJP_Server], [MonitoringItemID], MAX([CheckTime]) AS [MaxCheckTime]
+		              FROM [dbo].[SJPWMIMonitoringResults]
+		             GROUP BY [SJP_Server], [MonitoringItemID]) B
+		       WHERE B.MaxCheckTime = A.CheckTime AND B.MonitoringItemID = A.MonitoringItemID)
+		       
+ORDER BY [SJP_Server] asc,MonitorType asc, [MonitoringItemID] asc
+
+RETURN 0]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry />
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry />
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry />
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry />
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="2097" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetLatestMonitoringResults]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetLatestMonitoringResultsFiltered]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+
+DECLARE @SprocQuery VARCHAR(MAX) 
+DECLARE @WhereClauseEnd varchar(500)
+
+SET @WhereClauseEnd = ISNULL(@WhereClauseIn,' 1 = 1 ') 
+
+SET @SprocQuery = '
+SELECT [SJP_Server],''CHECKSUM'' as MonitorType, [MonitoringItemID],
+[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+FROM [dbo].[SJPChecksumMonitoringResults] A
+ WHERE EXISTS(SELECT * FROM (SELECT [SJP_Server], [MonitoringItemID], MAX([CheckTime]) AS [MaxCheckTime]
+		              FROM [dbo].[SJPChecksumMonitoringResults]
+		             GROUP BY [SJP_Server], [MonitoringItemID]) B
+		       WHERE B.MaxCheckTime = A.CheckTime AND B.MonitoringItemID = A.MonitoringItemID)
+		       AND ' + @WhereClauseEnd + ' 
+UNION
+SELECT [SJP_Server],''DATABASE'' as MonitorType, [MonitoringItemID],
+[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+FROM [dbo].[SJPDatabaseMonitoringResults] A
+ WHERE EXISTS(SELECT * FROM (SELECT [SJP_Server], [MonitoringItemID], MAX([CheckTime]) AS [MaxCheckTime]
+		              FROM [dbo].[SJPDatabaseMonitoringResults]
+		             GROUP BY [SJP_Server], [MonitoringItemID]) B
+		       WHERE B.MaxCheckTime = A.CheckTime AND B.MonitoringItemID = A.MonitoringItemID)
+		       AND ' + @WhereClauseEnd + ' 
+UNION
+SELECT [SJP_Server],''FILE'' as MonitorType, [MonitoringItemID],
+[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+FROM [dbo].[SJPFileMonitoringResults] A
+ WHERE EXISTS(SELECT * FROM (SELECT [SJP_Server], [MonitoringItemID], MAX([CheckTime]) AS [MaxCheckTime]
+		              FROM [dbo].[SJPFileMonitoringResults]
+		             GROUP BY [SJP_Server], [MonitoringItemID]) B
+		       WHERE B.MaxCheckTime = A.CheckTime AND B.MonitoringItemID = A.MonitoringItemID)
+		       AND ' + @WhereClauseEnd + ' 
+UNION
+SELECT [SJP_Server],''WMI'' as MonitorType, [MonitoringItemID],
+[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+FROM [dbo].[SJPWMIMonitoringResults] A
+ WHERE EXISTS(SELECT * FROM (SELECT [SJP_Server], [MonitoringItemID], MAX([CheckTime]) AS [MaxCheckTime]
+		              FROM [dbo].[SJPWMIMonitoringResults]
+		             GROUP BY [SJP_Server], [MonitoringItemID]) B
+		       WHERE B.MaxCheckTime = A.CheckTime AND B.MonitoringItemID = A.MonitoringItemID)
+		       AND ' + @WhereClauseEnd + '
+ORDER BY [SJP_Server] asc,MonitorType asc, [MonitoringItemID] asc'
+
+EXECUTE ( @SprocQuery )
+
+RETURN 0]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[varchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[varchar]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[GetLatestMonitoringResultsFiltered].[@WhereClauseIn]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[GetLatestMonitoringResultsFiltered].[@WhereClauseIn]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="2445" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetLatestMonitoringResultsFiltered]&#xD;&#xA;&#x9;@WhereClauseIn varchar(500) = NULL&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetWMIMonitoringItems]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+SELECT [ItemID]
+      ,[CheckInterval]
+      ,[Enabled]
+      ,[Description]
+      ,[WQLQuery]
+      ,[RedCondition]
+  FROM .[WMIMonitoringItems]
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[ItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[CheckInterval]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[WQLQuery]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems].[RedCondition]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="215" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetWMIMonitoringItems]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[InsertChecksumMonitoringResult]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+IF NOT EXISTS (SELECT [MonitoringItemID],[SJP_Server],[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+  FROM [dbo].[SJPChecksumMonitoringResults]
+  WHERE [SJP_Server] = @SJP_Server AND [MonitoringItemID] = @MonitoringItemID AND [CheckTime] = @CheckTime)
+BEGIN
+
+INSERT INTO [dbo].[SJPChecksumMonitoringResults]
+           ([MonitoringItemID]
+           ,[SJP_Server]
+           ,[Description]
+           ,[CheckTime]
+           ,[ValueAtCheck]
+           ,[IsInRed])
+     VALUES
+           (@MonitoringItemID 
+           ,@SJP_Server 
+           ,@Description 
+           ,@CheckTime 
+           ,@ValueAtCheck 
+           ,@IsInRed )
+END
+
+RETURN 0]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertChecksumMonitoringResult].[@SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertChecksumMonitoringResult].[@MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertChecksumMonitoringResult].[@CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPChecksumMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertChecksumMonitoringResult].[@Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertChecksumMonitoringResult].[@ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertChecksumMonitoringResult].[@IsInRed]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertChecksumMonitoringResult].[@MonitoringItemID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertChecksumMonitoringResult].[@SJP_Server]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertChecksumMonitoringResult].[@Description]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertChecksumMonitoringResult].[@CheckTime]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertChecksumMonitoringResult].[@ValueAtCheck]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertChecksumMonitoringResult].[@IsInRed]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="943" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[InsertChecksumMonitoringResult]&#xD;&#xA;           (@MonitoringItemID int&#xD;&#xA;           ,@SJP_Server varchar(50)&#xD;&#xA;           ,@Description varchar(200)&#xD;&#xA;           ,@CheckTime datetime&#xD;&#xA;           ,@ValueAtCheck varchar(200)&#xD;&#xA;           ,@IsInRed bit)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[InsertDatabaseMonitoringResult]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+IF NOT EXISTS (SELECT [MonitoringItemID],[SJP_Server],[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+  FROM [dbo].[SJPDatabaseMonitoringResults]
+  WHERE [SJP_Server] = @SJP_Server AND [MonitoringItemID] = @MonitoringItemID AND [CheckTime] = @CheckTime)
+BEGIN
+
+INSERT INTO [dbo].[SJPDatabaseMonitoringResults]
+           ([MonitoringItemID]
+           ,[SJP_Server]
+           ,[Description]
+           ,[CheckTime]
+           ,[ValueAtCheck]
+           ,[IsInRed])
+     VALUES
+           (@MonitoringItemID 
+           ,@SJP_Server 
+           ,@Description 
+           ,@CheckTime 
+           ,@ValueAtCheck 
+           ,@IsInRed )
+END
+
+RETURN 0]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertDatabaseMonitoringResult].[@SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertDatabaseMonitoringResult].[@MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertDatabaseMonitoringResult].[@CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPDatabaseMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertDatabaseMonitoringResult].[@Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertDatabaseMonitoringResult].[@ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertDatabaseMonitoringResult].[@IsInRed]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertDatabaseMonitoringResult].[@MonitoringItemID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertDatabaseMonitoringResult].[@SJP_Server]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertDatabaseMonitoringResult].[@Description]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertDatabaseMonitoringResult].[@CheckTime]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertDatabaseMonitoringResult].[@ValueAtCheck]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertDatabaseMonitoringResult].[@IsInRed]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="943" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[InsertDatabaseMonitoringResult]&#xD;&#xA;           (@MonitoringItemID int&#xD;&#xA;           ,@SJP_Server varchar(50)&#xD;&#xA;           ,@Description varchar(200)&#xD;&#xA;           ,@CheckTime datetime&#xD;&#xA;           ,@ValueAtCheck varchar(200)&#xD;&#xA;           ,@IsInRed bit)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[InsertFileMonitoringResult]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+IF NOT EXISTS (SELECT [MonitoringItemID],[SJP_Server],[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+  FROM [dbo].[SJPFileMonitoringResults]
+  WHERE [SJP_Server] = @SJP_Server AND [MonitoringItemID] = @MonitoringItemID AND [CheckTime] = @CheckTime)
+BEGIN
+
+INSERT INTO [dbo].[SJPFileMonitoringResults]
+           ([MonitoringItemID]
+           ,[SJP_Server]
+           ,[Description]
+           ,[CheckTime]
+           ,[ValueAtCheck]
+           ,[IsInRed]
+		   ,[FileCreatedDateTime]
+		   ,[FileModifiedDateTime]
+		   ,[FileSize]
+		   ,[FileProductVersion])
+     VALUES
+           (@MonitoringItemID 
+           ,@SJP_Server 
+           ,@Description 
+           ,@CheckTime 
+           ,@ValueAtCheck 
+           ,@IsInRed
+		   ,@FileCreatedDateTime
+		   ,@FileModifiedDateTime
+		   ,@FileSize
+		   ,@FileProductVersion )
+END
+
+RETURN 0]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertFileMonitoringResult].[@SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertFileMonitoringResult].[@MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertFileMonitoringResult].[@CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[FileCreatedDateTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[FileModifiedDateTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[FileSize]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPFileMonitoringResults].[FileProductVersion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertFileMonitoringResult].[@Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertFileMonitoringResult].[@ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertFileMonitoringResult].[@IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertFileMonitoringResult].[@FileCreatedDateTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertFileMonitoringResult].[@FileModifiedDateTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertFileMonitoringResult].[@FileSize]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertFileMonitoringResult].[@FileProductVersion]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertFileMonitoringResult].[@MonitoringItemID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertFileMonitoringResult].[@SJP_Server]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertFileMonitoringResult].[@Description]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertFileMonitoringResult].[@CheckTime]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertFileMonitoringResult].[@ValueAtCheck]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertFileMonitoringResult].[@IsInRed]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertFileMonitoringResult].[@FileCreatedDateTime]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertFileMonitoringResult].[@FileModifiedDateTime]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertFileMonitoringResult].[@FileSize]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="30" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertFileMonitoringResult].[@FileProductVersion]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="30" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1280" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[InsertFileMonitoringResult]&#xD;&#xA;           (@MonitoringItemID int&#xD;&#xA;           ,@SJP_Server varchar(50)&#xD;&#xA;           ,@Description varchar(200)&#xD;&#xA;           ,@CheckTime datetime&#xD;&#xA;           ,@ValueAtCheck varchar(200)&#xD;&#xA;           ,@IsInRed bit&#xD;&#xA;&#x9;&#x9;   ,@FileCreatedDateTime datetime&#xD;&#xA;&#x9;&#x9;   ,@FileModifiedDateTime datetime&#xD;&#xA;&#x9;&#x9;   ,@FileSize varchar(30)&#xD;&#xA;&#x9;&#x9;   ,@FileProductVersion varchar(30))&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[InsertWMIMonitoringResult]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+IF NOT EXISTS (SELECT [MonitoringItemID],[SJP_Server],[Description],[CheckTime],[ValueAtCheck],[IsInRed]
+  FROM .[SJPWMIMonitoringResults]
+  WHERE [SJP_Server] = @SJP_Server AND [MonitoringItemID] = @MonitoringItemID AND [CheckTime] = @CheckTime)
+BEGIN
+
+INSERT INTO .[SJPWMIMonitoringResults]
+           ([MonitoringItemID]
+           ,[SJP_Server]
+           ,[Description]
+           ,[CheckTime]
+           ,[ValueAtCheck]
+           ,[IsInRed])
+     VALUES
+           (@MonitoringItemID 
+           ,@SJP_Server 
+           ,@Description 
+           ,@CheckTime 
+           ,@ValueAtCheck 
+           ,@IsInRed )
+END
+
+RETURN 0]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertWMIMonitoringResult].[@SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertWMIMonitoringResult].[@MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertWMIMonitoringResult].[@CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[MonitoringItemID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[SJP_Server]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[CheckTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SJPWMIMonitoringResults].[IsInRed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertWMIMonitoringResult].[@Description]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertWMIMonitoringResult].[@ValueAtCheck]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[InsertWMIMonitoringResult].[@IsInRed]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertWMIMonitoringResult].[@MonitoringItemID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertWMIMonitoringResult].[@SJP_Server]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertWMIMonitoringResult].[@Description]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertWMIMonitoringResult].[@CheckTime]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertWMIMonitoringResult].[@ValueAtCheck]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[InsertWMIMonitoringResult].[@IsInRed]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="918" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[InsertWMIMonitoringResult]&#xD;&#xA;           (@MonitoringItemID int&#xD;&#xA;           ,@SJP_Server varchar(50)&#xD;&#xA;           ,@Description varchar(200)&#xD;&#xA;           ,@CheckTime datetime&#xD;&#xA;           ,@ValueAtCheck varchar(200)&#xD;&#xA;           ,@IsInRed bit)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ChangeNotification]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ChangeNotification].[Table]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="5" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ChecksumMonitoringItems]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ChecksumMonitoringItems].[ItemID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ChecksumMonitoringItems]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_DatabaseMonitoringItems]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[DatabaseMonitoringItems].[ItemID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[DatabaseMonitoringItems]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_FileMonitoringItems]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[FileMonitoringItems].[ItemID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[FileMonitoringItems]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_VersionInfo]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[VersionInfo].[DatabaseVersionInfo]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[VersionInfo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_WMIMonitoringItems]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[WMIMonitoringItems].[ItemID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[WMIMonitoringItems]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[SJPChecksumMonitoringResults]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPChecksumMonitoringResults].[MonitoringItemID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPChecksumMonitoringResults].[SJP_Server]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPChecksumMonitoringResults].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPChecksumMonitoringResults].[CheckTime]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPChecksumMonitoringResults].[ValueAtCheck]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPChecksumMonitoringResults].[IsInRed]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[SJPDatabaseMonitoringResults]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPDatabaseMonitoringResults].[MonitoringItemID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPDatabaseMonitoringResults].[SJP_Server]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPDatabaseMonitoringResults].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPDatabaseMonitoringResults].[CheckTime]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPDatabaseMonitoringResults].[ValueAtCheck]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPDatabaseMonitoringResults].[IsInRed]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[SJPFileMonitoringResults]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPFileMonitoringResults].[MonitoringItemID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPFileMonitoringResults].[SJP_Server]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPFileMonitoringResults].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPFileMonitoringResults].[CheckTime]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPFileMonitoringResults].[ValueAtCheck]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPFileMonitoringResults].[FullFilePath]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPFileMonitoringResults].[FileCreatedDateTime]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPFileMonitoringResults].[FileModifiedDateTime]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPFileMonitoringResults].[FileSize]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="30" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPFileMonitoringResults].[FileProductVersion]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="30" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPFileMonitoringResults].[IsInRed]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[SJPWMIMonitoringResults]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPWMIMonitoringResults].[MonitoringItemID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPWMIMonitoringResults].[SJP_Server]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPWMIMonitoringResults].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPWMIMonitoringResults].[CheckTime]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPWMIMonitoringResults].[ValueAtCheck]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[SJPWMIMonitoringResults].[IsInRed]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UpdateChangeNotificationTable]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ 
+BEGIN 
+
+    CREATE TABLE #updateTables 
+	(
+		tablename varchar(100) COLLATE database_default NOT NULL
+	)
+			    
+	DECLARE @currTable varchar(100), @pos int 
+        
+    SET @tableList = LTRIM(RTRIM(@tableList)) + ',' 
+    SET @pos = CHARINDEX(',', @tableList, 1) 
+        
+    IF REPLACE(@tableList, ',', '') <> '' 
+        BEGIN 
+            WHILE @pos > 0 
+                BEGIN 
+                    SET @currTable = LTRIM(RTRIM(LEFT(@tableList, @pos - 1))) 
+                    IF @currTable <> '' 
+                       BEGIN 
+                          INSERT INTO #updateTables VALUES (@currTable) 
+                       END 
+                    SET @tableList = RIGHT(@tableList, LEN(@tableList) - @pos) 
+                    SET @pos = CHARINDEX(',', @tableList, 1) 
+                END 
+        END 
+
+    BEGIN TRANSACTION
+
+	-- Update tables that did exist
+    UPDATE [dbo].[ChangeNotification]
+    SET    [version] = [version] + 1 
+    WHERE  [table] in 
+            (SELECT tablename FROM #updateTables) 
+
+    -- Add tables that didn't previously exist
+    INSERT INTO [dbo].[ChangeNotification] ([table], [version])
+    SELECT 		tablename, 1 
+    FROM		#updateTables
+    WHERE 		not EXISTS(SELECT * 
+							 FROM [dbo].[ChangeNotification] CN
+							WHERE CN.[Table] = #updateTables.tablename)
+    
+    COMMIT TRANSACTION
+    
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[varchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[@tableList]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Version]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="ISqlDynamicColumnSource" Name="[dbo].[UpdateChangeNotificationTable].[#updateTables]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]">
+									<Property Name="Collation" Value="database_default" />
+									<Property Name="IsNullable" Value="False" />
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[varchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UpdateChangeNotificationTable].[@tableList]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="1000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1484" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[UpdateChangeNotificationTable]&#xD;&#xA;( &#xD;&#xA;&#x9;@tableList varchar(1000) &#xD;&#xA;) &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[VersionInfo]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[VersionInfo].[DatabaseVersionInfo]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[WMIMonitoringItems]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[WMIMonitoringItems].[ItemID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[WMIMonitoringItems].[CheckInterval]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[WMIMonitoringItems].[Enabled]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[WMIMonitoringItems].[Description]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[WMIMonitoringItems].[WQLQuery]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[WMIMonitoringItems].[RedCondition]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90User" Name="[SJP_User]">
+			<Property Name="LoginIdentifierScript">
+				<Value><![CDATA[[SJP_User]]]></Value>
+			</Property>
+			<Relationship Name="Login">
+				<Entry>
+					<References ExternalSource="SJPServerDatabase.dbschema" Name="[master]|[SJP_User]" />
+				</Entry>
+			</Relationship>
+		</Element>
+	</Model>
+</DataSchemaModel>

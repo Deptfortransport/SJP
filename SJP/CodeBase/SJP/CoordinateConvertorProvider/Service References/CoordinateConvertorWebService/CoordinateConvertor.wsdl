@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://sjp.london2012.com/CoordinateConvertorService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://sjp.london2012.com/CoordinateConvertorService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://sjp.london2012.com/CoordinateConvertorService">
+      <s:element name="ConvertLatitudeLongitudetoOSGR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="latlongs" type="tns:ArrayOfLatitudeLongitude" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLatitudeLongitude">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LatitudeLongitude" nillable="true" type="tns:LatitudeLongitude" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LatitudeLongitude">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConvertLatitudeLongitudetoOSGRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConvertLatitudeLongitudetoOSGRResult" type="tns:ArrayOfOSGridReference" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOSGridReference">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OSGridReference" nillable="true" type="tns:OSGridReference" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OSGridReference">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Easting" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Northing" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConvertOSGRtoLatitudeLongitude">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="osgrs" type="tns:ArrayOfOSGridReference" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertOSGRtoLatitudeLongitudeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConvertOSGRtoLatitudeLongitudeResult" type="tns:ArrayOfLatitudeLongitude" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestActive">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestActiveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TestActiveResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestConvertOSGRToLatitudeLongitude">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="easting" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="northing" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestConvertOSGRToLatitudeLongitudeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestConvertOSGRToLatitudeLongitudeResult" type="tns:LatitudeLongitude" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConvertLatitudeLongitudetoOSGRSoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertLatitudeLongitudetoOSGR" />
+  </wsdl:message>
+  <wsdl:message name="ConvertLatitudeLongitudetoOSGRSoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertLatitudeLongitudetoOSGRResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConvertOSGRtoLatitudeLongitudeSoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertOSGRtoLatitudeLongitude" />
+  </wsdl:message>
+  <wsdl:message name="ConvertOSGRtoLatitudeLongitudeSoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertOSGRtoLatitudeLongitudeResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestActiveSoapIn">
+    <wsdl:part name="parameters" element="tns:TestActive" />
+  </wsdl:message>
+  <wsdl:message name="TestActiveSoapOut">
+    <wsdl:part name="parameters" element="tns:TestActiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestConvertOSGRToLatitudeLongitudeSoapIn">
+    <wsdl:part name="parameters" element="tns:TestConvertOSGRToLatitudeLongitude" />
+  </wsdl:message>
+  <wsdl:message name="TestConvertOSGRToLatitudeLongitudeSoapOut">
+    <wsdl:part name="parameters" element="tns:TestConvertOSGRToLatitudeLongitudeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CoordinateConvertorSoap">
+    <wsdl:operation name="ConvertLatitudeLongitudetoOSGR">
+      <wsdl:input message="tns:ConvertLatitudeLongitudetoOSGRSoapIn" />
+      <wsdl:output message="tns:ConvertLatitudeLongitudetoOSGRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertOSGRtoLatitudeLongitude">
+      <wsdl:input message="tns:ConvertOSGRtoLatitudeLongitudeSoapIn" />
+      <wsdl:output message="tns:ConvertOSGRtoLatitudeLongitudeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestActive">
+      <wsdl:input message="tns:TestActiveSoapIn" />
+      <wsdl:output message="tns:TestActiveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestConvertOSGRToLatitudeLongitude">
+      <wsdl:input message="tns:TestConvertOSGRToLatitudeLongitudeSoapIn" />
+      <wsdl:output message="tns:TestConvertOSGRToLatitudeLongitudeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CoordinateConvertorSoap" type="tns:CoordinateConvertorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConvertLatitudeLongitudetoOSGR">
+      <soap:operation soapAction="http://sjp.london2012.com/CoordinateConvertorService/ConvertLatitudeLongitudetoOSGR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertOSGRtoLatitudeLongitude">
+      <soap:operation soapAction="http://sjp.london2012.com/CoordinateConvertorService/ConvertOSGRtoLatitudeLongitude" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestActive">
+      <soap:operation soapAction="http://sjp.london2012.com/CoordinateConvertorService/TestActive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestConvertOSGRToLatitudeLongitude">
+      <soap:operation soapAction="http://sjp.london2012.com/CoordinateConvertorService/TestConvertOSGRToLatitudeLongitude" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CoordinateConvertorSoap12" type="tns:CoordinateConvertorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConvertLatitudeLongitudetoOSGR">
+      <soap12:operation soapAction="http://sjp.london2012.com/CoordinateConvertorService/ConvertLatitudeLongitudetoOSGR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertOSGRtoLatitudeLongitude">
+      <soap12:operation soapAction="http://sjp.london2012.com/CoordinateConvertorService/ConvertOSGRtoLatitudeLongitude" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestActive">
+      <soap12:operation soapAction="http://sjp.london2012.com/CoordinateConvertorService/TestActive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestConvertOSGRToLatitudeLongitude">
+      <soap12:operation soapAction="http://sjp.london2012.com/CoordinateConvertorService/TestConvertOSGRToLatitudeLongitude" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CoordinateConvertor">
+    <wsdl:port name="CoordinateConvertorSoap" binding="tns:CoordinateConvertorSoap">
+      <soap:address location="http://localhost/SJPWebServices/CoordinateConvertorService/CoordinateConvertor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CoordinateConvertorSoap12" binding="tns:CoordinateConvertorSoap12">
+      <soap12:address location="http://localhost/SJPWebServices/CoordinateConvertorService/CoordinateConvertor.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

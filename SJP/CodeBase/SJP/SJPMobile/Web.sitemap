@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode pageId="Homepage" url="http://m.london2012.com" title="Homepage" resourceKey="London2012.Homepage">
+
+    <siteMapNode pageId="MobileDefault" url="~/Default.aspx" title="Spectator journey planner" resourceKey="Pages.MobileDefault" />
+    <siteMapNode pageId="MobileInput" url="~/Input.aspx" title="Input" resourceKey="Pages.MobileInput" />
+    <siteMapNode pageId="MobileSummary" url="~/Summary.aspx" title="Summary" resourceKey="Pages.MobileSummary" />
+    <siteMapNode pageId="MobileDetail" url="~/Detail.aspx" title="Details" resourceKey="Pages.MobileDetail" />
+    <siteMapNode pageId="MobileDirection" url="~/Direction.aspx" title="Directions" resourceKey="Pages.MobileDirection" />
+    <siteMapNode pageId="MobileMap" url="~/Map.aspx" title="Map" resourceKey="Pages.MobileMap" />
+    <siteMapNode pageId="MobileTravelNews" url="~/TravelNews.aspx" title="Travel news" resourceKey="Pages.MobileTravelNews" />
+    <siteMapNode pageId="MobileTravelNewsDetail" url="~/TravelNewsDetail.aspx" title="Travel news detail" resourceKey="Pages.MobileTravelNewsDetail" />
+    <siteMapNode pageId="AccessibilityOptions" url="~/AccessibilityOptions.aspx" title="Accessible Stops" resourceKey="Pages.AccessibilityOptions" />
+
+    <siteMapNode pageId="Sitemap" url="http://www.london2012.com/sitemap.php" title="Sitemap" resourceKey="London2012.Sitemap" />
+    
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,991 @@
+<?xml version="1.0"?>
+<SJPAdditionalVenueData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.transportdirect.info/SJPAdditionalVenueData AdditionalVenueData_v3.1.xsd"
+  xmlns="http://www.transportdirect.info/SJPAdditionalVenueData"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!--
+      Distances are in km
+    
+      CHANGES IN V0.2
+        - Amended map links to be PDFs
+      CHANGES IN V0.3
+        - Added Excel
+        - Added North Greenwich Arena & Royal Artillery Barracks
+        - Added London Venues
+        - Added Out of London Venues
+        - Added Football Venues
+      CHANGES IN V0.4
+        - Amended Cycling Distances
+      CHANGES IN V0.5
+        - Further changes to Cycling Distances (Cardiff 5km, Glasgow 20km)
+        - Amemended UseNaPTANForJourneyPlanning for non-MDV venues
+      CHANGES IN V0.6
+        - Now uses v2.0 schema for Additional Venue Data
+      CHANGES IN V0.7
+        - Corrected 8100HGP and 8100HYD (from incorrect 8100HCG and 8100HTD)
+        - Set Central London venues (HGP, MAL, HYD) to no cycling (zero distance)
+      CHANGES IN V0.8
+        - Set City of Coventry and St James's Park (Newcastle) to no cycling (zero distance)
+      CHANGES IN V0.9
+        - Revisions to venue grouping
+      CHANGES IN V0.10
+        - Added piers and river services for Horse Guards Parade and The Mall
+        - Minor Change to group name to remove "Queen Elizabeth" from "Olympic Park"
+      CHANGES IN V0.11
+        - Amended non-MDV venues to have AccessibleJourneyToVenue = false
+      CHANGES IN V1.0
+        - Added Brands Hatch (Paralympic Venue)
+      CHANGES IN V1.1
+        - Used FBT codes for ferries instead of FER to overcome problems with ferry planning after a data change
+      CHANGES IN V1.2
+        - FBT codes required to be added to the footpaths as well
+        - Corrected NaPTAN code for Woolwich Arsenal Pier
+      CHANGES IN V1.3
+        - Added Weymouth Live Site (Weymouth Beach)
+	  CHANGES IN V1.4
+	    - Updated by Atos to support v3.1 of the schema
+  -->
+
+  <!-- OLYMPIC PARK -->
+  <Venue>
+    <VenueNaPTAN>8100OPK</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>http://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-olympic-park-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>http://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-olympic-park-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>Maybe</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_OPK</VenueGroupID>
+      <VenueGroupName>Olympic Park</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- RIVER ZONE VENUES -->
+  <!-- EXCEL -->
+  <Venue>
+    <VenueNaPTAN>8100EXL</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-excel-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-excel-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_RZ</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- GREENWICH PARK -->
+  <Venue>
+    <VenueNaPTAN>8100GRP</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <!-- Distance is in km as per IF -->
+    <VenueMapURL>http://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-greenwich-park-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>http://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-greenwich-park-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>Yes</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_RZ</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+    <VenueRiverServices>
+      <VenueRiverService>
+        <VenuePier>
+          <VenuePierNaPTAN>9300GNW1</VenuePierNaPTAN>
+          <VenuePierName>Greenwich Pier</VenuePierName>
+          <RemotePier>
+            <RemotePierNaPTAN>9300WMR1</RemotePierNaPTAN>
+            <RemotePierName>Westminster Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300WMP1</RemotePierNaPTAN>
+            <RemotePierName>London Eye Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300TMP1</RemotePierNaPTAN>
+            <RemotePierName>Tower Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300STC1</RemotePierNaPTAN>
+            <RemotePierName>St Katherines Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300WAS1</RemotePierNaPTAN>
+            <RemotePierName>Woolwich Arsenal Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300MIL1</RemotePierNaPTAN>
+            <RemotePierName>North Greenwich (QE2) Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300MHT1</RemotePierNaPTAN>
+            <RemotePierName>Masthouse Terrace</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300GLP1</RemotePierNaPTAN>
+            <RemotePierName>Greenland Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300CAW1</RemotePierNaPTAN>
+            <RemotePierName>Canary Wharf Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300LBR1</RemotePierNaPTAN>
+            <RemotePierName>London Bridge Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300SWK1</RemotePierNaPTAN>
+            <RemotePierName>Bankside Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300BFR1</RemotePierNaPTAN>
+            <RemotePierName>Blackfriars Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300EMB1</RemotePierNaPTAN>
+            <RemotePierName>Embankment Pier</RemotePierName>
+          </RemotePier>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300GNW_8100GRP_IN</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>Greenwich Pier to Grenwich Park</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:10:00</DefaultDuration>
+            <Distance>200</Distance>
+            <To>
+              <PlaceRef>8100GRPgGNW</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>9300GNW1</PlaceRef>
+            </From>
+            <PathtoVenue>true</PathtoVenue>
+          </PierVenueNavigationPath>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300GNW_8100GRP_OUT</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>Greenwich Park to Grenwich Pier</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:10:00</DefaultDuration>
+            <Distance>200</Distance>
+            <To>
+              <PlaceRef>9300GNW1</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>8100GRPgGNW</PlaceRef>
+            </From>
+            <PathtoVenue>false</PathtoVenue>
+          </PierVenueNavigationPath>
+        </VenuePier>
+      </VenueRiverService>
+    </VenueRiverServices>
+  </Venue>
+
+  <!-- NORTH GREENWICH ARENA -->
+  <Venue>
+    <VenueNaPTAN>8100NGA</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-north-greenwich-arena-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-north-greenwich-arena-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>Yes</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_RZ</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+    <VenueRiverServices>
+      <VenueRiverService>
+        <VenuePier>
+          <VenuePierNaPTAN>9300MIL1</VenuePierNaPTAN>
+          <VenuePierName>North Greenwich (QE2) Pier</VenuePierName>
+          <RemotePier>
+            <RemotePierNaPTAN>9300WMP1</RemotePierNaPTAN>
+            <RemotePierName>London Eye Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300TMP1</RemotePierNaPTAN>
+            <RemotePierName>Tower Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300WAS1</RemotePierNaPTAN>
+            <RemotePierName>Woolwich Arsenal Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300GNW1</RemotePierNaPTAN>
+            <RemotePierName>Greenwich Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300MHT1</RemotePierNaPTAN>
+            <RemotePierName>Masthouse Terrace</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300GLP1</RemotePierNaPTAN>
+            <RemotePierName>Greenland Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300CAW1</RemotePierNaPTAN>
+            <RemotePierName>Canary Wharf Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300LBR1</RemotePierNaPTAN>
+            <RemotePierName>London Bridge Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300SWK1</RemotePierNaPTAN>
+            <RemotePierName>Bankside Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300BFR1</RemotePierNaPTAN>
+            <RemotePierName>Blackfriars Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300EMB1</RemotePierNaPTAN>
+            <RemotePierName>Embankment Pier</RemotePierName>
+          </RemotePier>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300MIL_8100NGA_IN</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>North Greenwich (QE2) Pier to North Greenwich Arena</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:10:00</DefaultDuration>
+            <Distance>200</Distance>
+            <To>
+              <PlaceRef>8100NGAgEntr</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>9300MIL1</PlaceRef>
+            </From>
+            <PathtoVenue>true</PathtoVenue>
+          </PierVenueNavigationPath>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300MIL_8100NGA_OUT</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>North Greenwich Arena to North Greenwich (QE2) Pier</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:10:00</DefaultDuration>
+            <Distance>200</Distance>
+            <To>
+              <PlaceRef>9300MIL1</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>8100NGAgExit</PlaceRef>
+            </From>
+            <PathtoVenue>false</PathtoVenue>
+          </PierVenueNavigationPath>
+        </VenuePier>
+      </VenueRiverService>
+    </VenueRiverServices>
+  </Venue>
+
+  <!-- ROYAL ARTILLERY BARRACKS -->
+  <Venue>
+    <VenueNaPTAN>8100RAB</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-royal-artillery-barracks-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-royal-artillery-barracks-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>Yes</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_RZ</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+    <VenueRiverServices>
+      <VenueRiverService>
+        <VenuePier>
+          <VenuePierNaPTAN>9300WAS1</VenuePierNaPTAN>
+          <VenuePierName>Woowich Arsenal Pier</VenuePierName>
+          <RemotePier>
+            <RemotePierNaPTAN>9300TMP1</RemotePierNaPTAN>
+            <RemotePierName>Tower Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300MIL1</RemotePierNaPTAN>
+            <RemotePierName>North Greenwich (QE2) Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300GNW1</RemotePierNaPTAN>
+            <RemotePierName>Greenwich Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300MHT1</RemotePierNaPTAN>
+            <RemotePierName>Masthouse Terrace</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300GLP1</RemotePierNaPTAN>
+            <RemotePierName>Greenland Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300CAW1</RemotePierNaPTAN>
+            <RemotePierName>Canary Wharf Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300LBR1</RemotePierNaPTAN>
+            <RemotePierName>London Bridge Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300SWK1</RemotePierNaPTAN>
+            <RemotePierName>Bankside Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300BFR1</RemotePierNaPTAN>
+            <RemotePierName>Blackfriars Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300EMB1</RemotePierNaPTAN>
+            <RemotePierName>Embankment Pier</RemotePierName>
+          </RemotePier>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300WAS_8100RAB_IN</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>Woolwich Arsenal Pier to Royal Artillery Barracks</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:30:00</DefaultDuration>
+            <Distance>1500</Distance>
+            <To>
+              <PlaceRef>8100RABg0</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>9300WAS1</PlaceRef>
+            </From>
+            <PathtoVenue>true</PathtoVenue>
+          </PierVenueNavigationPath>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300WAS_8100RAB_OUT</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>Royal Artillery Barracks to Woolwich Arsenal Pier</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:30:00</DefaultDuration>
+            <Distance>1500</Distance>
+            <To>
+              <PlaceRef>9300WAS1</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>8100RABg0</PlaceRef>
+            </From>
+            <PathtoVenue>false</PathtoVenue>
+          </PierVenueNavigationPath>
+        </VenuePier>
+
+      </VenueRiverService>
+    </VenueRiverServices>
+  </Venue>
+
+  <!-- LONDON VENUES -->
+  <!-- EARLS COURT -->
+  <Venue>
+    <VenueNaPTAN>8100EAR</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-earls-court-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-earls-court-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_LON</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- LORDS CRICKET GROUND -->
+  <Venue>
+    <VenueNaPTAN>8100LCG</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-lords-cricket-ground-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-lords-cricket-ground-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_LON</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- WIMBLEDON -->
+  <Venue>
+    <VenueNaPTAN>8100WIM</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-wimbledon-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-wimbledon-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_LON</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- HORSE GUARDS PARADE -->
+  <Venue>
+    <VenueNaPTAN>8100HGP</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>0</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-horse-guards-parade-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-horse-guards-parade-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>Yes</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_LON</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+    <VenueRiverServices>
+      <VenueRiverService>
+        <VenuePier>
+          <VenuePierNaPTAN>9300EMB1</VenuePierNaPTAN>
+          <VenuePierName>Embankment Pier</VenuePierName>
+          <RemotePier>
+            <RemotePierNaPTAN>9300WMP1</RemotePierNaPTAN>
+            <RemotePierName>London Eye Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300TMP1</RemotePierNaPTAN>
+            <RemotePierName>Tower Millennium Pier</RemotePierName>
+          </RemotePier>
+            <RemotePier>
+            <RemotePierNaPTAN>9300WAS1</RemotePierNaPTAN>
+            <RemotePierName>Woolwich Arsenal Pier</RemotePierName>
+          </RemotePier>
+            <RemotePier>
+            <RemotePierNaPTAN>9300GNW1</RemotePierNaPTAN>
+            <RemotePierName>Greenwich Pier</RemotePierName>
+          </RemotePier>
+            <RemotePier>
+            <RemotePierNaPTAN>9300MHT1</RemotePierNaPTAN>
+            <RemotePierName>Masthouse Terrace</RemotePierName>
+          </RemotePier>
+            <RemotePier>
+            <RemotePierNaPTAN>9300GLP1</RemotePierNaPTAN>
+            <RemotePierName>Greenland Pier</RemotePierName>
+          </RemotePier>
+            <RemotePier>
+            <RemotePierNaPTAN>9300CAW1</RemotePierNaPTAN>
+            <RemotePierName>Canary Wharf Pier</RemotePierName>
+          </RemotePier>
+            <RemotePier>
+            <RemotePierNaPTAN>9300LBR1</RemotePierNaPTAN>
+            <RemotePierName>London Bridge Pier</RemotePierName>
+          </RemotePier>
+            <RemotePier>
+            <RemotePierNaPTAN>9300SWK1</RemotePierNaPTAN>
+            <RemotePierName>Bankside Pier</RemotePierName>
+          </RemotePier>
+            <RemotePier>
+            <RemotePierNaPTAN>9300BFR1</RemotePierNaPTAN>
+            <RemotePierName>Blackfriars Pier</RemotePierName>
+          </RemotePier>
+            <RemotePier>
+            <RemotePierNaPTAN>9300MIL1</RemotePierNaPTAN>
+            <RemotePierName>North Greenwich (QE2) Pier</RemotePierName>
+          </RemotePier>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300EMB_8100HGP_IN</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>Embankment Pier to Horse Guards Parade</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:15:00</DefaultDuration>
+            <Distance>600</Distance>
+            <To>
+              <PlaceRef>8100HGPgInN</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>9300EMB1</PlaceRef>
+            </From>
+            <PathtoVenue>true</PathtoVenue>
+          </PierVenueNavigationPath>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300EMB_8100HGP_OUT</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>Horse Guards Pardade to Embankment Pier</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:15:00</DefaultDuration>
+            <Distance>600</Distance>
+            <To>
+              <PlaceRef>9300EMB1</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>8100HGPgOutN</PlaceRef>
+            </From>
+            <PathtoVenue>false</PathtoVenue>
+          </PierVenueNavigationPath>
+        </VenuePier>
+      </VenueRiverService>      
+      <VenueRiverService>
+        <VenuePier>
+          <VenuePierNaPTAN>9300WMR1</VenuePierNaPTAN>
+          <VenuePierName>Westminster Pier</VenuePierName>
+          <RemotePier>
+            <RemotePierNaPTAN>9300GNW1</RemotePierNaPTAN>
+            <RemotePierName>Greenwich Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300WMP1</RemotePierNaPTAN>
+            <RemotePierName>London Eye Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300TMP1</RemotePierNaPTAN>
+            <RemotePierName>Tower Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300STC1</RemotePierNaPTAN>
+            <RemotePierName>St Katherines Pier</RemotePierName>
+          </RemotePier>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300WMR_8100HGP_IN</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>Westminster Pier to Horse Guards Parade</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:20:00</DefaultDuration>
+            <Distance>800</Distance>
+            <To>
+              <PlaceRef>8100HGPgInS</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>9300WMR1</PlaceRef>
+            </From>
+            <PathtoVenue>true</PathtoVenue>
+          </PierVenueNavigationPath>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300WMR_8100HGP_OUT</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>Horse Guards Parade to Westminster Pier</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:15:00</DefaultDuration>
+            <Distance>600</Distance>
+            <To>
+              <PlaceRef>9300WMR1</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>8100HGPgOutS</PlaceRef>
+            </From>
+            <PathtoVenue>false</PathtoVenue>
+          </PierVenueNavigationPath>
+        </VenuePier>
+      </VenueRiverService>
+    </VenueRiverServices>
+  </Venue>
+
+  <!-- THE MALL -->
+  <Venue>
+    <VenueNaPTAN>8100MAL</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>0</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-the-mall-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-the-mall-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>Yes</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_LON</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+    <VenueRiverServices>
+      <VenueRiverService>
+        <VenuePier>
+          <VenuePierNaPTAN>9300EMB1</VenuePierNaPTAN>
+          <VenuePierName>Embankment Pier</VenuePierName>
+          <RemotePier>
+            <RemotePierNaPTAN>9300WMP1</RemotePierNaPTAN>
+            <RemotePierName>London Eye Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300TMP1</RemotePierNaPTAN>
+            <RemotePierName>Tower Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300WAS1</RemotePierNaPTAN>
+            <RemotePierName>Woolwich Arsenal Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300GNW1</RemotePierNaPTAN>
+            <RemotePierName>Greenwich Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300MHT1</RemotePierNaPTAN>
+            <RemotePierName>Masthouse Terrace</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300GLP1</RemotePierNaPTAN>
+            <RemotePierName>Greenland Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300CAW1</RemotePierNaPTAN>
+            <RemotePierName>Canary Wharf Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300LBR1</RemotePierNaPTAN>
+            <RemotePierName>London Bridge Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300SWK1</RemotePierNaPTAN>
+            <RemotePierName>Bankside Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300BFR1</RemotePierNaPTAN>
+            <RemotePierName>Blackfriars Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300MIL1</RemotePierNaPTAN>
+            <RemotePierName>North Greenwich (QE2) Pier</RemotePierName>
+          </RemotePier>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300EMB_8100MAL_IN</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>Embankment Pier to The Mall</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:20:00</DefaultDuration> 
+            <Distance>800</Distance>
+            <To>
+              <PlaceRef>8100MALgN</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>9300EMB1</PlaceRef>
+            </From>
+            <PathtoVenue>true</PathtoVenue>
+          </PierVenueNavigationPath>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300EMB_8100MAL_OUT</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>The Mall to Embankment Pier</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:20:00</DefaultDuration>
+            <Distance>800</Distance>
+            <To>
+              <PlaceRef>9300EMB1</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>8100MALgN</PlaceRef>
+            </From>
+            <PathtoVenue>false</PathtoVenue>
+          </PierVenueNavigationPath>
+        </VenuePier>
+      </VenueRiverService>
+      <VenueRiverService>
+        <VenuePier>
+          <VenuePierNaPTAN>9300WMR1</VenuePierNaPTAN>
+          <VenuePierName>Westminster Pier</VenuePierName>
+          <RemotePier>
+            <RemotePierNaPTAN>9300GNW1</RemotePierNaPTAN>
+            <RemotePierName>Greenwich Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300WMP1</RemotePierNaPTAN>
+            <RemotePierName>London Eye Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300TMP1</RemotePierNaPTAN>
+            <RemotePierName>Tower Millennium Pier</RemotePierName>
+          </RemotePier>
+          <RemotePier>
+            <RemotePierNaPTAN>9300STC1</RemotePierNaPTAN>
+            <RemotePierName>St Katherines Pier</RemotePierName>
+          </RemotePier>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300WMR_8100MAL_IN</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>Westminster Pier to The Mall</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:20:00</DefaultDuration>
+            <Distance>800</Distance>
+            <To>
+              <PlaceRef>8100MALgS</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>9300WMR1</PlaceRef>
+            </From>
+            <PathtoVenue>true</PathtoVenue>
+          </PierVenueNavigationPath>
+          <PierVenueNavigationPath>
+            <NavigationID>oda:9300WMR_8100MAL_OUT</NavigationID>
+            <NavigationPathName>
+				<NavigationPathText>The Mall to Westminster Pier</NavigationPathText>
+				<NavigationPathLanguage>en</NavigationPathLanguage>
+			</NavigationPathName>
+            <DefaultDuration>00:20:00</DefaultDuration>
+            <Distance>800</Distance>
+            <To>
+              <PlaceRef>9300WMR1</PlaceRef>
+            </To>
+            <From>
+              <PlaceRef>8100MALgS</PlaceRef>
+            </From>
+            <PathtoVenue>false</PathtoVenue>
+          </PierVenueNavigationPath>
+        </VenuePier>
+      </VenueRiverService>
+    </VenueRiverServices>
+  </Venue>
+
+  <!-- HYDE PARK -->
+  <Venue>
+    <VenueNaPTAN>8100HYD</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>0</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-hyde-park-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-hyde-park-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_LON</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- WEMBLEY ARENA -->
+  <Venue>
+    <VenueNaPTAN>8100WEA</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-wembley-arena-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-wembley-arena-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_LON</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- HAMPTON COURT -->
+  <!--
+  <Venue>
+    <VenueNaPTAN>8100HCT</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-hampton-court-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-hampton-court-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_LON</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+  -->
+    
+
+  <!-- OUT OF LONDON VENUES -->
+  <!-- LEE VALLEY -->
+  <Venue>
+    <VenueNaPTAN>8100LVC</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-lee-valley-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-lee-valley-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>South East</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_OOL</VenueGroupID>
+      <VenueGroupName>Out of London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- HADLEIGH FARM -->
+  <Venue>
+    <VenueNaPTAN>8100HAD</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-hadleigh-farm-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-hadleigh-farm-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>South East</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_OOL</VenueGroupID>
+      <VenueGroupName>Out of London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- ETON DORNEY -->
+  <Venue>
+    <VenueNaPTAN>8100ETD</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-eton-dorney-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-eton-dorney-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>South East</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>Maybe</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_OOL</VenueGroupID>
+      <VenueGroupName>Out of London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- WEYMOUTH AND PORTLAND -->
+  <Venue>
+    <VenueNaPTAN>8100WAP</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-weymouth-portland-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-weymouth-portland-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>South West</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_OOL</VenueGroupID>
+      <VenueGroupName>Out of London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- WEYMOUTH BEACH -->
+  <Venue>
+    <VenueNaPTAN>8100WLB</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-weymouth-portland-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-weymouth-portland-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>South West</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_OOL</VenueGroupID>
+      <VenueGroupName>Out of London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- BRANDS HATCH (PARALYMPIC VENUE) -->
+  <Venue>
+    <VenueNaPTAN>8100BND</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-brands-hatch-o.pdf</VenueMapURL> <!-- Assumed URL based on others -->
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-brands-hatch-o.pdf</VenueWalkingRoutesURL> <!-- Assumed URL based on others -->
+    <VenueTravelNewsRegion>South East</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_OOL</VenueGroupID>
+      <VenueGroupName>Out of London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- FOOTBALL VENUES -->
+  <!-- WEMBLEY STADIUM -->
+  <Venue>
+    <VenueNaPTAN>8100WEM</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>true</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-wembley-stadium-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/london-venues/travel-to-wembley-stadium-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>London</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>true</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_LON</VenueGroupID>
+      <VenueGroupName>London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- MILLENNIUM STADIUM -->
+  <Venue>
+    <VenueNaPTAN>8100MIL</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>false</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>5</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-millennium-stadium-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-millennium-stadium-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>Wales</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>false</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_FOOT</VenueGroupID>
+      <VenueGroupName>Out of London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- HAMPDEN PARK -->
+  <Venue>
+    <VenueNaPTAN>8100HAM</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>false</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-hampden-park-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-hampden-park-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>Scotland</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>false</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_FOOT</VenueGroupID>
+      <VenueGroupName>Out of London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- OLD TRAFFORD -->
+  <Venue>
+    <VenueNaPTAN>8100OLD</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>false</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>20</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-old-trafford-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-old-trafford-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>North West</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>false</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_FOOT</VenueGroupID>
+      <VenueGroupName>Out of London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- CITY OF COVENTRY STADIUM -->
+  <Venue>
+    <VenueNaPTAN>8100COV</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>false</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>0</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-city-of-coventry-stadium-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-city-of-coventry-stadium-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>West Midlands</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>false</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_FOOT</VenueGroupID>
+      <VenueGroupName>Out of London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+  <!-- ST JAMES PARK (NEWCASTLE) -->
+  <Venue>
+    <VenueNaPTAN>8100SJP</VenueNaPTAN>
+    <UseNaPTANForJourneyPlanning>false</UseNaPTANForJourneyPlanning>
+    <CycleToVenueDistance>0</CycleToVenueDistance>
+    <VenueMapURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-st-james-park-o.pdf</VenueMapURL>
+    <VenueWalkingRoutesURL>https://www.london2012.com/visiting/getting-to-the-games/maps/uk-venues/travel-to-st-james-park-o.pdf</VenueWalkingRoutesURL>
+    <VenueTravelNewsRegion>North East</VenueTravelNewsRegion>
+    <AccesibleJourneyToVenue>false</AccesibleJourneyToVenue>
+	<VenueRiverServiceAvailable>No</VenueRiverServiceAvailable>
+    <InVenueGroup>
+      <VenueGroupID>oda:VG_FOOT</VenueGroupID>
+      <VenueGroupName>Out of London Venues</VenueGroupName>
+    </InVenueGroup>
+  </Venue>
+
+</SJPAdditionalVenueData>

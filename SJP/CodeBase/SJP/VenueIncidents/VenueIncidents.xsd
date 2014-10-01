@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.transportdirect.info/VenueIncidents" 
+			xmlns:mstns="http://www.transportdirect.info/VenueIncidents" 
+			xmlns="http://www.transportdirect.info/VenueIncidents"  
+			xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"  
+			xmlns:nap="http://www.naptan.org.uk/"
+			xmlns:oda="http://www.london2012.com/"
+			attributeFormDefault="qualified" 
+			elementFormDefault="qualified">
+<xs:import namespace="http://www.naptan.org.uk/" schemaLocation="http://www.dft.gov.uk/naptan/schema/2.4/NaPTAN.xsd" />
+	<xs:element name="VenueIncidents" type="VenueIncidents"/>
+	<xs:complexType name="VenueIncidents">
+		<xs:sequence>
+			<xs:element name="GenerationDateTime" type="xs:dateTime" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="DataVersion" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Venue" type="Venue" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Venue" type="Venue"/>
+	<xs:complexType name="Venue">
+		<xs:sequence>
+			<xs:element name="VenueNaPTAN" type="nap:AtcoCodeType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="ActiveIncident" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="VenueTravelNewsURL" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

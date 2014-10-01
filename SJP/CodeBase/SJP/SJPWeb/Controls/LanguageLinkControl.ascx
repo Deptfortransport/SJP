@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LanguageLinkControl.ascx.cs" Inherits="SJP.UserPortal.SJPWeb.Controls.LanguageLinkControl" %>
+<asp:LinkButton id="lnkbtnLanguage" runat="server"></asp:LinkButton>

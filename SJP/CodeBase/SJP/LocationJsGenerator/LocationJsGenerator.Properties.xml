@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+  <property name="propertyservice.refreshrate" GID="" AID="">1000</property>
+  <property name="propertyservice.version" GID="" AID="">1</property>
+
+  <property name="JSFolder.SJPWeb" GID="LocationJsGenerator" AID="SJP">./scripts/sjpweb/</property>
+  <property name="JSFolder.SJPMobile" GID="LocationJsGenerator" AID="SJP">./scripts/sjpmobile/</property>
+  <property name="ScriptName" GID="LocationJsGenerator" AID="SJP">Location</property>
+  <property name="AliasFile" GID="LocationJsGenerator" AID="SJP">\\fs\d$\SJPGazData\alias.csv</property>
+  <property name="GenerateDebugScripts" GID="LocationJsGenerator" AID="SJP">true</property>
+  <property name="GazetteerDB" GID="LocationJsGenerator" AID="SJP">Data Source=.\SQLEXPRESS;Initial Catalog=SJPGazetteer;Integrated Security=True;Pooling=False</property>
+</lookup>

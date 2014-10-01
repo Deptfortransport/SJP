@@ -1,0 +1,923 @@
+PrimaryStopNaPTAN,StopName,StopOperator,LinkUrl,WEFDate,WEUDate,OtherNaPTAN
+900010171,Warrington: Bus Interchange,NA,,20110601,20120930,
+900012283,Shrewsbury - Bus Stn Raven Meadows,NA,,20110601,20120930,
+900014225,Swansea Bus Stn,NA,,20110601,20120930,
+900015035,Cardiff Bus Stn,NA,,20110601,20120930,
+900015255,Newport (S Wales) - Bus Stn,NA,,20110601,20120930,
+900017043,Cheltenham Spa - Royal Well Bus Stn,NA,,20110601,20120930,
+900017263,Gloucester Bus Stn,NA,,20110601,20120930,
+900018133,Worcester - Crown Gate Bus Stn,NA,,20110601,20120930,
+900020233,Stafford  - Station Rd Coach Stop,NA,,20110601,20120930,
+900020591,Crewe Bus Station,NA,,20110601,20120930,
+900021151,Oldham Bus Station,NA,,20110601,20120930,
+900022152,Huddersfield Bus Stn,NA,,20110601,20120930,
+900027044,Derby Bus Stn,NA,,20110601,20120930,
+900029144,Mansfield - Rosemary Street Bus Stn,NA,,20110601,20120930,
+900034013,Coventry - Pool Meadow Bus Stn,NA,,20110601,20120930,
+900035064,Leicester - St Margaret's Bus Stn,NA,,20110601,20120930,
+900036114,Peterborough - Queensgate Bus Stn,NA,,20110601,20120930,
+900038174,Great Yarmouth: Town Centre Coach Stops,NA,,20110601,20120930,
+900038334,Norwich Bus Stn,NA,,20110601,20120930,
+900039074,Northampton - Greyfriars Bus Stn,NA,,20110601,20120930,
+900039324,Wellingborough: Town Centre Coach Stops,NA,,20110601,20120930,
+900039364,Kettering: Town Centre Coach Stops,NA,,20110601,20120930,
+900041065,Bristol - Marlborough Street Bus Stn,NA,,20110601,20120930,
+900042205,Taunton Bus Stn,NA,,20110601,20120930,
+900043345,Plymouth Bus Stn Bretonside,NA,,20110601,20120930,
+900044035,Exeter - Bus & Coach Stn Paris Street,NA,,20110601,20120930,
+900045345,Weymouth: Town Centre Coach Stops,NA,,20110601,20120930,
+900046093,Swindon Bus Stn,NA,,20110601,20120930,
+900048023,Banbury - Bus Stn Bridge Street,NA,,20110601,20120930,
+900049073,Oxford Bus Stn Gloucester Green,NA,,20110601,20120930,
+900050124,Milton Keynes Coachway,NA,,20110601,20120930,
+900051055,Stevenage Bus Stn,NA,,20110601,20120930,
+900051224,Luton Airport Bus Stn,NA,,20110601,20120930,
+900052074,Cambridge - City Centre Coach Stops,NA,,20110601,20120930,
+900053234,Ipswich - Old Cattle Market Bus Stn,NA,,20110601,20120930,
+900054014,Chelmsford Bus Station,NA,,20110601,20120930,
+900054019,Welwyn Garden City: Bus Station,NA,,20110601,20120930,
+900054094,Harlow Bus Stn,NA,,20110601,20120930,
+900056056,Slough Bus Stn,NA,,20110601,20120930,
+900058016,Ashford (Kent): Town Centre Coach Stops,NA,,20110601,20120930,
+900058066,Canterbury: Park & Ride Coach Stop,NA,,20110601,20120930,
+900058136,Dover: Town Centre Coach Stops,NA,,20110601,20120930,
+900058316,Margate: Town Centre Coach Stops,NA,,20110601,20120930,
+900058706,Maidstone - Chequers Centre Bus Stn,NA,,20110601,20120930,
+900058886,Folkestone - Bouverie Square Bus Stn,NA,,20110601,20120930,
+900059116,Eastbourne - Rail Stn Coach Stop,NA,,20110601,20120930,
+900059766,Hastings: Town Centre Coach Stops,NA,,20110601,20120930,
+900063316,Horsham: Rail Station Coach Stop,NA,,20110601,20120930,
+900065146,Southampton: Town Quay,NA,,20110601,20120930,
+900065576,Winchester: Town Centre Coach Stops,NA,,20110601,20120930,
+900077061,Preston Bus Stn,NA,,20110601,20120930,
+900079022,Wakefield: Bus Station Marsh Way,NA,,20110601,20120930,
+900082032,Hull - Paragon Bus Stn,NA,,20110601,20120930,
+900084053,Stratford-upon-Avon - Riverside Bus Stn,NA,,20110601,20120930,
+900085094,Thetford Bus Stn,NA,,20110601,20120930,
+900085144,Diss Bus Stn,NA,,20110601,20120930,
+900087025,Bath Spa - Bus Station,NA,,20110601,20120930,
+900089055,Salisbury - Bus Stn Endless Street,NA,,20110601,20120930,
+900098177,Nottingham Victoria Bus Station,NA,,20110601,20120930,
+900098334,Birmingham: Moor St Queensway Coach Stop,NA,,20110601,20120930,
+900098335,Didcot Broadway,NA,,20110601,20120930,
+900098336,Tonbridge: Rail Station Coach Stop,NA,,20110601,20120930,
+900098337,Ebbsfleet International Rail Station: Coach Stop,NA,,20110601,20120930,
+900098338,Aylesbury Bus Station,NA,,20110601,20120930,
+900098340,Bramley (W Yorks) Bus Station,NA,,20110601,20120930,
+900098341,Crystal Peaks: Shopping Centre Coach Stop,NA,,20110601,20120930,
+900098342,East Grinstead: Rail Station Coach Stop,NA,,20110601,20120930,
+900098343,Great Chesterford: Rail Station Coach Stop,NA,,20110601,20120930,
+900098344,Liverpool Queen Square Coach Stop,NA,,20110601,20120930,
+900098345,Manchester: Shudehill Interchange,NA,,20110601,20120930,
+900098347,Rugby Rail Stn: Coach Stop,NA,,20110601,20120930,
+900098348,Wellington Rail Stn: Coach Stop,NA,,20110601,20120930,
+900098349,Excel: Olympic Shuttle Coach Stop,NA,,20110601,20120930,
+900098350,Greenwich Park: Olympic Shuttle Coach Stop,NA,,20110601,20120930,
+900098351,Olympic Park:Northern Spectator Mall,NA,,20110601,20120930,
+900098352,Luton Airport Parkway Rail Station Coach Stop,NA,,20110601,20120930,
+9100ABRDEEN,Aberdeen Rail Station,SR,http://nationalrail.co.uk/stations/sjp/ABD/stationOverview.xhtml,20110601,20120930,
+9100ABWD,Abbey Wood Rail Station,SE,http://nationalrail.co.uk/stations/sjp/ABW/stationOverview.xhtml,20110601,20120930,
+9100ACTNCTL,Acton Central Rail Station,LO,http://nationalrail.co.uk/stations/sjp/ACC/stationOverview.xhtml,20110601,20120930,
+9100AINTREE,Aintree Rail Station,ME,http://nationalrail.co.uk/stations/sjp/AIN/stationOverview.xhtml,20110601,20120930,
+9100AIRDRIE,Airdrie Rail Station,SR,http://nationalrail.co.uk/stations/sjp/ADR/stationOverview.xhtml,20110601,20120930,
+9100AMERSHM,Amersham Rail Station,CH,http://nationalrail.co.uk/stations/sjp/AMR/stationOverview.xhtml,20110601,20120930,
+9100ANERLEY,Anerley Rail Station,LO,http://nationalrail.co.uk/stations/sjp/ANZ/stationOverview.xhtml,20110601,20120930,
+9100ARBROTH,Arbroath Rail Station,SR,http://nationalrail.co.uk/stations/sjp/ARB/stationOverview.xhtml,20110601,20120930,
+9100ASHFKY,Ashford International Rail Station,SE,http://nationalrail.co.uk/stations/sjp/AFK/stationOverview.xhtml,20110601,20120930,
+9100ASTON,Aston Rail Station,LM,http://nationalrail.co.uk/stations/sjp/AST/stationOverview.xhtml,20110601,20120930,
+9100AUDLEYE,Audley End Rail Station,LE,http://nationalrail.co.uk/stations/sjp/AUD/stationOverview.xhtml,20110601,20120930,
+9100AYLSBRY,Aylesbury Rail Station,CH,http://nationalrail.co.uk/stations/sjp/AYS/stationOverview.xhtml,20110601,20120930,
+9100BALHAM,Balham Rail Station,SN,http://nationalrail.co.uk/stations/sjp/BAL/stationOverview.xhtml,20110601,20120930,
+9100BANGOR,Bangor Rail Station,AW,http://nationalrail.co.uk/stations/sjp/BNG/stationOverview.xhtml,20110601,20120930,
+9100BARKING,Barking Rail Station,CC,http://nationalrail.co.uk/stations/sjp/BKG/stationOverview.xhtml,20110601,20120930,
+9100BAROW,Barrow-in-Furness Rail Station,TP,http://nationalrail.co.uk/stations/sjp/BIF/stationOverview.xhtml,20110601,20120930,
+9100BASILDN,Basildon Rail Station,CC,http://nationalrail.co.uk/stations/sjp/BSO/stationOverview.xhtml,20110601,20120930,
+9100BATHSPA,Bath Spa Rail Station,GW,http://nationalrail.co.uk/stations/sjp/BTH/stationOverview.xhtml,20110601,20120930,
+9100BCKNHMJ,Beckenham Junction Rail Station,SE,http://nationalrail.co.uk/stations/sjp/BKJ/stationOverview.xhtml,20110601,20120930,9100BCKNMJC
+9100BCNSFLD,Beaconsfield Rail Station,CH,http://nationalrail.co.uk/stations/sjp/BCF/stationOverview.xhtml,20110601,20120930,
+9100BCSTN,Bicester North Rail Station,CH,http://nationalrail.co.uk/stations/sjp/BCS/stationOverview.xhtml,20110601,20120930,
+9100BEBNGTN,Bebington Rail Station,ME,http://nationalrail.co.uk/stations/sjp/BEB/stationOverview.xhtml,20110601,20120930,
+9100BEDFDM,Bedford Rail Station,FC,http://nationalrail.co.uk/stations/sjp/BDM/stationOverview.xhtml,20110601,20120930,
+9100BELM,Belmont Rail Station,SN,http://nationalrail.co.uk/stations/sjp/BLM/stationOverview.xhtml,20110601,20120930,
+9100BELVEDR,Belvedere  Rail Station,SE,http://nationalrail.co.uk/stations/sjp/BVD/stationOverview.xhtml,20110601,20120930,
+9100BENFLET,Benfleet Rail Station,CC,http://nationalrail.co.uk/stations/sjp/BEF/stationOverview.xhtml,20110601,20120930,
+9100BEXHILL,Bexhill Rail Station,SN,http://nationalrail.co.uk/stations/sjp/BEX/stationOverview.xhtml,20110601,20120930,
+9100BHAMINT,Birmingham International Rail Station,VT,http://nationalrail.co.uk/stations/sjp/BHI/stationOverview.xhtml,20110601,20120930,
+9100BHAMJEW,Jewellery Quarter Rail Station,LM,http://nationalrail.co.uk/stations/sjp/JEQ/stationOverview.xhtml,20110601,20120930,
+9100BHAMMRS,Birmingham Moor Street Rail Station,CH,http://nationalrail.co.uk/stations/sjp/BMO/stationOverview.xhtml,20110601,20120930,
+9100BHAMNWS,Birmingham New Street Rail Station,NR,http://nationalrail.co.uk/stations/sjp/BHM/stationOverview.xhtml,20110601,20120930,
+9100BHAMSNH,Birmingham Snow Hill Rail Station,LM,http://nationalrail.co.uk/stations/sjp/BSW/stationOverview.xhtml,20110601,20120930,
+9100BLCHSRD,Blackhorse Road Rail Station,LE,http://www.nationalrail.co.uk/stations/sjp/BHO/stationOverview.xhtml,20110601,20120930,
+9100BLFR,London Blackfriars Rail Station,FC,http://nationalrail.co.uk/stations/sjp/BFR/stationOverview.xhtml,20110601,20120930,
+9100BLKB,Blackburn Rail Station,NT,http://nationalrail.co.uk/stations/sjp/BBN/stationOverview.xhtml,20110601,20120930,
+9100BLKHTH,Blackheath Rail Station,SE,http://nationalrail.co.uk/stations/sjp/BKH/stationOverview.xhtml,20110601,20120930,
+9100BNBR,Banbury Rail Station,CH,http://nationalrail.co.uk/stations/sjp/BAN/stationOverview.xhtml,20110601,20120930,
+9100BNSLY,Barnsley Rail Station,NT,http://nationalrail.co.uk/stations/sjp/BNY/stationOverview.xhtml,20110601,20120930,
+9100BNWK,Brunswick Rail Station,ME,http://nationalrail.co.uk/stations/sjp/BRW/stationOverview.xhtml,20110601,20120930,
+9100BOGNORR,Bognor Regis Rail Station,SN,http://nationalrail.co.uk/stations/sjp/BOG/stationOverview.xhtml,20110601,20120930,
+9100BOLTON,Bolton Rail Station,NT,http://nationalrail.co.uk/stations/sjp/BON/stationOverview.xhtml,20110601,20120930,
+9100BOMO,Bournemouth Rail Station,SW,http://nationalrail.co.uk/stations/sjp/BMH/stationOverview.xhtml,20110601,20120930,
+9100BOOTLNS,Bootle New Strand Rail Station,ME,http://nationalrail.co.uk/stations/sjp/BNW/stationOverview.xhtml,20110601,20120930,
+9100BOOTLOR,Bootle Oriel Road Rail Station,ME,http://nationalrail.co.uk/stations/sjp/BOT/stationOverview.xhtml,20110601,20120930,
+9100BRADIN,Bradford Interchange Rail Station,NT,http://nationalrail.co.uk/stations/sjp/BDI/stationOverview.xhtml,20110601,20120930,
+9100BRBY,Brondesbury Rail Station,LO,http://nationalrail.co.uk/stations/sjp/BSY/stationOverview.xhtml,20110601,20120930,
+9100BRBYPK,Brondesbury Park Rail Station,LO,http://nationalrail.co.uk/stations/sjp/BSP/stationOverview.xhtml,20110601,20120930,
+9100BRGHTN,Brighton Rail Station,SN,http://nationalrail.co.uk/stations/sjp/BTN/stationOverview.xhtml,20110601,20120930,
+9100BRHM,Barnham Rail Station,SN,http://nationalrail.co.uk/stations/sjp/BAA/stationOverview.xhtml,20110601,20120930,
+9100BRIMSDN,Brimsdown Rail Station,LE,http://nationalrail.co.uk/stations/sjp/BMD/stationOverview.xhtml,20110601,20120930,
+9100BRKNCPK,Conway Park Rail Station,ME,http://nationalrail.co.uk/stations/sjp/CNP/stationOverview.xhtml,20110601,20120930,
+9100BRKNHDC,Birkenhead Central Rail Station,ME,http://nationalrail.co.uk/stations/sjp/BKC/stationOverview.xhtml,20110601,20120930,
+9100BRMBRK,Bromborough Rake Rail Station,ME,http://nationalrail.co.uk/stations/sjp/BMR/stationOverview.xhtml,20110601,20120930,
+9100BROCKLY,Brockley Rail Station,LO,http://nationalrail.co.uk/stations/sjp/BCY/stationOverview.xhtml,20110601,20120930,
+9100BROMLYS,Bromley South Rail Station,SE,http://nationalrail.co.uk/stations/sjp/BMS/stationOverview.xhtml,20110601,20120930,
+9100BROXBRN,Broxbourne Rail Station,LE,http://nationalrail.co.uk/stations/sjp/BXB/stationOverview.xhtml,20110601,20120930,
+9100BRSTLTM,Bristol Temple Meads Rail Station,GW,http://nationalrail.co.uk/stations/sjp/BRI/stationOverview.xhtml,20110601,20120930,
+9100BRSTPWY,Bristol Parkway Rail Station,GW,http://nationalrail.co.uk/stations/sjp/BPW/stationOverview.xhtml,20110601,20120930,
+9100BRWCKUT,Berwick-upon-Tweed Rail Station,GR,http://nationalrail.co.uk/stations/sjp/BWK/stationOverview.xhtml,20110601,20120930,
+9100BSHPSFD,Bishops Stortford Rail Station,LE,http://nationalrail.co.uk/stations/sjp/BIS/stationOverview.xhtml,20110601,20120930,
+9100BSNGSTK,Basingstoke Rail Station,SW,http://nationalrail.co.uk/stations/sjp/BSK/stationOverview.xhtml,20110601,20120930,
+9100BSTEDMS,Bury St Edmunds Rail Station,LE,http://nationalrail.co.uk/stations/sjp/BSE/stationOverview.xhtml,20110601,20120930,
+9100BURGESH,Burgess Hill Rail Station,SN,http://nationalrail.co.uk/stations/sjp/BUG/stationOverview.xhtml,20110601,20120930,
+9100BURTNOT,Burton-on-Trent Rail Station,EM,http://www.nationalrail.co.uk/stations/sjp/BUT/stationOverview.xhtml,20110601,20120930,
+9100BUSHEY,Bushey Rail Station,LO,http://nationalrail.co.uk/stations/sjp/BSH/stationOverview.xhtml,20110601,20120930,9100BUSHYDC
+9100BUXTON,Buxton Rail Station,NT,http://nationalrail.co.uk/stations/sjp/BUX/stationOverview.xhtml,20110601,20120930,
+9100BXLYHTH,Bexleyheath Rail Station,SE,http://nationalrail.co.uk/stations/sjp/BXH/stationOverview.xhtml,20110601,20120930,
+9100CAMBDGE,Cambridge Rail Station,LE,http://nationalrail.co.uk/stations/sjp/CBG/stationOverview.xhtml,20110601,20120930,
+9100CANONST,London Cannon Street Rail Station,NR,http://nationalrail.co.uk/stations/sjp/CST/stationOverview.xhtml,20110601,20120930,
+9100CARLILE,Carlisle Rail Station,VT,http://nationalrail.co.uk/stations/sjp/CAR/stationOverview.xhtml,20110601,20120930,
+9100CATERHM,Caterham Rail Station,SN,http://nationalrail.co.uk/stations/sjp/CAT/stationOverview.xhtml,20110601,20120930,
+9100CHADHDD,Chafford Hundred Rail Station,CC,http://nationalrail.co.uk/stations/sjp/CFH/stationOverview.xhtml,20110601,20120930,
+9100CHATHAM,Chatham Rail Station,SE,http://nationalrail.co.uk/stations/sjp/CTM/stationOverview.xhtml,20110601,20120930,
+9100CHCHSTR,Chichester Rail Station,SN,http://nationalrail.co.uk/stations/sjp/CCH/stationOverview.xhtml,20110601,20120930,
+9100CHEAM,Cheam Rail Station,SN,http://nationalrail.co.uk/stations/sjp/CHE/stationOverview.xhtml,20110601,20120930,
+9100CHESHNT,Cheshunt Rail Station,LE,http://nationalrail.co.uk/stations/sjp/CHN/stationOverview.xhtml,20110601,20120930,
+9100CHFD,Chesterfield Rail Station,EM,http://nationalrail.co.uk/stations/sjp/CHD/stationOverview.xhtml,20110601,20120930,
+9100CHINGFD,Chingford Rail Station,LE,http://nationalrail.co.uk/stations/sjp/CHI/stationOverview.xhtml,20110601,20120930,
+9100CHLFNAL,Chalfont & Latimer Rail Station,CH,http://nationalrail.co.uk/stations/sjp/CFO/stationOverview.xhtml,20110601,20120930,
+9100CHLMSFD,Chelmsford Rail Station,LE,http://nationalrail.co.uk/stations/sjp/CHM/stationOverview.xhtml,20110601,20120930,
+9100CHLTNHM,Cheltenham Spa Rail Station,GW,http://nationalrail.co.uk/stations/sjp/CNM/stationOverview.xhtml,20110601,20120930,
+9100CHRNGXG,Charing Cross (Glasgow) Rail Station,SR,http://nationalrail.co.uk/stations/sjp/CHC/stationOverview.xhtml,20110601,20120930,
+9100CHRX,London Charing Cross Rail Station,NR,http://nationalrail.co.uk/stations/sjp/CHX/stationOverview.xhtml,20110601,20120930,
+9100CHST,Chester Rail Station,AW,http://nationalrail.co.uk/stations/sjp/CTR/stationOverview.xhtml,20110601,20120930,
+9100CLCHSTR,Colchester Rail Station,LE,http://nationalrail.co.uk/stations/sjp/COL/stationOverview.xhtml,20110601,20120930,
+9100CLDNNRB,Caledonian Rd & Barnsbury Rail Station,LO,http://nationalrail.co.uk/stations/sjp/CIR/stationOverview.xhtml,20110601,20120930,
+9100CLPHHS,Clapham High Street Rail Station,,http://nationalrail.co.uk/stations/sjp/CLP/stationOverview.xhtml,20110601,20120930,
+9100CLPHMJC,Clapham Junction Rail Station,SW,http://nationalrail.co.uk/stations/sjp/CLJ/stationOverview.xhtml,20110601,20120930,9100CLPHMJ2|9100CLPHMJM|9100CLPHMJW
+9100CMDNRD,Camden Road Rail Station,LO,http://nationalrail.co.uk/stations/sjp/CMD/stationOverview.xhtml,20110601,20120930,
+9100CMTHN,Carmarthen Rail Station,AW,http://www.nationalrail.co.uk/stations/sjp/CMN/stationOverview.xhtml,20110601,20120930,
+9100CNDAW,Canada Water Rail Station,LO,http://www.nationalrail.co.uk/stations/sjp/ZCW/stationOverview.xhtml,20110601,20120930,
+9100CNNB,Canonbury Rail Station,LO,http://nationalrail.co.uk/stations/sjp/CNN/stationOverview.xhtml,20110601,20120930,
+9100CNTBE,Canterbury East Rail Station,SE,http://nationalrail.co.uk/stations/sjp/CBE/stationOverview.xhtml,20110601,20120930,
+9100CNTBW,Canterbury West Rail Station,SE,http://nationalrail.co.uk/stations/sjp/CBW/stationOverview.xhtml,20110601,20120930,
+9100CODNBCH,Cooden Beach Rail Station,SN,http://nationalrail.co.uk/stations/sjp/COB/stationOverview.xhtml,20110601,20120930,
+9100COLESHL,Coleshill Parkway Rail Station,LM,http://nationalrail.co.uk/stations/sjp/CEH/stationOverview.xhtml,20110601,20120930,
+9100COVNTRY,Coventry Rail Station,VT,http://nationalrail.co.uk/stations/sjp/COV/stationOverview.xhtml,20110601,20120930,
+9100CRDFCEN,Cardiff Central Rail Station,AW,http://nationalrail.co.uk/stations/sjp/CDF/stationOverview.xhtml,20110601,20120930,
+9100CREWE,Crewe Rail Station,VT,http://nationalrail.co.uk/stations/sjp/CRE/stationOverview.xhtml,20110601,20120930,
+9100CRLN,Charlton Rail Station,SE,http://nationalrail.co.uk/stations/sjp/CTN/stationOverview.xhtml,20110601,20120930,
+9100CROUCHH,Crouch Hill Rail Station,LO,http://nationalrail.co.uk/stations/sjp/CRH/stationOverview.xhtml,20110601,20120930,
+9100CRPNDPK,Carpenders Park Rail Station,LO,http://nationalrail.co.uk/stations/sjp/CPK/stationOverview.xhtml,20110601,20120930,
+9100CRYSTLP,Crystal Palace Rail Station,LO,http://nationalrail.co.uk/stations/sjp/CYP/stationOverview.xhtml,20110601,20120930,
+9100CSEAH,Imperial Wharf Rail Station,LO,http://nationalrail.co.uk/stations/sjp/IMW/stationOverview.xhtml,20110601,20120930,
+9100CTMSLNK,City Thameslink Rail Station,FC,http://nationalrail.co.uk/stations/sjp/CTK/stationOverview.xhtml,20110601,20120930,
+9100DALMUIR,Dalmuir Rail Station,SR,http://nationalrail.co.uk/stations/sjp/DMR/stationOverview.xhtml,20110601,20120930,
+9100DALS,Dalston Junction Rail Station,LO,http://nationalrail.co.uk/stations/sjp/DLJ/stationOverview.xhtml,20110601,20120930,
+9100DALSKLD,Dalston Kingsland Rail Station,LO,http://nationalrail.co.uk/stations/sjp/DLK/stationOverview.xhtml,20110601,20120930,
+9100DARTFD,Dartford Rail Station,SE,http://nationalrail.co.uk/stations/sjp/DFD/stationOverview.xhtml,20110601,20120930,
+9100DENHAM,Denham Rail Station,CH,http://nationalrail.co.uk/stations/sjp/DNM/stationOverview.xhtml,20110601,20120930,
+9100DGNHMDC,Dagenham Dock Rail Station,CC,http://nationalrail.co.uk/stations/sjp/DDK/stationOverview.xhtml,20110601,20120930,
+9100DIDCOTP,Didcot Parkway Rail Station,GW,http://nationalrail.co.uk/stations/sjp/DID/stationOverview.xhtml,20110601,20120930,
+9100DLTN,Darlington Rail Station,GR,http://nationalrail.co.uk/stations/sjp/DAR/stationOverview.xhtml,20110601,20120930,
+9100DMBRTNC,Dumbarton Central Rail Station,SR,http://nationalrail.co.uk/stations/sjp/DBC/stationOverview.xhtml,20110601,20120930,
+9100DONC,Doncaster Rail Station,GR,http://nationalrail.co.uk/stations/sjp/DON/stationOverview.xhtml,20110601,20120930,
+9100DOVERP,Dover Priory Rail Station,SE,http://nationalrail.co.uk/stations/sjp/DVP/stationOverview.xhtml,20110601,20120930,
+9100DRBY,Derby Rail Station,EM,http://nationalrail.co.uk/stations/sjp/DBY/stationOverview.xhtml,20110601,20120930,
+9100DRHM,Durham Rail Station,GR,http://nationalrail.co.uk/stations/sjp/DHM/stationOverview.xhtml,20110601,20120930,
+9100DUDESTN,Duddeston Rail Station,LM,http://nationalrail.co.uk/stations/sjp/DUD/stationOverview.xhtml,20110601,20120930,
+9100DUNBAR,Dunbar Rail Station,GR,http://nationalrail.co.uk/stations/sjp/DUN/stationOverview.xhtml,20110601,20120930,
+9100DUNDETB,Dundee Rail Station,SR,http://nationalrail.co.uk/stations/sjp/DEE/stationOverview.xhtml,20110601,20120930,
+9100EALINGB,Ealing Broadway Rail Station,GW,,20110601,20120930,
+9100EBOURNE,Eastbourne Rail Station,SN,http://nationalrail.co.uk/stations/sjp/EBN/stationOverview.xhtml,20110601,20120930,
+9100EBSFDOM,Ebbsfleet International Rail Station,NR,http://nationalrail.co.uk/stations/sjp/EBD/stationOverview.xhtml,20110601,20120930,9100EBSFLTI
+9100ECROYDN,East Croydon Rail Station,SN,http://nationalrail.co.uk/stations/sjp/ECR/stationOverview.xhtml,20110601,20120930,
+9100EDINBUR,Edinburgh Waverley Rail Station,NR,http://nationalrail.co.uk/stations/sjp/EDB/stationOverview.xhtml,20110601,20120930,
+9100ELGH,Eastleigh Rail Station,SW,http://nationalrail.co.uk/stations/sjp/ESL/stationOverview.xhtml,20110601,20120930,
+9100ELMERSE,Elmers End Rail Station,SE,http://nationalrail.co.uk/stations/sjp/ELE/stationOverview.xhtml,20110601,20120930,
+9100ELYY,Ely Rail Station,LE,http://nationalrail.co.uk/stations/sjp/ELY/stationOverview.xhtml,20110601,20120930,
+9100EMPKWAY,East Midlands Parkway Rail Station,EM,http://nationalrail.co.uk/stations/sjp/EMD/stationOverview.xhtml,20110601,20120930,
+9100ENFLDLK,Enfield Lock Rail Station,LE,http://nationalrail.co.uk/stations/sjp/ENL/stationOverview.xhtml,20110601,20120930,
+9100ENFLDTN,Enfield Town Rail Station,LE,http://nationalrail.co.uk/stations/sjp/ENF/stationOverview.xhtml,20110601,20120930,
+9100EPSM,Epsom Rail Station,SN,http://nationalrail.co.uk/stations/sjp/EPS/stationOverview.xhtml,20110601,20120930,
+9100ESTFLDS,Mitcham Eastfields Rail Station,SN,http://nationalrail.co.uk/stations/sjp/MTC/stationOverview.xhtml,20110601,20120930,
+9100ETILBRY,East Tilbury Rail Station,CC,http://nationalrail.co.uk/stations/sjp/ETL/stationOverview.xhtml,20110601,20120930,
+9100EUSTON,London Euston Rail Station,NR,http://nationalrail.co.uk/stations/sjp/EUS/stationOverview.xhtml,20110601,20120930,
+9100EXETERC,Exeter Central Rail Station,GW,http://nationalrail.co.uk/stations/sjp/EXC/stationOverview.xhtml,20110601,20120930,
+9100EXETRSD,Exeter St David's Rail Station,GW,http://nationalrail.co.uk/stations/sjp/EXD/stationOverview.xhtml,20110601,20120930,
+9100EXHIBTC,Exhibition Centre Rail Station,SR,http://nationalrail.co.uk/stations/sjp/EXG/stationOverview.xhtml,20110601,20120930,
+9100FAREHAM,Fareham Rail Station,SW,http://nationalrail.co.uk/stations/sjp/FRM/stationOverview.xhtml,20110601,20120930,
+9100FAVRSHM,Faversham Rail Station,SE,http://nationalrail.co.uk/stations/sjp/FAV/stationOverview.xhtml,20110601,20120930,
+9100FAZKRLY,Fazakerley Rail Station,ME,http://nationalrail.co.uk/stations/sjp/FAZ/stationOverview.xhtml,20110601,20120930,
+9100FELTHAM,Feltham Rail Station,SW,http://nationalrail.co.uk/stations/sjp/FEL/stationOverview.xhtml,20110601,20120930,
+9100FENCHRS,London Fenchurch Street Rail Station,NR,http://nationalrail.co.uk/stations/sjp/FST/stationOverview.xhtml,20110601,20120930,
+9100FIVEWYS,Five Ways Rail Station,LM,http://nationalrail.co.uk/stations/sjp/FWY/stationOverview.xhtml,20110601,20120930,
+9100FNCHLYR,Finchley Road & Frognal Rail Station,LO,http://nationalrail.co.uk/stations/sjp/FNY/stationOverview.xhtml,20110601,20120930,
+9100FNPK,Finsbury Park Rail Station,FC,http://nationalrail.co.uk/stations/sjp/FOH/stationOverview.xhtml,20110601,20120930,
+9100FORESTH,Forest Hill Rail Station,LO,http://nationalrail.co.uk/stations/sjp/FTN/stationOverview.xhtml,20110601,20120930,
+9100FRATTON,Fratton Rail Station,SW,http://nationalrail.co.uk/stations/sjp/FTN/stationOverview.xhtml,20110601,20120930,
+9100FRTWLM,Fort William Rail Station,SR,http://nationalrail.co.uk/stations/sjp/FTW/stationOverview.xhtml,20110601,20120930,
+9100GALTILL,Smethwick Galton Bridge Rail Station,LM,http://nationalrail.co.uk/stations/sjp/SGB/stationOverview.xhtml,20110601,20120930,9100GALTINT
+9100GERRDSX,Gerrards Cross Rail Station,CH,http://nationalrail.co.uk/stations/sjp/GER/stationOverview.xhtml,20110601,20120930,
+9100GFORD,Greenford Rail Station,CH,,20110601,20120930,
+9100GLGC,Glasgow Central Rail Station,NR,http://nationalrail.co.uk/stations/sjp/GLC/stationOverview.xhtml,20110601,20120930,9100GLGCLL
+9100GLGQHL,Glasgow Queen Street Rail Station,SR,http://nationalrail.co.uk/stations/sjp/GLQ/stationOverview.xhtml,20110601,20120930,9100GLGQLL
+9100GLNGHMK,Gillingham (Kent) Rail Station,SE,http://nationalrail.co.uk/stations/sjp/GLM/stationOverview.xhtml,20110601,20120930,
+9100GLOSTER,Gloucester Rail Station,GW,http://nationalrail.co.uk/stations/sjp/GCR/stationOverview.xhtml,20110601,20120930,
+9100GNHT,Greenhithe for Bluewater Rail Station,SE,http://nationalrail.co.uk/stations/sjp/GNH/stationOverview.xhtml,20110601,20120930,
+9100GNRSBRY,Gunnersbury Rail Station,LO,http://nationalrail.co.uk/stations/sjp/GUN/stationOverview.xhtml,20110601,20120930,
+9100GNWH,Greenwich Rail Station,SE,http://nationalrail.co.uk/stations/sjp/GNW/stationOverview.xhtml,20110601,20120930,
+9100GOSPLOK,Gospel Oak Rail Station,LO,http://nationalrail.co.uk/stations/sjp/GPO/stationOverview.xhtml,20110601,20120930,
+9100GOUROCK,Gourock Rail Station,SR,http://nationalrail.co.uk/stations/sjp/GRK/stationOverview.xhtml,20110601,20120930,
+9100GRAYS,Grays Rail Station,CC,http://nationalrail.co.uk/stations/sjp/GRY/stationOverview.xhtml,20110601,20120930,
+9100GRVSEND,Gravesend Rail Station,SE,http://nationalrail.co.uk/stations/sjp/GRV/stationOverview.xhtml,20110601,20120930,
+9100GTHM,Grantham Rail Station,GR,http://nationalrail.co.uk/stations/sjp/GRA/stationOverview.xhtml,20110601,20120930,
+9100GTMSNDN,Great Missenden Rail Station,CH,http://nationalrail.co.uk/stations/sjp/GMN/stationOverview.xhtml,20110601,20120930,
+9100GTWK,Gatwick Airport Rail Station,NR,http://nationalrail.co.uk/stations/sjp/GTW/stationOverview.xhtml,20110601,20120930,
+9100GUILDFD,Guildford Rail Station,SW,http://nationalrail.co.uk/stations/sjp/GLD/stationOverview.xhtml,20110601,20120930,
+9100HACKNYC,Hackney Central Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HKC/stationOverview.xhtml,20110601,20120930,
+9100HACKNYW,Hackney Wick Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HKW/stationOverview.xhtml,20110601,20120930,
+9100HADMATP,Haddenham & Thame Parkway Rail Station,CH,http://nationalrail.co.uk/stations/sjp/HDM/stationOverview.xhtml,20110601,20120930,
+9100HAGGERS,Haggerston Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HGG/stationOverview.xhtml,20110601,20120930,
+9100HAGT,Harrogate Rail Station,NT,http://nationalrail.co.uk/stations/sjp/HGT/stationOverview.xhtml,20110601,20120930,
+9100HAMTSQ,Hamilton Square Rail Station,ME,http://nationalrail.co.uk/stations/sjp/BKQ/stationOverview.xhtml,20110601,20120930,
+9100HARLSDN,Harlesden Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HDN/stationOverview.xhtml,20110601,20120930,
+9100HAROOTH,Harrow-on-the Hill Rail Station,CH,http://nationalrail.co.uk/stations/sjp/HOH/stationOverview.xhtml,20110601,20120930,
+9100HASOCKS,Hassocks Rail Station,SN,http://nationalrail.co.uk/stations/sjp/HSK/stationOverview.xhtml,20110601,20120930,
+9100HASTING,Hastings Rail Station,SE,http://nationalrail.co.uk/stations/sjp/HGS/stationOverview.xhtml,20110601,20120930,
+9100HAVANT,Havant Rail Station,SW,http://nationalrail.co.uk/stations/sjp/HAV/stationOverview.xhtml,20110601,20120930,
+9100HAYMRKT,Haymarket Rail Station,SR,http://nationalrail.co.uk/stations/sjp/HYM/stationOverview.xhtml,20110601,20120930,
+9100HAYS,Hayes Rail Station,SE,http://nationalrail.co.uk/stations/sjp/HYS/stationOverview.xhtml,20110601,20120930,
+9100HAZL,Hazel Grove Rail Station,NT,http://nationalrail.co.uk/stations/sjp/HAZ/stationOverview.xhtml,20110601,20120930,
+9100HCRT,Hampton Court  Rail Station,SW,http://nationalrail.co.uk/stations/sjp/HUD/stationOverview.xhtml,20110601,20120930,
+9100HDRSFLD,Huddersfield Rail Station,TP,http://nationalrail.co.uk/stations/sjp/HDL/stationOverview.xhtml,20110601,20120930,
+9100HEDSTNL,Headstone Lane Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HFD/stationOverview.xhtml,20110601,20120930,
+9100HEREFRD,Hereford Railway Station Rail Station,AW,,20110601,20120930,
+9100HERTFDE,Hertford East Rail Station,LE,http://nationalrail.co.uk/stations/sjp/HFE/stationOverview.xhtml,20110601,20120930,
+9100HGHI,Highbury & Islington Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HHY/stationOverview.xhtml,20110601,20120930,9100HIGHBYA
+9100HLFX,Halifax Rail Station,NT,http://nationalrail.co.uk/stations/sjp/HFX/stationOverview.xhtml,20110601,20120930,
+9100HLNSBRC,Helensburgh Central Rail Station,SR,http://nationalrail.co.uk/stations/sjp/HLC/stationOverview.xhtml,20110601,20120930,
+9100HLYH,Holyhead Rail Station,AW,http://nationalrail.co.uk/stations/sjp/HHD/stationOverview.xhtml,20110601,20120930,
+9100HMPSTDH,Hampstead Heath Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HDH/stationOverview.xhtml,20110601,20120930,
+9100HNTNGDN,Huntingdon Rail Station,FC,http://nationalrail.co.uk/stations/sjp/HUN/stationOverview.xhtml,20110601,20120930,
+9100HOMRTON,Homerton Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HMN/stationOverview.xhtml,20110601,20120930,
+9100HONROPK,Honor Oak Park Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HPA/stationOverview.xhtml,20110601,20120930,
+9100HORSHAM,Horsham Rail Station,SN,http://nationalrail.co.uk/stations/sjp/HRH/stationOverview.xhtml,20110601,20120930,
+9100HOVE,Hove Rail Station,SN,http://nationalrail.co.uk/stations/sjp/HOV/stationOverview.xhtml,20110601,20120930,
+9100HOXTON,Hoxton Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HOX/stationOverview.xhtml,20110601,20120930,
+9100HRGYGL,Harringay Green Lanes Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HRY/stationOverview.xhtml,20110601,20120930,
+9100HRLWTWN,Harlow Town Rail Station,LE,http://nationalrail.co.uk/stations/sjp/HWN/stationOverview.xhtml,20110601,20120930,
+9100HROWDC,Harrow & Wealdstone Rail Station,LO,,20110601,20120930,
+9100HRTLEPL,Hartlepool Rail Station,NT,http://nationalrail.co.uk/stations/sjp/HPL/stationOverview.xhtml,20110601,20120930,
+9100HTCHEND,Hatch End Rail Station,LO,http://nationalrail.co.uk/stations/sjp/HTE/stationOverview.xhtml,20110601,20120930,
+9100HTRWAPT,Heathrow Airport T13 Rail Station,HX,http://nationalrail.co.uk/stations/sjp/HXX/stationOverview.xhtml,20110601,20120930,
+9100HTRWTM4,Heathrow Airport T4 Rail Station,HX,http://nationalrail.co.uk/stations/sjp/HAF/stationOverview.xhtml,20110601,20120930,
+9100HTRWTM5,Heathrow Airport T5 Rail Station,HX,http://nationalrail.co.uk/stations/sjp/HWV/stationOverview.xhtml,20110601,20120930,
+9100HULL,Hull Rail Station,TP,http://nationalrail.co.uk/stations/sjp/HUL/stationOverview.xhtml,20110601,20120930,
+9100HUYTON,Huyton Rail Station,NT,http://nationalrail.co.uk/stations/sjp/HUY/stationOverview.xhtml,20110601,20120930,
+9100HWYCOMB,High Wycombe Rail Station,CH,http://nationalrail.co.uk/stations/sjp/HWY/stationOverview.xhtml,20110601,20120930,
+9100HYWRDSH,Haywards Heath Rail Station,SN,http://nationalrail.co.uk/stations/sjp/HHE/stationOverview.xhtml,20110601,20120930,
+9100ILKLEY,Ilkley Rail Station,NT,http://nationalrail.co.uk/stations/sjp/ILK/stationOverview.xhtml,20110601,20120930,
+9100IPSWICH,Ipswich Rail Station,LE,http://nationalrail.co.uk/stations/sjp/IPS/stationOverview.xhtml,20110601,20120930,
+9100IVRKTHG,Inverkeithing Rail Station,SR,http://nationalrail.co.uk/stations/sjp/INK/stationOverview.xhtml,20110601,20120930,
+9100IVRNESS,Inverness Rail Station,SR,http://nationalrail.co.uk/stations/sjp/INV/stationOverview.xhtml,20110601,20120930,
+9100JAMESST,Liverpool James Street Rail Station,ME,http://nationalrail.co.uk/stations/sjp/LVJ/stationOverview.xhtml,20110601,20120930,
+9100KCLD,Kirkcaldy Rail Station,SR,http://nationalrail.co.uk/stations/sjp/KDY/stationOverview.xhtml,20110601,20120930,
+9100KDRMNST,Kidderminster Rail Station,LM,http://nationalrail.co.uk/stations/sjp/KID/stationOverview.xhtml,20110601,20120930,
+9100KEIGHLY,Keighley Rail Station,NT,http://nationalrail.co.uk/stations/sjp/KEI/stationOverview.xhtml,20110601,20120930,
+9100KENOLYM,Kensington Olympia Rail Station,LO,http://nationalrail.co.uk/stations/sjp/KPA/stationOverview.xhtml,20110601,20120930,
+9100KENR,Kensal Rise Rail Station,LO,http://nationalrail.co.uk/stations/sjp/KNR/stationOverview.xhtml,20110601,20120930,
+9100KENSLG,Kensal Green Rail Station,LO,http://nationalrail.co.uk/stations/sjp/KNL/stationOverview.xhtml,20110601,20120930,
+9100KEWGRDN,Kew Gardens Rail Station,LO,http://nationalrail.co.uk/stations/sjp/KWG/stationOverview.xhtml,20110601,20120930,
+9100KGSTON,Kingston Rail Station,SW,http://nationalrail.co.uk/stations/sjp/KNG/stationOverview.xhtml,20110601,20120930,
+9100KIDBROK,Kidbrooke Rail Station,SE,http://nationalrail.co.uk/stations/sjp/KDB/stationOverview.xhtml,20110601,20120930,
+9100KKBY,Kirkby Rail Station,ME,http://nationalrail.co.uk/stations/sjp/KIR/stationOverview.xhtml,20110601,20120930,
+9100KLBRNHR,Kilburn High Road Rail Station,LO,http://nationalrail.co.uk/stations/sjp/KBN/stationOverview.xhtml,20110601,20120930,
+9100KLYNN,Kings Lynn Rail Station,FC,http://nationalrail.co.uk/stations/sjp/KLN/stationOverview.xhtml,20110601,20120930,
+9100KNGX,London Kings Cross Rail Station,NR,http://nationalrail.co.uk/stations/sjp/KGX/stationOverview.xhtml,20110601,20120930,
+9100KNLY,Kenley Rail Station,SN,http://nationalrail.co.uk/stations/sjp/KLY/stationOverview.xhtml,20110601,20120930,
+9100KNTSHTN,Kentish Town Rail Station,FC,,20110601,20120930,
+9100KNTSHTW,Kentish Town West Rail Station,LO,http://nationalrail.co.uk/stations/sjp/KTW/stationOverview.xhtml,20110601,20120930,
+9100KRKDALE,Kirkdale Rail Station,ME,http://nationalrail.co.uk/stations/sjp/KKD/stationOverview.xhtml,20110601,20120930,
+9100KTON,Kenton Rail Station,LO,http://nationalrail.co.uk/stations/sjp/KNT/stationOverview.xhtml,20110601,20120930,
+9100KYLELSH,Kyle of Lochalsh Rail Station,SR,http://nationalrail.co.uk/stations/sjp/KYL/stationOverview.xhtml,20110601,20120930,
+9100LANARK,Lanark Rail Station,SR,http://nationalrail.co.uk/stations/sjp/LNK/stationOverview.xhtml,20110601,20120930,
+9100LANCSTR,Lancaster Rail Station,VT,http://nationalrail.co.uk/stations/sjp/LAN/stationOverview.xhtml,20110601,20120930,
+9100LANDUDJ,Llandudno Junction Railway Station Rail Station,AW,http://nationalrail.co.uk/stations/sjp/LLJ/stationOverview.xhtml,20110601,20120930,
+9100LARGS,Largs Rail Station,SR,http://nationalrail.co.uk/stations/sjp/LAR/stationOverview.xhtml,20110601,20120930,
+9100LCHC,Lichfield City Rail Station,LM,http://nationalrail.co.uk/stations/sjp/LIC/stationOverview.xhtml,20110601,20120930,
+9100LDYW,Ladywell Rail Station,SE,http://nationalrail.co.uk/stations/sjp/LAD/stationOverview.xhtml,20110601,20120930,
+9100LEAHALL,Lea Hall Rail Station,LM,http://nationalrail.co.uk/stations/sjp/LEH/stationOverview.xhtml,20110601,20120930,
+9100LEEDS,Leeds Rail Station,NR,http://nationalrail.co.uk/stations/sjp/LDS/stationOverview.xhtml,20110601,20120930,
+9100LEEE,Lee Rail Station,SE,http://nationalrail.co.uk/stations/sjp/LEE/stationOverview.xhtml,20110601,20120930,
+9100LEGR,Lea Green Rail Station,NT,http://nationalrail.co.uk/stations/sjp/LEG/stationOverview.xhtml,20110601,20120930,
+9100LESTER,Leicester Rail Station,EM,http://nationalrail.co.uk/stations/sjp/LEI/stationOverview.xhtml,20110601,20120930,
+9100LETHRHD,Leatherhead Rail Station,SN,http://nationalrail.co.uk/stations/sjp/LHD/stationOverview.xhtml,20110601,20120930,
+9100LEWES,Lewes Rail Station,SN,http://nationalrail.co.uk/stations/sjp/LWS/stationOverview.xhtml,20110601,20120930,
+9100LEWISHM,Lewisham Rail Station,SE,http://nationalrail.co.uk/stations/sjp/LEW/stationOverview.xhtml,20110601,20120930,
+9100LEYTNMR,Leyton Midland Road Rail Station,LO,http://nationalrail.co.uk/stations/sjp/LEM/stationOverview.xhtml,20110601,20120930,
+9100LHONSEA,Leigh-on-Sea Rail Station,CC,http://nationalrail.co.uk/stations/sjp/LES/stationOverview.xhtml,20110601,20120930,
+9100LINCLNC,Lincoln Central Rail Station,EM,http://nationalrail.co.uk/stations/sjp/LCN/stationOverview.xhtml,20110601,20120930,
+9100LISKARD,Liskeard Rail Station,GW,http://nationalrail.co.uk/stations/sjp/LSK/stationOverview.xhtml,20110601,20120930,
+9100LIVST,London Liverpool Street Rail Station,NR,http://nationalrail.co.uk/stations/sjp/LST/stationOverview.xhtml,20110601,20120930,
+9100LMNGTNS,Leamington Spa Rail Station,CH,http://nationalrail.co.uk/stations/sjp/LMS/stationOverview.xhtml,20110601,20120930,
+9100LNDNBDC,London Bridge Rail Station,NR,http://nationalrail.co.uk/stations/sjp/LBG/stationOverview.xhtml,20110601,20120930,9100LNDNBDE
+9100LNLTHGW,Linlithgow Rail Station,SR,http://nationalrail.co.uk/stations/sjp/LIN/stationOverview.xhtml,20110601,20120930,
+9100LOGHBRO,Loughborough Rail Station,EM,,20110601,20120930,
+9100LONB,Longbridge Rail Station,LM,http://nationalrail.co.uk/stations/sjp/LOB/stationOverview.xhtml,20110601,20120930,
+9100LOSTCKP,Lostock Rail Station,NT,http://nationalrail.co.uk/stations/sjp/LOT/stationOverview.xhtml,20110601,20120930,
+9100LSYDNHM,Lower Sydenham Rail Station,SE,http://nationalrail.co.uk/stations/sjp/LSY/stationOverview.xhtml,20110601,20120930,
+9100LTLHMPT,Littlehampton Rail Station,SN,http://nationalrail.co.uk/stations/sjp/LIT/stationOverview.xhtml,20110601,20120930,
+9100LUTOAPY,Luton Airport Parkway Rail Station,FC,http://nationalrail.co.uk/stations/sjp/LTN/stationOverview.xhtml,20110601,20120930,
+9100LVRPLCH,Liverpool Central Rail Station,ME,http://nationalrail.co.uk/stations/sjp/LVC/stationOverview.xhtml,20110601,20120930,9100LVRPLCL
+9100LVRPLSH,Liverpool Lime Street Rail Station,NR,http://nationalrail.co.uk/stations/sjp/LIV/stationOverview.xhtml,20110601,20120930,9100LVRPLSL
+9100LYTNSHR,Leytonstone High Road Rail Station,LO,http://nationalrail.co.uk/stations/sjp/LER/stationOverview.xhtml,20110601,20120930,
+9100MACLSFD,Macclesfield Rail Station,VT,http://nationalrail.co.uk/stations/sjp/MAC/stationOverview.xhtml,20110601,20120930,
+9100MARGATE,Margate Rail Station,SE,http://nationalrail.co.uk/stations/sjp/MAR/stationOverview.xhtml,20110601,20120930,
+9100MARYLBN,London Marylebone Rail Station,CH,http://nationalrail.co.uk/stations/sjp/MYB/stationOverview.xhtml,20110601,20120930,
+9100MAZEH,Maze Hill Rail Station,SE,http://nationalrail.co.uk/stations/sjp/MZH/stationOverview.xhtml,20110601,20120930,
+9100MDLSBRO,Middlesbrough Rail Station,TP,http://nationalrail.co.uk/stations/sjp/MBR/stationOverview.xhtml,20110601,20120930,
+9100MDNHEAD,Maidenhead Rail Station,GW,http://nationalrail.co.uk/stations/sjp/MAI/stationOverview.xhtml,20110601,20120930,
+9100MEADWHL,Meadowhall Rail Station,NT,http://nationalrail.co.uk/stations/sjp/MHS/stationOverview.xhtml,20110601,20120930,
+9100MITCHMJ,Mitcham Junction Rail Station,SN,http://nationalrail.co.uk/stations/sjp/MIJ/stationOverview.xhtml,20110601,20120930,
+9100MKIN,Markinch Rail Station,SR,http://nationalrail.co.uk/stations/sjp/MNC/stationOverview.xhtml,20110601,20120930,
+9100MKNSCEN,Milton Keynes Central Rail Station,LM,http://nationalrail.co.uk/stations/sjp/MKC/stationOverview.xhtml,20110601,20120930,
+9100MLAIG,Mallaig Rail Station,SR,http://nationalrail.co.uk/stations/sjp/MLG/stationOverview.xhtml,20110601,20120930,
+9100MLGV,Milngavie Rail Station,SR,http://nationalrail.co.uk/stations/sjp/MLN/stationOverview.xhtml,20110601,20120930,
+9100MNCRDGT,Deansgate Rail Station,NT,http://nationalrail.co.uk/stations/sjp/DGT/stationOverview.xhtml,20110601,20120930,
+9100MNCRIAP,Manchester Airport Rail Station,TP,http://nationalrail.co.uk/stations/sjp/MIA/stationOverview.xhtml,20110601,20120930,
+9100MNCRPIC,Manchester Piccadilly Rail Station,NR,http://nationalrail.co.uk/stations/sjp/MAN/stationOverview.xhtml,20110601,20120930,
+9100MNCRVIC,Manchester Victoria Rail Station,NT,http://nationalrail.co.uk/stations/sjp/MCV/stationOverview.xhtml,20110601,20120930,
+9100MONTRSE,Montrose Rail Station,SR,http://nationalrail.co.uk/stations/sjp/MTS/stationOverview.xhtml,20110601,20120930,
+9100MOTHRWL,Motherwell Rail Station,SR,http://nationalrail.co.uk/stations/sjp/MTH/stationOverview.xhtml,20110601,20120930,
+9100MOTNGHM,Mottingham Rail Station,SE,http://nationalrail.co.uk/stations/sjp/MTG/stationOverview.xhtml,20110601,20120930,
+9100MRGT,Moorgate Rail Station,FC,,20110601,20120930,
+9100MSLH,Mossley Hill Rail Station,NT,http://nationalrail.co.uk/stations/sjp/MSH/stationOverview.xhtml,20110601,20120930,
+9100MSTONEE,Maidstone East Rail Station,SE,http://nationalrail.co.uk/stations/sjp/MDE/stationOverview.xhtml,20110601,20120930,
+9100MTFL,Mount Florida Rail Station,SR,http://nationalrail.co.uk/stations/sjp/MFL/stationOverview.xhtml,20110601,20120930,
+9100NABT,Newton Abbot Rail Station,GW,http://nationalrail.co.uk/stations/sjp/NTA/stationOverview.xhtml,20110601,20120930,
+9100NBCKNHM,New Beckenham Rail Station,SE,http://nationalrail.co.uk/stations/sjp/NBC/stationOverview.xhtml,20110601,20120930,
+9100NEATH,Neath Rail Station,AW,http://nationalrail.co.uk/stations/sjp/NTH/stationOverview.xhtml,20110601,20120930,
+9100NEWANG,Newark North Gate Rail Station,GR,http://nationalrail.co.uk/stations/sjp/NNG/stationOverview.xhtml,20110601,20120930,
+9100NEWXGEL,New Cross Gate Rail Station,LO,http://nationalrail.co.uk/stations/sjp/NXG/stationOverview.xhtml,20110601,20120930,9100NEWXGTE
+9100NMBRLPK,Northumberland Park Rail Station,LE,http://nationalrail.co.uk/stations/sjp/NUM/stationOverview.xhtml,20110601,20120930,
+9100NMPTN,Northampton Rail Station,LM,http://nationalrail.co.uk/stations/sjp/NMP/stationOverview.xhtml,20110601,20120930,
+9100NNTN,Nuneaton Rail Station,LM,http://nationalrail.co.uk/stations/sjp/NUN/stationOverview.xhtml,20110601,20120930,
+9100NORBURY,Norbury Rail Station,SN,http://nationalrail.co.uk/stations/sjp/NRB/stationOverview.xhtml,20110601,20120930,
+9100NORWDJ,Norwood Junction Rail Station,LO,http://nationalrail.co.uk/stations/sjp/NWD/stationOverview.xhtml,20110601,20120930,
+9100NPUD,New Pudsey Rail Station,NT,http://nationalrail.co.uk/stations/sjp/NPD/stationOverview.xhtml,20110601,20120930,
+9100NRCH,Norwich Rail Station,LE,http://nationalrail.co.uk/stations/sjp/NRW/stationOverview.xhtml,20110601,20120930,
+9100NTHOLTP,Northolt Park Rail Station,CH,http://nationalrail.co.uk/stations/sjp/NLT/stationOverview.xhtml,20110601,20120930,
+9100NTNG,Nottingham Rail Station,EM,http://nationalrail.co.uk/stations/sjp/NOT/stationOverview.xhtml,20110601,20120930,
+9100NWCRELL,New Cross Rail Station,SE,http://nationalrail.co.uk/stations/sjp/NWX/stationOverview.xhtml,20110601,20120930,9100NWCROSS
+9100NWCSTLE,Newcastle Rail Station,GR,http://nationalrail.co.uk/stations/sjp/NCL/stationOverview.xhtml,20110601,20120930,
+9100NWEMBLY,North Wembley Rail Station,LO,http://nationalrail.co.uk/stations/sjp/NWB/stationOverview.xhtml,20110601,20120930,
+9100NWPTRTG,Newport (S. Wales) Rail Station,AW,http://nationalrail.co.uk/stations/sjp/NWP/stationOverview.xhtml,20110601,20120930,
+9100OBAN,Oban Rail Station,SR,http://nationalrail.co.uk/stations/sjp/OBN/stationOverview.xhtml,20110601,20120930,
+9100OCKENDN,Ockendon Rail Station,CC,http://nationalrail.co.uk/stations/sjp/OCK/stationOverview.xhtml,20110601,20120930,
+9100OLDROAN,Old Roan Rail Station,ME,http://nationalrail.co.uk/stations/sjp/ORN/stationOverview.xhtml,20110601,20120930,
+9100OLDST,Old Street Rail Station,FC,,20110601,20120930,
+9100ORMSKRK,Ormskirk Rail Station,ME,http://nationalrail.co.uk/stations/sjp/OMS/stationOverview.xhtml,20110601,20120930,
+9100ORPNGTN,Orpington Rail Station,SE,http://nationalrail.co.uk/stations/sjp/ORP/stationOverview.xhtml,20110601,20120930,
+9100OXENHLM,Oxenholme Lake District Rail Station,VT,http://nationalrail.co.uk/stations/sjp/OXN/stationOverview.xhtml,20110601,20120930,
+9100OXFD,Oxford Rail Station,GW,http://nationalrail.co.uk/stations/sjp/OXF/stationOverview.xhtml,20110601,20120930,
+9100OXTED,Oxted Rail Station,SN,http://nationalrail.co.uk/stations/sjp/OXT/stationOverview.xhtml,20110601,20120930,9100OXTEDBY
+9100PADTON,London Paddington Rail Station,NR,http://nationalrail.co.uk/stations/sjp/PAD/stationOverview.xhtml,20110601,20120930,
+9100PBRO,Peterborough Rail Station,GR,http://nationalrail.co.uk/stations/sjp/PBO/stationOverview.xhtml,20110601,20120930,
+9100PENEW,Penge West Rail Station,LO,http://nationalrail.co.uk/stations/sjp/PNW/stationOverview.xhtml,20110601,20120930,
+9100PENZNCE,Penzance Rail Station,GW,http://nationalrail.co.uk/stations/sjp/PNZ/stationOverview.xhtml,20110601,20120930,
+9100PERTH,Perth Rail Station,SR,http://nationalrail.co.uk/stations/sjp/PTH/stationOverview.xhtml,20110601,20120930,
+9100PHBR,Portsmouth Harbour Rail Station,SW,http://nationalrail.co.uk/stations/sjp/PMH/stationOverview.xhtml,20110601,20120930,
+9100PITSEA,Pitsea Rail Station,CC,http://nationalrail.co.uk/stations/sjp/PTS/stationOverview.xhtml,20110601,20120930,
+9100PLYMTH,Plymouth Rail Station,GW,http://nationalrail.co.uk/stations/sjp/PLY/stationOverview.xhtml,20110601,20120930,
+9100PNTH,Penrith Rail Station,VT,http://nationalrail.co.uk/stations/sjp/PNR/stationOverview.xhtml,20110601,20120930,
+9100POOLE,Poole Rail Station,SW,http://nationalrail.co.uk/stations/sjp/POO/stationOverview.xhtml,20110601,20120930,
+9100POTRSBR,Potters Bar Rail Station,FC,http://nationalrail.co.uk/stations/sjp/PBR/stationOverview.xhtml,20110601,20120930,
+9100PRINRIS,Princes Risborough Rail Station,CH,http://nationalrail.co.uk/stations/sjp/PRR/stationOverview.xhtml,20110601,20120930,
+9100PRKSTON,Harwich International Rail Station,LE,http://nationalrail.co.uk/stations/sjp/HPQ/stationOverview.xhtml,20110601,20120930,
+9100PRST,Preston Rail Station,VT,http://nationalrail.co.uk/stations/sjp/PRE/stationOverview.xhtml,20110601,20120930,
+9100PSEA,Portsmouth & Southsea Rail Station,SW,http://nationalrail.co.uk/stations/sjp/PMS/stationOverview.xhtml,20110601,20120930,
+9100PSLYGST,Paisley Gilmour Street Rail Station,SR,http://nationalrail.co.uk/stations/sjp/PYG/stationOverview.xhtml,20110601,20120930,
+9100PTCK,Partick Rail Station,SR,http://nationalrail.co.uk/stations/sjp/PTK/stationOverview.xhtml,20110601,20120930,
+9100PURFLET,Purfleet Rail Station,CC,http://nationalrail.co.uk/stations/sjp/PFL/stationOverview.xhtml,20110601,20120930,
+9100PURLEY,Purley Rail Station,SN,http://nationalrail.co.uk/stations/sjp/PUR/stationOverview.xhtml,20110601,20120930,
+9100PWCKAPT,Prestwick International Rail Station,SR,http://nationalrail.co.uk/stations/sjp/PWI/stationOverview.xhtml,20110601,20120930,
+9100RAINHMK,Rainham (Kent) Rail Station,SE,http://nationalrail.co.uk/stations/sjp/RAI/stationOverview.xhtml,20110601,20120930,
+9100RAMSGTE,Ramsgate Rail Station,SE,http://nationalrail.co.uk/stations/sjp/RAM/stationOverview.xhtml,20110601,20120930,
+9100RCHDALE,Rochdale Rail Station,NT,http://nationalrail.co.uk/stations/sjp/RCD/stationOverview.xhtml,20110601,20120930,
+9100RCHT,Rochester Rail Station,SE,http://nationalrail.co.uk/stations/sjp/RTR/stationOverview.xhtml,20110601,20120930,
+9100RCKMNSW,Rickmansworth Rail Station,CH,,20110601,20120930,
+9100RDLSDWN,Riddlesdown Rail Station,SN,http://nationalrail.co.uk/stations/sjp/RDD/stationOverview.xhtml,20110601,20120930,
+9100RDNGSTN,Reading Rail Station,GW,http://nationalrail.co.uk/stations/sjp/RDG/stationOverview.xhtml,20110601,20120930,9100RDNG4AB
+9100REDHILL,Redhill Rail Station,SN,http://nationalrail.co.uk/stations/sjp/RDH/stationOverview.xhtml,20110601,20120930,
+9100RHYL,Rhyl Rail Station,AW,http://nationalrail.co.uk/stations/sjp/RHL/stationOverview.xhtml,20110601,20120930,
+9100RICHMND,Richmond Rail Station,SW,http://nationalrail.co.uk/stations/sjp/RMD/stationOverview.xhtml,20110601,20120930,9100RICHNLL
+9100RNHAME,Rainham (Essex) Rail Station,CC,http://nationalrail.co.uk/stations/sjp/RNM/stationOverview.xhtml,20110601,20120930,
+9100ROMFORD,Romford Rail Station,LE,http://nationalrail.co.uk/stations/sjp/RMF/stationOverview.xhtml,20110601,20120930,
+9100ROTHCEN,Rotherham Central Rail Station,NT,http://nationalrail.co.uk/stations/sjp/RMC/stationOverview.xhtml,20110601,20120930,
+9100ROYSTON,Royston Rail Station,FC,http://nationalrail.co.uk/stations/sjp/RYS/stationOverview.xhtml,20110601,20120930,
+9100RTFD,Retford Rail Station,GR,http://nationalrail.co.uk/stations/sjp/RET/stationOverview.xhtml,20110601,20120930,9100RTFDLL
+9100RTHERHI,Rotherhithe Rail Station,LO,http://nationalrail.co.uk/stations/sjp/ROE/stationOverview.xhtml,20110601,20120930,
+9100RUGBY,Rugby Rail Station,VT,http://nationalrail.co.uk/stations/sjp/RUG/stationOverview.xhtml,20110601,20120930,
+9100RUNCORN,Runcorn Rail Station,VT,http://nationalrail.co.uk/stations/sjp/RUN/stationOverview.xhtml,20110601,20120930,
+9100SACTON,South Acton Rail Station,LO,http://nationalrail.co.uk/stations/sjp/SAT/stationOverview.xhtml,20110601,20120930,
+9100SBYD,Stalybridge Rail Station,TP,http://nationalrail.co.uk/stations/sjp/SYB/stationOverview.xhtml,20110601,20120930,
+9100SCARBRO,Scarborough Rail Station,TP,http://nationalrail.co.uk/stations/sjp/SCA/stationOverview.xhtml,20110601,20120930,
+9100SDON,Swindon Rail Station,GW,http://nationalrail.co.uk/stations/sjp/SWI/stationOverview.xhtml,20110601,20120930,
+9100SDSD,Sanderstead Rail Station,SN,http://nationalrail.co.uk/stations/sjp/SNR/stationOverview.xhtml,20110601,20120930,
+9100SELYOAK,Selly Oak Rail Station,LM,http://nationalrail.co.uk/stations/sjp/SEO/stationOverview.xhtml,20110601,20120930,
+9100SEVNSIS,Seven Sisters Rail Station,LE,http://nationalrail.co.uk/stations/sjp/SVS/stationOverview.xhtml,20110601,20120930,
+9100SHADWEL,Shadwell Rail Station,LO,http://nationalrail.co.uk/stations/sjp/SDE/stationOverview.xhtml,20110601,20120930,
+9100SHBRYNS,Shoeburyness Rail Station,CC,http://nationalrail.co.uk/stations/sjp/SRY/stationOverview.xhtml,20110601,20120930,
+9100SHEFFLD,Sheffield Rail Station,EM,http://nationalrail.co.uk/stations/sjp/SHF/stationOverview.xhtml,20110601,20120930,
+9100SHENFLD,Shenfield Rail Station,LE,http://nationalrail.co.uk/stations/sjp/SNF/stationOverview.xhtml,20110601,20120930,
+9100SHMPSTD,South Hampstead Rail Station,LO,http://nationalrail.co.uk/stations/sjp/SOH/stationOverview.xhtml,20110601,20120930,
+9100SHPDSB,Shepherd's Bush Rail Station,LO,http://nationalrail.co.uk/stations/sjp/SPB/stationOverview.xhtml,20110601,20120930,
+9100SHRDHST,Shoreditch High Street Rail Station,LO,http://nationalrail.co.uk/stations/sjp/SDC/stationOverview.xhtml,20110601,20120930,
+9100SHRWBY,Shrewsbury Rail Station,AW,http://nationalrail.co.uk/stations/sjp/SHR/stationOverview.xhtml,20110601,20120930,
+9100SIDCUP,Sidcup Rail Station,SE,http://nationalrail.co.uk/stations/sjp/SID/stationOverview.xhtml,20110601,20120930,
+9100SKENTON,South Kenton Rail Station,LO,http://nationalrail.co.uk/stations/sjp/SOK/stationOverview.xhtml,20110601,20120930,
+9100SKPT,Skipton Rail Station,NT,http://nationalrail.co.uk/stations/sjp/SKI/stationOverview.xhtml,20110601,20120930,
+9100SLADEGN,Slade Green Rail Station,SE,http://nationalrail.co.uk/stations/sjp/SGR/stationOverview.xhtml,20110601,20120930,
+9100SLEHOPE,Stanford-le-Hope Rail Station,CC,http://nationalrail.co.uk/stations/sjp/SFO/stationOverview.xhtml,20110601,20120930,
+9100SLOUGH,Slough Rail Station,GW,http://nationalrail.co.uk/stations/sjp/SLO/stationOverview.xhtml,20110601,20120930,
+9100SLSBRY,Salisbury Rail Station,SW,http://nationalrail.co.uk/stations/sjp/SAL/stationOverview.xhtml,20110601,20120930,
+9100SMITHAM,Coulsdon Town Rail Station,SN,http://nationalrail.co.uk/stations/sjp/SMI/stationOverview.xhtml,20110601,20120930,
+9100SNDRLND,Sunderland Rail Station,NT,http://nationalrail.co.uk/stations/sjp/SUN/stationOverview.xhtml,20110601,20120930,
+9100SNDWDUD,Sandwell & Dudley Rail Station,LM,http://nationalrail.co.uk/stations/sjp/SAD/stationOverview.xhtml,20110601,20120930,
+9100SOTON,Southampton Central Rail Station,SW,http://nationalrail.co.uk/stations/sjp/SOU/stationOverview.xhtml,20110601,20120930,
+9100SOTPKWY,Southampton Airport Parkway Rail Station,SW,http://nationalrail.co.uk/stations/sjp/SOA/stationOverview.xhtml,20110601,20120930,
+9100SRUISLP,South Ruislip Rail Station,CH,http://nationalrail.co.uk/stations/sjp/SRU/stationOverview.xhtml,20110601,20120930,
+9100STAFFRD,Stafford Rail Station,VT,http://nationalrail.co.uk/stations/sjp/STA/stationOverview.xhtml,20110601,20120930,
+9100STAINES,Staines Rail Station,SW,http://nationalrail.co.uk/stations/sjp/SNS/stationOverview.xhtml,20110601,20120930,
+9100STALBCY,St Albans Rail Station,FC,http://nationalrail.co.uk/stations/sjp/SAC/stationOverview.xhtml,20110601,20120930,
+9100STANAIR,Stansted Airport Rail Station,LE,http://nationalrail.co.uk/stations/sjp/SSD/stationOverview.xhtml,20110601,20120930,
+9100STEVNGE,Stevenage Rail Station,FC,http://nationalrail.co.uk/stations/sjp/SVG/stationOverview.xhtml,20110601,20120930,
+9100STFD,Stratford Rail Station,LE,http://nationalrail.co.uk/stations/sjp/SRA/stationOverview.xhtml,20110601,20120930,
+9100STFODOM,Stratford International Station Rail Station,SE,http://nationalrail.co.uk/stations/sjp/SDI/stationOverview.xhtml,20110601,20120930,
+9100STHCENT,Southend Central Rail Station,CC,http://nationalrail.co.uk/stations/sjp/SOC/stationOverview.xhtml,20110601,20120930,
+9100STHLNSC,St Helens Central Rail Station,NT,http://nationalrail.co.uk/stations/sjp/SNH/stationOverview.xhtml,20110601,20120930,
+9100STHVIC,Southend Victoria Rail Station,LE,http://nationalrail.co.uk/stations/sjp/SOV/stationOverview.xhtml,20110601,20120930,
+9100STIRLNG,Stirling Rail Station,SR,http://nationalrail.co.uk/stations/sjp/STG/stationOverview.xhtml,20110601,20120930,
+9100STKM,Stoke Mandeville Rail Station,CH,http://nationalrail.co.uk/stations/sjp/SKM/stationOverview.xhtml,20110601,20120930,
+9100STKP,Stockport Rail Station,VT,http://nationalrail.co.uk/stations/sjp/SPT/stationOverview.xhtml,20110601,20120930,
+9100STNBGPK,Stonebridge Park Rail Station,LO,http://nationalrail.co.uk/stations/sjp/SBP/stationOverview.xhtml,20110601,20120930,
+9100STNGBRN,Sittingbourne Rail Station,SE,http://nationalrail.co.uk/stations/sjp/SIT/stationOverview.xhtml,20110601,20120930,
+9100STOKEOT,Stoke-on-Trent Rail Station,VT,http://nationalrail.co.uk/stations/sjp/SOT/stationOverview.xhtml,20110601,20120930,
+9100STOTNHM,South Tottenham Rail Station,LO,http://nationalrail.co.uk/stations/sjp/STO/stationOverview.xhtml,20110601,20120930,
+9100STPADOM,London St Pancras Domestic Rail Station,NR,http://nationalrail.co.uk/stations/sjp/STP/stationOverview.xhtml,20110601,20120930,
+9100STPX,London St Pancras International Rail Station,NR,http://nationalrail.co.uk/stations/sjp/SPX/stationOverview.xhtml,20110601,20120930,
+9100STRBDGJ,Stourbridge Junction Rail Station,LM,http://nationalrail.co.uk/stations/sjp/SBJ/stationOverview.xhtml,20110601,20120930,
+9100STRHCOM,Streatham Common Rail Station,SN,http://nationalrail.co.uk/stations/sjp/SRC/stationOverview.xhtml,20110601,20120930,
+9100STRHILL,Streatham Hill Rail Station,SN,http://nationalrail.co.uk/stations/sjp/SRH/stationOverview.xhtml,20110601,20120930,
+9100STROOD,Strood Rail Station,SE,http://nationalrail.co.uk/stations/sjp/SOO/stationOverview.xhtml,20110601,20120930,
+9100STWMRKT,Stowmarket Rail Station,LE,http://nationalrail.co.uk/stations/sjp/SMK/stationOverview.xhtml,20110601,20120930,
+9100SURBITN,Surbiton Rail Station,SW,http://nationalrail.co.uk/stations/sjp/SUR/stationOverview.xhtml,20110601,20120930,
+9100SURREYQ,Surrey Quays Rail Station,LO,http://nationalrail.co.uk/stations/sjp/SQE/stationOverview.xhtml,20110601,20120930,
+9100SUTCO,Sutton Coldfield Rail Station,LM,http://nationalrail.co.uk/stations/sjp/SUT/stationOverview.xhtml,20110601,20120930,
+9100SUTTON,Sutton (Surrey) Rail Station,SN,http://nationalrail.co.uk/stations/sjp/SUO/stationOverview.xhtml,20110601,20120930,
+9100SVNOAKS,Sevenoaks Rail Station,SE,http://nationalrail.co.uk/stations/sjp/SEV/stationOverview.xhtml,20110601,20120930,
+9100SWANSEA,Swansea Rail Station,AW,http://nationalrail.co.uk/stations/sjp/SWA/stationOverview.xhtml,20110601,20120930,
+9100SYDENHM,Sydenham Rail Station,LO,http://nationalrail.co.uk/stations/sjp/SYD/stationOverview.xhtml,20110601,20120930,
+9100TAUNTON,Taunton Rail Station,GW,http://nationalrail.co.uk/stations/sjp/TAU/stationOverview.xhtml,20110601,20120930,
+9100TEINMTH,Teignmouth Rail Station,GW,http://nationalrail.co.uk/stations/sjp/TGM/stationOverview.xhtml,20110601,20120930,
+9100TELFRDC,Telford Central Rail Station,LM,http://nationalrail.co.uk/stations/sjp/TFC/stationOverview.xhtml,20110601,20120930,
+9100THBDGS,Three Bridges Rail Station,SN,http://nationalrail.co.uk/stations/sjp/TBD/stationOverview.xhtml,20110601,20120930,
+9100TIVIPW,Tiverton Parkway Rail Station,GW,http://nationalrail.co.uk/stations/sjp/TVP/stationOverview.xhtml,20110601,20120930,
+9100TMWTHLL,Tamworth Rail Station,LM,http://nationalrail.co.uk/stations/sjp/TAM/stationOverview.xhtml,20110601,20120930,9100TMWTHHL
+9100TONBDG,Tonbridge Rail Station,SE,http://nationalrail.co.uk/stations/sjp/TON/stationOverview.xhtml,20110601,20120930,
+9100TRURO,Truro Rail Station,GW,http://nationalrail.co.uk/stations/sjp/TRU/stationOverview.xhtml,20110601,20120930,
+9100TTNHMHL,Tottenham Hale Rail Station,LE,http://nationalrail.co.uk/stations/sjp/TOM/stationOverview.xhtml,20110601,20120930,
+9100TUNWELL,Tunbridge Wells Rail Station,SE,http://nationalrail.co.uk/stations/sjp/TBW/stationOverview.xhtml,20110601,20120930,
+9100TWYFORD,Twyford Rail Station,GW,http://nationalrail.co.uk/stations/sjp/TWY/stationOverview.xhtml,20110601,20120930,
+9100UNVRSYB,University Rail Station,LM,http://nationalrail.co.uk/stations/sjp/UNI/stationOverview.xhtml,20110601,20120930,
+9100UPMNSTR,Upminster Rail Station,CC,http://nationalrail.co.uk/stations/sjp/UPM/stationOverview.xhtml,20110601,20120930,9100UPMNSP6
+9100UPRHLWY,Upper Holloway Rail Station,LO,http://nationalrail.co.uk/stations/sjp/UHL/stationOverview.xhtml,20110601,20120930,
+9100VAUXHLM,Vauxhall Rail Station,SW,http://nationalrail.co.uk/stations/sjp/VHX/stationOverview.xhtml,20110601,20120930,9100VAUXHLW
+9100VICTRIC,London Victoria Rail Station,NR,http://nationalrail.co.uk/stations/sjp/VIC/stationOverview.xhtml,20110601,20120930,9100VICTRIE
+9100WALNGTN,Wallington Rail Station,SN,http://nationalrail.co.uk/stations/sjp/WLT/stationOverview.xhtml,20110601,20120930,
+9100WALSALL,Walsall Rail Station,LM,http://nationalrail.co.uk/stations/sjp/WSL/stationOverview.xhtml,20110601,20120930,
+9100WAPPING,Wapping Rail Station,LO,http://nationalrail.co.uk/stations/sjp/WPE/stationOverview.xhtml,20110601,20120930,
+9100WARWPWY,Warwick Parkway Rail Station,CH,http://nationalrail.co.uk/stations/sjp/WRP/stationOverview.xhtml,20110601,20120930,
+9100WATFDHS,Watford High Street Rail Station,LO,http://nationalrail.co.uk/stations/sjp/WFH/stationOverview.xhtml,20110601,20120930,
+9100WATFDJ,Watford Junction Rail Station,LM,http://nationalrail.co.uk/stations/sjp/WFJ/stationOverview.xhtml,20110601,20120930,9100WATFJDC
+9100WATRLMN,London Waterloo Main Rail Station,NR,http://nationalrail.co.uk/stations/sjp/WAT/stationOverview.xhtml,20110601,20120930,
+9100WBRMPTN,West Brompton Rail Station,LO,http://nationalrail.co.uk/stations/sjp/WBP/stationOverview.xhtml,20110601,20120930,
+9100WCHAPEL,Whitechapel Rail Station,LO,http://nationalrail.co.uk/stations/sjp/ZWL/stationOverview.xhtml,20110601,20120930,
+9100WCLIFF,Westcliff Rail Station,CC,http://nationalrail.co.uk/stations/sjp/WCF/stationOverview.xhtml,20110601,20120930,
+9100WCOMBEP,Westcombe Park Rail Station,SE,http://nationalrail.co.uk/stations/sjp/WCB/stationOverview.xhtml,20110601,20120930,
+9100WCROYDN,West Croydon Rail Station,LO,http://nationalrail.co.uk/stations/sjp/WCY/stationOverview.xhtml,20110601,20120930,
+9100WDGRNPK,Woodgrange Park Rail Station,LO,http://nationalrail.co.uk/stations/sjp/WGR/stationOverview.xhtml,20110601,20120930,
+9100WDON,Wimbledon Rail Station,SW,http://nationalrail.co.uk/stations/sjp/WIM/stationOverview.xhtml,20110601,20120930,
+9100WEMBLSM,Wembley Stadium Rail Station,CH,http://nationalrail.co.uk/stations/sjp/WCX/stationOverview.xhtml,20110601,20120930,
+9100WEMYSSB,Wemyss Bay Rail Station,SR,http://nationalrail.co.uk/stations/sjp/WMS/stationOverview.xhtml,20110601,20120930,
+9100WEYBDGB,Weybridge Rail Station,SW,http://nationalrail.co.uk/stations/sjp/WYB/stationOverview.xhtml,20110601,20120930,9100WEYBDGE
+9100WEYMTH,Weymouth Rail Station,SW,http://nationalrail.co.uk/stations/sjp/WEY/stationOverview.xhtml,20110601,20120930,
+9100WHAMHL,West Ham Rail Station,LU,http://nationalrail.co.uk/stations/sjp/WEH/stationOverview.xhtml,20110601,20120930,
+9100WHISTON,Whiston Rail Station,NT,http://nationalrail.co.uk/stations/sjp/WHN/stationOverview.xhtml,20110601,20120930,
+9100WHMDSTD,West Hampstead Rail Station,LO,http://nationalrail.co.uk/stations/sjp/WHD/stationOverview.xhtml,20110601,20120930,
+9100WIGANNW,Wigan North Western Rail Station,VT,http://nationalrail.co.uk/stations/sjp/WGN/stationOverview.xhtml,20110601,20120930,
+9100WIGANWL,Wigan Wallgate Rail Station,NT,http://nationalrail.co.uk/stations/sjp/WGW/stationOverview.xhtml,20110601,20120930,
+9100WIMBLDN,Wimbledon Rail Station,SW,http://nationalrail.co.uk/stations/sjp/WIM/stationOverview.xhtml,20110601,20120930,
+9100WITHAME,Witham Rail Station,LE,http://nationalrail.co.uk/stations/sjp/WTM/stationOverview.xhtml,20110601,20120930,
+9100WKFLDWG,Wakefield Westgate Rail Station,GR,http://nationalrail.co.uk/stations/sjp/WKF/stationOverview.xhtml,20110601,20120930,
+9100WLNGBRO,Wellingborough Rail Station,EM,,20110601,20120930,
+9100WLOE,London Waterloo East Rail Station,SE,http://nationalrail.co.uk/stations/sjp/WAE/stationOverview.xhtml,20110601,20120930,
+9100WLSDJHL,Willesden Junction Rail Station,LO,http://nationalrail.co.uk/stations/sjp/WIJ/stationOverview.xhtml,20110601,20120930,9100WLSDNJL
+9100WLTHQRD,Walthamstow Queens Road Rail Station,LO,http://nationalrail.co.uk/stations/sjp/WMW/stationOverview.xhtml,20110601,20120930,
+9100WLTWCEN,Walthamstow Central Rail Station,LE,http://nationalrail.co.uk/stations/sjp/WHC/stationOverview.xhtml,20110601,20120930,
+9100WLWYNGC,Welwyn Garden City Rail Station,FC,http://nationalrail.co.uk/stations/sjp/WGC/stationOverview.xhtml,20110601,20120930,
+9100WMBY,Wembley Central Rail Station,LO,http://nationalrail.co.uk/stations/sjp/WMB/stationOverview.xhtml,20110601,20120930,9100WMBYDC
+9100WNCHSTR,Winchester Rail Station,SW,http://nationalrail.co.uk/stations/sjp/WIN/stationOverview.xhtml,20110601,20120930,
+9100WNORWOD,West Norwood Rail Station,SN,http://nationalrail.co.uk/stations/sjp/WNW/stationOverview.xhtml,20110601,20120930,
+9100WNSTDPK,Wanstead Park Rail Station,LO,http://nationalrail.co.uk/stations/sjp/WNP/stationOverview.xhtml,20110601,20120930,
+9100WOKING,Woking Rail Station,SW,http://nationalrail.co.uk/stations/sjp/WOK/stationOverview.xhtml,20110601,20120930,
+9100WOLWCHA,Woolwich Arsenal Rail Station,SE,http://nationalrail.co.uk/stations/sjp/WWA/stationOverview.xhtml,20110601,20120930,
+9100WORCSFS,Worcester Foregate Street Rail Station,LM,http://nationalrail.co.uk/stations/sjp/WOF/stationOverview.xhtml,20110601,20120930,
+9100WORTHNG,Worthing Rail Station,SN,http://nationalrail.co.uk/stations/sjp/WRH/stationOverview.xhtml,20110601,20120930,
+9100WRGT,Warrington Central Rail Station,TP,http://nationalrail.co.uk/stations/sjp/WAC/stationOverview.xhtml,20110601,20120930,
+9100WRGTNBQ,Warrington Bank Quay Rail Station,VT,http://nationalrail.co.uk/stations/sjp/WBQ/stationOverview.xhtml,20110601,20120930,
+9100WRUISLP,West Ruislip Rail Station,CH,,20110601,20120930,
+9100WSMARE,Weston-super-Mare Rail Station,GW,http://nationalrail.co.uk/stations/sjp/WSM/stationOverview.xhtml,20110601,20120930,
+9100WSORAER,Windsor & Eton Riverside Rail Station,SW,http://nationalrail.co.uk/stations/sjp/WNR/stationOverview.xhtml,20110601,20120930,
+9100WSTBRYW,Westbury (Wilts) Rail Station,GW,http://nationalrail.co.uk/stations/sjp/WSB/stationOverview.xhtml,20110601,20120930,
+9100WVRMPTN,Wolverhampton Rail Station,VT,http://nationalrail.co.uk/stations/sjp/WVH/stationOverview.xhtml,20110601,20120930,
+9100WVRTTEC,Wavertree Technology Park Rail Station,NT,http://nationalrail.co.uk/stations/sjp/WAV/stationOverview.xhtml,20110601,20120930,
+9100WWICKHM,West Wickham Rail Station,SE,http://nationalrail.co.uk/stations/sjp/WWI/stationOverview.xhtml,20110601,20120930,
+9100YORK,York Rail Station,GR,http://nationalrail.co.uk/stations/sjp/YRK/stationOverview.xhtml,20110601,20120930,
+9300BFR,Blackfriars Millennium Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300BFR1
+9300CAW,Canary Wharf Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300CAW1
+9300EMB,Embankment Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300EMB1
+9300GLP,Greenland Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300GLP1
+9300GNW,Greenwich Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300GNW1
+9300LBR,London Bridge City Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300LBR1
+9300MHT,Masthouse Terrace Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300MHT1
+9300MIL,Queen Elizabeth Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300MIL1
+9300STC,St Katharine's Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300STC1
+9300SWK,Bankside Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300SWK1
+9300TMP,Tower Millennium Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300TMP1
+9300WAS,Woolwich Arsenal Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300WAS1
+9300WMP,London Eye Millennium Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300WMP1
+9300WMR,Westminster Millennium Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300WMR1
+9300WWC,Woolwich Ferry North Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300WWC1
+9300WWS,Woolwich Ferry South Pier,NA,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1177.aspx,20110601,20120930,9300WWS1
+9400ZZCRADD,Addiscombe Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRADD1
+9400ZZCRADV,Addington Village Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRADV1
+9400ZZCRAMP,Ampere Way Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRAMP1|9400ZZCRAMP2
+9400ZZCRARA,Arena Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRARA1
+9400ZZCRAVE,Avenue Road Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRAVE1
+9400ZZCRBED,Beddington Lane Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRBED1
+9400ZZCRBEK,Beckenham Junction Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRBEK1
+9400ZZCRBGV,Belgrave Walk Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRBGV1|9400ZZCRBGV2
+9400ZZCRBIR,Birkbeck Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRBIR1
+9400ZZCRBLA,Blackhorse Lane Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRBLA1
+9400ZZCRBRD,Beckenham Road Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRBRD1
+9400ZZCRCEN,George Street Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRCEN1
+9400ZZCRCHR,Church Street Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRCHR1
+9400ZZCRCOO,Coombe Lane Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRCOO1|9400ZZCRCOO2
+9400ZZCRDDR,Dundonald Road Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRDDR1
+9400ZZCRECR,East Croydon Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRECR1
+9400ZZCRELM,Elmers End Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRELM1
+9400ZZCRFLD,Fieldway Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRFLD1
+9400ZZCRGRA,Gravel Hill Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRGRA1
+9400ZZCRHAR,Harrington Road Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRHAR1
+9400ZZCRKGH,King Henry’s Drive Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRKGH1|9400ZZCRKGH2
+9400ZZCRLEB,Lebanon Road Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRLEB1
+9400ZZCRLOY,Lloyd Park Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRLOY1
+9400ZZCRMCH,Mitcham Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRMCH1
+9400ZZCRMDN,Morden Road Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRMDN1
+9400ZZCRMJT,Mitcham Junction Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRMJT1
+9400ZZCRMTP,Merton Park Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRMTP1
+9400ZZCRNWA,New Addington Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRNWA1
+9400ZZCRPHI,Phipps Bridge Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRPHI1
+9400ZZCRRVC,Reeves Corner Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRRVC1
+9400ZZCRSAN,Sandilands Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRSAN1
+9400ZZCRTPA,Therapia Lane Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRTPA1
+9400ZZCRWAD,Waddon Marsh Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRWAD1|9400ZZCRWAD2
+9400ZZCRWAN,Wandle Park Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRWAN1
+9400ZZCRWCR,West Croydon Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRWCR1
+9400ZZCRWEL,Wellesley Road Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRWEL1
+9400ZZCRWMB,Wimbledon Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRWMB1
+9400ZZCRWOD,Woodside Tramlink Stop,CR,http://www.tfl.gov.uk/gettingaround/transportaccessibility/1173.aspx,20110601,20120930,9400ZZCRWOD1
+9400ZZDLABR,Abbey Road DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLABR1|9400ZZDLABR2
+9400ZZDLALL,All Saints DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLALL1
+9400ZZDLBEC,Beckton DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLBEC1
+9400ZZDLBLA,Blackwall DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLBLA1
+9400ZZDLBNK,Bank DLR Station,DL,http://www.directenquiries.com/information/Bank%20Monument%20Complex/74213/stationplanroute/information.aspx ,20110601,20120930,9400ZZDLBNK1
+9400ZZDLBOW,Bow Church DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLBOW1
+9400ZZDLBPK,Beckton Park DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLBPK1
+9400ZZDLCAN,Canary Wharf DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLCAN1
+9400ZZDLCGT,Canning Town DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLCGT1|9400ZZDLCGT2|9400ZZDLCGT3|9400ZZDLCGT4
+9400ZZDLCLA,Crossharbour DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLCLA1
+9400ZZDLCUS,Custom House DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLCUS1
+9400ZZDLCUT,Cutty Sark DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLCUT1
+9400ZZDLCYP,Cyprus DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLCYP1
+9400ZZDLDEP,Deptford Bridge DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLDEP1
+9400ZZDLDEV,Devons Road DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLDEV1
+9400ZZDLEIN,East India DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLEIN1
+9400ZZDLELV,Elverson Road DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLELV1
+9400ZZDLGAL,Gallions Reach DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLGAL1
+9400ZZDLGRE,Greenwich DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLGRE1
+9400ZZDLHEQ,Heron Quays DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLHEQ1
+9400ZZDLISL,Island Gardens DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLISL1
+9400ZZDLKGV,King George V DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLKGV1
+9400ZZDLLCA,London City Airport DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLLCA1
+9400ZZDLLDP,Langdon Park DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLLDP1|9400ZZDLLDP2
+9400ZZDLLEW,Lewisham DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLLEW1
+9400ZZDLLIM,Limehouse DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLLIM1
+9400ZZDLMUD,Mudchute DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLMUD1
+9400ZZDLPDK,Pontoon Dock DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLPDK1
+9400ZZDLPOP,Poplar  DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLPOP1
+9400ZZDLPRE,Prince Regent DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLPRE1
+9400ZZDLRAL,Royal Albert DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLRAL1
+9400ZZDLRVC,Royal Victoria DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLRVC1
+9400ZZDLSHA,Shadwell DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLSHA1
+9400ZZDLSHS,Stratford High Street DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLSHS1|9400ZZDLSHS2
+9400ZZDLSIT,Stratford International DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLSIT1|9400ZZDLSIT2
+9400ZZDLSOQ,South Quay DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLSOQ1
+9400ZZDLSTD,Stratford DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLSTD1|9400ZZDLSTD2|9400ZZDLSTD3|9400ZZDLSTD4
+9400ZZDLSTL,Star Lane DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLSTL1|9400ZZDLSTL2
+9400ZZDLTWG,Tower Gateway DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLTWG1
+9400ZZDLWFE,Westferry DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLWFE1|9400ZZDLWFE2
+9400ZZDLWHM,West Ham DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLWHM1|9400ZZDLWHM2
+9400ZZDLWIQ,West India Quay DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLWIQ1
+9400ZZDLWLA,Woolwich Arsenal DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLWLA1|9400ZZDLWLA2
+9400ZZDLWSV,West Silvertown DLR Station,DL,http://www.london2012.com/visiting/getting-to-the-games/plan-your-travel/accessible-travel/docklands-light-railway-accessibility.php,20110601,20120930,9400ZZDLWSV1
+9400ZZLUACT,Acton Town Underground Station,LU,http://www.directenquiries.com/information/Acton%20Town/74202/stationplanroute/information.aspx,20110601,20120930,9400ZZLUACT1|9400ZZLUACT2|9400ZZLUACT3|9400ZZLUACT4
+9400ZZLUACY,Archway Underground Station,LU,http://www.directenquiries.com/information/Archway/74208/stationplanroute/information.aspx,20110601,20120930,9400ZZLUACY1
+9400ZZLUADE,Aldgate East Underground Station,LU,http://www.directenquiries.com/information/Aldgate%20East/74204/stationplanroute/information.aspx,20110601,20120930,9400ZZLUADE1|9400ZZLUADE2
+9400ZZLUAGL,Angel Underground Station,LU,http://www.directenquiries.com/information/Angel/74207/stationplanroute/information.aspx,20110601,20120930,9400ZZLUAGL1
+9400ZZLUALD,Aldgate Underground Station,LU,http://www.directenquiries.com/information/Aldgate/74203/stationplanroute/information.aspx,20110601,20120930,9400ZZLUALD1|9400ZZLUALD2|9400ZZLUALD3|9400ZZLUALD4
+9400ZZLUALP,Alperton Underground Station,LU,http://www.directenquiries.com/information/Alperton/74205/stationplanroute/information.aspx,20110601,20120930,9400ZZLUALP1|9400ZZLUALP2
+9400ZZLUAMS,Amersham Underground Station,LU,http://www.directenquiries.com/information/Amersham/74206/stationplanroute/information.aspx,20110601,20120930,9400ZZLUAMS1|9400ZZLUAMS2
+9400ZZLUASG,Arnos Grove Underground Station,LU,http://www.directenquiries.com/information/Arnos%20Grove/74209/stationplanroute/information.aspx,20110601,20120930,9400ZZLUASG1|9400ZZLUASG2|9400ZZLUASG3
+9400ZZLUASL,Arsenal Underground Station,LU,http://www.directenquiries.com/information/Arsenal/74210/stationplanroute/information.aspx,20110601,20120930,9400ZZLUASL1
+9400ZZLUBBB,Bromley-by-Bow Underground Station,LU,http://www.directenquiries.com/information/Bromley-by-Bow/74232/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBBB1|9400ZZLUBBB2
+9400ZZLUBBN,Barbican Underground Station,LU,http://www.directenquiries.com/information/Barbican/74214/stationplanroute/information.aspx ,20110601,20120930,9400ZZLUBBN1|9400ZZLUBBN2
+9400ZZLUBDS,Bounds Green Underground Station,LU,http://www.directenquiries.com/information/Bounds%20Green/74228/stationplanroute/information.aspx,,20120930,9400ZZLUBDS1
+9400ZZLUBEC,Becontree Underground Station,LU,http://www.directenquiries.com/information/Becontree/74219/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBEC1|9400ZZLUBEC2
+9400ZZLUBKE,Barkingside Underground Station,LU,http://www.directenquiries.com/information/Barkingside/74216/stationplanroute/information.aspx ,20110601,20120930,9400ZZLUBKE1|9400ZZLUBKE2
+9400ZZLUBKF,Blackfriars Underground Station,LU,http://www.directenquiries.com/information/Blackfriars/74223/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBKF1|9400ZZLUBKF2
+9400ZZLUBKG,Barking Underground Station,LU,http://www.directenquiries.com/information/Barking/74215/stationplanroute/information.aspx ,20110601,20120930,9400ZZLUBKG1|9400ZZLUBKG2|9400ZZLUBKG3
+9400ZZLUBKH,Buckhurst Hill Underground Station,LU,http://www.directenquiries.com/information/Buckhurst%20Hill/74233/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBKH1|9400ZZLUBKH2
+9400ZZLUBLG,Bethnal Green Underground Station,LU,http://www.directenquiries.com/information/Bethnal%20Green/74222/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBLG1
+9400ZZLUBLM,Balham Underground Station,LU,http://www.directenquiries.com/information/Balham/74212/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBLM1
+9400ZZLUBLR,Blackhorse Road Underground Station,LU,http://www.directenquiries.com/information/Blackhorse%20Road/74224/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBLR1
+9400ZZLUBMY,Bermondsey Underground Station,LU,http://www.directenquiries.com/information/Bermondsey/74221/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBMY1
+9400ZZLUBND,Bond Street Underground Station,LU,http://www.directenquiries.com/information/Bond%20Street/74225/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBND1|9400ZZLUBND2|9400ZZLUBND3
+9400ZZLUBNK,Bank Underground Station,LU,http://www.directenquiries.com/information/Bank%20Monument%20Complex/74213/stationplanroute/information.aspx ,20110601,20120930,9400ZZLUBNK1|9400ZZLUBNK2|9400ZZLUBNK3|9400ZZLUBNK4|9400ZZLUBNK5
+9400ZZLUBOR,Borough Underground Station,LU,http://www.directenquiries.com/information/Borough/74226/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBOR1|9400ZZLUBOR2
+9400ZZLUBOS,Boston Manor Underground Station,LU,http://www.directenquiries.com/information/Boston%20Manor/74227/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBOS1|9400ZZLUBOS2
+9400ZZLUBSC,Barons Court Underground Station,LU,http://www.directenquiries.com/information/Barons%20Court/74217/stationplanroute/information.aspx ,20110601,20120930,9400ZZLUBSC1|9400ZZLUBSC2|9400ZZLUBSC3|9400ZZLUBSC4
+9400ZZLUBST,Baker Street Underground Station,LU,http://www.directenquiries.com/information/Baker%20Street/74211/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBST1|9400ZZLUBST2|9400ZZLUBST3|9400ZZLUBST4|9400ZZLUBST5|9400ZZLUBST6|9400ZZLUBST7|9400ZZLUBST8
+9400ZZLUBTK,Burnt Oak Underground Station,LU,http://www.directenquiries.com/information/Burnt%20Oak/74234/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBTK1
+9400ZZLUBTX,Brent Cross Underground Station,LU,http://www.directenquiries.com/information/Brent%20Cross/74230/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBTX1
+9400ZZLUBWR,Bow Road Underground Station,LU,http://www.directenquiries.com/information/Bow%20Road/74229/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBWR1|9400ZZLUBWR2
+9400ZZLUBWT,Bayswater Underground Station,LU,http://www.directenquiries.com/information/Bayswater/74218/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBWT1|9400ZZLUBWT2
+9400ZZLUBXN,Brixton Underground Station,LU,http://www.directenquiries.com/information/Brixton/74231/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBXN1
+9400ZZLUBZP,Belsize Park Underground Station,LU,http://www.directenquiries.com/information/Belsize%20Park/74220/stationplanroute/information.aspx,20110601,20120930,9400ZZLUBZP1
+9400ZZLUCAL,Chalfont & Latimer Underground Station,LU,http://www.directenquiries.com/information/Chalfont%20%20and%20amp;%20Latimer/74242/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCAL1|9400ZZLUCAL2
+9400ZZLUCAR,Caledonian Road Underground Station,LU,http://www.directenquiries.com/information/Caledonian%20Road/74235/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCAR1
+9400ZZLUCFM,Chalk Farm Underground Station,LU,http://www.directenquiries.com/information/Chalk%20Farm/74243/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCFM1
+9400ZZLUCGN,Covent Garden Underground Station,LU,http://www.directenquiries.com/information/Covent%20Garden/74256/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCGN1
+9400ZZLUCGT,Canning Town Underground Station,LU,http://www.directenquiries.com/information/Canning%20Town/74239/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCGT1|9400ZZLUCGT2
+9400ZZLUCHL,Chancery Lane Underground Station,LU,http://www.directenquiries.com/information/Chancery%20Lane/74244/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCHL1|9400ZZLUCHL2
+9400ZZLUCHX,Charing Cross Underground Station,LU,http://www.directenquiries.com/information/Charing%20Cross/74245/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCHX1|9400ZZLUCHX2|9400ZZLUCHX3|9400ZZLUCHX4|9400ZZLUCHX5
+9400ZZLUCKS,Cockfosters Underground Station,LU,http://www.directenquiries.com/information/Cockfosters/74253/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCKS1
+9400ZZLUCND,Colindale Underground Station,LU,http://www.directenquiries.com/information/Colindale/74254/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCND1
+9400ZZLUCPC,Clapham Common Underground Station,LU,http://www.directenquiries.com/information/Clapham%20Common/74250/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCPC1
+9400ZZLUCPK,Canons Park Underground Station,LU,http://www.directenquiries.com/information/Canons%20Park/74241/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCPK1|9400ZZLUCPK2
+9400ZZLUCPN,Clapham North Underground Station,LU,http://www.directenquiries.com/information/Clapham%20North/74251/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCPN1
+9400ZZLUCPS,Clapham South Underground Station,LU,http://www.directenquiries.com/information/Clapham%20South/74252/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCPS1
+9400ZZLUCSD,Colliers Wood Underground Station,LU,http://www.directenquiries.com/information/Colliers%20Wood/74255/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCSD1
+9400ZZLUCSM,Chesham Underground Station,LU,http://www.directenquiries.com/information/Chesham/74246/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCSM1
+9400ZZLUCST,Cannon Street Underground Station,LU,http://www.directenquiries.com/information/Cannon%20Street/74240/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCST1|9400ZZLUCST2
+9400ZZLUCTN,Camden Town Underground Station,LU,http://www.directenquiries.com/information/Camden%20Town/74236/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCTN1|9400ZZLUCTN2|9400ZZLUCTN3|9400ZZLUCTN4
+9400ZZLUCWL,Chigwell Underground Station,LU,http://www.directenquiries.com/information/Chigwell/74247/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCWL1|9400ZZLUCWL2
+9400ZZLUCWP,Chiswick Park Underground Station,LU,http://www.directenquiries.com/information/Chiswick%20Park/74248/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCWP1|9400ZZLUCWP2
+9400ZZLUCWR,Canada Water Underground Station,LU,http://www.directenquiries.com/information/Canada%20Water/74237/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCWR1|9400ZZLUCWR2|9400ZZLUCWR3
+9400ZZLUCXY,Croxley Underground Station,LU,http://www.directenquiries.com/information/Croxley/74257/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCXY1|9400ZZLUCXY2
+9400ZZLUCYD,Chorleywood Underground Station,LU,http://www.directenquiries.com/information/Chorleywood/74249/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCYD1|9400ZZLUCYD2
+9400ZZLUCYF,Canary Wharf Underground Station,LU,http://www.directenquiries.com/information/Canary%20Wharf/74238/stationplanroute/information.aspx,20110601,20120930,9400ZZLUCYF1
+9400ZZLUDBN,Debden Underground Station,LU,http://www.directenquiries.com/information/Debden/74260/stationplanroute/information.aspx,20110601,20120930,9400ZZLUDBN1|9400ZZLUDBN2
+9400ZZLUDGE,Dagenham East Underground Station,LU,http://www.directenquiries.com/information/Dagenham%20East/74258/stationplanroute/information.aspx,20110601,20120930,9400ZZLUDGE1|9400ZZLUDGE2
+9400ZZLUDGY,Dagenham Heathway Underground Station,LU,http://www.directenquiries.com/information/Dagenham%20Heathway/74259/stationplanroute/information.aspx,20110601,20120930,9400ZZLUDOH1
+9400ZZLUDOH,Dollis Hill Underground Station,LU,http://www.directenquiries.com/information/Dollis%20Hill/74261/stationplanroute/information.aspx,20110601,20120930,9400ZZLUDOH1
+9400ZZLUEAC,Elephant & Castle Underground Station,LU,http://www.directenquiries.com/information/Elephant%20%20and%20amp;%20Castle/74273/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEAC1|9400ZZLUEAC2|9400ZZLUEAC3|9400ZZLUEAC4
+9400ZZLUEAE,Eastcote Underground Station,LU,http://www.directenquiries.com/information/Eastcote/74269/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEAE1|9400ZZLUEAE2
+9400ZZLUEAN,East Acton Underground Station,LU,http://www.directenquiries.com/information/East%20Acton/74265/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEAN1|9400ZZLUEAN2
+9400ZZLUEBY,Ealing Broadway Underground Station,LU,http://www.directenquiries.com/information/Ealing%20Broadway/74262/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEBY1|9400ZZLUEBY2|9400ZZLUEBY3|9400ZZLUEBY4
+9400ZZLUECM,Ealing Common Underground Station,LU,http://www.directenquiries.com/information/Ealing%20Common/74263/stationplanroute/information.aspx,20110601,20120930,9400ZZLUECM1|9400ZZLUECM2
+9400ZZLUECT,Earls Court Underground Station,LU,http://www.directenquiries.com/information/Earl's%20Court/74264/stationplanroute/information.aspx,20110601,20120930,9400ZZLUECT1|9400ZZLUECT2|9400ZZLUECT3|9400ZZLUECT4
+9400ZZLUEFY,East Finchley Underground Station,LU,http://www.directenquiries.com/information/East%20Finchley/74266/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEFY1|9400ZZLUEFY2
+9400ZZLUEGW,Edgware Underground Station,LU,http://www.directenquiries.com/information/Edgware/74270/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEGW1
+9400ZZLUEHM,East Ham Underground Station,LU,http://www.directenquiries.com/information/East%20Ham/74267/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEHM1|9400ZZLUEHM2
+9400ZZLUEMB,Embankment Underground Station,LU,http://www.directenquiries.com/information/Embankment/74275/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEMB1|9400ZZLUEMB2|9400ZZLUEMB3|9400ZZLUEMB4|9400ZZLUEMB5|9400ZZLUEMB6
+9400ZZLUEPG,Epping Underground Station,LU,http://www.directenquiries.com/information/Epping/74276/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEPG1|9400ZZLUEPG2
+9400ZZLUEPK,Elm Park Underground Station,LU,http://www.directenquiries.com/information/Elm%20Park/74274/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEPK1
+9400ZZLUEPY,East Putney Underground Station,LU,http://www.directenquiries.com/information/East%20Putney/74268/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEPY1|9400ZZLUEPY2
+9400ZZLUERB,Edgware Road Bakerloo Underground Station,LU,http://www.directenquiries.com/information/Edgware%20Road%20(B)/74271/stationplanroute/information.aspx,20110601,20120930,9400ZZLUERB1|9400ZZLUERB2
+9400ZZLUERC,Edgware Road Met Underground Station,LU,http://www.directenquiries.com/information/Edgware%20Road%20(C%20and%20amp;H)/74272/stationplanroute/information.aspx,20110601,20120930,9400ZZLUERC1|9400ZZLUERC2|9400ZZLUERC3|9400ZZLUERC4
+9400ZZLUESQ,Euston Square Underground Station,LU,http://www.directenquiries.com/information/Euston%20Square/74278/stationplanroute/information.aspx,20110601,20120930,9400ZZLUESQ1|9400ZZLUESQ2
+9400ZZLUEUS,Euston Underground Station,LU,http://www.directenquiries.com/information/Euston/74277/stationplanroute/information.aspx,20110601,20120930,9400ZZLUEUS1|9400ZZLUEUS2|9400ZZLUEUS3|9400ZZLUEUS4|9400ZZLUEUS5|9400ZZLUEUS6
+9400ZZLUFBY,Fulham Broadway Underground Station,LU,http://www.directenquiries.com/information/Fulham%20Broadway/74284/stationplanroute/information.aspx,20110601,20120930,9400ZZLUFBY1|9400ZZLUFBY2
+9400ZZLUFCN,Farringdon Underground Station,LU,http://www.directenquiries.com/information/Farringdon/74280/stationplanroute/information.aspx,20110601,20120930,9400ZZLUFCN1|9400ZZLUFCN2|9400ZZLUFCN3|9400ZZLUFCN4
+9400ZZLUFLP,Fairlop Underground Station,LU,http://www.directenquiries.com/information/Fairlop/74279/stationplanroute/information.aspx,20110601,20120930,9400ZZLUFLP1|9400ZZLUFLP2
+9400ZZLUFPK,Finsbury Park Underground Station,LU,http://www.directenquiries.com/information/Finsbury%20Park/74283/stationplanroute/information.aspx,20110601,20120930,9400ZZLUFPK1|9400ZZLUFPK2|9400ZZLUFPK3|9400ZZLUFPK4
+9400ZZLUFYC,Finchley Central Underground Station,LU,http://www.directenquiries.com/information/Finchley%20Central/74281/stationplanroute/information.aspx,20110601,20120930,9400ZZLUFYC1|9400ZZLUFYC2
+9400ZZLUFYR,Finchley Road Underground Station,LU,http://www.directenquiries.com/information/Finchley%20Road/74282/stationplanroute/information.aspx,20110601,20120930,9400ZZLUFYR1|9400ZZLUFYR2|9400ZZLUFYR3|9400ZZLUFYR4
+9400ZZLUGBY,Gunnersbury Underground Station,LU,http://www.directenquiries.com/information/Gunnersbury/74294/stationplanroute/information.aspx,20110601,20120930,9400ZZLUGBY1
+9400ZZLUGDG,Goodge Street Underground Station,LU,http://www.directenquiries.com/information/Goodge%20Street/74289/stationplanroute/information.aspx,20110601,20120930,9400ZZLUGDG1
+9400ZZLUGFD,Greenford Underground Station,LU,http://www.directenquiries.com/information/Greenford/74293/stationplanroute/information.aspx,20110601,20120930,9400ZZLUGFD1|9400ZZLUGFD2
+9400ZZLUGGH,Grange Hill Underground Station,LU,http://www.directenquiries.com/information/Grange%20Hill/74290/stationplanroute/information.aspx,20110601,20120930,9400ZZLUGGH1|9400ZZLUGGH2
+9400ZZLUGGN,Golders Green Underground Station,LU,http://www.directenquiries.com/information/Golders%20Green/74287/stationplanroute/information.aspx,20110601,20120930,9400ZZLUGGN1
+9400ZZLUGHK,Goldhawk Road Underground Station,LU,http://www.directenquiries.com/information/Goldhawk%20Road/74288/stationplanroute/information.aspx,20110601,20120930,9400ZZLUGHK1|9400ZZLUGHK2
+9400ZZLUGPK,Green Park Underground Station,LU,http://www.directenquiries.com/information/Green%20Park/74292/stationplanroute/information.aspx,20110601,20120930,9400ZZLUGPK1|9400ZZLUGPK2|9400ZZLUGPK3|9400ZZLUGPK4|9400ZZLUGPK5
+9400ZZLUGPS,Great Portland Street Underground Station,LU,http://www.directenquiries.com/information/Great%20Portland%20Street/74291/stationplanroute/information.aspx,20110601,20120930,9400ZZLUGPS1|9400ZZLUGPS2
+9400ZZLUGTH,Gants Hill Underground Station,LU,http://www.directenquiries.com/information/Gants%20Hill/74285/stationplanroute/information.aspx,20110601,20120930,9400ZZLUGTH1
+9400ZZLUGTR,Gloucester Road Underground Station,LU,http://www.directenquiries.com/information/Gloucester%20Road/74286/stationplanroute/information.aspx,20110601,20120930,9400ZZLUGTR1|9400ZZLUGTR2|9400ZZLUGTR3|9400ZZLUGTR4|9400ZZLUGTR5
+9400ZZLUHAI,Highbury & Islington Underground Station,LU,http://www.directenquiries.com/information/Highbury%20%20and%20amp;%20Islington/74309/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHAI1|9400ZZLUHAI2
+9400ZZLUHAW,Harrow & Wealdstone Underground Station,LU,http://www.directenquiries.com/information/Harrow%20%20and%20amp;%20Wealdstone/74301/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHAW1
+9400ZZLUHBN,Holborn Underground Station,LU,http://www.directenquiries.com/information/Holborn/74312/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHBN1|9400ZZLUHBN2|9400ZZLUHBN3|9400ZZLUHBN4
+9400ZZLUHBT,High Barnet Underground Station,LU,http://www.directenquiries.com/information/High%20Barnet/74307/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHBT1
+9400ZZLUHCH,Hornchurch Underground Station,LU,http://www.directenquiries.com/information/Hornchurch/74315/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHCH1|9400ZZLUHCH2
+9400ZZLUHCL,Hendon Central Underground Station,LU,http://www.directenquiries.com/information/Hendon%20Central/74306/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHCL1
+9400ZZLUHGD,Hillingdon Underground Station,LU,http://www.directenquiries.com/information/Hillingdon/74311/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHGD1|9400ZZLUHGD2
+9400ZZLUHGR,Hanger Lane Underground Station,LU,http://www.directenquiries.com/information/Hanger%20Lane/74299/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHGR1
+9400ZZLUHGT,Highgate Underground Station,LU,http://www.directenquiries.com/information/Highgate/74310/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHGT1
+9400ZZLUHLT,Hainault Underground Station,LU,http://www.directenquiries.com/information/Hainault/74295/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHLT1
+9400ZZLUHNX,Hatton Cross Underground Station,LU,http://www.directenquiries.com/information/Hatton%20Cross/74303/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHNX1
+9400ZZLUHOH,Harrow-on-the Hill Underground Station,LU,http://www.directenquiries.com/information/Harrow-on-the-Hill/74302/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHOH1|9400ZZLUHOH2
+9400ZZLUHPC,Hyde Park Corner Underground Station,LU,http://www.directenquiries.com/information/Hyde%20Park%20Corner/74319/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHPC1
+9400ZZLUHPK,Holland Park Underground Station,LU,http://www.directenquiries.com/information/Holland%20Park/74313/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHPK1
+9400ZZLUHR4,Heathrow T4 Underground Station,LU,http://www.directenquiries.com/information/Heathrow%20T4/74304/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHR41
+9400ZZLUHR5,Heathrow T5 Underground Station,LU,http://www.directenquiries.com/information/Heathrow%20T5/88821/stationplanroute/information.aspx ,20110601,20120930,9400ZZLUHR51
+9400ZZLUHRC,Heathrow T123 Underground Station,LU,http://www.directenquiries.com/information/Heathrow%20T123/74305/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHRC1
+9400ZZLUHSC,Hammersmith (H&C) Underground Station,LU,http://www.directenquiries.com/information/Hammersmith%20(H%20and%20amp;C%20Line)/74297/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHSC1
+9400ZZLUHSD,Hammersmith (D& Pic) Underground Station,LU,http://www.directenquiries.com/information/Hammersmith%20(Dist%20and%20amp;Picc%20Line)/74296/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHSD1|9400ZZLUHSD2|9400ZZLUHSD3|9400ZZLUHSD4
+9400ZZLUHSK,High Street Kensington Underground Station,LU,http://www.directenquiries.com/information/High%20Street%20Kensington/74308/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHSK1|9400ZZLUHSK2
+9400ZZLUHSN,Harlesden Underground Station,LU,http://www.directenquiries.com/information/Harlesden/74300/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHSN1
+9400ZZLUHTD,Hampstead Underground Station,LU,http://www.directenquiries.com/information/Hampstead/74298/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHTD1
+9400ZZLUHWC,Hounslow Central Underground Station,LU,http://www.directenquiries.com/information/Hounslow%20Central/74316/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHWC1
+9400ZZLUHWE,Hounslow East Underground Station,LU,http://www.directenquiries.com/information/Hounslow%20East/74317/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHWE1|9400ZZLUHWE2
+9400ZZLUHWT,Hounslow West Underground Station,LU,http://www.directenquiries.com/information/Hounslow%20West/74318/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHWT1
+9400ZZLUHWY,Holloway Road Underground Station,LU,http://www.directenquiries.com/information/Holloway%20Road/74314/stationplanroute/information.aspx,20110601,20120930,9400ZZLUHWY1
+9400ZZLUICK,Ickenham Underground Station,LU,http://www.directenquiries.com/information/Ickenham/74320/stationplanroute/information.aspx,20110601,20120930,9400ZZLUICK1|9400ZZLUICK2
+9400ZZLUKBN,Kilburn Underground Station,LU,http://www.directenquiries.com/information/Kilburn/74327/stationplanroute/information.aspx,20110601,20120930,9400ZZLUKBN1
+9400ZZLUKBY,Kingsbury Underground Station,LU,http://www.directenquiries.com/information/Kingsbury/74330/stationplanroute/information.aspx,20110601,20120930,9400ZZLUKBY1
+9400ZZLUKEN,Kenton Underground Station,LU,http://www.directenquiries.com/information/Kenton/74325/stationplanroute/information.aspx,20110601,20120930,9400ZZLUKEN1
+9400ZZLUKNB,Knightsbridge Underground Station,LU,http://www.directenquiries.com/information/Knightsbridge/74331/stationplanroute/information.aspx,20110601,20120930,9400ZZLUKNB1
+9400ZZLUKNG,Kennington Underground Station,LU,http://www.directenquiries.com/information/Kennington/74321/stationplanroute/information.aspx,20110601,20120930,9400ZZLUKNG1|9400ZZLUKNG2
+9400ZZLUKOY,Kensington Olympia Underground Station,LU,http://www.directenquiries.com/information/Kensington%20(Olympia)/74323/stationplanroute/information.aspx,20110601,20120930,9400ZZLUKOY1
+9400ZZLUKPK,Kilburn Park Underground Station,LU,http://www.directenquiries.com/information/Kilburn%20Park/74328/stationplanroute/information.aspx,20110601,20120930,9400ZZLUKPK1
+9400ZZLUKSH,Kentish Town Underground Station,LU,http://www.directenquiries.com/information/Kentish%20Town/74324/stationplanroute/information.aspx,20110601,20120930,9400ZZLUKSH1|9400ZZLUKSH2
+9400ZZLUKSL,Kensal Green Underground Station,LU,http://www.directenquiries.com/information/Kensal%20Green/74322/stationplanroute/information.aspx,20110601,20120930,9400ZZLUKSL1
+9400ZZLUKSX,King’s Cross St. Pancras Underground Station,LU,http://www.directenquiries.com/information/King%27s%20Cross%20St%20Pancras/74329/stationplanroute/information.aspx,20110601,20120930,9400ZZLUKSX1|9400ZZLUKSX2|9400ZZLUKSX3|9400ZZLUKSX4|9400ZZLUKSX5|9400ZZLUKSX6|9400ZZLUKSX7
+9400ZZLUKWG,Kew Gardens Underground Station,LU,http://www.directenquiries.com/information/Kew%20Gardens/74326/stationplanroute/information.aspx,20110601,20120930,9400ZZLUKWG1|9400ZZLUKWG2
+9400ZZLULAD,Ladbroke Grove Underground Station,LU,http://www.directenquiries.com/information/Ladbroke%20Grove/74332/stationplanroute/information.aspx,20110601,20120930,9400ZZLULAD1|9400ZZLULAD2
+9400ZZLULBN,Lambeth North Underground Station,LU,http://www.directenquiries.com/information/Lambeth%20North/74333/stationplanroute/information.aspx,20110601,20120930,9400ZZLULBN1
+9400ZZLULGN,Loughton Underground Station,LU,http://www.directenquiries.com/information/Loughton/74341/stationplanroute/information.aspx,20110601,20120930,9400ZZLULGN1|9400ZZLULGN2
+9400ZZLULGT,Lancaster Gate Underground Station,LU,http://www.directenquiries.com/information/Lancaster%20Gate/74334/stationplanroute/information.aspx,20110601,20120930,9400ZZLULGT1
+9400ZZLULNB,London Bridge Underground Station,LU,http://www.directenquiries.com/information/London%20Bridge/74340/stationplanroute/information.aspx,20110601,20120930,9400ZZLULNB1|9400ZZLULNB2
+9400ZZLULRD,Latimer Road Underground Station,LU,http://www.directenquiries.com/information/Latimer%20Road/74335/stationplanroute/information.aspx,20110601,20120930,9400ZZLULRD1|9400ZZLULRD2
+9400ZZLULSQ,Leicester Square Underground Station,LU,http://www.directenquiries.com/information/Leicester%20Square/74336/stationplanroute/information.aspx,20110601,20120930,9400ZZLULSQ1|9400ZZLULSQ2|9400ZZLULSQ3
+9400ZZLULVT,Liverpool Street Underground Station,LU,http://www.directenquiries.com/information/Liverpool%20Street%20%28Central%29/74339/stationplanroute/information.aspx,20110601,20120930,9400ZZLULVT1|9400ZZLULVT2|9400ZZLULVT3|9400ZZLULVT4
+9400ZZLULYN,Leyton Underground Station,LU,http://www.directenquiries.com/information/Leyton/74337/stationplanroute/information.aspx,20110601,20120930,9400ZZLULYN1|9400ZZLULYN2
+9400ZZLULYS,Leytonstone Underground Station,LU,http://www.directenquiries.com/information/Leytonstone/74338/stationplanroute/information.aspx,20110601,20120930,9400ZZLULYS1|9400ZZLULYS2
+9400ZZLUMBA,Marble Arch Underground Station,LU,http://www.directenquiries.com/information/Marble%20Arch/74345/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMBA1
+9400ZZLUMDN,Morden Underground Station,LU,http://www.directenquiries.com/information/Morden/74351/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMDN1|9400ZZLUMDN2
+9400ZZLUMED,Mile End Underground Station,LU,http://www.directenquiries.com/information/Mile%20End/74347/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMED1|9400ZZLUMED2|9400ZZLUMED3|9400ZZLUMED4
+9400ZZLUMGT,Moorgate Underground Station,LU,http://www.directenquiries.com/information/Moorgate%20(C%20and%20amp;H)/74350/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMGT1|9400ZZLUMGT2|9400ZZLUMGT3|9400ZZLUMGT4
+9400ZZLUMHL,Mill Hill East Underground Station,LU,http://www.directenquiries.com/information/Mill%20Hill%20East/74348/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMHL1
+9400ZZLUMMT,Monument Underground Station,LU,http://www.directenquiries.com/information/Bank%20Monument%20Complex/74213/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMMT1|9400ZZLUMMT2
+9400ZZLUMPK,Moor Park Underground Station,LU,http://www.directenquiries.com/information/Moor%20Park/74349/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMPK1|9400ZZLUMPK2|9400ZZLUMPK3
+9400ZZLUMRH,Manor House Underground Station,LU,http://www.directenquiries.com/information/Manor%20House/74343/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMRH1
+9400ZZLUMSH,Mansion House Underground Station,LU,http://www.directenquiries.com/information/Mansion%20House/74344/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMSH1|9400ZZLUMSH2|9400ZZLUMSH3
+9400ZZLUMTC,Mornington Crescent Underground Station,LU,http://www.directenquiries.com/information/Mornington%20Crescent/74352/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMTC1
+9400ZZLUMVL,Maida Vale Underground Station,LU,http://www.directenquiries.com/information/Maida%20Vale/74342/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMVL1
+9400ZZLUMYB,Marylebone Underground Station,LU,http://www.directenquiries.com/information/Marylebone/74346/stationplanroute/information.aspx,20110601,20120930,9400ZZLUMYB1|9400ZZLUMYB2
+9400ZZLUNAN,North Acton Underground Station,LU,http://www.directenquiries.com/information/North%20Acton/74357/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNAN1|9400ZZLUNAN2
+9400ZZLUNBP,Newbury Park Underground Station,LU,http://www.directenquiries.com/information/Newbury%20Park/74356/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNBP1|9400ZZLUNBP2
+9400ZZLUNDN,Neasden Underground Station,LU,http://www.directenquiries.com/information/Neasden/74353/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNDN1
+9400ZZLUNEN,North Ealing Underground Station,LU,http://www.directenquiries.com/information/North%20Ealing/74358/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNEN1|9400ZZLUNEN2
+9400ZZLUNFD,Northfields Underground Station,LU,http://www.directenquiries.com/information/Northfields/74362/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNFD1|9400ZZLUNFD2
+9400ZZLUNGW,North Greenwich Underground Station,LU,http://www.directenquiries.com/information/North%20Greenwich/74359/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNGW1|9400ZZLUNGW2
+9400ZZLUNHA,North Harrow Underground Station,LU,http://www.directenquiries.com/information/North%20Harrow/74360/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNHA1|9400ZZLUNHA2
+9400ZZLUNHG,Notting Hill Gate Underground Station,LU,http://www.directenquiries.com/information/Notting%20Hill%20Gate/74367/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNHG1|9400ZZLUNHG2|9400ZZLUNHG3|9400ZZLUNHG4
+9400ZZLUNHT,Northolt Underground Station,LU,http://www.directenquiries.com/information/Northolt/74363/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNHT1
+9400ZZLUNKP,Northwick Park Underground Station,LU,http://www.directenquiries.com/information/Northwick%20Park/74364/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNKP1
+9400ZZLUNOW,Northwood Underground Station,LU,http://www.directenquiries.com/information/Northwood/74365/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNOW1|9400ZZLUNOW2
+9400ZZLUNWH,Northwood Hills Underground Station,LU,http://www.directenquiries.com/information/Northwood%20Hills/74366/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNWH1|9400ZZLUNWH2
+9400ZZLUNWY,North Wembley Underground Station,LU,http://www.directenquiries.com/information/North%20Wembley/74361/stationplanroute/information.aspx,20110601,20120930,9400ZZLUNWY1
+9400ZZLUOAK,Oakwood Underground Station,LU,http://www.directenquiries.com/information/Oakwood/74368/stationplanroute/information.aspx,20110601,20120930,9400ZZLUOAK1
+9400ZZLUODS,Old Street Underground Station,LU,http://www.directenquiries.com/information/Old%20Street/74369/stationplanroute/information.aspx,20110601,20120930,9400ZZLUODS1
+9400ZZLUOSY,Osterley Underground Station,LU,http://www.directenquiries.com/information/Osterley/74370/stationplanroute/information.aspx,20110601,20120930,9400ZZLUOSY1|9400ZZLUOSY2
+9400ZZLUOVL,Oval Underground Station,LU,http://www.directenquiries.com/information/Oval/74371/stationplanroute/information.aspx,20110601,20120930,9400ZZLUOVL1|9400ZZLUOVL2
+9400ZZLUOXC,Oxford Circus Underground Station,LU,http://www.directenquiries.com/information/Oxford%20Circus/74372/stationplanroute/information.aspx,20110601,20120930,9400ZZLUOXC1|9400ZZLUOXC2|9400ZZLUOXC3|9400ZZLUOXC4|9400ZZLUOXC5|9400ZZLUOXC6
+9400ZZLUPAC,Paddington D&C Underground Station,LU,http://www.directenquiries.com/information/Paddington/74373/stationplanroute/information.aspx,20110601,20120930,9400ZZLUPAC1|9400ZZLUPAC2|9400ZZLUPAC3|9400ZZLUPAC4
+9400ZZLUPAH,Paddington H&C Underground Station,LU,http://www.directenquiries.com/information/Paddington%20(H%20and%20amp;C%20Line)/74374/stationplanroute/information.aspx,20110601,20120930,9400ZZLUPAH1|9400ZZLUPAH2
+9400ZZLUPCC,Piccadilly Circus Underground Station,LU,http://www.directenquiries.com/information/Piccadilly%20Circus/74378/stationplanroute/information.aspx,20110601,20120930,9400ZZLUPCC1|9400ZZLUPCC2|9400ZZLUPCC3|9400ZZLUPCC4
+9400ZZLUPCO,Pimlico Underground Station,LU,http://www.directenquiries.com/information/Pimlico/74379/stationplanroute/information.aspx,20110601,20120930,9400ZZLUPCO1
+9400ZZLUPKR,Park Royal Underground Station,LU,http://www.directenquiries.com/information/Park%20Royal/74375/stationplanroute/information.aspx,20110601,20120930,9400ZZLUPKR1|9400ZZLUPKR2
+9400ZZLUPLW,Plaistow Underground Station,LU,http://www.directenquiries.com/information/Plaistow/74381/stationplanroute/information.aspx,20110601,20120930,9400ZZLUPLW1|9400ZZLUPLW2
+9400ZZLUPNR,Pinner Underground Station,LU,http://www.directenquiries.com/information/Pinner/74380/stationplanroute/information.aspx,20110601,20120930,9400ZZLUPNR1|9400ZZLUPNR2
+9400ZZLUPRD,Preston Road Underground Station,LU,http://www.directenquiries.com/information/Preston%20Road/74382/stationplanroute/information.aspx,20110601,20120930,9400ZZLUPRD1
+9400ZZLUPSG,Parsons Green Underground Station,LU,http://www.directenquiries.com/information/Parsons%20Green/74376/stationplanroute/information.aspx,20110601,20120930,9400ZZLUPSG1|9400ZZLUPSG2
+9400ZZLUPVL,Perivale Underground Station,LU,http://www.directenquiries.com/information/Perivale/74377/stationplanroute/information.aspx,20110601,20120930,9400ZZLUPVL1
+9400ZZLUPYB,Putney Bridge Underground Station,LU,http://www.directenquiries.com/information/Putney%20Bridge/74383/stationplanroute/information.aspx,20110601,20120930,9400ZZLUPYB1|9400ZZLUPYB2
+9400ZZLUQBY,Queensbury Underground Station,LU,http://www.directenquiries.com/information/Queensbury/74385/stationplanroute/information.aspx,20110601,20120930,9400ZZLUQBY1|9400ZZLUQBY2
+9400ZZLUQPS,Queen’s Park Underground Station,LU,http://www.directenquiries.com/information/Queen's%20Park/74384/stationplanroute/information.aspx,20110601,20120930,9400ZZLUQPS1
+9400ZZLUQWY,Queensway Underground Station,LU,http://www.directenquiries.com/information/Queensway/74386/stationplanroute/information.aspx,20110601,20120930,9400ZZLUQWY1
+9400ZZLURBG,Redbridge Underground Station,LU,http://www.directenquiries.com/information/Redbridge/74389/stationplanroute/information.aspx,20110601,20120930,9400ZZLURBG1
+9400ZZLURGP,Regent’s Park Underground Station,LU,http://www.directenquiries.com/information/Regent's%20Park/74390/stationplanroute/information.aspx,20110601,20120930,9400ZZLURGP1|9400ZZLURGP2
+9400ZZLURKW,Rickmansworth Underground Station,LU,http://www.directenquiries.com/information/Rickmansworth/74392/stationplanroute/information.aspx,20110601,20120930,9400ZZLURKW1|9400ZZLURKW2
+9400ZZLURMD,Richmond Underground Station,LU,http://www.directenquiries.com/information/Richmond/74391/stationplanroute/information.aspx,20110601,20120930,9400ZZLURMD1
+9400ZZLURSG,Ruislip Gardens Underground Station,LU,http://www.directenquiries.com/information/Ruislip%20Gardens/74397/stationplanroute/information.aspx,20110601,20120930,9400ZZLURSG1
+9400ZZLURSM,Ruislip Manor Underground Station,LU,http://www.directenquiries.com/information/Ruislip%20Manor/74398/stationplanroute/information.aspx,20110601,20120930,9400ZZLURSM1|9400ZZLURSM2
+9400ZZLURSP,Ruislip Underground Station,LU,http://www.directenquiries.com/information/Ruislip/74396/stationplanroute/information.aspx,20110601,20120930,9400ZZLURSP1|9400ZZLURSP2
+9400ZZLURSQ,Russell Square Underground Station,LU,http://www.directenquiries.com/information/Russell%20Square/74399/stationplanroute/information.aspx,20110601,20120930,9400ZZLURSQ1|9400ZZLURSQ2
+9400ZZLURVP,Ravenscourt Park Underground Station,LU,http://www.directenquiries.com/information/Ravenscourt%20Park/74387/stationplanroute/information.aspx,20110601,20120930,9400ZZLURVP1|9400ZZLURVP2
+9400ZZLURVY,Roding Valley Underground Station,LU,http://www.directenquiries.com/information/Roding%20Valley/74393/stationplanroute/information.aspx,20110601,20120930,9400ZZLURVY1|9400ZZLURVY2
+9400ZZLURYL,Rayners Lane Underground Station,LU,http://www.directenquiries.com/information/Rayners%20Lane/74388/stationplanroute/information.aspx,20110601,20120930,9400ZZLURYL1|9400ZZLURYL2
+9400ZZLURYO,Royal Oak Underground Station,LU,http://www.directenquiries.com/information/Royal%20Oak/74395/stationplanroute/information.aspx,20110601,20120930,9400ZZLURYO1
+9400ZZLUSBC,Shepherd’s Bush Central Underground Station,LU,http://www.directenquiries.com/information/Shepherd's%20Bush%20(Central%20Line)/74402/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSBC1
+9400ZZLUSBM,Shepherd’s Bush Market Underground Station,LU,http://www.directenquiries.com/information/Shepherd's%20Bush%20Market/74403/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSBM1|9400ZZLUSBM2
+9400ZZLUSEA,South Ealing Underground Station,LU,http://www.directenquiries.com/information/South%20Ealing/74406/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSEA1
+9400ZZLUSFB,Stamford Brook Underground Station,LU,http://www.directenquiries.com/information/Stamford%20Brook/74419/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSFB1|9400ZZLUSFB2
+9400ZZLUSFS,Southfields Underground Station,LU,http://www.directenquiries.com/information/Southfields/74413/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSFS1
+9400ZZLUSGN,Stepney Green Underground Station,LU,http://www.directenquiries.com/information/Stepney%20Green/74421/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSGN1|9400ZZLUSGN2
+9400ZZLUSGP,Stonebridge Park Underground Station,LU,http://www.directenquiries.com/information/Stonebridge%20Park/74423/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSGP1
+9400ZZLUSGT,Southgate Underground Station,LU,http://www.directenquiries.com/information/Southgate/74414/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSGT1
+9400ZZLUSHH,South Harrow Underground Station,LU,http://www.directenquiries.com/information/South%20Harrow/74407/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSHH1|9400ZZLUSHH2
+9400ZZLUSJP,St. James’s Park Underground Station,LU,http://www.directenquiries.com/information/St%20James's%20Park/74416/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSJP1|9400ZZLUSJP2
+9400ZZLUSJW,St. John’s Wood Underground Station,LU,http://www.directenquiries.com/information/St%20John's%20Wood/74417/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSJW1
+9400ZZLUSKS,South Kensington Underground Station,LU,http://www.directenquiries.com/information/South%20Kensington/74408/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSKS1|9400ZZLUSKS2|9400ZZLUSKS3
+9400ZZLUSKT,South Kenton Underground Station,LU,http://www.directenquiries.com/information/South%20Kenton/74409/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSKT1
+9400ZZLUSKW,Stockwell Underground Station,LU,http://www.directenquiries.com/information/Stockwell/74422/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSKW1|9400ZZLUSKW2|9400ZZLUSKW3|9400ZZLUSKW4
+9400ZZLUSNB,Snaresbrook Underground Station,LU,http://www.directenquiries.com/information/Snaresbrook/74405/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSNB1
+9400ZZLUSPU,St. Paul’s Underground Station,LU,http://www.directenquiries.com/information/St%20Paul's/74418/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSPU1|9400ZZLUSPU2
+9400ZZLUSRP,South Ruislip Underground Station,LU,http://www.directenquiries.com/information/South%20Ruislip/74410/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSRP1
+9400ZZLUSSQ,Sloane Square Underground Station,LU,http://www.directenquiries.com/information/Sloane%20Square/74404/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSSQ1|9400ZZLUSSQ2
+9400ZZLUSTD,Stratford Underground Station,LU,http://www.directenquiries.com/information/Stratford/74424/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSTD1|9400ZZLUSTD2|9400ZZLUSTD3|9400ZZLUSTD4|9400ZZLUSTD5|9400ZZLUSTD6
+9400ZZLUSTM,Stanmore Underground Station,LU,http://www.directenquiries.com/information/Stanmore/74420/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSTM1
+9400ZZLUSUH,Sudbury Hill Underground Station,LU,http://www.directenquiries.com/information/Sudbury%20Hill/74425/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSUH1|9400ZZLUSUH2
+9400ZZLUSUT,Sudbury Town Underground Station,LU,http://www.directenquiries.com/information/Sudbury%20Town/74426/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSUT1|9400ZZLUSUT2
+9400ZZLUSVS,Seven Sisters Underground Station,LU,http://www.directenquiries.com/information/Seven%20Sisters/74400/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSVS1|9400ZZLUSVS2
+9400ZZLUSWC,Swiss Cottage Underground Station,LU,http://www.directenquiries.com/information/Swiss%20Cottage/74428/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSWC1
+9400ZZLUSWF,South Woodford Underground Station,LU,http://www.directenquiries.com/information/South%20Woodford/74412/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSWF1|9400ZZLUSWF2
+9400ZZLUSWK,Southwark Underground Station,LU,http://www.directenquiries.com/information/Southwark/74415/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSWK1
+9400ZZLUSWN,South Wimbledon Underground Station,LU,http://www.directenquiries.com/information/South%20Wimbledon/74411/stationplanroute/information.aspx,20110601,20120930,9400ZZLUSWN1
+9400ZZLUTAW,Totteridge & Whetstone Underground Station,LU,http://www.directenquiries.com/information/Totteridge%20%20and%20amp;%20Whetstone/74435/stationplanroute/information.aspx,20110601,20120930,9400ZZLUTAW1| 9400ZZLUTAW2
+9400ZZLUTBC,Tooting Bec Underground Station,LU,http://www.directenquiries.com/information/Tooting%20Bec/74431/stationplanroute/information.aspx,20110601,20120930,9400ZZLUTBC1
+9400ZZLUTBY,Tooting Broadway Underground Station,LU,http://www.directenquiries.com/information/Tooting%20Broadway/74432/stationplanroute/information.aspx,20110601,20120930,9400ZZLUTBY1
+9400ZZLUTCR,Tottenham Court Road Underground Station,LU,http://www.directenquiries.com/information/Tottenham%20Court%20Road/74433/stationplanroute/information.aspx,20110601,20120930,9400ZZLUTCR1|9400ZZLUTCR2|9400ZZLUTCR3
+9400ZZLUTFP,Tufnell Park Underground Station,LU,http://www.directenquiries.com/information/Tufnell%20Park/74437/stationplanroute/information.aspx,20110601,20120930,9400ZZLUTFP1|9400ZZLUTFP2
+9400ZZLUTHB,Theydon Bois Underground Station,LU,http://www.directenquiries.com/information/Theydon%20Bois/74430/stationplanroute/information.aspx,20110601,20120930,9400ZZLUTHB1|9400ZZLUTHB2
+9400ZZLUTMH,Tottenham Hale Underground Station,LU,http://www.directenquiries.com/information/Tottenham%20Hale/74434/stationplanroute/information.aspx,20110601,20120930,9400ZZLUTMH1
+9400ZZLUTMP,Temple Underground Station,LU,http://www.directenquiries.com/information/Temple/74429/stationplanroute/information.aspx,20110601,20120930,9400ZZLUTMP1|9400ZZLUTMP2
+9400ZZLUTNG,Turnham Green Underground Station,LU,http://www.directenquiries.com/information/Turnham%20Green/74438/stationplanroute/information.aspx,20110601,20120930,9400ZZLUTNG1|9400ZZLUTNG2|9400ZZLUTNG3|9400ZZLUTNG4
+9400ZZLUTPN,Turnpike Lane Underground Station,LU,http://www.directenquiries.com/information/Turnpike%20Lane/74439/stationplanroute/information.aspx,20110601,20120930,9400ZZLUTPN1
+9400ZZLUTWH,Tower Hill Underground Station,LU,http://www.directenquiries.com/information/Tower%20Hill/74436/stationplanroute/information.aspx,20110601,20120930,9400ZZLUTWH1|9400ZZLUTWH2
+9400ZZLUUPB,Upminster Bridge Underground Station,LU,http://www.directenquiries.com/information/Upminster%20Bridge/74441/stationplanroute/information.aspx,20110601,20120930,9400ZZLUUPB1
+9400ZZLUUPK,Upton Park Underground Station,LU,http://www.directenquiries.com/information/Upton%20Park/74443/stationplanroute/information.aspx,20110601,20120930,9400ZZLUUPK1|9400ZZLUUPK2
+9400ZZLUUPM,Upminster Underground Station,LU,http://www.directenquiries.com/information/Upminster/74440/stationplanroute/information.aspx,20110601,20120930,9400ZZLUUPM1|9400ZZLUUPM2
+9400ZZLUUPY,Upney Underground Station,LU,http://www.directenquiries.com/information/Upney/74442/stationplanroute/information.aspx,20110601,20120930,9400ZZLUUPY1
+9400ZZLUUXB,Uxbridge Underground Station,LU,http://www.directenquiries.com/information/Uxbridge/74444/stationplanroute/information.aspx,20110601,20120930,9400ZZLUUXB1|9400ZZLUUXB2
+9400ZZLUVIC,Victoria Underground Station,LU,http://www.directenquiries.com/information/Victoria/74446/stationplanroute/information.aspx,20110601,20120930,9400ZZLUVIC1|9400ZZLUVIC2|9400ZZLUVIC3
+9400ZZLUVXL,Vauxhall Underground Station,LU,http://www.directenquiries.com/information/Vauxhall/74445/stationplanroute/information.aspx,20110601,20120930,9400ZZLUVXL1
+9400ZZLUWAF,Watford Underground Station,LU,http://www.directenquiries.com/information/Watford/74453/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWAF1
+9400ZZLUWBN,West Brompton Underground Station,LU,http://www.directenquiries.com/information/West%20Brompton/74457/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWBN1|9400ZZLUWBN2
+9400ZZLUWCY,White City Underground Station,LU,http://www.directenquiries.com/information/White%20City/74466/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWCY1|9400ZZLUWCY2
+9400ZZLUWFN,West Finchley Underground Station,LU,http://www.directenquiries.com/information/West%20Finchley/74458/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWFN1|9400ZZLUWFN2
+9400ZZLUWHM,West Ham Underground Station,LU,http://www.directenquiries.com/information/West%20Ham/74459/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWHM1|9400ZZLUWHM2|9400ZZLUWHM3|9400ZZLUWHM4
+9400ZZLUWHP,West Hampstead Underground Station,LU,http://www.directenquiries.com/information/West%20Hampstead/74460/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWHP1
+9400ZZLUWHW,West Harrow Underground Station,LU,http://www.directenquiries.com/information/West%20Harrow/74461/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWHW1|9400ZZLUWHW2
+9400ZZLUWIG,Willesden Green Underground Station,LU,http://www.directenquiries.com/information/Willesden%20Green/74468/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWIG1
+9400ZZLUWIM,Wimbledon Underground Station,LU,http://www.directenquiries.com/information/Wimbledon/74470/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWIM1
+9400ZZLUWIP,Wimbledon Park Underground Station,LU,http://www.directenquiries.com/information/Wimbledon%20Park/74471/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWIP1
+9400ZZLUWJN,Willesden Junction Underground Station,LU,http://www.directenquiries.com/information/Willesden%20Junction/74469/stationplanroute/information.aspx,20110601,20120930,
+9400ZZLUWKA,Warwick Avenue Underground Station,LU,http://www.directenquiries.com/information/Warwick%20Avenue/74451/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWKA1
+9400ZZLUWKN,West Kensington Underground Station,LU,http://www.directenquiries.com/information/West%20Kensington/74462/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWKN1|9400ZZLUWKN2
+9400ZZLUWLA,Wood Lane Underground Station,LU,http://www.directenquiries.com/information/Wood%20Lane/103347/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWLA1|9400ZZLUWLA2
+9400ZZLUWLO,Waterloo Underground Station,LU,http://www.directenquiries.com/information/Waterloo/74452/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWLO1|9400ZZLUWLO2|9400ZZLUWLO3|9400ZZLUWLO4
+9400ZZLUWOF,Woodford Underground Station,LU,http://www.directenquiries.com/information/Woodford/74473/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWOF1|9400ZZLUWOF2
+9400ZZLUWOG,Wood Green Underground Station,LU,http://www.directenquiries.com/information/Wood%20Green/74472/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWOG1
+9400ZZLUWOP,Woodside Park Underground Station,LU,http://www.directenquiries.com/information/Woodside%20Park/74474/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWOP1
+9400ZZLUWPL,Whitechapel Underground Station,LU,http://www.directenquiries.com/information/Whitechapel/74467/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWPL1|9400ZZLUWPL2|9400ZZLUWPL3|9400ZZLUWPL4
+9400ZZLUWRP,West Ruislip Underground Station,LU,http://www.directenquiries.com/information/West%20Ruislip/74463/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWRP1
+9400ZZLUWRR,Warren Street Underground Station,LU,http://www.directenquiries.com/information/Warren%20Street/74450/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWRR1|9400ZZLUWRR2|9400ZZLUWRR3|9400ZZLUWRR4
+9400ZZLUWSD,Wanstead Underground Station,LU,http://www.directenquiries.com/information/Wanstead/74448/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWSD1
+9400ZZLUWSM,Westminster Underground Station,LU,http://www.directenquiries.com/information/Westminster/74465/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWSM1|9400ZZLUWSM2|9400ZZLUWSM3|9400ZZLUWSM4
+9400ZZLUWSP,Westbourne Park Underground Station,LU,http://www.directenquiries.com/information/Westbourne%20Park/74464/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWSP1|9400ZZLUWSP2
+9400ZZLUWTA,West Acton Underground Station,LU,http://www.directenquiries.com/information/West%20Acton/74456/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWTA1|9400ZZLUWTA12
+9400ZZLUWWL,Walthamstow Central Underground Station,LU,http://www.directenquiries.com/information/Walthamstow%20Central/74447/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWWL1
+9400ZZLUWYC,Wembley Central Underground Station,LU,http://www.directenquiries.com/information/Wembley%20Central/74454/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWYC1
+9400ZZLUWYP,Wembley Park Underground Station,LU,http://www.directenquiries.com/information/Wembley%20Park/74455/stationplanroute/information.aspx,20110601,20120930,9400ZZLUWYP1|9400ZZLUWYP2|9400ZZLUWYP3|9400ZZLUWYP4

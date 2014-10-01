@@ -1,0 +1,9 @@
+D:\SJP\CodeBase\SJP\Databases\SJPConfiguration\sql\debug\SJPConfiguration_Script.PreDeployment.sql
+D:\SJP\CodeBase\SJP\Databases\SJPConfiguration\sql\debug\SJPConfiguration_Script.PostDeployment.sql
+D:\SJP\CodeBase\SJP\Databases\SJPConfiguration\sql\debug\SJPConfiguration_Database.sqlsettings
+D:\SJP\CodeBase\SJP\Databases\SJPConfiguration\sql\debug\SJPConfiguration_Database.sqldeployment
+D:\SJP\CodeBase\SJP\Databases\SJPConfiguration\sql\debug\SJPConfiguration_Database.sqlcmdvars
+D:\SJP\CodeBase\SJP\Databases\SJPConfiguration\sql\debug\SJPConfiguration.deploymanifest
+D:\SJP\CodeBase\SJP\Databases\SJPConfiguration\sql\debug\SJPConfiguration.dbschema
+D:\SJP\CodeBase\SJP\Databases\SJPConfiguration\sql\debug\SJPServerDatabase.dbschema
+D:\SJP\CodeBase\SJP\Databases\SJPConfiguration\obj\Debug\SJPConfiguration.dbschema

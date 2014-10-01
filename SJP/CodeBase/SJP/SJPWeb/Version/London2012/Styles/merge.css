@@ -1,0 +1,564 @@
+div#page-2012 div#top-tips{background:#F2F2F2;}
+div#page-2012 div#top-tips div.content{display:none;float:left;width:200px;}
+div#page-2012 div#top-tips{border-bottom:6px solid #0098FE;width:220px;}
+
+body#section-visiting.travel-planning div#sidebar-right-2012 div#top-tips div.slider {
+	background: transparent url('../images/travel-planning/light-bulb.gif') no-repeat 9px 27px !important;
+	padding-left: 48px;
+}
+
+body#section-visiting.travel-planning div#sidebar-right-2012 div#top-tips div.slider div.content,
+body#section-visiting.travel-planning div#sidebar-right-2012 div#top-tips div.slider div.content p {
+	width: 140px
+}
+
+body#section-visiting.travel-planning div#sidebar-right-2012 div#top-tips div.slider div.content p {
+	padding-right: 10px;
+}
+
+#top-tips .slider .content div{margin-bottom:12px !important;}
+
+.action-button a {
+    background-position:0px 0px;
+    overflow: hidden;
+    border: none;
+    cursor:pointer;
+    text-indent:-5000px;
+    margin:0;
+    padding:0;
+    font-size: 0px;
+    line-height:0px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+div.action-button {
+    background:url('../images/presentation/dotted-border-grey.gif') repeat-x left bottom; padding-bottom:15px; margin-bottom: 10px;
+}
+
+#getting-to-your-event a {
+    background: transparent url('../images/travel-planning/buttons/getting-to-your-event.png') no-repeat;
+    height: 36px;
+    width: 217px;
+}
+
+.stpDisplayImage {margin: 5px 0px 15px 0px;}
+
+.stp-venue-details-container {
+    background:url('../images/presentation/dotted-border-grey.gif') repeat-x left bottom; padding-bottom:15px; margin-bottom: 10px;
+}
+.stp-venue-details-inner {
+    background:url('../images/presentation/dotted-border-grey.gif') repeat-x left top; padding-top:15px; margin-top: 10px;
+}
+
+div#sidebar-left-2012 ul li ul li ul li ul li span {margin-left:27px;}
+
+.stp-vitem-label {
+    width:75px; font-weight:bold; font-size:1.2em; display:inline; float:left;
+}
+.stp-vitem-detail {
+    display:inline; float:left;
+}
+
+.stp-venue-details-vitem {width:100%; margin-bottom: 8px;}
+.stp-venue-details-vitem:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.stp-getting-there-container {
+    background-color:#f2f2f2;
+}
+
+.stp-getting-there-inner {
+    margin:15px;
+}
+
+.stp-getting-there-row-inner {
+    padding-left:45px;
+    background:url('../images/presentation/dotted-border-grey.gif') repeat-x left bottom; padding-bottom:10px; margin-top: 10px;
+}
+
+#getting-there-last.stp-getting-there-row-inner  {
+    background-image:none;
+}
+
+#stp-gt-rail {
+    background:url('../images/travel-planning/icons/rail.png') no-repeat left top;
+}
+#stp-gt-river {
+    background:url('../images/travel-planning/icons/river.png') no-repeat left top;
+}
+#stp-gt-parknride {
+    background:url('../images/travel-planning/icons/park-and-ride.png') no-repeat left top;
+}
+#stp-gt-walking {
+    background:url('../images/travel-planning/icons/walk.png') no-repeat left top;
+}
+#stp-gt-cycling {
+    background:url('../images/travel-planning/icons/cycling.gif') no-repeat left top;
+}
+#stp-gt-taxi {
+    background:url('../images/travel-planning/icons/taxi.png') no-repeat left top;
+}
+#stp-gt-coach {
+    background:url('../images/travel-planning/icons/coach.png') no-repeat left top;
+}
+#stp-gt-underground {
+    background:url('../images/travel-planning/icons/underground.png') no-repeat left top;
+}
+#stp-gt-docklightrail {
+    background:url('../images/travel-planning/icons/dlr.png') no-repeat left top;
+}
+
+div#page-2012 .stp-getting-there-container h3 {
+    font-size:1.2em; padding:15px 0 10px 0;
+}
+.stp-getting-there-container h4 {
+    font-size:1em; padding:0 0 15px 0;
+}
+
+body#section-visiting.travel-planning #see-also h2 {
+    background-color:#DF0094; color:#fff;
+}
+
+.angle-button-image {
+    margin-left:75px; margin-top:-17px; display:block;
+}
+#stp-download-pdf-button {
+    margin-left:75px;
+}
+#stp-plan-now-button {
+    margin-left:111px;
+}
+#stp-book-now-button {
+    margin-left:112px;
+}
+
+div#page-2012 div#sidebar-right-2012 div.stp-side-box h2,
+div#page-2012 .stp-right-div div.stp-side-box h2,
+div#page-2012 div#sidebar-right-2012 div.stp-side-box h2 a,
+div#page-2012 .stp-right-div div.stp-side-box h2 a{color:#ffffff;}
+div#page-2012 div#sidebar-right-2012 div.stp-side-box h2,
+div#page-2012 .stp-right-div div.stp-side-box h2 {min-height:21px;height:auto !important;height:21px;font-size:1.1em;padding:13px 10px 2px  10px;background:#ffffff url('../images/travel-planning/stp-sidebar.gif')  no-repeat left top !important;}
+div#page-2012 div#sidebar-right-2012 div.stp-side-box,
+div#page-2012 .stp-right-div div.stp-side-box{margin:16px 0 23px 0;clear:left;}
+
+div#page-2012  div#sidebar-right-2012 div#make-a-day-of-it.stp-side-box h2{background-image:url('../images/travel-planning/stp-sidebar-blue.gif') !important;}
+
+div#page-2012 .stp-right-div div.stp-side-box h2 {margin-bottom: 0;}
+
+.madoi-options {
+    background-color:#f2f2f2;
+}
+
+.madoi-option {
+    padding:10px 0px; margin:0px 10px; background:url('../images/presentation/dotted-border-grey.gif') repeat-x left bottom;
+}
+
+#madoi-last {
+    background-image:none;
+}
+
+.madoi-option p {
+    margin:0; padding:0;
+}
+
+.section-seperator {
+    font-size:0; line-height:0; padding:10px 0px 0px 0px; margin:0px 0px 10px 0px; background:url('../images/presentation/dotted-border-grey.gif') repeat-x left bottom;
+}
+
+.stp-left-div div.landing-child,
+.stp-right-div div.landing-child {background:url('../images/presentation/landing-child-bg.gif') no-repeat 0 2.3em;padding:0 3px 0 3px;}
+.stp-left-div div.landing-child p,
+.stp-right-div div.landing-child p{margin-bottom:0.7em;}
+
+.stp-left-div div.main-content-left,
+.stp-left-div div.main-content-right,
+.stp-right-div div.stp-sidebar-content{width:220px;position:relative;float:left;margin-bottom:0.5em;}
+.stp-left-div div.main-content-left{display:inline;clear:left;margin-right:6px;}
+.stp-left-div div.main-content-right{}
+
+.stp-right-div div.stp-sidebar-content {}
+
+.stp-left-div {float:left;width:463px;margin-top:0;overflow:hidden; position:relative;}
+.stp-right-div {width:220px; float:right; margin-top:0px; margin-right:4px; display:inline; overflow:visible !important; overflow:hidden;}
+
+.stp-right-div div.stp-sidebar-content div.content{padding-left:8px;width:198px;float:left;}
+
+.stp-right-div div.stp-sidebar-content h2{padding:4px 0 4px 8px;}
+
+body.travel-planning #wide-content-2012 {padding-bottom:15px;}
+
+body.travel-planning #wide-content-2012 h1#heading {background:none; background-image:none; background-color: transparent; padding:7px 0 7px 0px;width:700px;color:#4C4C4C; margin-left:0px; margin-bottom:0px;}
+
+
+.stp-side-box-content {
+        background-color:#f2f2f2;
+}
+
+.stp-side-box-content p {
+    padding:5px 8px;
+}
+
+.big-map-header {margin:15px 0px;}
+
+#PageContent a:hover {text-decoration:underline;}
+
+
+/* mods from 9/2/2011 */
+
+.stp-venue-selector-container {
+    background-color:#f2f2f2;
+    margin-bottom: 15px;
+}
+
+.stp-venue-selector-inner {
+    padding:15px 0px 15px 0px;
+    margin:0px 15px 0px 15px;
+}
+
+#vs-olympic-events-row, #vs-paralympic-events-row {
+    background:url('../images/travel-planning/grey-dotted.gif') repeat-x left top; zoom: 1;}
+
+#vs-olympic-events-row form, #vs-paralympic-events-row form {
+	 padding:10px 0px 10px 0px;
+
+}    
+    
+
+#vs-olympic-events-row label, #vs-paralympic-events-row label {
+    font-weight:bold;
+}
+#vs-olympic-events-row label.sub-label, #vs-paralympic-events-row label.sub-label {
+    font-weight:normal;
+}
+
+
+.p-heading {font-weight:bold;}
+
+.p-heading-extra {margin-top:10px; font-weight:bold; background:url('../images/travel-planning/grey-dotted.gif') repeat-x left top; padding:10px 0px 0px 0px;}
+
+.vs-sub-option-row {background:url('../images/travel-planning/grey-dotted.gif') repeat-x left top; padding:10px 0px 0px 0px;}
+
+#vs-form-submit-sub {display:none; float:right;}
+
+.vs-form-submit {float:right;}
+
+
+form.vs-drop-down-form {
+    margin: 0;
+}
+
+form.drop-down-form input.submit {
+    margin-top: 5px;
+    clear: left;
+}
+
+div.vs-drop-down ul {
+    position: absolute;
+    z-index: 9999;
+}
+
+div.vs-drop-down, div.vs-drop-down ul, select.vs-drop-down {
+    width: 250px;
+    float: left; display:inline;
+    cursor: pointer;
+}
+
+#olympic-venue-2-venue div.vs-drop-down,
+#olympic-venue-2-venue div.vs-drop-down ul,
+#olympic-venue-2-venue select.vs-drop-down {
+    width: 200px;
+}
+
+form.vs-drop-down-form select {
+    clear: both;
+}
+
+form.vs-drop-down-form select,
+form.vs-drop-down-form div.selected,
+form.vs-drop-down-form ul li a,
+form.vs-drop-down-form div.selected a
+{
+    color: #5E5E5E;
+}
+
+form.vs-drop-down-form div.selected {
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+div#page-2012 a.dd-header {
+    color:#4c4c4c !important;
+    display: block;
+    position: relative;
+}
+
+form.vs-drop-down-form .selected {
+    background: #fbfbfb url('../images/travel-planning/dd-toggle.gif') repeat-y 17.4em 0px;
+}
+
+form.vs-drop-down-form .selected:hover {
+    background: #fbfbfb url('../images/travel-planning/dd-toggle.gif') no-repeat 17.4em -23px;
+}
+
+form.vs-drop-down-form .open {
+    background: #fbfbfb url('../images/travel-planning/dd-toggle.gif') no-repeat 17.4em -46px !important;
+}
+
+form.vs-drop-down-form .open:hover {
+    background: #fbfbfb url('../images/travel-planning/dd-toggle.gif') no-repeat 17.4em -69px !important;
+}
+
+form#olympic-venue-2-venue.vs-drop-down-form .selected {
+    background: #fbfbfb url('../images/travel-planning/dd-toggle.gif') repeat-y 13.5em 0px;
+}
+
+form#olympic-venue-2-venue.vs-drop-down-form .selected:hover {
+    background: #fbfbfb url('../images/travel-planning/dd-toggle.gif') no-repeat 13.5em -23px;
+}
+
+form#olympic-venue-2-venue.vs-drop-down-form .open {
+    background: #fbfbfb url('../images/travel-planning/dd-toggle.gif') no-repeat 13.5em -46px !important;
+}
+
+form#olympic-venue-2-venue.vs-drop-down-form .open:hover {
+    background: #fbfbfb url('../images/travel-planning/dd-toggle.gif') no-repeat 13.5em -69px !important;
+}
+
+form.vs-drop-down-form select, form.vs-drop-down-form .selected {
+    background-color: #fbfbfb;
+}
+
+form.vs-drop-down-form ul {
+    padding: 5px 0;
+    background: #FFFFFF url('../images/icons/links-bar-grad.gif') repeat-y left top;
+    border-bottom: 5px solid #f2f2f2;
+}
+
+form.vs-drop-down-form .selected {
+    display: block;
+}
+
+form.vs-drop-down-form .selected a.dd-header {
+	padding: 3px 8px;
+
+}
+    
+form.vs-drop-down-form ul li a {
+    padding: 1px 8px;
+    display: block;
+}
+
+form.vs-drop-down-form ul li a {
+    color: #5E5E5E !important;
+}
+
+form.vs-drop-down-form ul li a:hover {
+    text-decoration: underline;
+}
+
+form.vs-drop-down-form ul {
+    overflow: hidden;
+    display: none;
+    height: 200px;
+    overflow: auto;
+}
+
+form.vs-drop-down-form li {
+    margin:0; padding:0; float:left; display:inline; width:230px;
+}
+
+form#olympic-venue-2-venue.vs-drop-down-form li {
+    width: 170px;
+}
+
+.vs-drop-down ul li a.selected-dd {font-weight:bold;}
+
+div#MainContent .vs-drop-down ul {
+    padding-left:0;
+}
+
+.dd-main-label {float:left; display:inline; width: 115px; padding-top:4px;}
+.vs-form-submit {float:left; display:inline; margin-left:5px;}
+
+.vs-form-submit input {
+    background-position:0px 0px;
+    overflow: hidden;
+    border: none;
+    cursor:pointer;
+    text-indent:-5000px;
+    margin:0;
+    padding:0;
+    font-size: 0px;
+    line-height:0px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    background: transparent url('../images/travel-planning/buttons/select.gif') no-repeat;
+    background-position:0px 0px;
+    height: 22px;
+    width: 56px;
+}
+
+.vs-form-submit input.go-disabled {
+    background-position:0px -22px;
+}
+
+#vs-form-submit-sub {
+    margin:-15px 0 10px 0px;
+}
+
+#vs-form-submit-sub input {
+    background-position:0px 0px;
+    overflow: hidden;
+    border: none;
+    cursor:pointer;
+    text-indent:-5000px;
+    margin:0;
+    padding:0;
+    font-size: 0px;
+    line-height:0px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    background: transparent url('../images/travel-planning/buttons/big-select.gif') no-repeat;
+    background-position:0px 0px;
+    height: 25px;
+    width: 62px;
+}
+
+#vs-form-submit-sub input.go-disabled {
+    background-position:0px -25px;
+}
+
+.vs-sub-option-row input {}
+
+#olympic-venue-selector select {float:left; display:inline;}
+#paralympic-venue-selector select {float:left; display:inline;}
+
+#olympic-venue-selector h3 {
+    margin-top:10px;
+}
+
+#olympic-venue-selector .multi-locations-row-ns {
+    margin-top:10px;
+}
+
+.radio-group .radio {
+	height: 25px;
+	width: 24px;
+	clear:left;
+	float:left;
+	margin: 0 0 3px;
+	padding: 0 0 0 0px;
+	background: url("../images/custom-radio-checkbox/oda-radio.gif");
+	background-repeat:no-repeat;
+	cursor: pointer;
+}
+.radio-group .selected {
+	background-position: 0 -52px;
+}
+
+.radio-group  label {
+	float:left;
+	text-align:left; padding:2px 0px 0px 3px;
+}
+
+.radio-group  input {display:none;}
+
+#vs-form-submit-sub a {float:left; display:inline; color:#4c4c4c; margin-right:8px; margin-top:5px; font-size:0.9em;}
+
+.v2v-label {display:none;}
+
+#v2v-go-button input {
+    background-position:0px 0px;
+    overflow: hidden;
+    border: none;
+    cursor:pointer;
+    text-indent:-5000px;
+    margin:0;
+    padding:0;
+    font-size: 0px;
+    line-height:0px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    background: transparent url('../images/travel-planning/buttons/check-time.gif') no-repeat;
+    background-position:0px 0px;
+    height: 30px;
+    width: 109px;
+}
+
+#v2v-go-button input.go-disabled {
+    background-position:0px -30px;
+}
+
+.results-shown #v2v-go-button input {
+    background-position:0px -60px;
+}
+
+.results-shown #v2v-go-button input.go-disabled {
+    background-position:0px -90px;
+}
+
+#v2v-go-button {
+    float:right;
+}
+
+p.v2vJourneyTime {
+    font-weight:bold;
+    padding-bottom:4px;
+}
+
+.v2vClockImg {
+    padding:0px 8px 4px 8px;
+}
+
+#v2v-venue1-div {
+    padding-bottom:8px;
+}
+
+#v2v-venue2-div {
+    padding-bottom:12px;
+}
+
+div#v2v-results-inner {
+    margin:8px 8px 0 8px; line-height:1; font-size:1;
+    background:url('../images/travel-planning/grey-dotted-grey-bg.gif') repeat-x left top;
+}
+
+#olympic-venue-2-venue-side-box .stp-side-box-content {
+  background:url('../images/travel-planning/v2v-bg.gif') repeat-x left bottom;
+  background-color:#f2f2f2;
+}
+
+#olympic-venue-2-venue-side-box.results-shown .stp-side-box-content {
+  background-image:none;
+}
+
+.ns-sub-label {margin-top:5px; font-weight:bold;}
+#vs-olympic-events-row .ns-sub-venues label {}
+#vs-olympic-events-row .ns-sub-venues  {margin-bottom:5px;}
+
+
+.v2v-tip {
+    text-decoration:none; color:#d100ad; padding-right:18px;
+    background:url('../images/travel-planning/clock/whats-this.png') no-repeat right top;
+    font-size:0.9em;
+
+}
+.v2v-tip:hover {
+    text-decoration:underline;
+}
+
+div#page-2012 div.snippet div.navigation .prev,
+div#page-2012 div.snippet div.navigation .next {
+	display: inline;
+	overflow: hidden;
+}

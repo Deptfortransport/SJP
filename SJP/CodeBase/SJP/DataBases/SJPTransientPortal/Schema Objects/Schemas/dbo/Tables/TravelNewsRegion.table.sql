@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[TravelNewsRegion]
+(
+	[UID] [varchar](25) NOT NULL,
+	[RegionName] [varchar](25) NOT NULL,
+ CONSTRAINT [PK_TravelNewsRegion] PRIMARY KEY CLUSTERED 
+(
+	[UID] ASC,
+	[RegionName] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]

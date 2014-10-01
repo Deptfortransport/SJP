@@ -1,0 +1,8 @@
+D:\SJP\CodeBase\SJP\CommandAndControl\HashValidator\bin\Debug\HashValidator.exe
+D:\SJP\CodeBase\SJP\CommandAndControl\HashValidator\bin\Debug\HashValidator.pdb
+D:\SJP\CodeBase\SJP\CommandAndControl\HashValidator\bin\Debug\HashValidator.exe.CodeAnalysisLog.xml
+D:\SJP\CodeBase\SJP\CommandAndControl\HashValidator\bin\Debug\HashValidator.exe.lastcodeanalysissucceeded
+D:\SJP\CodeBase\SJP\CommandAndControl\HashValidator\bin\Debug\ChecksumHelper.dll
+D:\SJP\CodeBase\SJP\CommandAndControl\HashValidator\bin\Debug\ChecksumHelper.pdb
+D:\SJP\CodeBase\SJP\CommandAndControl\HashValidator\obj\Debug\HashValidator.exe
+D:\SJP\CodeBase\SJP\CommandAndControl\HashValidator\obj\Debug\HashValidator.pdb

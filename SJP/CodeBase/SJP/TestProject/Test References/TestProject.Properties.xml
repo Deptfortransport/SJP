@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lookup>
+  <property name="propertyservice.refreshrate" GID="" AID="">1000</property>
+  <property name="propertyservice.version" GID="" AID="">1</property>
+
+  <!-- Databases -->
+  <property name="DefaultDB" GID="TestGroup" AID="TestApp">Data Source=.\SQLEXPRESS;Initial Catalog=SJPConfiguration;Pooling=False;Timeout=30;Trusted_Connection=true;</property>
+  <property name="GazetteerDB" GID="TestGroup" AID="TestApp">Data Source=.\SQLEXPRESS;Initial Catalog=SJPGazetteer;Pooling=False;Timeout=30;Trusted_Connection=true;</property>
+  <property name="ReportStagingDB" GID="TestGroup" AID="TestApp">Data Source=.\SQLEXPRESS;Initial Catalog=SJPReportStaging;Pooling=False;Timeout=30;Trusted_Connection=true;</property>
+  <property name="TransientPortalDB" GID="TestGroup" AID="TestApp">Data Source=.\SQLEXPRESS;Initial Catalog=SJPTransientPortal;Pooling=False;Timeout=30;Trusted_Connection=true;</property>
+  <property name="ContentDB" GID="TestGroup" AID="TestApp">Data Source=.\SQLEXPRESS;Initial Catalog=SJPContent;Pooling=False;Timeout=30;Trusted_Connection=true;</property>
+  <property name="CommandControlDB" GID="TestGroup" AID="TestApp">Data Source=.\SQLEXPRESS;Initial Catalog=CommandAndControl;Pooling=False;Timeout=30;Trusted_Connection=true;</property>
+
+
+  <property name="JSFolder.SJPWeb" GID="TestGroup" AID="TestApp">./scripts/sjpweb/</property>
+  <property name="JSFolder.SJPMobile" GID="TestGroup" AID="TestApp">./scripts/sjpmobile/</property>
+  <property name="ScriptName" GID="TestGroup" AID="TestApp">Location</property>
+  <property name="AliasFile" GID="TestGroup" AID="TestApp">./LocationJsGenerator/alias.csv</property>
+  <property name="GenerateDebugScripts" GID="TestGroup" AID="TestApp">true</property>
+
+  <!-- Event Logging -->
+  <property name="" GID="TestGroup" AID="TestApp"></property>
+
+  <property name="EventReceiver.Queue" GID="TestGroup" AID="TestApp">Queue1</property>
+  <property name="EventReceiver.Queue.Queue1.Path" GID="TestGroup" AID="TestApp">.\Private$\ERTestQueue1$</property>
+  <property name="EventReceiver.Queue.Queue2.Path" GID="TestGroup" AID="TestApp">.\Private$\ERTestQueue2$</property>
+  <property name="EventReceiver.TimeBeforeRecovery.Millisecs" GID="TestGroup" AID="TestApp">1000</property>
+  
+  <property name="Logging.Publisher.Default" GID="TestGroup" AID="TestApp">FILE1</property>
+
+  <property name="Logging.Publisher.Console" GID="TestGroup" AID="TestApp"></property>
+  <property name="Logging.Publisher.Custom" GID="TestGroup" AID="TestApp">SJPDB OPDB</property>
+  <property name="Logging.Publisher.Email" GID="TestGroup" AID="TestApp"></property>
+  <property name="Logging.Publisher.EventLog" GID="TestGroup" AID="TestApp"></property>
+  <property name="Logging.Publisher.File" GID="TestGroup" AID="TestApp">FILE1</property>
+  <property name="Logging.Publisher.Queue" GID="TestGroup" AID="TestApp"></property>
+
+  <property name="Logging.Publisher.File.FILE1.Directory" GID="TestGroup" AID="TestApp">D:\SJP</property>
+  <property name="Logging.Publisher.File.FILE1.Rotation" GID="TestGroup" AID="TestApp">20000</property>
+
+  <property name="Logging.Publisher.Custom.SJPDB.Name" GID="TestGroup" AID="TestApp">SJPCustomEventPublisher</property>
+  <property name="Logging.Publisher.Custom.OPDB.Name" GID="TestGroup" AID="TestApp">SJPOperationalEventPublisher</property>
+
+  <property name="Logging.Event.Operational.TraceLevel" GID="TestGroup" AID="TestApp">Verbose</property>
+  <property name="Logging.Event.Operational.Verbose.Publishers" GID="TestGroup" AID="TestApp">FILE1</property>
+  <property name="Logging.Event.Operational.Info.Publishers" GID="TestGroup" AID="TestApp">FILE1</property>
+  <property name="Logging.Event.Operational.Warning.Publishers" GID="TestGroup" AID="TestApp">FILE1</property>
+  <property name="Logging.Event.Operational.Error.Publishers" GID="TestGroup" AID="TestApp">FILE1</property>
+
+  <property name="Logging.Event.Custom.Trace" GID="TestGroup" AID="TestApp">On</property>
+  <property name="Logging.Event.Custom" GID="TestGroup" AID="TestApp">JOURNEYREQUEST JOURNEYRESULTS CYCLEREQUEST CYCLERESULT STOPEVENT WORKLOAD</property>
+
+  <property name="Logging.Event.Custom.JOURNEYREQUEST.Name" GID="TestGroup" AID="TestApp">JourneyPlanRequestEvent</property>
+  <property name="Logging.Event.Custom.JOURNEYREQUEST.Assembly" GID="TestGroup" AID="TestApp">sjp.reporting.events</property>
+  <property name="Logging.Event.Custom.JOURNEYREQUEST.Publishers" GID="TestGroup" AID="TestApp">FILE1</property>
+  <property name="Logging.Event.Custom.JOURNEYREQUEST.Trace" GID="TestGroup" AID="TestApp">On</property>
+
+  <property name="Logging.Event.Custom.JOURNEYRESULTS.Name" GID="TestGroup" AID="TestApp">JourneyPlanResultsEvent</property>
+  <property name="Logging.Event.Custom.JOURNEYRESULTS.Assembly" GID="TestGroup" AID="TestApp">sjp.reporting.events</property>
+  <property name="Logging.Event.Custom.JOURNEYRESULTS.Publishers" GID="TestGroup" AID="TestApp">FILE1</property>
+  <property name="Logging.Event.Custom.JOURNEYRESULTS.Trace" GID="TestGroup" AID="TestApp">On</property>
+
+  <property name="Logging.Event.Custom.CYCLEREQUEST.Name" GID="TestGroup" AID="TestApp">CyclePlannerRequestEvent</property>
+  <property name="Logging.Event.Custom.CYCLEREQUEST.Assembly" GID="TestGroup" AID="TestApp">sjp.reporting.events</property>
+  <property name="Logging.Event.Custom.CYCLEREQUEST.Publishers" GID="TestGroup" AID="TestApp">FILE1</property>
+  <property name="Logging.Event.Custom.CYCLEREQUEST.Trace" GID="TestGroup" AID="TestApp">On</property>
+
+  <property name="Logging.Event.Custom.CYCLERESULT.Name" GID="TestGroup" AID="TestApp">CyclePlannerResultEvent</property>
+  <property name="Logging.Event.Custom.CYCLERESULT.Assembly" GID="TestGroup" AID="TestApp">sjp.reporting.events</property>
+  <property name="Logging.Event.Custom.CYCLERESULT.Publishers" GID="TestGroup" AID="TestApp">FILE1</property>
+  <property name="Logging.Event.Custom.CYCLERESULT.Trace" GID="TestGroup" AID="TestApp">On</property>
+  
+  <property name="Logging.Event.Custom.STOPEVENT.Name" GID="TestGroup" AID="TestApp">StopEventRequestEvent</property>
+  <property name="Logging.Event.Custom.STOPEVENT.Assembly" GID="TestGroup" AID="TestApp">sjp.reporting.events</property>
+  <property name="Logging.Event.Custom.STOPEVENT.Publishers" GID="TestGroup" AID="TestApp">FILE1</property>
+  <property name="Logging.Event.Custom.STOPEVENT.Trace" GID="TestGroup" AID="TestApp">On</property>
+
+  <property name="Logging.Event.Custom.WORKLOAD.Assembly" AID="TestApp" GID="TestGroup" >sjp.reporting.events</property>
+  <property name="Logging.Event.Custom.WORKLOAD.Name" AID="TestApp" GID="TestGroup" >WorkloadEvent</property>
+  <property name="Logging.Event.Custom.WORKLOAD.Publishers" AID="TestApp" GID="TestGroup" >FILE1</property>
+  <property name="Logging.Event.Custom.WORKLOAD.Trace" AID="TestApp" GID="TestGroup" >On</property>
+
+  <property name="Logging.Publisher.Custom.CJPDB.Name" AID="TestApp" GID="TestGroup" >CJPCustomEventPublisher</property>
+
+  <!-- Data Notification - Groups -->
+  <property name="DataNotification.PollingInterval.Seconds" GID="TestGroup" AID="TestApp">300</property>
+  <property name="DataNotification.Groups" GID="TestGroup" AID="TestApp">Configuration,Content,Gazetteer,TravelNews</property>
+
+  <!-- Data Notification - Tables -->
+  <property name="DataNotification.Configuration.Database" GID="TestGroup" AID="TestApp">DefaultDB</property>
+  <property name="DataNotification.Configuration.Tables" GID="TestGroup" AID="TestApp">TestTable</property>
+
+  <property name="DataNotification.Content.Database" GID="TestGroup" AID="TestApp">ContentDB</property>
+  <property name="DataNotification.Content.Tables" GID="TestGroup" AID="TestApp">Content,ContentGroup,ContentOverride</property>
+
+  <property name="DataNotification.Gazetteer.Database" GID="TestGroup" AID="TestApp">GazetteerDB</property>
+  <property name="DataNotification.Gazetteer.Tables" GID="TestGroup" AID="TestApp"></property>
+
+  <property name="DataNotification.TravelNews.Database" GID="TestGroup" AID="TestApp">TransientPortalDB</property>
+  <property name="DataNotification.TravelNews.Tables" GID="TestGroup" AID="TestApp">TravelNewsImport</property>
+
+  <!-- Location Service -->
+  <property name="LocationService.Cache.LoadLocations" GID="TestGroup" AID="TestApp">false</property>
+  <property name="LocationService.Cache.LoadPostcodes" GID="TestGroup" AID="TestApp">false</property>
+
+  <property name="LocationService.NaptanPrefix.Airport" GID="TestGroup" AID="TestApp">9200</property>
+  <property name="LocationService.NaptanPrefix.Coach" GID="TestGroup" AID="TestApp">9000</property>
+  <property name="LocationService.NaptanPrefix.Rail" GID="TestGroup" AID="TestApp">9100</property>
+
+  <property name="LocationService.CommonWords" GID="TestGroup" AID="TestApp">rail,station,stations,bus,airport,terminal,Coach,tramway,tramlink,dlr,subway,spt,steam,rly,underground,metrolink,tram,rhdr,supertram,metro</property>
+
+  <!-- Journey Control (CJP and CyclePlanner) -->
+  <property name="JourneyControl.Log.NoJourneyResponses" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.Log.JourneyWebFailures" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.Log.TTBOFailures" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.Log.CJPFailures" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.Log.RoadEngineFailures" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.Log.CyclePlannerFailures" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.Log.DisplayableMessages" GID="TestGroup" AID="TestApp">true</property>
+
+  <property name="JourneyControl.Code.CJP.OK" GID="TestGroup" AID="TestApp">0</property>
+  <property name="JourneyControl.Code.CJP.NoPublicJourney" GID="TestGroup" AID="TestApp">18</property>
+  <property name="JourneyControl.Code.CJP.JourneysRejected" GID="TestGroup" AID="TestApp">19</property>
+  <property name="journeyControl.Code.CJP.AwkwardOvernightRejected" GID="TestGroup" AID="TestApp">30</property>
+  <property name="JourneyControl.Code.CJP.RoadEngineOK" GID="TestGroup" AID="TestApp">100</property>
+  <property name="JourneyControl.Code.CJP.RoadEngineMin" GID="TestGroup" AID="TestApp">100</property>
+  <property name="JourneyControl.Code.CJP.RoadEngineMax" GID="TestGroup" AID="TestApp">199</property>
+
+  <property name="JourneyControl.Code.JourneyWeb.MajorNoResults" GID="TestGroup" AID="TestApp">1</property>
+  <property name="JourneyControl.Code.JourneyWeb.MinorPast" GID="TestGroup" AID="TestApp">1</property>
+  <property name="JourneyControl.Code.JourneyWeb.MinorFuture" GID="TestGroup" AID="TestApp">2</property>
+  <property name="JourneyControl.Code.JourneyWeb.MajorGeneral" GID="TestGroup" AID="TestApp">9</property>
+  <property name="JourneyControl.Code.JourneyWeb.MinorDisplayable" GID="TestGroup" AID="TestApp">2</property>
+
+  <property name="JourneyControl.Code.TTBO.MajorOK" GID="TestGroup" AID="TestApp">0</property>
+  <property name="JourneyControl.Code.TTBO.MinorOK" GID="TestGroup" AID="TestApp">1</property>
+  <property name="JourneyControl.Code.TTBO.MinorNoResults" GID="TestGroup" AID="TestApp">1</property>
+  <property name="JourneyControl.Code.TTBO.NoTimetableServiceFound" GID="TestGroup" AID="TestApp">302</property>
+
+  <property name="JourneyControl.Code.CTP.OK" GID="TestGroup" AID="TestApp">100</property>
+  <property name="JourneyControl.Code.CTP.UndeterminedError" GID="TestGroup" AID="TestApp">1</property>
+  <property name="JourneyControl.Code.CTP.SystemException" GID="TestGroup" AID="TestApp">2</property>
+  <property name="JourneyControl.Code.CTP.OperationNotSupported" GID="TestGroup" AID="TestApp">3</property>
+  <property name="JourneyControl.Code.CTP.InvalidRequest" GID="TestGroup" AID="TestApp">4</property>
+  <property name="JourneyControl.Code.CTP.ErrorConnectingToDatabase" GID="TestGroup" AID="TestApp">5</property>
+  <property name="JourneyControl.Code.CTP.NoJourneyCouldBeFound" GID="TestGroup" AID="TestApp">6</property>
+
+  <property name="JourneyControl.Notes.TrapezeRegions" GID="TestGroup" AID="TestApp">S,Y,NW,SW,W,WM</property>
+  <property name="JourneyControl.NullTollLink.Value" GID="TestGroup" AID="TestApp">No URL has been set for this operator</property>
+  <property name="JourneyControl.CongestionWarning.Value" GID="TestGroup" AID="TestApp">30</property>
+  <property name="JourneyControl.ToidPrefix" GID="TestGroup" AID="TestApp">osgb</property>
+
+  <property name="JourneyControl.CJP.TimeoutMillisecs" GID="TestGroup" AID="TestApp">60000</property>
+
+  <property name="JourneyControl.RiverService.Interchange.Max.Minutes" GID="TestGroup" AID="TestApp">180</property>
+  <property name="JourneyControl.RiverService.Interchange.Minutes" GID="TestGroup" AID="TestApp">15</property>
+  
+  <property name="JourneyControl.CJP.JourneyRequest.Algorithm.Public" GID="TestGroup" AID="TestApp">Default</property>
+  <property name="JourneyControl.CJP.JourneyRequest.DrtIsRequired" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.CJP.JourneyRequest.Sequence" GID="TestGroup" AID="TestApp">2</property>
+  <property name="JourneyControl.CJP.JourneyRequest.InterchangeSpeed" GID="TestGroup" AID="TestApp">0</property>
+  <property name="JourneyControl.CJP.JourneyRequest.WalkingSpeed.MetresPerMin" GID="TestGroup" AID="TestApp">80</property>
+  <property name="JourneyControl.CJP.JourneyRequest.MaxWalkingTime.Minutes" GID="TestGroup" AID="TestApp">25</property>
+  <property name="JourneyControl.CJP.JourneyRequest.RoutingGuideInfluenced" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CJP.JourneyRequest.RoutingGuideCompliantJourneysOnly" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CJP.JourneyRequest.RouteCodes" GID="TestGroup" AID="TestApp"></property>
+  <property name="JourneyControl.CJP.JourneyRequest.OlympicRequest" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.CJP.JourneyRequest.TravelDemandPlan.Switch" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.CJP.JourneyRequest.TravelDemandPlan.Off" GID="TestGroup" AID="TestApp">Normal</property>
+  <property name="JourneyControl.CJP.JourneyRequest.TravelDemandPlan.Outward" GID="TestGroup" AID="TestApp">AccessMajorEvent</property>
+  <property name="JourneyControl.CJP.JourneyRequest.TravelDemandPlan.Return" GID="TestGroup" AID="TestApp">LeaveMajorEvent</property>
+  
+  <property name="JourneyControl.CJP.JourneyRequest.Algorithm.Private" GID="TestGroup" AID="TestApp">Fastest</property>
+  <property name="JourneyControl.CJP.JourneyRequest.AvoidMotorways" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CJP.JourneyRequest.AvoidFerries" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CJP.JourneyRequest.AvoidTolls" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CJP.JourneyRequest.DrivingSpeed.KmPerHour" GID="TestGroup" AID="TestApp">112</property>
+  <property name="JourneyControl.CJP.JourneyRequest.DoNotUseMotorways" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CJP.JourneyRequest.FuelConsumption.MetresPerLitre" GID="TestGroup" AID="TestApp">13807</property>
+  <property name="JourneyControl.CJP.JourneyRequest.FuelPrice.PencePerLitre" GID="TestGroup" AID="TestApp">1150</property>
+
+  <property name="JourneyControl.CyclePlanner.TimeoutMillisecs" GID="TestGroup" AID="TestApp">180000</property>
+
+  <property name="JourneyControl.CyclePlanner.JourneyRequest.IncludeToids" GID="TestGroup" AID="TestApp">false</property>
+
+  <property name="JourneyControl.CyclePlanner.PenaltyFunction.Algorithm" GID="TestGroup" AID="TestApp">QuickestV913</property>
+  <property name="JourneyControl.CyclePlanner.PenaltyFunction.QuickestV913.DllPath" GID="TestGroup" AID="TestApp">D:\TransportDirect\Services\CycleHost\</property>
+  <property name="JourneyControl.CyclePlanner.PenaltyFunction.QuickestV913.Dll" GID="TestGroup" AID="TestApp">td.cp.CyclePenaltyFunctions.v3.dll</property>
+  <property name="JourneyControl.CyclePlanner.PenaltyFunction.QuickestV913.Prefix" GID="TestGroup" AID="TestApp">TransportDirect.JourneyPlanning.CyclePenaltyFunctions</property>
+  <property name="JourneyControl.CyclePlanner.PenaltyFunction.QuickestV913.Suffix" GID="TestGroup" AID="TestApp">QuickestV913</property>
+  
+  <property name="JourneyControl.CyclePlanner.UserPreference.NumberOfPreferences" GID="TestGroup" AID="TestApp">15</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.0" GID="TestGroup" AID="TestApp">850</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.1" GID="TestGroup" AID="TestApp">11000</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.2" GID="TestGroup" AID="TestApp">Congestion</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.3" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.4" GID="TestGroup" AID="TestApp">Bicycle</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.5" GID="TestGroup" AID="TestApp">19</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.6" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.7" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.8" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.9" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.10" GID="TestGroup" AID="TestApp"></property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.11" GID="TestGroup" AID="TestApp"></property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.12" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.13" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.CyclePlanner.UserPreference.Preference.14" GID="TestGroup" AID="TestApp">false</property>
+
+  <property name="JourneyControl.CyclePlanner.JourneyResultSetting.IncludeToids" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.CyclePlanner.JourneyResultSetting.IncludeGeometry" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.CyclePlanner.JourneyResultSetting.IncludeText" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyControl.CyclePlanner.JourneyResultSetting.PointSeperator" GID="TestGroup" AID="TestApp"> </property>
+  <property name="JourneyControl.CyclePlanner.JourneyResultSetting.EastingNorthingSeperator" GID="TestGroup" AID="TestApp">,</property>
+
+  <property name="JourneyControl.CyclePlanner.JourneyResult.IncludeLatitudeLongitude" GID="TestGroup" AID="TestApp">true</property>
+
+  <!-- Cycle Planner Service -->
+  <property name="CyclePlanner.WebService.URL" GID="TestGroup" AID="TestApp">http://212.159.214.41/cycleplannerservice/service.asmx</property>
+  <property name="CyclePlanner.WebService.Timeout.Seconds" GID="TestGroup" AID="TestApp">180</property>
+
+  <!-- Coordinate Convertor Service -->
+  <property name="CoordinateConvertor.WebService.URL" GID="TestGroup" AID="TestApp">http://localhost/SJPWebServices/CoordinateConvertorService/CoordinateConvertor.asmx</property>
+  <property name="CoordinateConvertor.WebService.Timeout.Seconds" GID="TestGroup" AID="TestApp">30</property>
+
+  <!-- Coordinate Convertor Web Service -->
+  <property name="Coordinate.Convertor.DataPath" GID="TestGroup" AID="TestApp">D:\SJP\CodeBase\SJP\SJPWebServices\CoordinateConvertorService\bin\App_Data</property>
+  <property name="Coordinate.Convertor.InitialiseString" GID="TestGroup" AID="TestApp">GIQ.6.0</property>
+  
+  <!-- Stop Event Service -->
+  <property name="JourneyControl.StopEvents.CJP.TimeoutMillisecs" GID="TestGroup" AID="TestApp">30000</property>
+  <property name="JourneyControl.StopEvents.JourneyRequest.IncludeLocationFilter" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.StopEvents.JourneyRequest.RealTimeRequired" GID="TestGroup" AID="TestApp">false</property>
+  <property name="JourneyControl.StopEvents.JourneyRequest.Range" GID="TestGroup" AID="TestApp">3</property>
+
+  <!-- Retail -->
+  <property name="Retail.RetailHandoffXml.Schema.Path" GID="TestGroup" AID="TestApp">D:\SJP\CodeBase\SJP\TestProject\Test References\SJPBookingSystemHandoff.xsd</property>
+  <property name="Retail.RetailHandoffXml.Xmlns" GID="TestGroup" AID="TestApp">http://www.transportdirect.info/SJPBookingSystemHandoff</property>
+  <property name="Retail.RetailHandoffXml.Xmlns.Xs" GID="TestGroup" AID="TestApp">http://www.w3.org/2001/XMLSchema</property>
+
+  <!-- DataServices -->
+  <property name="SJP.UserPortal.DataServices.CountryDrop.db"  AID="TestApp" GID="TestGroup">TransientPortalDB</property>
+  <property name="SJP.UserPortal.DataServices.CountryDrop.query"  AID="TestApp" GID="TestGroup" >SELECT ResourceID, ItemValue, IsSelected FROM DropDownLists WHERE DataSet = 'CountryDrop' ORDER BY SortOrder</property>
+  <property name="SJP.UserPortal.DataServices.CountryDrop.type" AID="TestApp" GID="TestGroup" >3</property>
+  <property name="SJP.UserPortal.DataServices.CycleRouteType.db"  AID="TestApp" GID="TestGroup" >TransientPortalDB</property>
+  <property name="SJP.UserPortal.DataServices.CycleRouteType.query" AID="TestApp" GID="TestGroup" >SELECT ResourceID, ItemValue, IsSelected FROM DropDownLists WHERE DataSet = 'CycleRouteType' ORDER BY SortOrder</property>
+  <property name="SJP.UserPortal.DataServices.CycleRouteType.type"  AID="TestApp" GID="TestGroup" >3</property>
+  <property name="SJP.UserPortal.DataServices.NewsRegionDrop.db"  AID="TestApp" GID="TestGroup" >TransientPortalDB</property>
+  <property name="SJP.UserPortal.DataServices.NewsRegionDrop.query" AID="TestApp" GID="TestGroup" >SELECT ResourceID, ItemValue, IsSelected FROM DropDownLists WHERE DataSet = 'NewsRegionDrop' ORDER BY SortOrder</property>
+  <property name="SJP.UserPortal.DataServices.NewsRegionDrop.type"  AID="TestApp" GID="TestGroup" >3</property>
+  <property name="SJP.UserPortal.DataServices.SJPEventDates.db" AID="TestApp" GID="TestGroup" >TransientPortalDB</property>
+  <property name="SJP.UserPortal.DataServices.SJPEventDates.query" AID="TestApp" GID="TestGroup" >SELECT eventdate FROM SJPEventDates</property>
+  <property name="SJP.UserPortal.DataServices.SJPEventDates.type"  AID="TestApp" GID="TestGroup" >2</property>
+
+  <!-- Journey Plan Runner Caller -->
+  <property name="JourneyPlanner.Validate.Games.StartDate" GID="TestGroup" AID="TestApp">2012/07/18 00:00:00</property>
+  <property name="JourneyPlanner.Validate.Games.EndDate" GID="TestGroup" AID="TestApp">2012/09/14 23:59:59</property>
+  <property name="JourneyPlanner.Switch.CyclePlanner.Available" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyPlanner.Validate.Switch.DatesInGamesDateRange" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyPlanner.Validate.Switch.OneLocationIsVenue" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyPlanner.Validate.Switch.CycleLocationsDistance" GID="TestGroup" AID="TestApp">true</property>
+  <property name="JourneyPlanner.Validate.Locations.CycleDistance.Metres" GID="TestGroup" AID="TestApp">50000</property>
+
+
+  <property name="WebLogReader.ClientIPExcludes" AID="TestApp" GID="TestGroup" ></property>
+  <property name="WebLogReader.UserExperienceVisitor.UserAgent" AID="TestApp" GID="TestGroup" >SiteCon</property>
+  <property name="WebLogReader.NonPageMinimumBytes"  AID="TestApp" GID="TestGroup" >5000000</property>
+  <property name="WebLogReader.RolloverPeriod" AID="TestApp" GID="TestGroup" >Hourly</property>
+  <property name="WebLogReader.UseLocalTime"  AID="TestApp" GID="TestGroup" >false</property>
+  <property name="WebLogReader.ValidStatusCode.RANGE1.Max" AID="TestApp" GID="TestGroup" >399</property>
+  <property name="WebLogReader.ValidStatusCode.RANGE1.Min" AID="TestApp" GID="TestGroup" >100</property>
+  <property name="WebLogReader.ValidStatusCode.RANGE2.Max" AID="TestApp" GID="TestGroup" >599</property>
+  <property name="WebLogReader.ValidStatusCode.RANGE2.Min" AID="TestApp" GID="TestGroup" >500</property>
+  <property name="WebLogReader.ValidStatusCode.Ranges" AID="TestApp" GID="TestGroup" >RANGE1 RANGE2</property>
+  <property name="WebLogReader.W3SVC1.ArchiveDirectory" AID="TestApp" GID="TestGroup" >weblogreader/W3SVC1/Archive</property>
+  <property name="WebLogReader.W3SVC1.ArchiveDirectory.NegativeTest" AID="TestApp" GID="TestGroup" >weblogreader/W3SVC1/Archive1</property>
+  <property name="WebLogReader.W3SVC1.LogDirectory" AID="TestApp" GID="TestGroup" >weblogreader/W3SVC1</property>
+  <property name="WebLogReader.W3SVC1.LogDirectory.NegativeTest" AID="TestApp" GID="TestGroup" >weblogreader/W3SVC11</property>
+  <property name="WebLogReader.WebLogFolders" AID="TestApp" GID="TestGroup" >W3SVC1</property>
+  <property name="WebLogReader.WebPageExtensions" AID="TestApp" GID="TestGroup" >asp aspx htm html pdf ashx axd [none]</property>
+
+</lookup>

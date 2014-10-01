@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StopAccessibilityLinksData>
+<StopAccessibilityLinks>
+<StopAccessibilityLinks StopNaPTAN="9100LECSTER" StopName="Leicester Rail Station" StopOperator="EM" LinkUrl="http://www.transportdirect.info" WEFDate="2012-07-01" WEUDate="2012-09-14" />
+<StopAccessibilityLinks StopNaPTAN="9000NOT" StopName="Nottingham Coach Station" StopOperator="NE" LinkUrl="http://www.transportdirect.info" WEFDate="2012-07-15" WEUDate="2012-09-01" />
+</StopAccessibilityLinks>
+</StopAccessibilityLinksData>

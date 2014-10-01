@@ -1,0 +1,267 @@
+﻿/* Styles override for SJP HighVis accessible */
+
+/********** COLOURS ***********/
+
+/* Buttons */
+div#MainContent input.linkButton
+{
+    color: #FFFFFF;
+}
+
+/* Journey Planner Input */
+div#page-2012 div.journeyplannerinput div#MainContent,
+div#MainContent .eventDateTime div.eventDate div.return
+{
+   background-color: #112233;
+}
+
+/* Journey Summary */
+div.journeySummary table.legSummary tr.odd,
+div.stopEventResult table.stopEventResultTable tr.odd
+{
+    background-color: #112233;
+}
+div.journeySummary table.legSummary tr.selected
+{
+    background-color: #108AFF;
+}
+div.journeySummary div.leg div.row div.row2 div.columnMode img,
+div.journeySummary div.leg div.row div.row2 div.columnDetail div.vehicleFeatures img,
+div.journeySummary div.leg div.row div.row2 div.columnDetail div.accessibleFeatures img
+{
+    background-color: #FFFFFF;
+}
+/* Generic javascript right down arrow */
+div#MainContent div.journeySummary table.legSummary td.transport div.js_arrow_btn{
+   background: none;
+}
+
+/* Retailers */
+.sjpRetailerIcon 
+{
+    background-color: #FFFFFF;
+}
+
+/********** BACKGROUNDS *******/
+
+/* Journey Planner Input */
+div.sjpHeading
+{
+    background: none;
+}
+
+/* Journey Options Tabs */
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li input,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.active,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.pjTab,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.rsTab,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.prTab,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.bbTab,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.cyTab
+{
+    background: none;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.tabHeader img
+{
+    display: none;
+}
+
+/* Arrow button on the further accessibility needs */
+div#MainContent input.js_accessiblity_btn
+{
+   background: none;
+}
+
+/* Printer friendly */
+div#MainContent div.printerFriendly input.linkButton, div#MainContent div.printerFriendly a
+{
+    background: none;
+}
+
+/* Top Tips */
+div#Content div#top-tips div.slider
+{
+    background: none !important;
+}
+
+/* Generic Promo Widget */
+div#page-2012 .sidebar-right-2012 div.stp-side-box h2.blue
+{
+    /*background-image: none;*/
+}
+div#page-2012 div.sidebar-right-2012 div.stp-side-box div.angle-button-image div.link 
+{
+    /*background: none;*/
+}
+
+/* Further Accessibility page */
+div.stopSelection
+{
+    background: none;
+}
+
+/********** FONTS *************/
+
+/* Buttons */
+div#MainContent input.linkButton
+{
+    font-size: 1.1em;
+}
+
+/* Journey Planner Input */
+.locationRow .locationBox,
+input.dateEntry
+{
+    font-size: 1.0em;
+}
+
+/********** MAIN **************/
+
+div.sjpContent img 
+{ 
+    margin: 0px; 
+}
+
+/* Buttons */
+div#MainContent input.linkButton
+{
+    text-decoration: underline;
+}
+.sjpContent div.JourneyLocations div.serviceRoutes input.btnLargePink
+{
+    width: 200px;
+}
+
+/* Journey Planner Input */
+div.journeyParams
+{
+    width: 450px;
+}
+div#MainContent .eventDateTime div.eventDate div.outward, 
+div#MainContent .eventDateTime div.eventDate div.return
+{
+    width: auto;
+}
+div#MainContent .eventDateTime div.eventDate div.timePicker
+{
+    width: auto;
+}
+.locationRow .locationBox,
+input.dateEntry
+{
+    height: 25px;
+}
+
+/* Journey Options Tabs */
+div.sjp_jo_tab div.sjp_tab_headers
+{
+    height: auto;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li
+{
+    float: none;
+    height: auto;
+    width: auto;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.pjTab,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.rsTab,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.prTab,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.bbTab,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.cyTab
+{
+    width: auto;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.pjTab input,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.rsTab input,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.prTab input,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.bbTab input,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.cyTab input,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.pjTab a,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.rsTab a,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.prTab a,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.bbTab a,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.cyTab a
+{
+    padding-left: 0px;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li a
+{
+    display: inline;
+    text-decoration: underline;
+}
+
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.submittab
+{
+    margin-top: 20px;
+}
+
+/* Journey Summary Heading */
+div.journeySummary div.header div.journeyHeading, 
+div.stopEventResult div.header div.journeyHeading
+{
+    padding: 2px 0px 3px 20px;   
+}
+
+/* Journey Summary */
+div.journeySummary
+{
+    width: 650px;
+}
+div.journeySummary table.legSummary td.transport div.transportModes input.linkButton, 
+div.journeySummary table.legSummary td.transport div.transportModes span
+{
+    text-decoration: underline;    
+}
+
+/* Journey leg rows - row 2 */
+div.journeySummary div.leg div.row div.row2 div.columnMode img
+{
+    padding: 5px;
+}
+div.journeySummary div.leg div.row div.row2 div.columnDetail div.arrow_btn input,
+div.journeySummary div.leg div.row div.row2 div.columnDetail input.detailLinkButton
+{
+    height: 22px;
+}
+div.journeySummary div.leg div.row div.row2 div.columnDetail div.vehicleFeatures img,
+div.journeySummary div.leg div.row div.row2 div.columnDetail div.accessibleFeatures img
+{
+    padding: 5px;
+}
+
+/* River Services */
+div.JourneyLocations div.serviceResults div.stopEventResult
+{
+    width: 500px;
+}
+
+/* Retailers */
+.sjpRetailer
+{
+    height: 60px;
+}
+.sjpRetailerIcon 
+{
+    padding: 5px;
+}
+
+/* Top Tips */
+div#Content div.snippet div.slider 
+{
+    min-height: 230px;
+}
+div#Content div#top-tips div.slider 
+{
+    padding-left: 5px;
+}
+div#page-2012 div#top-tips 
+{
+    border-bottom-width: 0px;
+}
+
+/* Further Accessibility page */
+div.stopSelection div.stopTypes input
+{
+    display: inline;
+}

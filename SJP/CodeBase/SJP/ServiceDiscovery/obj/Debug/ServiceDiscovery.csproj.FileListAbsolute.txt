@@ -1,0 +1,9 @@
+D:\SJP\CodeBase\SJP\ServiceDiscovery\bin\Debug\sjp.common.servicediscovery.dll
+D:\SJP\CodeBase\SJP\ServiceDiscovery\bin\Debug\sjp.common.servicediscovery.pdb
+D:\SJP\CodeBase\SJP\ServiceDiscovery\bin\Debug\sjp.common.servicediscovery.dll.CodeAnalysisLog.xml
+D:\SJP\CodeBase\SJP\ServiceDiscovery\bin\Debug\sjp.common.servicediscovery.dll.lastcodeanalysissucceeded
+D:\SJP\CodeBase\SJP\ServiceDiscovery\bin\Debug\sjp.common.dll
+D:\SJP\CodeBase\SJP\ServiceDiscovery\bin\Debug\sjp.common.pdb
+D:\SJP\CodeBase\SJP\ServiceDiscovery\obj\Debug\ServiceDiscovery.csprojResolveAssemblyReference.cache
+D:\SJP\CodeBase\SJP\ServiceDiscovery\obj\Debug\sjp.common.servicediscovery.dll
+D:\SJP\CodeBase\SJP\ServiceDiscovery\obj\Debug\sjp.common.servicediscovery.pdb

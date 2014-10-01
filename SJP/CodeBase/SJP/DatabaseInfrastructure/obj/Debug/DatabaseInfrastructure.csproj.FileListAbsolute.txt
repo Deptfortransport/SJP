@@ -1,0 +1,16 @@
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.databaseinfrastructure.dll
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.databaseinfrastructure.pdb
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.databaseinfrastructure.dll.CodeAnalysisLog.xml
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.databaseinfrastructure.dll.lastcodeanalysissucceeded
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.dll
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.eventlogging.dll
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.propertymanager.dll
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.servicediscovery.dll
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.extenders.dll
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.pdb
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.eventlogging.pdb
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.propertymanager.pdb
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.servicediscovery.pdb
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\bin\Debug\sjp.common.extenders.pdb
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\obj\Debug\sjp.common.databaseinfrastructure.dll
+D:\SJP\CodeBase\SJP\DatabaseInfrastructure\obj\Debug\sjp.common.databaseinfrastructure.pdb

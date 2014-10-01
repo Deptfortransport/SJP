@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F70D1C0-9DAD-4857-B26C-AEE5ECC8E867}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SJP.TestProject</RootNamespace>
+    <AssemblyName>sjp.testproject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\..\RuleSets\TDSJPRuleSet.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisLogFile>bin\Debug\sjp.testproject.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\..\..\RuleSets\TDSJPRuleSet.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\sjp.testproject.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.GIQ60Lib">
+      <HintPath>..\..\..\ThirdParty\Quest\Interop.GIQ60Lib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="soss_svcdotnet, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a1ec0b86f746a476, processorArchitecture=AMD64" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.DynamicData.Design" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="td.CJP">
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJP.dll</HintPath>
+    </Reference>
+    <Reference Include="td.CJPInterface">
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="td.common">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.common.dll</HintPath>
+    </Reference>
+    <Reference Include="td.common.databaseinfrastructure">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.common.databaseinfrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="td.common.logging">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.common.logging.dll</HintPath>
+    </Reference>
+    <Reference Include="td.common.propertyservice.databasepropertyprovider">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.common.propertyservice.databasepropertyprovider.dll</HintPath>
+    </Reference>
+    <Reference Include="td.common.propertyservice.properties">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.common.propertyservice.properties.dll</HintPath>
+    </Reference>
+    <Reference Include="td.common.servicediscovery">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.common.servicediscovery.dll</HintPath>
+    </Reference>
+    <Reference Include="td.datagateway.framework">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.datagateway.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="td.reportdataprovider.cjpcustomevents">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.reportdataprovider.cjpcustomevents.dll</HintPath>
+    </Reference>
+    <Reference Include="td.reportdataprovider.tdpcustomevents">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.reportdataprovider.tdpcustomevents.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataImporters\SJPTravelcardDataImporterTest.cs" />
+    <Compile Include="EventReceiver\EventParserTest.cs" />
+    <Compile Include="EventReceiver\EventReceiverInitialisationTest.cs" />
+    <Compile Include="EventReceiver\EventReceiverPropertyValidatorTest.cs" />
+    <Compile Include="EventReceiver\EventReceiverServiceTest.cs" />
+    <Compile Include="EventReceiver\EventReceiverTest.cs" />
+    <Compile Include="EventReceiver\InstallerTest.cs" />
+    <Compile Include="EventReceiver\MockEvent.cs" />
+    <Compile Include="EventReceiver\MockPropertiesEventWrite.cs" />
+    <Compile Include="EventReceiver\MockPropertiesGoodProperties.cs" />
+    <Compile Include="EventReceiver\ProgramTest.cs" />
+    <Compile Include="CommonWeb\HttpContextHelperTest.cs" />
+    <Compile Include="Common\LanguageHelperTest.cs" />
+    <Compile Include="Initialisation\SJPMobileInitialisationTest.cs" />
+    <Compile Include="Retail\TravelcardCataloguePerformanceTest.cs" />
+    <Compile Include="SessionManager\AbstractKeyTest.cs" />
+    <Compile Include="SessionManager\BoolKeyTest.cs" />
+    <Compile Include="CoordinateConvertorService\CoordinateConvertorTest.cs" />
+    <Compile Include="CyclePlannerService\CyclePlannerFactoryTest.cs" />
+    <Compile Include="CyclePlannerService\CyclePlannerTest.cs" />
+    <Compile Include="SessionManager\DateKeyTest.cs" />
+    <Compile Include="SessionManager\DeferredKeyTest.cs" />
+    <Compile Include="SessionManager\DoubleKeyTest.cs" />
+    <Compile Include="SessionManager\IKeyTest.cs" />
+    <Compile Include="SessionManager\InputPageStateTest.cs" />
+    <Compile Include="SessionManager\IntKeyTest.cs" />
+    <Compile Include="SessionManager\ISJPSessionAwareTest.cs" />
+    <Compile Include="SessionManager\ISJPSessionFactoryTest.cs" />
+    <Compile Include="SessionManager\ISJPSessionManagerTest.cs" />
+    <Compile Include="SessionManager\ISJPSessionTest.cs" />
+    <Compile Include="SessionManager\JourneyViewStateTest.cs" />
+    <Compile Include="SessionManager\PageIdKeyTest.cs" />
+    <Compile Include="SessionManager\SessionKeyTest.cs" />
+    <Compile Include="SessionManager\SessionManagerKeyTest.cs" />
+    <Compile Include="SessionManager\SJPRequestManagerTest.cs" />
+    <Compile Include="SessionManager\SJPResultManagerTest.cs" />
+    <Compile Include="SessionManager\SJPSessionFactoryTest.cs" />
+    <Compile Include="SessionManager\SJPSessionManagerTest.cs" />
+    <Compile Include="SessionManager\SJPSessionTest.cs" />
+    <Compile Include="SessionManager\SJPStopEventRequestManagerTest.cs" />
+    <Compile Include="SessionManager\SJPStopEventResultManagerTest.cs" />
+    <Compile Include="LocationService\SJPGNATAdminAreaTest.cs" />
+    <Compile Include="StateServer\DataAccessorStringTest.cs" />
+    <Compile Include="StateServer\ISJPStateServerTest.cs" />
+    <Compile Include="JourneyPlanRunner\CycleJourneyPlanRunnerCallerFactoryTest.cs" />
+    <Compile Include="JourneyPlanRunner\CycleJourneyPlanRunnerCallerTest.cs" />
+    <Compile Include="JourneyPlanRunner\CycleJourneyPlanRunnerTest.cs" />
+    <Compile Include="DataImporters\TestTDInitialisation.cs" />
+    <Compile Include="CommandAndControl\ChecksumHelperTest.cs" />
+    <Compile Include="CommandAndControl\HashGeneratorProgramTest.cs" />
+    <Compile Include="CommandAndControl\SJPDashboardTest.cs" />
+    <Compile Include="DataServices\NPTG\AdminAreaTest.cs" />
+    <Compile Include="JourneyPlanRunner\JourneyPlanRunnerBaseTest.cs" />
+    <Compile Include="JourneyPlanRunner\JourneyPlanRunnerCallerFactoryTest.cs" />
+    <Compile Include="JourneyPlanRunner\JourneyPlanRunnerCallerTest.cs" />
+    <Compile Include="JourneyPlanRunner\JourneyPlanRunnerTest.cs" />
+    <Compile Include="CyclePlannerService\ICyclePlannerTest.cs" />
+    <Compile Include="CoordinateConvertorService\LatitudeLongitudeTest.cs" />
+    <Compile Include="LocationService\LevensteinTest.cs" />
+    <Compile Include="StateServer\MessagesTest.cs" />
+    <Compile Include="MockSJPSession.cs" />
+    <Compile Include="MockSJPSessionFactory.cs" />
+    <Compile Include="MockSJPSessionManager.cs" />
+    <Compile Include="ServiceDiscovery\SJPServiceDiscoveryTest.cs" />
+    <Compile Include="ServiceDiscovery\TestService.cs" />
+    <Compile Include="ServiceDiscovery\TestServiceFactory.cs" />
+    <Compile Include="ServiceDiscovery\TestServiceFactoryInitialisation.cs" />
+    <Compile Include="StateServer\SJPStateServerTest.cs" />
+    <Compile Include="SessionManager\StringKeyTest.cs" />
+    <Compile Include="SessionManager\TravelNewsPageStateTest.cs" />
+    <Compile Include="Retail\TravelcardCatalogueFactoryTest.cs" />
+    <Compile Include="Retail\TravelcardCatalogueTest.cs" />
+    <Compile Include="WebLogReader\ProgramTest.cs" />
+    <Compile Include="CoordinateConvertorService\OSGridReferenceTest.cs" />
+    <Compile Include="ResourceManager\ContentGroupTest.cs" />
+    <Compile Include="ResourceManager\ContentProviderTest.cs" />
+    <Compile Include="DataServices\CycleAttributes\CycleAttributesFactoryTest.cs" />
+    <Compile Include="DataServices\CycleAttributes\CycleAttributesTest.cs" />
+    <Compile Include="DataServices\CycleAttributes\CycleAttributeTest.cs" />
+    <Compile Include="DatabaseInfrastructure\ChangedEventArgsTest.cs" />
+    <Compile Include="CommandAndControl\CommandAndControlAgentServiceTest.cs" />
+    <Compile Include="CommonWeb\CurrentLanguageTest.cs" />
+    <Compile Include="CommonWeb\CurrentStyleTest.cs" />
+    <Compile Include="CommonWeb\PersistentCookieTest.cs" />
+    <Compile Include="DatabaseInfrastructure\DataChangeNotificationFactoryTest.cs" />
+    <Compile Include="DatabaseInfrastructure\DataChangeNotificationGroupTest.cs" />
+    <Compile Include="DatabaseInfrastructure\DataChangeNotificationTest.cs" />
+    <Compile Include="DataServices\DataServicesFactoryTest.cs" />
+    <Compile Include="DataServices\DataServicesTest.cs" />
+    <Compile Include="DataServices\NPTG\DistrictTest.cs" />
+    <Compile Include="DataServices\DSDropItemTest.cs" />
+    <Compile Include="LocationJSGenerator\JSGeneratorSettingsTest.cs" />
+    <Compile Include="DataServices\NPTG\NPTGDataFactoryTest.cs" />
+    <Compile Include="DataServices\NPTG\NPTGDataTest.cs" />
+    <Compile Include="CommandAndControl\HashValidatorProgramTest.cs" />
+    <Compile Include="ScreenFlow\MessagesTest.cs" />
+    <Compile Include="ScreenFlow\PageControllerFactoryTest.cs" />
+    <Compile Include="ScreenFlow\PageControllerTest.cs" />
+    <Compile Include="ScreenFlow\PageTransferCacheTest.cs" />
+    <Compile Include="ScreenFlow\PageTransferDetailTest.cs" />
+    <Compile Include="Reporting\Events\BasePageEntryEventTest.cs" />
+    <Compile Include="CoordinateConvertorProvider\CoordinateConvertorFactoryTest.cs" />
+    <Compile Include="CoordinateConvertorProvider\CoordinateConvertorTest.cs" />
+    <Compile Include="CoordinateConvertorProvider\ICoordinateConvertorTest.cs" />
+    <Compile Include="CoordinateConvertorProvider\MockCoordinateConvertor.cs" />
+    <Compile Include="Reporting\Events\CyclePlannerRequestEventTest.cs" />
+    <Compile Include="Reporting\Events\CyclePlannerResultEventTest.cs" />
+    <Compile Include="Reporting\Events\DataGatewayEventTest.cs" />
+    <Compile Include="JourneyControl\CyclePlannerManagerTest.cs" />
+    <Compile Include="JourneyControl\CJPManagerTest.cs" />
+    <Compile Include="EventLogging\ConsolePublisherTest.cs" />
+    <Compile Include="EventLogging\CustomEmailEventTest.cs" />
+    <Compile Include="EventLogging\CustomEventFilterTest.cs" />
+    <Compile Include="EventLogging\CustomEventOne.cs" />
+    <Compile Include="EventLogging\CustomEventSwitchTest.cs" />
+    <Compile Include="DatabaseInfrastructure\SqlHelperTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventLogging\CustomEventTwo.cs" />
+    <Compile Include="EventLogging\DefaultFormatterTest.cs" />
+    <Compile Include="EventLogging\EventLogPublisherTest.cs" />
+    <Compile Include="EventLogging\EventPublisherGroupTest.cs" />
+    <Compile Include="EventLogging\FilePublisherTest.cs" />
+    <Compile Include="EventLogging\LoggingPropertyValidatorTest.cs" />
+    <Compile Include="EventLogging\MockCustomEventConsoleFormatter.cs" />
+    <Compile Include="EventLogging\MockCustomEventEmailFormatter.cs" />
+    <Compile Include="EventLogging\MockCustomEventEventLogFormatter.cs" />
+    <Compile Include="EventLogging\MockCustomEventFileFormatter.cs" />
+    <Compile Include="EventLogging\MockObjects\MockPropertiesBadPublishers.cs" />
+    <Compile Include="EventLogging\MockObjects\MockPropertiesCoreCustomPublisher.cs" />
+    <Compile Include="EventLogging\MockObjects\MockPropertiesEmpty.cs" />
+    <Compile Include="EventLogging\MockObjects\MockPropertiesEmptyValues.cs" />
+    <Compile Include="EventLogging\MockObjects\MockPropertiesGood.cs" />
+    <Compile Include="EventLogging\MockObjects\MockPropertiesGoodMinimumProperties.cs" />
+    <Compile Include="EventLogging\MockObjects\MockPropertiesGoodPublishersBadEvents.cs" />
+    <Compile Include="EventLogging\MockObjects\MockPropertiesGoodServiceFactory.cs" />
+    <Compile Include="EventLogging\MockObjects\SJPEvent1.cs" />
+    <Compile Include="EventLogging\MockObjects\SJPEvent2.cs" />
+    <Compile Include="EventLogging\MockObjects\SJPEvent3.cs" />
+    <Compile Include="EventLogging\MockObjects\SJPEvent4.cs" />
+    <Compile Include="EventLogging\MockObjects\SJPPublisher1.cs" />
+    <Compile Include="EventLogging\MockObjects\SJPPublisher2.cs" />
+    <Compile Include="EventLogging\MockObjects\SJPPublisher3.cs" />
+    <Compile Include="EventLogging\OperationalEventConsoleFormatterTest.cs" />
+    <Compile Include="EventLogging\OperationalEventEmailFormatterTest.cs" />
+    <Compile Include="EventLogging\OperationalEventEventLogFormatterTest.cs" />
+    <Compile Include="EventLogging\OperationalEventFileFormatterTest.cs" />
+    <Compile Include="EventLogging\OperationalEventFilterTest.cs" />
+    <Compile Include="EventLogging\OperationalEventTest.cs" />
+    <Compile Include="Reporting\Events\JourneyPlanRequestEventTest.cs" />
+    <Compile Include="Reporting\Events\JourneyPlanResultsEventTest.cs" />
+    <Compile Include="Reporting\Events\LandingPageEntryEventTest.cs" />
+    <Compile Include="LocationService\LatitudeLongitudeTest.cs" />
+    <Compile Include="LocationJSGenerator\JSLocationProviderTest.cs" />
+    <Compile Include="LocationJSGenerator\JSLocationTest.cs" />
+    <Compile Include="LocationJSGenerator\ProgramTest.cs" />
+    <Compile Include="LocationService\LocationServiceFactoryTest.cs" />
+    <Compile Include="LocationService\LocationServiceTest.cs" />
+    <Compile Include="LocationService\LocationServiceInitialisation.cs" />
+    <Compile Include="LocationService\OSGridReferenceTest.cs" />
+    <Compile Include="Reporting\Events\PageEntryEventTest.cs" />
+    <Compile Include="PropertyManager\MockPropertyValidator.cs" />
+    <Compile Include="PropertyProviders\DatabasePropertyProviderTest.cs" />
+    <Compile Include="PropertyProviders\FilePropertyProviderTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyManager\PropertyServiceFactoryTest.cs" />
+    <Compile Include="PropertyManager\PropertyValidatorTest.cs" />
+    <Compile Include="EventLogging\QueuePublisherTest.cs" />
+    <Compile Include="EventLogging\SJPTraceListenerTest.cs" />
+    <Compile Include="EventLogging\SJPTraceSwitchTest.cs" />
+    <Compile Include="LocationService\SJPVenueLocationCacheTest.cs" />
+    <Compile Include="LocationService\SJPGNATLocationCacheTest.cs" />
+    <Compile Include="LocationService\SJPLocationCacheTest.cs" />
+    <Compile Include="LocationService\SJPLocationTypeHelperTest.cs" />
+    <Compile Include="Reporting\Events\ReceivedOperationalEventTest.cs" />
+    <Compile Include="Reporting\Events\ReferenceTransactionEventTest.cs" />
+    <Compile Include="Reporting\Events\RepeatVisitorEventTest.cs" />
+    <Compile Include="Reporting\Events\RetailerHandoffEventTest.cs" />
+    <Compile Include="Retail\RetailerCatalogueFactoryTest.cs" />
+    <Compile Include="Retail\RetailerCatalogueTest.cs" />
+    <Compile Include="Retail\RetailHandoffConvertorTest.cs" />
+    <Compile Include="Reporting\EventPublishers\SJPCustomEventPublisherTest.cs" />
+    <Compile Include="Reporting\EventPublishers\SJPOperationalEventPublisherTest.cs" />
+    <Compile Include="Reporting\Events\SJPCustomEventTest.cs" />
+    <Compile Include="JourneyControl\StopEventManagerTest.cs" />
+    <Compile Include="Common\SJPExceptionTest.cs" />
+    <Compile Include="Common\SJPMessageTest.cs" />
+    <Compile Include="DatabaseInfrastructure\SqlTypeHelperTest.cs" />
+    <Compile Include="Reporting\Events\StopEventRequestEventTest.cs" />
+    <Compile Include="Initialisation\SJPWebInitialisationTest.cs" />
+    <Compile Include="LocationJSGenerator\SJPNonPostcodeLocationTest.cs" />
+    <Compile Include="ResourceManager\SJPResourceManagerTest.cs" />
+    <Compile Include="DataServices\StopAccessibilityLinks\StopAccessibilityLinksFactoryTest.cs" />
+    <Compile Include="DataServices\StopAccessibilityLinks\StopAccessibilityLinksTest.cs" />
+    <Compile Include="DataServices\StopAccessibilityLinks\StopAccessibilityLinkTest.cs" />
+    <Compile Include="Extenders\StringExtendersTest.cs" />
+    <Compile Include="DataImporters\SJPCycleParkImporterTest.cs" />
+    <Compile Include="DataImporters\SJPGNATLocationsDataImporterTest.cs" />
+    <Compile Include="DataImporters\SJPParkAndRideLocationsImporterTest.cs" />
+    <Compile Include="DataImporters\SJPStopAccessibilityLinksDataImporterTest.cs" />
+    <Compile Include="DataImporters\SJPVenueAccessDataImporterTest.cs" />
+    <Compile Include="DataImporters\SJPVenueAdditionalDataImporterTest.cs" />
+    <Compile Include="DataImporters\SJPVenueGateDataImporterTest.cs" />
+    <Compile Include="LocationService\SJPGNATLocationTest.cs" />
+    <Compile Include="LocationService\SJPLocationTest.cs" />
+    <Compile Include="LocationService\SJPParkAvailabilityTest.cs" />
+    <Compile Include="LocationService\SJPParkTest.cs" />
+    <Compile Include="LocationService\SJPPierVenueNavigationPathTest.cs" />
+    <Compile Include="LocationService\SJPVenueAccessStationTest.cs" />
+    <Compile Include="LocationService\SJPVenueAccessTest.cs" />
+    <Compile Include="LocationService\SJPVenueCarParkTest.cs" />
+    <Compile Include="LocationService\SJPVenueCycleParkTest.cs" />
+    <Compile Include="LocationService\SJPVenueGateCheckConstraintTest.cs" />
+    <Compile Include="LocationService\SJPVenueGateNavigationPathTest.cs" />
+    <Compile Include="LocationService\SJPVenueGateTest.cs" />
+    <Compile Include="LocationService\SJPVenueLocationTest.cs" />
+    <Compile Include="LocationService\SJPVenueRiverServiceTest.cs" />
+    <Compile Include="JourneyPlanRunner\StopEventRunnerCallerFactoryTest.cs" />
+    <Compile Include="JourneyPlanRunner\StopEventRunnerCallerTest.cs" />
+    <Compile Include="JourneyPlanRunner\StopEventRunnerTest.cs" />
+    <Compile Include="WebLogReader\StatusCodeTest.cs" />
+    <Compile Include="Test References\SJPBookingSystemHandoff.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SJPBookingSystemHandoff.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TestDataManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestInitialisation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reporting\Events\WorkloadEventTest.cs" />
+    <Compile Include="LocationService\TransitShuttleTest.cs" />
+    <Compile Include="TravelNews\TravelNewsHandlerFactoryTest.cs" />
+    <Compile Include="TravelNews\TravelNewsHandlerTest.cs" />
+    <Compile Include="WebLogReader\W3CWebLogDataTest.cs" />
+    <Compile Include="WebLogReader\W3CWebLogReaderTest.cs" />
+    <Compile Include="WebLogReader\WebLogDataSpecificationTest.cs" />
+    <Compile Include="WebLogReader\WebLogReaderControllerTest.cs" />
+    <Compile Include="WebLogReader\WebLogReaderInitialisationTest.cs" />
+    <Compile Include="WebLogReader\WebLogReaderPropertyValidatorTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Shadow Include="Test References\sjp.common.databaseinfrastructure.accessor" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommandAndControl\ChecksumUtils\ChecksumUtils.csproj">
+      <Project>{A44D6C6D-4331-4D1B-BB59-7CB532A0C4AD}</Project>
+      <Name>ChecksumUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandAndControl\CommandAndControlAgentService\CommandAndControlAgentService.csproj">
+      <Project>{6E4B9146-D44D-47B0-A9CA-82381D7E44E6}</Project>
+      <Name>CommandAndControlAgentService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandAndControl\HashGenerator\HashGenerator.csproj">
+      <Project>{66D44518-5380-4621-AA03-E95DBC0FD17E}</Project>
+      <Name>HashGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandAndControl\HashValidator\HashValidator.csproj">
+      <Project>{E77D2C1D-4109-4DE2-A975-D16CD8CFE321}</Project>
+      <Name>HashValidator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandAndControl\SJPDashboard\SJPDashboard.csproj">
+      <Project>{FF72ADBF-A2A2-4DF5-8C0B-2C76A9E43702}</Project>
+      <Name>SJPDashboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonWeb\CommonWeb.csproj">
+      <Project>{D1182D81-3E17-441B-82E7-97AEBF9B8879}</Project>
+      <Name>CommonWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{2EF9DD6E-4BA7-46BF-84CB-7509A5099F44}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoordinateConvertorProvider\CoordinateConvertorProvider.csproj">
+      <Project>{C648ACE3-40CC-41FE-9B52-0ACF9C3BE5BC}</Project>
+      <Name>CoordinateConvertorProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CyclePlannerService\CyclePlannerService.csproj">
+      <Project>{5B98B72A-C603-4F55-9ACD-34B606AF2107}</Project>
+      <Name>CyclePlannerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseInfrastructure\DatabaseInfrastructure.csproj">
+      <Project>{ECA839BB-B752-49F6-9D60-69F20CC5BBA4}</Project>
+      <Name>DatabaseInfrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataImporters\DataImporters.csproj">
+      <Project>{0B4A45BB-262C-4E18-830A-0EA8B6B58FB9}</Project>
+      <Name>DataImporters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Project>{348204EC-DDF7-4735-8DA0-341F206CCCD9}</Project>
+      <Name>DataServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLogging\EventLogging.csproj">
+      <Project>{4AED788E-EA9A-4C3F-BB8D-07A7F1FBE8AA}</Project>
+      <Name>EventLogging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extenders\Extenders.csproj">
+      <Project>{F82632FB-A7EB-4121-B4C9-338450D024AF}</Project>
+      <Name>Extenders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Initialisation\Initialisation.csproj">
+      <Project>{9CE678F8-33FE-4822-A596-4C3FA802C64F}</Project>
+      <Name>Initialisation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyControl\JourneyControl.csproj">
+      <Project>{3A2EB34A-A197-4426-AC2A-2CA4FDC38610}</Project>
+      <Name>JourneyControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyPlanRunner\JourneyPlanRunner.csproj">
+      <Project>{5F677F32-02CA-4462-A99E-162FD5266F18}</Project>
+      <Name>JourneyPlanRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LocationJsGenerator\LocationJsGenerator.csproj">
+      <Project>{1807A189-3F0B-449E-A8B9-6DD81BB379F6}</Project>
+      <Name>LocationJsGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LocationService\LocationService.csproj">
+      <Project>{D6BCFB92-FFF1-4BE9-9B95-8A7063258597}</Project>
+      <Name>LocationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyManager\PropertyManager.csproj">
+      <Project>{E3CBE746-9620-4433-9D53-6C334C9BBB7E}</Project>
+      <Name>PropertyManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyProviders\PropertyProviders.csproj">
+      <Project>{14ED9C55-9007-4689-8142-83B80CDCF6A9}</Project>
+      <Name>PropertyProviders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reporting\EventPublishers\EventPublishers.csproj">
+      <Project>{39AF0D89-8315-4E6A-8287-A21CBC9C4CD6}</Project>
+      <Name>EventPublishers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reporting\EventReceiver\EventReceiver.csproj">
+      <Project>{A501AEFB-6BA7-47AC-8384-C2BD54C66B5F}</Project>
+      <Name>EventReceiver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reporting\Events\Events.csproj">
+      <Project>{280E29DE-E83B-4F66-A06C-EAACF5CFA35F}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reporting\WebLogReader\WebLogReader.csproj">
+      <Project>{E255433E-B063-4705-81BA-2CDE9DDF353B}</Project>
+      <Name>WebLogReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceManager\ResourceManager.csproj">
+      <Project>{2E16E3F2-5AE8-450E-9953-177FAB41554C}</Project>
+      <Name>ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Retail\Retail.csproj">
+      <Project>{5A992265-3A04-422C-872E-2C66A55A0D86}</Project>
+      <Name>Retail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenFlow\ScreenFlow.csproj">
+      <Project>{4D570070-A1E5-434B-81AA-CEA52294DA59}</Project>
+      <Name>ScreenFlow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Project>{81877B7C-61F6-46C5-B212-861065CD538F}</Project>
+      <Name>ServiceDiscovery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SessionManager\SessionManager.csproj">
+      <Project>{0E99A5BE-AAB2-4E72-80D9-D1A657553922}</Project>
+      <Name>SessionManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SJPWebServices\CoordinateConvertorService\CoordinateConvertorService.csproj">
+      <Project>{93F2EFB5-C38A-4B58-A4A4-F68F581DF7CB}</Project>
+      <Name>CoordinateConvertorService</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\StateServer\StateServer.csproj">
+      <Project>{55A13C46-7CAD-4084-BB1E-47C4ECACCDB7}</Project>
+      <Name>StateServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TravelNews\TravelNews.csproj">
+      <Project>{BC7DF30A-3F39-402E-9B06-C9AE1E0537F4}</Project>
+      <Name>TravelNews</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\SJP.UserPortal.CoordinateConvertorProvider.CoordinateConvertorWebService.LatitudeLongitude.datasource" />
+    <None Include="Properties\DataSources\SJP.UserPortal.CoordinateConvertorProvider.CoordinateConvertorWebService.OSGridReference.datasource" />
+    <Content Include="Test References\data\DatabaseInfrastructure\SqlHelperTestData.xml" />
+    <Content Include="Test References\data\DatabaseInfrastructure\SqlHelperTestCleanUp.sql" />
+    <Content Include="Test References\data\DatabaseInfrastructure\SqlHelperTestSetup.sql" />
+    <Content Include="Test References\data\DataImporters\AdditionalVenueData v1.4.xml" />
+    <Content Include="Test References\data\DataImporters\Olympic Venues 0.10.xml" />
+    <Content Include="Test References\data\DataImporters\ParkAndRideLocations.xml" />
+    <Content Include="Test References\data\DataImporters\SJPCycleParkLocations v0.5.xml" />
+    <Content Include="Test References\data\DataImporters\SJPTravelcardData.xml" />
+    <Content Include="Test References\data\DataImporters\VenueAccessData v1.3.xml" />
+    <Content Include="Test References\data\DataServices\CycleAttributeData.xml" />
+    <Content Include="Test References\data\DataServices\DataServicesData.xml" />
+    <Content Include="Test References\data\DataServices\DataServicesTestCleanUp.sql" />
+    <Content Include="Test References\data\DataServices\DataServicesTestSetup.sql" />
+    <Content Include="Test References\data\DataServices\NPTGTestData.xml" />
+    <Content Include="Test References\data\DataServices\StopAccessibilityLinksData.xml" />
+    <Content Include="Test References\data\LocationJsGenerator\LocationJsGeneratorData.xml" />
+    <Content Include="Test References\data\LocationJsGenerator\LocationJsGeneratorTestCleanUp.sql" />
+    <Content Include="Test References\data\LocationJsGenerator\LocationJsGeneratorTestSetup.sql" />
+    <Content Include="Test References\data\PropertyManager\TestNewVersion.xml" />
+    <Content Include="Test References\data\PropertyManager\PropertyManagerTest.Properties.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Test References\data\PropertyProviders\TestNewVersionXMLException.xml" />
+    <Content Include="Test References\data\PropertyProviders\TestNewVersionNullReferenceException.xml" />
+    <Content Include="Test References\data\PropertyProviders\TestNewVersionException.xml" />
+    <Content Include="Test References\data\PropertyProviders\PropertyProvidersTestCleanUp.sql" />
+    <Content Include="Test References\data\PropertyProviders\PropertyProvidersTestSetup.sql" />
+    <Content Include="Test References\data\PropertyProviders\TestNewVersion.xml" />
+    <Content Include="Test References\data\Reporting\SJPCustomEventPublisherCleanUp.sql" />
+    <Content Include="Test References\data\ResourceManager\ResourceManagerTestCleanUp.sql" />
+    <Content Include="Test References\data\ResourceManager\ResourceManagerTestData.xml" />
+    <Content Include="Test References\data\ResourceManager\ResourceManagerTestSetup.sql" />
+    <Content Include="Test References\data\Retail\TravelcardData.xml" />
+    <Content Include="Test References\data\Retail\TravelcardTestCleanUp.sql" />
+    <Content Include="Test References\data\Retail\TravelcardTestSetup.sql" />
+    <Content Include="Test References\data\TravelNews\TravelNewsSetUp.sql" />
+    <Content Include="Test References\data\TravelNews\TravelNewsCleanUp.sql" />
+    <Content Include="Test References\data\WeblogReader\W3SVC1\Archive\DONOTREMOVE.txt" />
+    <Content Include="Test References\TestProject.Properties.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Shadow Include="Test References\WebSupportHashGenerator.accessor" />
+    <Shadow Include="Test References\sjp.common.accessor" />
+    <Content Include="Test References\Web.sitemap">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Shadow Include="Test References\sjp.userportal.travelnews.accessor" />
+    <Shadow Include="Test References\sjp.userportal.screenFlow.accessor" />
+    <Shadow Include="Test References\sjp.common.dataservices.accessor" />
+    <Shadow Include="Test References\sjp.common.resourcemanager.accessor" />
+    <Shadow Include="Test References\sjp.dataimporters.accessor" />
+    <Shadow Include="Test References\HashValidator.accessor" />
+    <Shadow Include="Test References\ChecksumHelper.accessor" />
+    <Shadow Include="Test References\sjp.userportal.cycleplannerservice.accessor" />
+    <Shadow Include="Test References\sjp.userportal.journeyplanrunner.accessor" />
+    <None Include="Test References\data\DataImporters\110613 GNAT STATION LIST VERSION 8FN.csv" />
+    <Shadow Include="Test References\sjp.webservice.coordinateconvertorservice.accessor" />
+    <Shadow Include="Test References\sjp.reporting.weblogreader.accessor" />
+    <None Include="Test References\data\DataImporters\StopLinks_v0.2a.csv" />
+    <None Include="Test References\data\WeblogReader\W3SVC1\u_ex11042613.log" />
+    <None Include="Test References\data\WeblogReader\W3SVC1\u_ex11042713.log" />
+    <Shadow Include="Test References\sjp.userportal.stateserver.accessor" />
+    <Shadow Include="Test References\sjp.userportal.sessionmanager.accessor" />
+    <Shadow Include="Test References\EventReceiver.accessor" />
+    <Shadow Include="Test References\sjp.common.web.accessor" />
+    <None Include="Test References\SJPBookingSystemHandoff.xsc">
+      <DependentUpon>SJPBookingSystemHandoff.xsd</DependentUpon>
+    </None>
+    <None Include="Test References\SJPBookingSystemHandoff.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJPBookingSystemHandoff.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Test References\SJPBookingSystemHandoff.xss">
+      <DependentUpon>SJPBookingSystemHandoff.xsd</DependentUpon>
+    </None>
+    <Shadow Include="Test References\sjp.reporting.events.accessor" />
+    <Shadow Include="Test References\sjp.reporting.eventpublishers.accessor" />
+    <Shadow Include="Test References\sjp.userportal.retail.accessor" />
+    <Shadow Include="Test References\sjp.common.locationservice.accessor" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Remoting.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <Shadow Include="Test References\CommandAndControlAgent.accessor" />
+    <None Include="Test References\data\LocationJsGenerator\alias.csv" />
+    <Shadow Include="Test References\sjp.userportal.coordinateconvertorprovider.accessor" />
+    <Shadow Include="Test References\sjp.userportal.journeycontrol.accessor" />
+    <Shadow Include="Test References\LocationJsGenerator.accessor" />
+    <Shadow Include="Test References\sjp.common.servicediscovery.accessor" />
+    <Shadow Include="Test References\sjp.common.eventlogging.accessor" />
+    <Shadow Include="Test References\sjp.common.propertymanager.accessor" />
+    <Shadow Include="Test References\sjp.common.propertymanager.propertyproviders.accessor" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

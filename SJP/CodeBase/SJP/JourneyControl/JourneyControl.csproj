@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A2EB34A-A197-4426-AC2A-2CA4FDC38610}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SJP.UserPortal.JourneyControl</RootNamespace>
+    <AssemblyName>sjp.userportal.journeycontrol</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisLogFile>bin\Debug\sjp.userportal.journeycontrol.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\sjp.userportal.journeycontrol.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="td.CJP, Version=11.2.2.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJP.dll</HintPath>
+    </Reference>
+    <Reference Include="td.CJPInterface, Version=11.2.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="td.common.logging">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.common.logging.dll</HintPath>
+    </Reference>
+    <Reference Include="td.common.propertyservice.properties">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.common.propertyservice.properties.dll</HintPath>
+    </Reference>
+    <Reference Include="td.reportdataprovider.cjpcustomevents">
+      <HintPath>..\..\..\ThirdParty\TransportDirect\td.reportdataprovider.cjpcustomevents.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\Codes.cs" />
+    <Compile Include="Constants\Messages.cs" />
+    <Compile Include="ISJPJourneyRequest.cs" />
+    <Compile Include="ISJPJourneyResult.cs" />
+    <Compile Include="Journey\CycleJourneyDetail.cs" />
+    <Compile Include="Journey\DateTimeHelper.cs" />
+    <Compile Include="Journey\Journey.cs" />
+    <Compile Include="Journey\JourneyCallingPoint.cs" />
+    <Compile Include="Journey\JourneyCallingPointType.cs" />
+    <Compile Include="Journey\JourneyComparer.cs" />
+    <Compile Include="Journey\JourneyDetail.cs" />
+    <Compile Include="Journey\PublicJourneyContinuousDetail.cs" />
+    <Compile Include="Journey\PublicJourneyDetail.cs" />
+    <Compile Include="Journey\JourneyLeg.cs" />
+    <Compile Include="Journey\PublicJourneyFrequencyDetail.cs" />
+    <Compile Include="Journey\PublicJourneyInterchangeDetail.cs" />
+    <Compile Include="Journey\PublicJourneyTimedDetail.cs" />
+    <Compile Include="Journey\RoadJourneyDetail.cs" />
+    <Compile Include="Journey\RoutingDetail.cs" />
+    <Compile Include="Journey\ServiceDetail.cs" />
+    <Compile Include="Journey\SJPAccessibilityType.cs" />
+    <Compile Include="Journey\SJPAccessibilityTypeHelper.cs" />
+    <Compile Include="Journey\SJPCheckConstraintHelper.cs" />
+    <Compile Include="Journey\SJPModeTypeHelper.cs" />
+    <Compile Include="Constants\Keys.cs" />
+    <Compile Include="Manager\CJPStopEventCall.cs" />
+    <Compile Include="Manager\IStopEventManager.cs" />
+    <Compile Include="Manager\Populator\StopEventRequestPopulator.cs" />
+    <Compile Include="Manager\StopEventDateComparer.cs" />
+    <Compile Include="Manager\StopEventManager.cs" />
+    <Compile Include="Manager\StopEventManagerFactory.cs" />
+    <Compile Include="SJPAccessiblePreferences.cs" />
+    <Compile Include="SJPJourneyPlannerMode.cs" />
+    <Compile Include="SJPJourneyPlannerModeHelper.cs" />
+    <Compile Include="SJPPrivateAlgorithmType.cs" />
+    <Compile Include="Manager\CJPCall.cs" />
+    <Compile Include="Manager\CJPFactory.cs" />
+    <Compile Include="Manager\CJPManager.cs" />
+    <Compile Include="Manager\CJPManagerFactory.cs" />
+    <Compile Include="Manager\CyclePlannerCall.cs" />
+    <Compile Include="Manager\CyclePlannerManager.cs" />
+    <Compile Include="Manager\CyclePlannerManagerFactory.cs" />
+    <Compile Include="Manager\Populator\CyclePlannerRequestPopulator.cs" />
+    <Compile Include="Manager\ICJPManager.cs" />
+    <Compile Include="Manager\ICyclePlannerManager.cs" />
+    <Compile Include="Manager\Populator\JourneyRequestPopulator.cs" />
+    <Compile Include="Manager\Populator\JourneyRequestPopulatorFactory.cs" />
+    <Compile Include="Manager\Populator\MultiModalJourneyRequestPopulator.cs" />
+    <Compile Include="SJPJourneyRequest.cs" />
+    <Compile Include="SJPJourneyResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SJPPublicAlgorithmType.cs" />
+    <Compile Include="SJPUserPreference.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{2EF9DD6E-4BA7-46BF-84CB-7509A5099F44}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoordinateConvertorProvider\CoordinateConvertorProvider.csproj">
+      <Project>{C648ACE3-40CC-41FE-9B52-0ACF9C3BE5BC}</Project>
+      <Name>CoordinateConvertorProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CyclePlannerService\CyclePlannerService.csproj">
+      <Project>{5B98B72A-C603-4F55-9ACD-34B606AF2107}</Project>
+      <Name>CyclePlannerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseInfrastructure\DatabaseInfrastructure.csproj">
+      <Project>{ECA839BB-B752-49F6-9D60-69F20CC5BBA4}</Project>
+      <Name>DatabaseInfrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLogging\EventLogging.csproj">
+      <Project>{4AED788E-EA9A-4C3F-BB8D-07A7F1FBE8AA}</Project>
+      <Name>EventLogging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extenders\Extenders.csproj">
+      <Project>{F82632FB-A7EB-4121-B4C9-338450D024AF}</Project>
+      <Name>Extenders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LocationService\LocationService.csproj">
+      <Project>{D6BCFB92-FFF1-4BE9-9B95-8A7063258597}</Project>
+      <Name>LocationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyManager\PropertyManager.csproj">
+      <Project>{E3CBE746-9620-4433-9D53-6C334C9BBB7E}</Project>
+      <Name>PropertyManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reporting\Events\Events.csproj">
+      <Project>{280E29DE-E83B-4F66-A06C-EAACF5CFA35F}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceManager\ResourceManager.csproj">
+      <Project>{2E16E3F2-5AE8-450E-9953-177FAB41554C}</Project>
+      <Name>ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Project>{81877B7C-61F6-46C5-B212-861065CD538F}</Project>
+      <Name>ServiceDiscovery</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

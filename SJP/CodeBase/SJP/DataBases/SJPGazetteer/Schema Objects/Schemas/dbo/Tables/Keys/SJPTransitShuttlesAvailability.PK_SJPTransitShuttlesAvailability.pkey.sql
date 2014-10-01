@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[SJPTransitShuttlesAvailability]
+	ADD CONSTRAINT [PK_SJPTransitShuttlesAvailability]
+	PRIMARY KEY ([TransitShuttleAvailabilityID]) WITH (ALLOW_PAGE_LOCKS = ON, ALLOW_ROW_LOCKS = ON, PAD_INDEX = OFF, IGNORE_DUP_KEY = OFF, STATISTICS_NORECOMPUTE = OFF);

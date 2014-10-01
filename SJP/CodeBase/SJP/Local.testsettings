@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="Local" id="cfe7d5e5-f1ce-4a58-8d3c-95655b159bc3" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>These are default test settings for a local test run.</Description>
+  <Deployment>
+    <DeploymentItem filename="TestProject\Remoting.config" />
+    <DeploymentItem filename="TestProject\Test References\TestProject.Properties.xml" />
+    <DeploymentItem filename="TestProject\Test References\data\" />
+  </Deployment>
+  <Execution>
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="LocalMachineDefaultRole">
+      <DataCollectors>
+        <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Code Coverage">
+          <Configuration>
+            <CodeCoverage xmlns="">
+              <Regular>
+                <CodeCoverageItem binaryFile="EventLogging\bin\Debug\sjp.common.eventlogging.dll" pdbFile="EventLogging\bin\Debug\sjp.common.eventlogging.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Common\bin\Debug\sjp.common.dll" pdbFile="Common\bin\Debug\sjp.common.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="PropertyManager\bin\Debug\sjp.common.propertymanager.dll" pdbFile="PropertyManager\bin\Debug\sjp.common.propertymanager.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="PropertyProviders\bin\Debug\sjp.common.propertymanager.propertyproviders.dll" pdbFile="PropertyProviders\bin\Debug\sjp.common.propertymanager.propertyproviders.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="ServiceDiscovery\bin\Debug\sjp.common.servicediscovery.dll" pdbFile="ServiceDiscovery\bin\Debug\sjp.common.servicediscovery.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="LocationJsGenerator\bin\Debug\LocationJsGenerator.exe" pdbFile="LocationJsGenerator\bin\Debug\LocationJsGenerator.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CoordinateConvertorProvider\bin\Debug\sjp.userportal.coordinateconvertorprovider.dll" pdbFile="CoordinateConvertorProvider\bin\Debug\sjp.userportal.coordinateconvertorprovider.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="JourneyControl\bin\Debug\sjp.userportal.journeycontrol.dll" pdbFile="JourneyControl\bin\Debug\sjp.userportal.journeycontrol.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CyclePlannerService\bin\Debug\sjp.userportal.cycleplannerservice.dll" pdbFile="CyclePlannerService\bin\Debug\sjp.userportal.cycleplannerservice.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Retail\bin\Debug\sjp.userportal.retail.dll" pdbFile="Retail\bin\Debug\sjp.userportal.retail.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="ScreenFlow\bin\Debug\sjp.userportal.screenFlow.dll" pdbFile="ScreenFlow\bin\Debug\sjp.userportal.screenFlow.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="LocationService\bin\Debug\sjp.common.locationservice.dll" pdbFile="LocationService\bin\Debug\sjp.common.locationservice.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Reporting\Events\bin\Debug\sjp.reporting.events.dll" pdbFile="Reporting\Events\bin\Debug\sjp.reporting.events.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Reporting\EventPublishers\bin\Debug\sjp.reporting.eventpublishers.dll" pdbFile="Reporting\EventPublishers\bin\Debug\sjp.reporting.eventpublishers.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Reporting\EventReceiver\bin\Debug\EventReceiver.exe" pdbFile="Reporting\EventReceiver\bin\Debug\EventReceiver.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="DataServices\bin\Debug\sjp.common.dataservices.dll" pdbFile="DataServices\bin\Debug\sjp.common.dataservices.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Extenders\bin\Debug\sjp.common.extenders.dll" pdbFile="Extenders\bin\Debug\sjp.common.extenders.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="ResourceManager\bin\Debug\sjp.common.resourcemanager.dll" pdbFile="ResourceManager\bin\Debug\sjp.common.resourcemanager.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Initialisation\bin\Debug\sjp.common.servicediscovery.initialisation.dll" pdbFile="Initialisation\bin\Debug\sjp.common.servicediscovery.initialisation.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="DataImporters\bin\Debug\sjp.dataimporters.dll" pdbFile="DataImporters\bin\Debug\sjp.dataimporters.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="Reporting\WebLogReader\bin\Debug\sjp.reporting.weblogreader.exe" pdbFile="Reporting\WebLogReader\bin\Debug\sjp.reporting.weblogreader.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="JourneyPlanRunner\bin\Debug\sjp.userportal.journeyplanrunner.dll" pdbFile="JourneyPlanRunner\bin\Debug\sjp.userportal.journeyplanrunner.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="StateServer\bin\Debug\sjp.userportal.stateserver.dll" pdbFile="StateServer\bin\Debug\sjp.userportal.stateserver.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="SessionManager\bin\Debug\sjp.userportal.sessionmanager.dll" pdbFile="SessionManager\bin\Debug\sjp.userportal.sessionmanager.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="TravelNews\bin\Debug\sjp.userportal.travelnews.dll" pdbFile="TravelNews\bin\Debug\sjp.userportal.travelnews.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CommandAndControl\HashGenerator\bin\Debug\WebSupportHashGenerator.exe" pdbFile="CommandAndControl\HashGenerator\bin\Debug\WebSupportHashGenerator.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CommandAndControl\HashValidator\bin\Debug\HashValidator.exe" pdbFile="CommandAndControl\HashValidator\bin\Debug\HashValidator.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.dll" pdbFile="CommandAndControl\ChecksumUtils\bin\Debug\ChecksumHelper.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CommandAndControl\CommandAndControlAgentService\bin\Debug\CommandAndControlAgent.exe" pdbFile="CommandAndControl\CommandAndControlAgentService\bin\Debug\CommandAndControlAgent.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="DatabaseInfrastructure\bin\Debug\sjp.common.databaseinfrastructure.dll" pdbFile="DatabaseInfrastructure\bin\Debug\sjp.common.databaseinfrastructure.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="CommonWeb\bin\Debug\sjp.common.web.dll" pdbFile="CommonWeb\bin\Debug\sjp.common.web.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="DataLoader\bin\Debug\sjp.dataloader.exe" pdbFile="DataLoader\bin\Debug\sjp.dataloader.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="UndergroundNews\bin\Debug\sjp.userportal.undergroundnews.dll" pdbFile="UndergroundNews\bin\Debug\sjp.userportal.undergroundnews.pdb" instrumentInPlace="true" />
+              </Regular>
+              <AspNet>
+                <AspNetCodeCoverageItem id="93f2efb5-c38a-4b58-a4a4-f68f581df7cb" name="SJPWebServices\CoordinateConvertorService" applicationRoot="/" url="http://localhost:0/" />
+              </AspNet>
+            </CodeCoverage>
+          </Configuration>
+        </DataCollector>
+      </DataCollectors>
+    </AgentRule>
+  </Execution>
+</TestSettings>

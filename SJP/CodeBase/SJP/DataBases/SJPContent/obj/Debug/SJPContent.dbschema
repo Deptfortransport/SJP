@@ -1,0 +1,2196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="1.1" DspName="Microsoft.Data.Schema.Sql.Sql100DatabaseSchemaProvider" CollationLcid="2057" CollationCaseSensitive="False">
+	<Header>
+		<CustomData Category="ModelCapability">
+			<Metadata Name="ModelCapability" Value="Default" />
+		</CustomData>
+		<CustomData Category="ClrTypesDbSchema" Type="DbSchema">
+			<Metadata Name="ClrTypesDbSchema" Value="True" />
+		</CustomData>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="100" />
+		</CustomData>
+		<CustomData Category="Permissions" Type="XmlPermissions">
+			<Metadata Name="FileName" Value="D:\SJP\CODEBASE\SJP\DATABASES\SJPCONTENT\PROPERTIES\DATABASE.SQLPERMISSIONS" />
+		</CustomData>
+		<CustomData Category="Reference" Type="DbSchema">
+			<Metadata Name="FileName" Value="D:\SJP\CODEBASE\SJP\DATABASES\SJPSERVERDATABASE\SQL\DEBUG\SJPSERVERDATABASE.DBSCHEMA" />
+			<Metadata Name="LogicalName" Value="SJPServerDatabase.dbschema" />
+			<Metadata Name="ExternalParts" Value="[master]" />
+		</CustomData>
+	</Header>
+	<Model>
+		<Element Type="ISql100DatabaseOptions">
+			<Property Name="Collation" Value="Latin1_General_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="RecoveryMode" Value="1" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[('en')]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ContentOverride]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[CultureCode]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[('en')]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Content]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Content].[CultureCode]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+		</Element>
+		<Element Type="ISqlRoleMembership">
+			<Relationship Name="Member">
+				<Entry>
+					<References Name="[SJP_User]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Role">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[db_datareader]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISqlRoleMembership">
+			<Relationship Name="Member">
+				<Entry>
+					<References Name="[SJP_User]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Role">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[db_datawriter]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddChangeNotificationTable]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	-- Add tables that didn't previously exist
+	IF NOT EXISTS (SELECT * FROM [dbo].[ChangeNotification]
+						   WHERE [table] = @table)
+		BEGIN
+			INSERT INTO [dbo].[ChangeNotification] ([table], [version])
+				 VALUES (@table, 1)
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddChangeNotificationTable].[@table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Version]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddChangeNotificationTable].[@table]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="334" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[AddChangeNotificationTable]&#xD;&#xA;&#x9;@table varchar(100) &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddContent]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	DECLARE @GroupId int
+   
+    --Look up the GroupId:
+    SELECT @GroupId = GroupId 
+      FROM [dbo].ContentGroup
+     WHERE [Name] = @Group
+
+    --Check the group:
+    IF @GroupId IS NULL
+    	BEGIN
+    		RAISERROR ('%s is an invalid group', 16, 1, @Group)
+			RETURN 0
+    	END
+
+	IF EXISTS (SELECT * FROM [dbo].Content 
+					   WHERE Content.PropertyName = @PropertyName 
+						 AND Content.ControlName = @ControlName 
+						 AND Content.CultureCode = @Language 
+						 AND Content.GroupId = @GroupId )
+		BEGIN
+			UPDATE [dbo].Content
+			   SET [ContentValue] = @ContentValue
+			 WHERE Content.PropertyName = @PropertyName 
+			   AND Content.ControlName = @ControlName 
+			   AND Content.CultureCode = @Language 
+			   AND Content.GroupId = @GroupId 
+		END
+	ELSE
+	   BEGIN
+			INSERT INTO [dbo].Content (GroupId, CultureCode, ControlName, PropertyName, ContentValue)
+        	VALUES ( @GroupId, @Language, @ControlName, @PropertyName, @ContentValue)
+	   END
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContent].[@Group]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContent].[@PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContent].[@ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContent].[@Language]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ContentValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContent].[@ContentValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[PropertyName]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContent].[@Group]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContent].[@Language]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContent].[@ControlName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="60" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContent].[@PropertyName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContent].[@ContentValue]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[text]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1174" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[AddContent]&#xD;&#xA;(&#xD;&#xA;&#x9;@Group varchar(100),&#xD;&#xA;&#x9;@Language char(2),&#xD;&#xA;&#x9;@ControlName varchar(60),&#xD;&#xA;&#x9;@PropertyName varchar(100),&#xD;&#xA;&#x9;@ContentValue text&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddContentOverride]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	DECLARE @GroupId int
+   
+    --Look up the GroupId:
+    SELECT @GroupId = GroupId 
+      FROM [dbo].ContentGroup
+     WHERE [Name] = @Group
+
+    --Check the group:
+    IF @GroupId IS NULL
+    	BEGIN
+    		RAISERROR ('%s is an invalid group', 16, 1, @Group)
+			RETURN 0
+    	END
+
+	IF EXISTS (SELECT * FROM [dbo].ContentOverride 
+					   WHERE ContentOverride.PropertyName = @PropertyName 
+						 AND ContentOverride.ControlName = @ControlName 
+						 AND ContentOverride.CultureCode = @Language 
+						 AND ContentOverride.GroupId = @GroupId )
+		BEGIN
+			UPDATE [dbo].ContentOverride
+			   SET ContentValue = @ContentValue,
+				   StartDate = @StartDate,
+				   EndDate = @EndDate
+			 WHERE ContentOverride.PropertyName = @PropertyName 
+			   AND ContentOverride.ControlName = @ControlName 
+			   AND ContentOverride.CultureCode = @Language 
+			   AND ContentOverride.GroupId = @GroupId
+		END
+	ELSE
+		BEGIN
+			INSERT INTO [dbo].ContentOverride ( GroupId, CultureCode, ControlName, PropertyName, ContentValue, StartDate, EndDate)
+			VALUES ( @GroupId, @Language, @ControlName, @PropertyName, @ContentValue, @StartDate, @EndDate)
+		END
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContentOverride].[@Group]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContentOverride].[@PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContentOverride].[@ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContentOverride].[@Language]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[ContentValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContentOverride].[@ContentValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[StartDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContentOverride].[@StartDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[EndDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddContentOverride].[@EndDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[PropertyName]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContentOverride].[@Group]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContentOverride].[@Language]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContentOverride].[@ControlName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="60" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContentOverride].[@PropertyName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContentOverride].[@ContentValue]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[text]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContentOverride].[@StartDate]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddContentOverride].[@EndDate]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1404" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[AddContentOverride]&#xD;&#xA;(&#xD;&#xA;&#x9;@Group varchar(100),&#xD;&#xA;&#x9;@Language char(2),&#xD;&#xA;&#x9;@ControlName varchar(60),&#xD;&#xA;&#x9;@PropertyName varchar(100),&#xD;&#xA;&#x9;@ContentValue text,&#xD;&#xA;&#x9;@StartDate datetime,&#xD;&#xA;&#x9;@EndDate datetime&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddGroup]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	DECLARE @GroupId int
+
+	IF NOT EXISTS (SELECT GroupId 
+				     FROM ContentGroup 
+					WHERE [Name] = @Group)
+		BEGIN
+			SET @GroupId = (SELECT ISNULL(Max(GroupId),0) + 1 FROM ContentGroup)
+
+			INSERT INTO ContentGroup(GroupId, [Name]) 
+				 VALUES (@GroupId, @Group)
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddGroup].[@Group]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[Name]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddGroup].[@Group]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="365" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[AddGroup]&#xD;&#xA;(&#xD;&#xA;&#x9;@Group varchar(100)&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ChangeNotification]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChangeNotification].[Version]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChangeNotification].[Table]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Content]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Content].[GroupId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Content].[CultureCode]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="6" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Content].[ControlName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="60" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Content].[PropertyName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Content].[ContentValue]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[text]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="FilegroupForTextImage">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ContentGroup]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ContentGroup].[GroupId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ContentGroup].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ContentOverride]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ContentOverride].[GroupId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ContentOverride].[CultureCode]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="5" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ContentOverride].[ControlName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="60" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ContentOverride].[PropertyName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ContentOverride].[ContentValue]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[text]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ContentOverride].[StartDate]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ContentOverride].[EndDate]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="FilegroupForTextImage">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[DeleteAllGroupContent]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	-- Deletes all content for the Group specified, 
+	-- but does not delete the group
+
+	DECLARE @GroupId int
+   
+    --Look up the GroupId:
+    SELECT @GroupId = GroupId 
+      FROM [dbo].ContentGroup
+     WHERE [Name] = @Group
+
+	IF @GroupId IS NOT NULL
+    	BEGIN
+
+			-- Delete from ContentOverride
+			IF EXISTS (SELECT * FROM [dbo].ContentOverride 
+					   WHERE ContentOverride.GroupId = @GroupId )
+			BEGIN
+				DELETE FROM [dbo].ContentOverride
+					  WHERE ContentOverride.GroupId = @GroupId
+			END
+
+			-- Delete from Content
+			IF EXISTS (SELECT * FROM [dbo].Content 
+					   WHERE Content.GroupId = @GroupId )
+			BEGIN
+				DELETE FROM [dbo].Content
+				      WHERE Content.GroupId = @GroupId
+			END
+
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteAllGroupContent].[@Group]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[GroupId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[DeleteAllGroupContent].[@Group]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="827" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DeleteAllGroupContent]&#xD;&#xA;&#x9;@Group varchar(100)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[DeleteContent]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	DECLARE @GroupId int
+   
+    --Look up the GroupId:
+    SELECT @GroupId = GroupId 
+      FROM [dbo].ContentGroup
+     WHERE [Name] = @Group
+
+    --Check the group:
+    IF @GroupId IS NULL
+    	BEGIN
+    		RAISERROR ('%s is an invalid group', 16, 1, @Group)
+			RETURN 0
+    	END
+
+	IF EXISTS (SELECT * FROM [dbo].Content 
+					   WHERE Content.PropertyName = @PropertyName 
+						 AND Content.ControlName = @ControlName 
+						 AND Content.CultureCode = @Language 
+						 AND Content.GroupId = @GroupId )
+		BEGIN
+			DELETE FROM [dbo].Content
+				  WHERE Content.PropertyName = @PropertyName 
+					AND Content.ControlName = @ControlName 
+					AND Content.CultureCode = @Language 
+					AND Content.GroupId = @GroupId
+
+			EXEC DeleteContentOverride @Group, @Language, @ControlName, @PropertyName
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteContent].[@Group]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteContent].[@PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteContent].[@ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteContent].[@Language]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteContentOverride]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[DeleteContent].[@Group]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[DeleteContent].[@Language]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[DeleteContent].[@ControlName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="60" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[DeleteContent].[@PropertyName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="989" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DeleteContent]&#xD;&#xA;(&#xD;&#xA;&#x9;@Group varchar(100),&#xD;&#xA;&#x9;@Language char(2),&#xD;&#xA;&#x9;@ControlName varchar(60),&#xD;&#xA;&#x9;@PropertyName varchar(100)&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[DeleteContentOverride]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	DECLARE @GroupId int
+   
+    --Look up the GroupId:
+    SELECT @GroupId = GroupId 
+      FROM [dbo].ContentGroup
+     WHERE [Name] = @Group
+
+    --Check the group:
+    IF @GroupId IS NULL
+    	BEGIN
+    		RAISERROR ('%s is an invalid group', 16, 1, @Group)
+			RETURN 0
+    	END
+
+	IF EXISTS (SELECT * FROM [dbo].ContentOverride 
+					   WHERE ContentOverride.PropertyName = @PropertyName 
+						 AND ContentOverride.ControlName = @ControlName 
+						 AND ContentOverride.CultureCode = @Language 
+						 AND ContentOverride.GroupId = @GroupId )
+		BEGIN
+			DELETE FROM [dbo].ContentOverride
+				  WHERE ContentOverride.PropertyName = @PropertyName 
+				    AND ContentOverride.ControlName = @ControlName 
+					AND ContentOverride.CultureCode = @Language 
+					AND ContentOverride.GroupId = @GroupId
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteContentOverride].[@Group]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteContentOverride].[@PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteContentOverride].[@ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteContentOverride].[@Language]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[GroupId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[DeleteContentOverride].[@Group]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[DeleteContentOverride].[@Language]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[DeleteContentOverride].[@ControlName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="60" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[DeleteContentOverride].[@PropertyName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1000" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DeleteContentOverride]&#xD;&#xA;(&#xD;&#xA;&#x9;@Group varchar(100),&#xD;&#xA;&#x9;@Language char(2),&#xD;&#xA;&#x9;@ControlName varchar(60),&#xD;&#xA;&#x9;@PropertyName varchar(100)&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[DeleteGroup]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	DECLARE @GroupId int
+
+	--Look up the GroupId:
+    SELECT @GroupId = GroupId 
+      FROM [dbo].ContentGroup
+     WHERE [Name] = @Group
+
+	IF @GroupId IS NOT NULL
+		BEGIN
+			-- Check if there is any Content using this group
+			IF EXISTS (SELECT * 
+						 FROM [dbo].Content
+						WHERE GroupId = @GroupId)
+				BEGIN
+					RAISERROR ('Content exists for group %s, unable to delete group', 16, 1, @Group)
+					RETURN 0
+				END
+
+			-- OK to delete group
+			DELETE FROM [dbo].ContentGroup
+				  WHERE [Name] = @Group
+
+		END
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[DeleteGroup].[@Group]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[GroupId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[DeleteGroup].[@Group]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="624" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[DeleteGroup]&#xD;&#xA;(&#xD;&#xA;&#x9;@Group varchar(100)&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetChangeTable]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	  SELECT [Table], [Version] 
+	    FROM [dbo].[ChangeNotification]
+	ORDER BY [Table]
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Version]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="146" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetChangeTable]&#xD;&#xA;&#x9;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetContent]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+    --First look up the culture code and GroupId 
+    --for the data passed. It is better to do two look 
+    --ups than perform lots of joins later on...
+    DECLARE @GroupId int
+   
+    --Check the language:
+    IF @Language NOT IN ('en', 'fr')
+        BEGIN
+            RAISERROR ('%s is an invalid language', 16, 1, @Language)
+        END
+    --END IF
+
+    --Look up the group:
+    SELECT @GroupId = GroupId 
+      FROM ContentGroup
+     WHERE [Name] = @Group
+
+    --Check the group:
+    IF @GroupId IS NULL
+    	BEGIN
+    	RAISERROR ('%s is an invalid group', 16, 1, @Group)
+    	END
+
+   
+    --Now select the correct content.
+    --The first part of the query gets all content for the  group and culture
+	--It also take into account any overriddent content
+    SELECT Content.ControlName,
+           Content.PropertyName,
+           ISNULL(ContentOverride.ContentValue, Content.ContentValue) ContentValue
+      FROM Content
+      LEFT JOIN ContentOverride
+		ON Content.GroupId = ContentOverride.GroupId
+		AND Content.ControlName = ContentOverride.ControlName
+		AND Content.PropertyName = ContentOverride.PropertyName
+		AND CAST(FLOOR( CAST( GETDATE() AS FLOAT ) ) AS DATETIME) >= CAST(FLOOR( CAST(ContentOverride.StartDate AS FLOAT ) ) AS DATETIME)
+		AND CAST(FLOOR( CAST( GETDATE() AS FLOAT ) ) AS DATETIME) <= CAST(FLOOR( CAST(ContentOverride.EndDate AS FLOAT ) ) AS DATETIME)
+     WHERE Content.GroupId = @GroupId
+		AND Content.CultureCode = @Language
+    --The second part of the query adds items that exist for en-GB culture
+    --but not specified for the other cultures, to ensure there is a full
+    --set of data.
+    UNION ALL
+    (
+        SELECT C1.ControlName,
+               C1.PropertyName,
+               C1.ContentValue
+          FROM Content C1
+         WHERE CultureCode = 'en'
+           AND GroupId = @GroupId
+           AND NOT EXISTS (SELECT 1
+                             FROM Content C2
+                            WHERE C2.[ControlName] = C1.[ControlName]
+                              AND C2.[PropertyName] = C1.[PropertyName]
+                              AND CultureCode = @Language
+                              AND GroupId = @GroupId
+                           )
+    )
+
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[GetContent].[@Language]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentGroup].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[GetContent].[@Group]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[datetime]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[float]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[datetime]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[float]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[StartDate]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[datetime]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[float]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[datetime]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[float]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[EndDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ContentOverride].[ContentValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ContentValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ContentValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[GroupId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[ControlName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[PropertyName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[CultureCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Content].[GroupId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[GetContent].[@Group]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[GetContent].[@Language]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="2383" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE  PROCEDURE [dbo].[GetContent] &#xD;&#xA;(&#xD;&#xA;    @Group      varchar(100),&#xD;&#xA;    @Language char(2)&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100UniqueConstraint" Name="[dbo].[IX_ContentGroup_Name]">
+			<Property Name="IsClustered" Value="True" />
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ContentGroup].[Name]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ContentGroup]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="10" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ChangeNotification]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ChangeNotification].[Table]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="7" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Content]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Content].[GroupId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Content].[CultureCode]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Content].[ControlName]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Content].[PropertyName]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Content]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="8" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ContentGroup]">
+			<Property Name="IsClustered" Value="False" />
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ContentGroup].[GroupId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ContentGroup]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="9" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ContentOverride]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ContentOverride].[GroupId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ContentOverride].[CultureCode]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ContentOverride].[ControlName]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ContentOverride].[PropertyName]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ContentOverride]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="11" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_VersionInfo]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[VersionInfo].[DatabaseVersionInfo]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[VersionInfo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UpdateChangeNotificationTable]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ 
+BEGIN 
+
+    CREATE TABLE #updateTables 
+	(
+		tablename varchar(100) COLLATE database_default NOT NULL
+	)
+			    
+	DECLARE @currTable varchar(100), @pos int 
+        
+    SET @tableList = LTRIM(RTRIM(@tableList)) + ',' 
+    SET @pos = CHARINDEX(',', @tableList, 1) 
+        
+    IF REPLACE(@tableList, ',', '') <> '' 
+        BEGIN 
+            WHILE @pos > 0 
+                BEGIN 
+                    SET @currTable = LTRIM(RTRIM(LEFT(@tableList, @pos - 1))) 
+                    IF @currTable <> '' 
+                       BEGIN 
+                          INSERT INTO #updateTables VALUES (@currTable) 
+                       END 
+                    SET @tableList = RIGHT(@tableList, LEN(@tableList) - @pos) 
+                    SET @pos = CHARINDEX(',', @tableList, 1) 
+                END 
+        END 
+
+    BEGIN TRANSACTION
+
+	-- Update tables that did exist
+    UPDATE [dbo].[ChangeNotification]
+    SET    [version] = [version] + 1 
+    WHERE  [table] in 
+            (SELECT tablename FROM #updateTables) 
+
+    -- Add tables that didn't previously exist
+    INSERT INTO [dbo].[ChangeNotification] ([table], [version])
+    SELECT 		tablename, 1 
+    FROM		#updateTables
+    WHERE 		not EXISTS(SELECT * 
+							 FROM [dbo].[ChangeNotification] CN
+							WHERE CN.[Table] = #updateTables.tablename)
+    
+    COMMIT TRANSACTION
+    
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[varchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[@tableList]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Version]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="ISqlDynamicColumnSource" Name="[dbo].[UpdateChangeNotificationTable].[#updateTables]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]">
+									<Property Name="Collation" Value="database_default" />
+									<Property Name="IsNullable" Value="False" />
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[varchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UpdateChangeNotificationTable].[@tableList]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="1000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1484" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[UpdateChangeNotificationTable]&#xD;&#xA;( &#xD;&#xA;&#x9;@tableList varchar(1000) &#xD;&#xA;) &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[VersionInfo]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[VersionInfo].[DatabaseVersionInfo]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90User" Name="[SJP_User]">
+			<Property Name="LoginIdentifierScript">
+				<Value><![CDATA[[SJP_User]]]></Value>
+			</Property>
+			<Relationship Name="Login">
+				<Entry>
+					<References ExternalSource="SJPServerDatabase.dbschema" Name="[master]|[SJP_User]" />
+				</Entry>
+			</Relationship>
+		</Element>
+	</Model>
+</DataSchemaModel>

@@ -1,0 +1,9 @@
+D:\SJP\CodeBase\SJP\DataBases\SJPReportStaging\sql\debug\SJPReportStaging_Script.PreDeployment.sql
+D:\SJP\CodeBase\SJP\DataBases\SJPReportStaging\sql\debug\SJPReportStaging_Script.PostDeployment.sql
+D:\SJP\CodeBase\SJP\DataBases\SJPReportStaging\sql\debug\SJPReportStaging_Database.sqlsettings
+D:\SJP\CodeBase\SJP\DataBases\SJPReportStaging\sql\debug\SJPReportStaging_Database.sqldeployment
+D:\SJP\CodeBase\SJP\DataBases\SJPReportStaging\sql\debug\SJPReportStaging_Database.sqlcmdvars
+D:\SJP\CodeBase\SJP\DataBases\SJPReportStaging\sql\debug\SJPReportStaging.deploymanifest
+D:\SJP\CodeBase\SJP\DataBases\SJPReportStaging\sql\debug\SJPReportStaging.dbschema
+D:\SJP\CodeBase\SJP\DataBases\SJPReportStaging\sql\debug\SJPServerDatabase.dbschema
+D:\SJP\CodeBase\SJP\DataBases\SJPReportStaging\obj\Debug\SJPReportStaging.dbschema

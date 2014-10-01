@@ -1,0 +1,364 @@
+﻿/* Buttons */
+.sjpContent input.btnSmallerPink, .sjpContent input.btnSmallPink
+{
+    color: #FFFFFF;
+}
+.sjpContent input.btnMediumPink
+{
+    color: #FFFFFF;
+}
+.sjpContent input.btnLargePink
+{
+    color: #FFFFFF;
+}
+.sjpContent input.linkButton
+{
+    color: #007da8;
+}
+.sjpContent input.linkButtonPink
+{
+    color: #e6007e;
+}
+
+/* Labels */
+.sjpContent .error
+{
+    color: #e6007e;
+}
+.sjpContent .warning
+{
+    color: #e6007e;
+}
+
+/* Journey Planner Input */
+.sjpContent .locationRow .locationBox,
+.sjpContent .eventDateTime div.eventDate div.dateSelect input
+{
+    border-color: #CFCFCF !important;
+}
+#articleBody .sjpContent .locationRow a:link,
+#articleBody .sjpContent .timePicker a:link,
+#articleBody .sjpContent .stopSelectDrops a:link,
+#articleBody .sjpContent .serviceRoutes a:link,
+#articleBody .sjpContent .cycleParks a:link,
+#articleBody .sjpContent .preferredParks a:link,
+#articleBody .sjpContent .parkAndRideTimeSlot a:link,
+#articleBody .sjpContent .tnfilter a:link
+{
+    color: #4c4c4c !important;
+    text-decoration:none;
+}
+#articleBody .sjpContent .locationRow a:hover,
+#articleBody .sjpContent .timePicker a:hover,
+#articleBody .sjpContent .stopSelectDrops a:hover,
+#articleBody .sjpContent .serviceRoutes a:hover,
+#articleBody .sjpContent .cycleParks a:hover,
+#articleBody .sjpContent .preferredParks a:hover,
+#articleBody .sjpContent .parkAndRideTimeSlot a:hover,
+#articleBody .sjpContent .tnfilter a:hover
+{
+    color: #4c4c4c !important;
+    text-decoration:none;
+}
+#articleBody .sjpContent .locationRow a:visited,
+#articleBody .sjpContent .timePicker a:visited,
+#articleBody .sjpContent .stopSelectDrops a:visited,
+#articleBody .sjpContent .serviceRoutes a:visited,
+#articleBody .sjpContent .cycleParks a:visited,
+#articleBody .sjpContent .preferredParks a:visited,
+#articleBody .sjpContent .parkAndRideTimeSlot a:visited,
+#articleBody .sjpContent .tnfilter a:visited
+{
+    color: #4c4c4c !important;
+    text-decoration:none;
+}
+#articleBody .sjpContent .sjp_tab_headers a:link,
+#articleBody .sjpContent .sjp_tab_headers a:hover,
+#articleBody .sjpContent .sjp_tab_headers a:visited
+{
+    color: #FFFFFF !important;   
+}
+#articleBody .sjpContent .preferredParks a:link.viewMapLink,
+#articleBody .sjpContent .preferredParks a:hover.viewMapLink,
+#articleBody .sjpContent .preferredParks a:visited.viewMapLink
+{
+    color: #e6007e !important;
+}
+#articleBody .sjpContent .bookingUrl a:link,
+#articleBody .sjpContent .bookingUrl a:hover,
+#articleBody .sjpContent .bookingUrl a:visted
+{
+    color: #007da8;
+}
+
+/* Location Suggest */
+#articleBody .sjpContent ul.locationSuggestList
+{
+   border-color: #CFCFCF;
+   background-color:white;
+}
+#articleBody .sjpContent ul.locationSuggestList li.locationSuggestListItem a
+{
+    color: #4C4C4C !important;   
+}
+#articleBody .sjpContent ul.locationSuggestList li.locationSuggestSelectedItem
+{
+    background-color:#007da8;
+    color:#ffffff !important;
+}
+#articleBody .sjpContent ul.locationSuggestList li.locationSuggestSelectedItem a
+{
+     color:#ffffff !important;
+}
+#articleBody .sjpContent div.locationControl span.ambiguityinfo
+{
+    color:#e6007e;
+}
+
+/* Journey Options Tabs */
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li
+{
+    border-bottom-color: #CCCCCC;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li input,
+div.sjp_jo_tab .sjp_tab_headers ul li a
+{
+    color: #FFFFFF;    
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.active
+{
+    color: #FFFFFF;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.active input,
+div.sjp_jo_tab .sjp_tab_headers ul li.active a
+{
+    color: #FFFFFF;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers .sjp_tab_highlight
+{
+    background-color: #CCCCCC;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers .sjp_tab_highlight div
+{
+    background-color: #e6007e;    
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.active div.processMessage
+{
+    background-color: #DEDEDE;
+}
+#articleBody div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.updateContent a:link,
+#articleBody div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.updateContent a:hover,
+#articleBody div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.updateContent a:visited
+{
+    color: #007DA8;
+}
+
+/** -------------- Journey Locations --------------**/
+#articleBody .JourneyLocations div.parkAndRideBooking div.bookingUrl a:link,
+#articleBody .JourneyLocations div.parkAndRideBooking div.bookingUrl a:hover,
+#articleBody .JourneyLocations div.parkAndRideBooking div.bookingUrl a:visited
+{
+    color: #007DA8;
+}
+
+/** -------- Journey Summary Heading ---------------**/
+div.journeySummary div.header, 
+div.stopEventResult div.header,
+.mapbing div.header,
+.printablemapbing div.header,
+.mapbing .instructionHeading,
+.mapbing .arriveHeading
+{
+    border-bottom-color: #007da8;
+}
+div.journeySummary div.header div.journeyDirection, 
+div.stopEventResult div.header div.journeyDirection,
+.mapbing div.header div.journeyDirection,
+.printablemapbing div.header div.journeyDirection
+{
+    color: #FFFFFF;
+}
+
+/** --------------- Journey Summary    --------------- **/
+.sjpContent div.journeySummary div.summary input.replanButton,
+.sjpContent div.stopEventResult div.summary input.replanButton
+{
+    border-color: #cccccc;
+}
+div.journeySummary table.legSummary tr.detailsRow div.rowDetail
+{
+    border-color: #c0c0c0;
+}
+div.journeySummary table.legSummary tr.odd,
+div.stopEventResult table.stopEventResultTable tr.odd,
+table.cycleLegTable tr.odd
+{
+    background-color: #eeeeee;
+}
+div.journeySummary table.legSummary tr.selected
+{
+    background-color: #007da8;
+    color: #ffffff;
+}
+#articleBody .sjpContent div.journeySummary div.columnDetail a.travelNotesLink:link,
+#articleBody .sjpContent div.journeySummary div.columnDetail a.travelNotesLink:hover,
+#articleBody .sjpContent div.journeySummary div.columnDetail a.travelNotesLink:visited,
+#articleBody .sjpContent div.journeySummary div.columnDetail a.bookTicketInfo:link,
+#articleBody .sjpContent div.journeySummary div.columnDetail a.bookTicketInfo:hover,
+#articleBody .sjpContent div.journeySummary div.columnDetail a.bookTicketInfo:visited,
+#articleBody .sjpContent div.journeySummary div.columnLocation div.accessibleLinkDiv a:link,
+#articleBody .sjpContent div.journeySummary div.columnLocation div.accessibleLinkDiv a:hover,
+#articleBody .sjpContent div.journeySummary div.columnLocation div.accessibleLinkDiv a:visited
+{
+    color: #007da8;
+}
+
+/* Car details and Cycle details legs */
+div.journeySummary div.leg div.legCar div.carLeg div.summary,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.summary
+{
+    background-color: #eeeeee;
+}
+div.journeySummary div.leg div.legCar div.carLeg div.detail,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail
+{
+    border-color: #c0c0c0;
+}
+
+/* Bing map */
+div.mapLegend
+{
+    background-color: #69603B;
+}
+
+/* drop downs */
+.selectbox .display{
+    background-color:#fff;
+    color :#4C4C4C;
+    border-color: #CFCFCF;
+}
+.selectbox .display.active
+{
+    border-color:#7b7d83;
+}
+.selectbox.focused .display .text
+{
+    background-color:#007da8;
+    color:#ffffff;
+}
+.selectbox.items{
+  background:#fff;
+  border-color:  #CFCFCF;
+}
+.selectbox.items li>.item
+{
+    color:#4C4C4C;
+}
+.selectbox.items li.selected>.item
+{
+    background-color: #DE0094;
+    color:#ffffff;
+}
+.selectbox.items li.hover>.item
+{
+    background-color:#007da8;
+    color:#ffffff;
+}
+
+/* Non Javascript - Calendar - start */
+.sjpContent #sjp-calendar-tabs ul.tabbed-headers li input.monthTab
+{
+    color: #007da8;   
+}
+.sjpContent #sjp-calendar-tabs #BlogCalendar table td input
+{
+    color: #4C4C4C;
+}
+.sjpContent #sjp-calendar-tabs #BlogCalendar table td.selected input
+{
+    color: #ffffff;
+}
+.sjpContent #sjp-calendar-tabs #BlogCalendar table td.disabled input
+{
+    color: #c0c0c0;
+}
+
+/* Non Javascript - Calendar - end */
+
+/* CheckBoxes */
+span.checkbox span.disabled
+{
+    color: #848284;
+}
+
+/* DateEntry */
+.sjpContent .eventDateTime div.datetime div.datebox input.dateEntry
+{
+    border-color: #CFCFCF;
+}
+
+/* Travel news page */
+#articleBody .sjpContent div.tnfilter div.refreshLinkDiv a,
+#articleBody .sjpContent div.tnfilter div.refreshLinkDiv a:link,
+#articleBody .sjpContent div.tnfilter div.refreshLinkDiv a:visited,
+#articleBody .sjpContent div.tnfilter div.refreshLinkDiv a:hover
+{
+    color: #e6007e !important;
+}
+div.tnItem div.body div.status
+{
+   color: #ACACAC;
+}
+div.tnItem div.body .highlight
+{
+   color: #e6007e;
+}
+div.travelnews div.odd
+{
+    background-color: #DFDFDF;
+}
+.sjpContent div.travelnews div.severity div.active
+{
+    border-bottom-color: #009AE7;
+}
+.travelNewsInfoWidget .promoContent a
+{
+    color: #e6007e;
+}
+
+/* -- SJP London Underground color code -- */
+.bakerloo { background-color: #AE6118 ; color: #ffffff; }
+.central { background-color: #E41F1F ; color: #ffffff; }
+.circle { background-color: #F8D42D ; color: #000000; }
+.district { background-color: #00A575 ; color: #ffffff; }
+.jubilee { background-color: #8F989E ; color: #ffffff; }
+.metropolitan { background-color: #893267 ; color: #ffffff; }
+.northern { background-color: #000000 ; color: #ffffff; }
+.piccadilly { background-color: #0450A1 ; color: #ffffff; }
+.victoria { background-color: #009FE0 ; color: #ffffff; }
+.waterlooandcity { background-color: #70C3CE ; color: #113B92; }
+.overground { background-color: #FF6600 ; color: #ffffff; }
+.dlr { background-color: #00BBB4 ; color: #ffffff; }
+.hammersmithandcity {background-color:#E899A8; color:#113B92;}
+
+
+/* Detail leg Retail handoff links and the journey web note links */
+a.bookTicketLink
+{
+    color: #DE0094;
+}
+
+/* date time input - disabled css */
+div.return input.dateEntry[disabled='disabled'], div.return div.dateSelect input.disabled
+{
+    background-color: #D4D0C8;
+}
+
+.selectbox.disabled .display{background-color: #D4D0C8;color: #999;}
+
+/* Debug */
+.debug
+{
+    color: #00BA9C;
+    font-size: 10px;
+}

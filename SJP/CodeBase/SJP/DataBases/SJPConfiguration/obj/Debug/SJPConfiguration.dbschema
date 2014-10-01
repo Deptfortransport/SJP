@@ -1,0 +1,1712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="1.1" DspName="Microsoft.Data.Schema.Sql.Sql100DatabaseSchemaProvider" CollationLcid="2057" CollationCaseSensitive="False">
+	<Header>
+		<CustomData Category="ModelCapability">
+			<Metadata Name="ModelCapability" Value="Default" />
+		</CustomData>
+		<CustomData Category="ClrTypesDbSchema" Type="DbSchema">
+			<Metadata Name="ClrTypesDbSchema" Value="True" />
+		</CustomData>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="100" />
+		</CustomData>
+		<CustomData Category="Permissions" Type="XmlPermissions">
+			<Metadata Name="FileName" Value="D:\SJP\CODEBASE\SJP\DATABASES\SJPCONFIGURATION\PROPERTIES\DATABASE.SQLPERMISSIONS" />
+		</CustomData>
+		<CustomData Category="Reference" Type="DbSchema">
+			<Metadata Name="FileName" Value="D:\SJP\CODEBASE\SJP\DATABASES\SJPSERVERDATABASE\SQL\DEBUG\SJPSERVERDATABASE.DBSCHEMA" />
+			<Metadata Name="LogicalName" Value="SJPServerDatabase.dbschema" />
+			<Metadata Name="ExternalParts" Value="[master]" />
+			<Metadata Name="SuppressMissingDependenciesErrors" Value="True" />
+		</CustomData>
+	</Header>
+	<Model>
+		<Element Type="ISql100DatabaseOptions">
+			<Property Name="Collation" Value="SQL_Latin1_General_CP1_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="RecoveryMode" Value="1" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(0)]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ReferenceNum]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[ReferenceNum].[RefID]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+		</Element>
+		<Element Type="ISqlRoleMembership">
+			<Relationship Name="Member">
+				<Entry>
+					<References Name="[SJP_User]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Role">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[db_datareader]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISqlRoleMembership">
+			<Relationship Name="Member">
+				<Entry>
+					<References Name="[SJP_User]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Role">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[db_datawriter]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Route" Name="[AutoCreatedLocal]">
+			<Property Name="Address" Value="LOCAL" />
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddChangeNotificationTable]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+
+	-- Add tables that didn't previously exist
+	IF NOT EXISTS (SELECT * FROM [dbo].[ChangeNotification]
+						   WHERE [table] = @table)
+		BEGIN
+			INSERT INTO [dbo].[ChangeNotification] ([table], [version])
+				 VALUES (@table, 1)
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddChangeNotificationTable].[@table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Version]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddChangeNotificationTable].[@table]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="334" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[AddChangeNotificationTable]&#xD;&#xA;&#x9;@table varchar(100) &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddUpdateProperty]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	IF not exists (select top 1 * from properties 
+								 where pName = @pName 
+								   and AID = @AID 
+								   and GID = @GID)
+	BEGIN
+		insert into properties values (
+			@pName, 
+			@pValue, 
+			@AID, 
+			@GID)
+	END
+	ELSE
+	BEGIN
+		update properties 
+		set pValue = @pValue
+		where pName = @pName
+		  and AID = @AID
+		  and GID = @GID
+	END	
+
+RETURN 0]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[properties]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[pName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateProperty].[@pName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[AID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateProperty].[@AID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[GID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateProperty].[@GID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateProperty].[@pValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[pValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[pName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[AID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[GID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateProperty].[@pName]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateProperty].[@pValue]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateProperty].[@AID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateProperty].[@GID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="CreateOffset" Value="149" />
+				<Property Name="Length" Value="661" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="-- =============================================&#xD;&#xA;-- Stored procedure to add or update a property&#xD;&#xA;-- =============================================&#xD;&#xA;CREATE PROCEDURE [dbo].[AddUpdateProperty]&#xD;&#xA;&#x9;@pName varchar(255), &#xD;&#xA;&#x9;@pValue varchar(2000),&#xD;&#xA;&#x9;@AID varchar(50),&#xD;&#xA;&#x9;@GID varchar(50)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddUpdateRetailer]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	IF NOT EXISTS (SELECT * 
+				     FROM [dbo].[Retailers] 
+					WHERE [RetailerId] = @RetailerId) 			   
+		BEGIN
+			INSERT INTO [dbo].[Retailers] (RetailerId, Name, WebsiteURL, HandoffURL, DisplayURL, PhoneNumber, PhoneNumberDisplay, ResourceKey)
+				 VALUES (@RetailerId, @Name, @WebsiteURL, @HandoffURL, @DisplayURL, @PhoneNumber, @PhoneNumberDisplay, @ResourceKey)
+		END
+	ELSE
+		BEGIN
+			UPDATE [dbo].[Retailers]
+			   SET [Name] = @Name,
+				   [WebsiteURL] = @WebsiteURL,
+				   [HandoffURL] = @HandoffURL,
+				   [DisplayURL] = @DisplayURL,
+				   [PhoneNumber] = @PhoneNumber,
+				   [PhoneNumberDisplay] = @PhoneNumberDisplay,
+				   [ResourceKey] = @ResourceKey
+			 WHERE [RetailerID] = @RetailerId
+		END	
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Retailers]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[RetailerId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateRetailer].[@RetailerId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[RetailerId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[WebsiteURL]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[HandoffURL]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[DisplayURL]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[PhoneNumber]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[PhoneNumberDisplay]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[ResourceKey]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateRetailer].[@Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateRetailer].[@WebsiteURL]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateRetailer].[@HandoffURL]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateRetailer].[@DisplayURL]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateRetailer].[@PhoneNumber]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateRetailer].[@PhoneNumberDisplay]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateRetailer].[@ResourceKey]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[RetailerId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateRetailer].[@RetailerId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateRetailer].[@Name]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateRetailer].[@WebsiteURL]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateRetailer].[@HandoffURL]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateRetailer].[@DisplayURL]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateRetailer].[@PhoneNumber]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateRetailer].[@PhoneNumberDisplay]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateRetailer].[@ResourceKey]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1011" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[AddUpdateRetailer]&#xD;&#xA;&#x9;@RetailerId [char](20),&#xD;&#xA;&#x9;@Name [char](50),&#xD;&#xA;&#x9;@WebsiteURL [char](300),&#xD;&#xA;&#x9;@HandoffURL [char](300),&#xD;&#xA;&#x9;@DisplayURL [char](100),&#xD;&#xA;&#x9;@PhoneNumber [char](100),&#xD;&#xA;&#x9;@PhoneNumberDisplay [char](100),&#xD;&#xA;&#x9;@ResourceKey [char](100)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[AddUpdateRetailerLookup]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	IF NOT EXISTS (SELECT * 
+				     FROM [dbo].[RetailerLookup] 
+					WHERE [RetailerId] = @RetailerId 
+					  AND [Mode] = @Mode
+					  AND [OperatorCode] = @OperatorCode) 			   
+		BEGIN
+			INSERT INTO [dbo].[RetailerLookup] ([OperatorCode], [Mode], [RetailerId])
+				 VALUES (@OperatorCode, @Mode, @RetailerId)
+		END
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[RetailerLookup]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RetailerLookup].[RetailerId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateRetailerLookup].[@RetailerId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RetailerLookup].[Mode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateRetailerLookup].[@Mode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RetailerLookup].[OperatorCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[AddUpdateRetailerLookup].[@OperatorCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RetailerLookup].[OperatorCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RetailerLookup].[Mode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RetailerLookup].[RetailerId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateRetailerLookup].[@OperatorCode]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateRetailerLookup].[@Mode]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[AddUpdateRetailerLookup].[@RetailerId]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="464" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[AddUpdateRetailerLookup]&#xD;&#xA;&#x9;@OperatorCode [char](10),&#xD;&#xA;&#x9;@Mode [char](10),&#xD;&#xA;&#x9;@RetailerId [char](20)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ChangeNotification]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChangeNotification].[Version]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ChangeNotification].[Table]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+		</Element>
+		<Element Type="ISql90CheckConstraint" Name="[dbo].[CK_RetailerLookup]">
+			<Property Name="CheckExpressionScript">
+				<Value><![CDATA[([Mode] = 'Underground' or ([Mode] = 'Tram' or ([Mode] = 'Rail' or ([Mode] = 'Metro' or ([Mode] = 'Ferry' or ([Mode] = 'Drt' or ([Mode] = 'Bus' or ([Mode] = 'Coach' or [Mode] = 'Air'))))))))]]></Value>
+			</Property>
+			<Relationship Name="CheckExpressionDependencies">
+				<Entry>
+					<References Name="[dbo].[RetailerLookup].[Mode]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[RetailerLookup]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_RetailerLookup_Retailers]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[RetailerLookup].[RetailerId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[RetailerLookup]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Retailers].[RetailerId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Retailers]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetChangeTable]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	  SELECT [Table], [Version] 
+	    FROM [dbo].[ChangeNotification]
+	ORDER BY [Table]
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Version]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="146" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetChangeTable]&#xD;&#xA;&#x9;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetRetailerLookup]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	SELECT 	[OperatorCode], 
+		    [Mode], 
+			[RetailerId]
+	  FROM	[dbo].[RetailerLookup]		
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[RetailerLookup]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RetailerLookup].[OperatorCode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RetailerLookup].[Mode]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[RetailerLookup].[RetailerId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="152" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetRetailerLookup]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetRetailers]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	SELECT [RetailerId],
+		   [Name],
+		   [WebsiteURL],
+		   [HandoffURL],
+		   [DisplayURL],
+		   [PhoneNumber],
+		   [PhoneNumberDisplay],
+		   [ResourceKey]
+	  FROM [dbo].[Retailers]
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Retailers]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[RetailerId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[WebsiteURL]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[HandoffURL]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[DisplayURL]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[PhoneNumber]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[PhoneNumberDisplay]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Retailers].[ResourceKey]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="246" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetRetailers]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[GetVersion]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+
+SELECT PVALUE FROM PROPERTIES
+	WHERE PNAME='propertyservice.version'
+
+RETURN 0]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[properties]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[pValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[pName]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="124" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetVersion]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ChangeNotification]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ChangeNotification].[Table]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="6" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Properties]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[properties].[pName]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[properties].[AID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[properties].[GID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[properties]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_ReferenceNum]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[ReferenceNum].[RefID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[ReferenceNum]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_Retailer]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Retailers].[RetailerId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Retailers]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_RetailerLookup]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[RetailerLookup].[OperatorCode]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[RetailerLookup].[Mode]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[RetailerLookup].[RetailerId]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[RetailerLookup]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+		</Element>
+		<Element Type="ISql100PrimaryKeyConstraint" Name="[dbo].[PK_VersionInfo]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[VersionInfo].[DatabaseVersionInfo]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[VersionInfo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[properties]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[properties].[pName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="255" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[properties].[pValue]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="2000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[properties].[AID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[properties].[GID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="7" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[ReferenceNum]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[ReferenceNum].[RefID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="5" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[RetailerLookup]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[RetailerLookup].[OperatorCode]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[RetailerLookup].[Mode]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="10" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[RetailerLookup].[RetailerId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="9" />
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[Retailers]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Retailers].[RetailerId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Retailers].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Retailers].[WebsiteURL]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Retailers].[HandoffURL]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="300" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Retailers].[DisplayURL]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Retailers].[PhoneNumber]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Retailers].[PhoneNumberDisplay]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[Retailers].[ResourceKey]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="8" />
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[SelectApplicationProperties]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+
+SELECT PNAME, PVALUE FROM PROPERTIES P
+	WHERE P.AID = @AID
+
+RETURN 0]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[properties]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[pName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[pValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[AID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SelectApplicationProperties].[@AID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[SelectApplicationProperties].[@AID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="147" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SelectApplicationProperties]&#xD;&#xA;&#x9;@AID char(50)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[SelectGlobalProperties]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+
+SELECT PNAME, PVALUE FROM PROPERTIES P
+	WHERE P.AID = '<DEFAULT>'
+		AND P.GID = '<DEFAULT>'
+
+RETURN 0]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[properties]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[pName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[pValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[AID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[GID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="162" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SelectGlobalProperties]&#xD;&#xA;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[SelectGroupProperties]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+
+SELECT PNAME, PVALUE FROM PROPERTIES P
+	WHERE P.GID = @GID
+
+RETURN 0]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[properties]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[pName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[pValue]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[properties].[GID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SelectGroupProperties].[@GID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[SelectGroupProperties].[@GID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="141" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SelectGroupProperties]&#xD;&#xA;&#x9;@GID char(50)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Procedure" Name="[dbo].[UpdateChangeNotificationTable]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ 
+BEGIN 
+
+    CREATE TABLE #updateTables 
+	(
+		tablename varchar(100) COLLATE database_default NOT NULL
+	)
+			    
+	DECLARE @currTable varchar(100), @pos int 
+        
+    SET @tableList = LTRIM(RTRIM(@tableList)) + ',' 
+    SET @pos = CHARINDEX(',', @tableList, 1) 
+        
+    IF REPLACE(@tableList, ',', '') <> '' 
+        BEGIN 
+            WHILE @pos > 0 
+                BEGIN 
+                    SET @currTable = LTRIM(RTRIM(LEFT(@tableList, @pos - 1))) 
+                    IF @currTable <> '' 
+                       BEGIN 
+                          INSERT INTO #updateTables VALUES (@currTable) 
+                       END 
+                    SET @tableList = RIGHT(@tableList, LEN(@tableList) - @pos) 
+                    SET @pos = CHARINDEX(',', @tableList, 1) 
+                END 
+        END 
+
+    BEGIN TRANSACTION
+
+	-- Update tables that did exist
+    UPDATE [dbo].[ChangeNotification]
+    SET    [version] = [version] + 1 
+    WHERE  [table] in 
+            (SELECT tablename FROM #updateTables) 
+
+    -- Add tables that didn't previously exist
+    INSERT INTO [dbo].[ChangeNotification] ([table], [version])
+    SELECT 		tablename, 1 
+    FROM		#updateTables
+    WHERE 		not EXISTS(SELECT * 
+							 FROM [dbo].[ChangeNotification] CN
+							WHERE CN.[Table] = #updateTables.tablename)
+    
+    COMMIT TRANSACTION
+    
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[varchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[@tableList]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Version]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ChangeNotification].[Table]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DynamicObjects">
+				<Entry>
+					<Element Type="ISqlDynamicColumnSource" Name="[dbo].[UpdateChangeNotificationTable].[#updateTables]">
+						<Relationship Name="Columns">
+							<Entry>
+								<Element Type="ISql100SimpleColumn" Name="[dbo].[UpdateChangeNotificationTable].[#updateTables].[tablename]">
+									<Property Name="Collation" Value="database_default" />
+									<Property Name="IsNullable" Value="False" />
+									<Relationship Name="TypeSpecifier">
+										<Entry>
+											<Element Type="ISql90TypeSpecifier">
+												<Property Name="Length" Value="100" />
+												<Relationship Name="Type">
+													<Entry>
+														<References ExternalSource="BuiltIns" Name="[varchar]" />
+													</Entry>
+												</Relationship>
+											</Element>
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISql100SubroutineParameter" Name="[dbo].[UpdateChangeNotificationTable].[@tableList]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="1000" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1484" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[UpdateChangeNotificationTable]&#xD;&#xA;( &#xD;&#xA;&#x9;@tableList varchar(1000) &#xD;&#xA;) &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql100Table" Name="[dbo].[VersionInfo]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISql100SimpleColumn" Name="[dbo].[VersionInfo].[DatabaseVersionInfo]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="20" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90User" Name="[SJP_User]">
+			<Property Name="LoginIdentifierScript">
+				<Value><![CDATA[[SJP_User]]]></Value>
+			</Property>
+			<Relationship Name="Login">
+				<Entry>
+					<References ExternalSource="SJPServerDatabase.dbschema" Name="[master]|[SJP_User]" />
+				</Entry>
+			</Relationship>
+		</Element>
+	</Model>
+</DataSchemaModel>

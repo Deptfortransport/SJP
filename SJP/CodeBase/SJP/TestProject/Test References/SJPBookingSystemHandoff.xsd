@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<xs:schema id="SJPBookingSystemHandoff" 
+			targetNamespace="http://www.transportdirect.info/SJPBookingSystemHandoff" 
+			xmlns:mstns="http://www.transportdirect.info/SJPBookingSystemHandoff" 
+			xmlns="http://www.transportdirect.info/SJPBookingSystemHandoff" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+			xmlns:nap="http://www.naptan.org.uk/" 
+			attributeFormDefault="qualified" 
+			elementFormDefault="qualified">
+    <xs:element name="BookingHandoff" msdata:IsDataSet="true" msdata:Locale="en-GB" msdata:EnforceConstraints="false">
+        <xs:complexType>
+          <xs:sequence>
+	    <xs:element name="HandOffReference" type="xs:string" />
+            <xs:element name="DateTimeGenerated" type="xs:dateTime" />
+            <xs:element name="Journeys" minOccurs="1" maxOccurs="1">
+                <xs:complexType>
+					<xs:sequence>
+						<xs:element name="AccessibleJourneys" type="xs:boolean" minOccurs="1" maxOccurs="1" />
+                        <xs:element name="Journey" type="Journey" minOccurs="1" maxOccurs="2" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="Journey">
+        <xs:sequence>
+            <xs:element name="OutwardJourney" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="JourneyLeg" type="JourneyLeg" minOccurs="1" maxOccurs="unbounded"/>
+         </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="JourneyLeg">
+      <xs:sequence>
+         <xs:element name="LegId" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+         <xs:element name="LegBoard" type="JourneySite" minOccurs="1" maxOccurs="1" />
+         <xs:element name="LegAlight" type="JourneySite" minOccurs="1" maxOccurs="1" />
+         <xs:element name="LegBoardTime" type="xs:dateTime" minOccurs="1" maxOccurs="1" />
+         <xs:element name="LegAlightTime" type="xs:dateTime" minOccurs="1" maxOccurs="1" />
+         <xs:element name="OperatorCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+         <xs:element name="OperatorName" type="xs:string" minOccurs="0" maxOccurs="1" />
+         <xs:element name="ServiceNumber" type="xs:string" minOccurs="0" maxOccurs="1" />
+         <xs:element name="LegMode" type="VehicleModes" minOccurs="1" maxOccurs="1" />       
+      </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="VehicleModes">
+        <xs:restriction base ="xs:string">
+            <xs:enumeration value="air" />
+            <xs:enumeration value="bus" />
+            <xs:enumeration value="coach" />
+            <xs:enumeration value="ferry" />
+            <xs:enumeration value="metro" />
+            <xs:enumeration value="rail" />
+            <xs:enumeration value="railReplacementBus" />
+            <xs:enumeration value="tram" />
+            <xs:enumeration value="underground" />
+            <xs:enumeration value="shuttleBus" />
+            <xs:enumeration value="railShuttle" />
+            <xs:enumeration value="walk" />
+            <xs:enumeration value="taxi" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="JourneySite">
+        <xs:sequence>
+	        <xs:element name="SiteName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="SiteAtcoCode" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

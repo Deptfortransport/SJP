@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataServicesData>
+  <DropDownLists>
+    <DropDownLists DataSet="CountryDrop" ResourceID="Default" ItemValue="" IsSelected="1" SortOrder="1" />
+    <DropDownLists DataSet="CountryDrop" ResourceID="England" ItemValue="Eng" IsSelected="0" SortOrder="2" />
+    <DropDownLists DataSet="CountryDrop" ResourceID="Scotland" ItemValue="Sco" IsSelected="0" SortOrder="3" />
+    <DropDownLists DataSet="CountryDrop" ResourceID="Wales" ItemValue="Wal" IsSelected="0" SortOrder="4" />
+    <DropDownLists DataSet="CycleRouteType" ResourceID="Quickest" ItemValue="QuickestV913" IsSelected="0" SortOrder="2" />
+    <DropDownLists DataSet="CycleRouteType" ResourceID="Quietest" ItemValue="QuietestV913" IsSelected="1" SortOrder="1" />
+    <DropDownLists DataSet="CycleRouteType" ResourceID="Recreational" ItemValue="RecreationalV913" IsSelected="0" SortOrder="3" />
+    <DropDownLists DataSet="NewsRegionDrop" ResourceID="EastAnglia" ItemValue="East Anglia" IsSelected="0" SortOrder="4" />
+    <DropDownLists DataSet="NewsRegionDrop" ResourceID="EastMidlands" ItemValue="East Midlands" IsSelected="0" SortOrder="5" />
+    <DropDownLists DataSet="NewsRegionDrop" ResourceID="London" ItemValue="London" IsSelected="1" SortOrder="3" />
+    <DropDownLists DataSet="NewsRegionDrop" ResourceID="NorthEast" ItemValue="North East" IsSelected="0" SortOrder="9" />
+    <DropDownLists DataSet="NewsRegionDrop" ResourceID="NorthWest" ItemValue="North West" IsSelected="0" SortOrder="8" />
+    <DropDownLists DataSet="NewsRegionDrop" ResourceID="Scotland" ItemValue="Scotland" IsSelected="0" SortOrder="10" />
+    <DropDownLists DataSet="NewsRegionDrop" ResourceID="SouthEast" ItemValue="South East" IsSelected="0" SortOrder="2" />
+    <DropDownLists DataSet="NewsRegionDrop" ResourceID="SouthWest" ItemValue="South West" IsSelected="0" SortOrder="1" />
+    <DropDownLists DataSet="NewsRegionDrop" ResourceID="Wales" ItemValue="Wales" IsSelected="0" SortOrder="11" />
+    <DropDownLists DataSet="NewsRegionDrop" ResourceID="WestMidlands" ItemValue="West Midlands" IsSelected="0" SortOrder="6" />
+    <DropDownLists DataSet="NewsRegionDrop" ResourceID="YorkshireandHumber" ItemValue="Yorkshire and Humber" IsSelected="0" SortOrder="7" />
+  </DropDownLists>
+  <SJPEventDates>
+    <SJPEventDates EventDate="2012-06-01 00:00:00" />
+    <SJPEventDates EventDate="2012-06-02 00:00:00" />
+    <SJPEventDates EventDate="2012-06-03 00:00:00" />
+    <SJPEventDates EventDate="2012-06-04 00:00:00" />
+    <SJPEventDates EventDate="2012-06-05 00:00:00" />
+    <SJPEventDates EventDate="2012-06-06 00:00:00" />
+    <SJPEventDates EventDate="2012-06-07 00:00:00" />
+    <SJPEventDates EventDate="2012-06-08 00:00:00" />
+    <SJPEventDates EventDate="2012-06-09 00:00:00" />
+    <SJPEventDates EventDate="2012-06-10 00:00:00" />
+    <SJPEventDates EventDate="2012-06-11 00:00:00" />
+    <SJPEventDates EventDate="2012-06-12 00:00:00" />
+    <SJPEventDates EventDate="2012-06-13 00:00:00" />
+    <SJPEventDates EventDate="2012-06-14 00:00:00" />
+    <SJPEventDates EventDate="2012-06-15 00:00:00" />
+    <SJPEventDates EventDate="2012-06-16 00:00:00" />
+    <SJPEventDates EventDate="2012-06-17 00:00:00" />
+    <SJPEventDates EventDate="2012-06-18 00:00:00" />
+    <SJPEventDates EventDate="2012-06-19 00:00:00" />
+    <SJPEventDates EventDate="2012-06-20 00:00:00" />
+    <SJPEventDates EventDate="2012-06-21 00:00:00" />
+    <SJPEventDates EventDate="2012-06-22 00:00:00" />
+    <SJPEventDates EventDate="2012-06-23 00:00:00" />
+    <SJPEventDates EventDate="2012-06-24 00:00:00" />
+    <SJPEventDates EventDate="2012-06-25 00:00:00" />
+    <SJPEventDates EventDate="2012-06-26 00:00:00" />
+    <SJPEventDates EventDate="2012-06-27 00:00:00" />
+    <SJPEventDates EventDate="2012-06-28 00:00:00" />
+    <SJPEventDates EventDate="2012-06-29 00:00:00" />
+    <SJPEventDates EventDate="2012-06-30 00:00:00" />
+    
+  </SJPEventDates>
+  
+</DataServicesData>

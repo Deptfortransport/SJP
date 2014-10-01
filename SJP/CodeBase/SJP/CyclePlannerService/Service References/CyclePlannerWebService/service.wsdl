@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="JourneyPlan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:CyclePlannerRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CyclePlannerRequest" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="referenceTransaction" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="requestID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="language" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sessionID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="userType" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JourneyRequest">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CyclePlannerRequest">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="depart" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="penaltyFunction" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="origin" type="tns:RequestPlace" />
+              <s:element minOccurs="0" maxOccurs="1" name="destination" type="tns:RequestPlace" />
+              <s:element minOccurs="0" maxOccurs="1" name="journeyResultSettings" type="tns:JourneyResultSettings" />
+              <s:element minOccurs="0" maxOccurs="1" name="vias" type="tns:ArrayOfRequestPlace" />
+              <s:element minOccurs="0" maxOccurs="1" name="userPreferences" type="tns:ArrayOfUserPreference" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="RequestPlace">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="givenName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="timeDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="roadPoints" type="tns:ArrayOfITN" />
+          <s:element minOccurs="0" maxOccurs="1" name="coordinate" type="tns:Coordinate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfITN">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ITN" nillable="true" type="tns:ITN" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ITN">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TOID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="timeDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="node" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="seed" type="tns:Seed" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Seed">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="distanceFromANode" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Coordinate">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="easting" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="northing" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JourneyResultSettings">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="includeToids" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="includeGeometry" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="includeText" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="pointSeparator" type="s1:char" />
+          <s:element minOccurs="1" maxOccurs="1" name="eastingNorthingSeparator" type="s1:char" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRequestPlace">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RequestPlace" nillable="true" type="tns:RequestPlace" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUserPreference">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UserPreference" nillable="true" type="tns:UserPreference" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UserPreference">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="parameterID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="parameterValue" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="JourneyPlanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JourneyPlanResult" type="tns:CyclePlannerResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CyclePlannerResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="messages" type="tns:ArrayOfMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Message" nillable="true" type="tns:Message" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Message">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JourneyResult">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CyclePlannerResult">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="journeys" type="tns:ArrayOfJourney" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfJourney">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Journey" nillable="true" type="tns:Journey" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Journey">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="startTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="sections" type="tns:ArrayOfSection" />
+          <s:element minOccurs="0" maxOccurs="1" name="start" type="tns:StopoverSection" />
+          <s:element minOccurs="0" maxOccurs="1" name="finish" type="tns:StopoverSection" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSection">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Section" nillable="true" type="tns:Section" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Section" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="sectionID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="time" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="nodeAttributes" type="tns:ArrayOfUnsignedInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="sectionFeatures" type="tns:ArrayOfSectionFeature" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUnsignedInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="unsignedInt" type="s:unsignedInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSectionFeature">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SectionFeature" nillable="true" type="tns:SectionFeature" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SectionFeature" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SectionFeatureAttributes">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SectionFeature">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="value" type="s:unsignedInt" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TextSectionFeature">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:SectionFeature">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="type" type="tns:FeatureType" />
+              <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="FeatureType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Number" />
+          <s:enumeration value="Text" />
+          <s:enumeration value="URL" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="StopoverSection">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Section">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="type" type="tns:StopoverSectionType" />
+              <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="toll" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="node" type="tns:StopoverPoint" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="StopoverSectionType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Origin" />
+          <s:enumeration value="Destination" />
+          <s:enumeration value="Via" />
+          <s:enumeration value="Wait" />
+          <s:enumeration value="UndefinedWait" />
+          <s:enumeration value="Toll" />
+          <s:enumeration value="TollEntry" />
+          <s:enumeration value="TollExit" />
+          <s:enumeration value="CongestionZoneEntry" />
+          <s:enumeration value="CongestionZoneExit" />
+          <s:enumeration value="CongestionZoneEnd" />
+          <s:enumeration value="FerryCheckIn" />
+          <s:enumeration value="FerryCheckOut" />
+          <s:enumeration value="NamedAccessRestriction" />
+          <s:enumeration value="ComplexManoeuvre" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="StopoverPoint">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TOID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="geometry" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ITNNode">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:StopoverPoint" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="PointOnITNLink">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:StopoverPoint" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="DriveSection">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Section">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="number" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="distance" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="turnCount" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="turnDirection" type="tns:TurnDirection" />
+              <s:element minOccurs="1" maxOccurs="1" name="turnAngle" type="tns:TurnAngle" />
+              <s:element minOccurs="1" maxOccurs="1" name="cost" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="heading" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="roadSplits" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="joiningSignificantLinkAttributes" type="tns:ArrayOfUnsignedInt" />
+              <s:element minOccurs="0" maxOccurs="1" name="leavingSignificantLinkAttributes" type="tns:ArrayOfUnsignedInt" />
+              <s:element minOccurs="0" maxOccurs="1" name="interestingLinkAttributes" type="tns:ArrayOfUnsignedInt" />
+              <s:element minOccurs="0" maxOccurs="1" name="significantNodeAttributes" type="tns:ArrayOfUnsignedInt" />
+              <s:element minOccurs="0" maxOccurs="1" name="instructionText" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="links" type="tns:ArrayOfITNLink" />
+              <s:element minOccurs="0" maxOccurs="1" name="cycleRoutes" type="tns:ArrayOfCycleRoute" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="TurnDirection">
+        <s:restriction base="s:string">
+          <s:enumeration value="Left" />
+          <s:enumeration value="Right" />
+          <s:enumeration value="Continue" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="TurnAngle">
+        <s:restriction base="s:string">
+          <s:enumeration value="Turn" />
+          <s:enumeration value="Bear" />
+          <s:enumeration value="Continue" />
+          <s:enumeration value="Return" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfITNLink">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ITNLink" nillable="true" type="tns:ITNLink" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ITNLink">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TOID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="congestion" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="geometry" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="interpolateGradient" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="style" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCycleRoute">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CycleRoute" nillable="true" type="tns:CycleRoute" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CycleRoute">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="number" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JunctionDriveSection">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:DriveSection">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="junctionNumber" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="type" type="tns:JunctionType" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="JunctionType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Entry" />
+          <s:enumeration value="Exit" />
+          <s:enumeration value="Merge" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="char">
+        <s:restriction base="s:unsignedShort" />
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="JourneyPlanSoapIn">
+    <wsdl:part name="parameters" element="tns:JourneyPlan" />
+  </wsdl:message>
+  <wsdl:message name="JourneyPlanSoapOut">
+    <wsdl:part name="parameters" element="tns:JourneyPlanResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CyclePlannerServiceSoap">
+    <wsdl:operation name="JourneyPlan">
+      <wsdl:input message="tns:JourneyPlanSoapIn" />
+      <wsdl:output message="tns:JourneyPlanSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CyclePlannerServiceSoap" type="tns:CyclePlannerServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="JourneyPlan">
+      <soap:operation soapAction="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface/JourneyPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CyclePlannerServiceSoap12" type="tns:CyclePlannerServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="JourneyPlan">
+      <soap12:operation soapAction="http://www.atkinsglobal.com/journeyplanning/cycleplannerinterface/JourneyPlan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CyclePlannerService">
+    <wsdl:port name="CyclePlannerServiceSoap" binding="tns:CyclePlannerServiceSoap">
+      <soap:address location="http://10.93.154.7/cycleplannerservice/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CyclePlannerServiceSoap12" binding="tns:CyclePlannerServiceSoap12">
+      <soap12:address location="http://10.93.154.7/cycleplannerservice/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

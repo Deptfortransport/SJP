@@ -1,0 +1,9 @@
+D:\SJP\CodeBase\SJP\DataBases\SJPTransientPortal\sql\debug\SJPTransientPortal_Script.PreDeployment.sql
+D:\SJP\CodeBase\SJP\DataBases\SJPTransientPortal\sql\debug\SJPTransientPortal_Script.PostDeployment.sql
+D:\SJP\CodeBase\SJP\DataBases\SJPTransientPortal\sql\debug\SJPTransientPortal_Database.sqlsettings
+D:\SJP\CodeBase\SJP\DataBases\SJPTransientPortal\sql\debug\SJPTransientPortal_Database.sqldeployment
+D:\SJP\CodeBase\SJP\DataBases\SJPTransientPortal\sql\debug\SJPTransientPortal_Database.sqlcmdvars
+D:\SJP\CodeBase\SJP\DataBases\SJPTransientPortal\sql\debug\SJPTransientPortal.deploymanifest
+D:\SJP\CodeBase\SJP\DataBases\SJPTransientPortal\sql\debug\SJPTransientPortal.dbschema
+D:\SJP\CodeBase\SJP\DataBases\SJPTransientPortal\sql\debug\SJPServerDatabase.dbschema
+D:\SJP\CodeBase\SJP\DataBases\SJPTransientPortal\obj\Debug\SJPTransientPortal.dbschema

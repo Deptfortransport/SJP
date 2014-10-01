@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C250826-A52A-4B4D-97CF-070D4E91C29F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SJP.UserPortal.SJPMobile</RootNamespace>
+    <AssemblyName>sjp.userportal.sjpmobile</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisLogFile>bin\SJPMobile.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\sjp.userportal.sjpmobile.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccessibilityOptions.aspx" />
+    <Content Include="Controls\AccessibleFeaturesControl.ascx" />
+    <Content Include="Controls\AccessibleOptionsControl.ascx" />
+    <Content Include="Controls\AccessibleStopsControl.ascx" />
+    <Content Include="Controls\DetailsCycleControl.ascx" />
+    <Content Include="Controls\DetailsLegControl.ascx" />
+    <Content Include="Controls\DetailsLegsControl.ascx" />
+    <Content Include="Controls\DetailsSummaryControl.ascx" />
+    <Content Include="Controls\EventDateControl.ascx" />
+    <Content Include="Controls\FooterControl.ascx" />
+    <Content Include="Controls\HeaderControl.ascx" />
+    <Content Include="Controls\JourneyInputControl.ascx" />
+    <Content Include="Controls\JourneyPageControl.ascx" />
+    <Content Include="Controls\LocationControl.ascx" />
+    <Content Include="Controls\TravelNewsControl.ascx" />
+    <Content Include="Controls\TravelNewsDetailControl.ascx" />
+    <Content Include="Controls\UndergroundStatusControl.ascx" />
+    <Content Include="Controls\UndergroundStatusDetailsControl.ascx" />
+    <Content Include="Controls\VehicleFeaturesControl.ascx" />
+    <Content Include="Controls\VenueMapControl.ascx" />
+    <Content Include="Controls\VenueSelectControl.ascx" />
+    <Content Include="Controls\WaitControl.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Detail.aspx" />
+    <Content Include="Direction.aspx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Input.aspx" />
+    <Content Include="Map.aspx" />
+    <Content Include="PageNotFound.aspx" />
+    <Content Include="SorryPage.aspx" />
+    <Content Include="Summary.aspx" />
+    <Content Include="TravelNews.aspx" />
+    <Content Include="TravelNewsDetail.aspx" />
+    <Content Include="Version\Images\arrows\Up_down.png" />
+    <Content Include="Version\Images\arrows\Up_down_double_head.png" />
+    <Content Include="Version\Images\bgheader.png" />
+    <Content Include="Version\Images\bgheaderinfo.png" />
+    <Content Include="Version\Images\cycle\CyclePark.png" />
+    <Content Include="Version\Images\invisible.png" />
+    <Content Include="Version\Images\collapse.png" />
+    <Content Include="Version\Images\collapseblue.png" />
+    <Content Include="Version\Images\collapseicon.png" />
+    <Content Include="Version\Images\collapsemag.png" />
+    <Content Include="Version\Images\cycle\CyclePath.gif" />
+    <Content Include="Version\Images\cycle\CycleRoute.gif" />
+    <Content Include="Version\Images\location.png" />
+    <Content Include="Version\Images\maps\Blue-cluster.png" />
+    <Content Include="Version\Images\maps\Blue-flag.png" />
+    <Content Include="Version\Images\maps\Blue-point.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100BRH_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100EAR_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100ETD_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100EXL_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100GRP_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100HAD_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100HAM_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100HGP_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100HYD_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100LCG_CycleParkMapsM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100LVC_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100MIL_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100MLL_CycleParksMapNorthM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100MLL_CycleParksMapSouthM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100NGA_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100OLD_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100OPK_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100RAB_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100VPL_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100WAP_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100WEA_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100WEM_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\CycleParksMaps\8100WIM_CycleParksMapM.png" />
+    <Content Include="Version\Images\maps\My-Location-30.png" />
+    <Content Include="Version\Images\maps\Pink-cluster.png" />
+    <Content Include="Version\Images\maps\Pink-flag.png" />
+    <Content Include="Version\Images\maps\Pink-point.png" />
+    <Content Include="Version\Images\maps\pointer.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-box-hill-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-brands-hatch-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-city-of-coventry-stadium-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-earls-court-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-eton-dorney-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-eton-dorney-p.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-excel-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-greenwich-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-greenwich-p.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-hadleigh-farm-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-hampden-park-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-hampton-court-palace-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-horse-guards-parade-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-hyde-park-live.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-hyde-park-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-lee-valley-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-lords-cricket-ground-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-millennium-stadium-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-north-greenwich-arena-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-old-trafford-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-olympic-park-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-potters-field-live.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-royal-artillery-barracks-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-st-james-park-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-the-mall-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-the-mall-p.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-trafalgar-square-live.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-victoria-park-live.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-wembley-arena-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-wembley-stadium-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-weymouth-and-portland-o.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-weymouth-and-portland-p.png" />
+    <Content Include="Version\Images\maps\VenueMaps\travel-to-wimbeldon-o.png" />
+    <Content Include="Version\Images\maps\X_big_white.gif" />
+    <Content Include="Version\Images\maps\X_small_white.gif" />
+    <Content Include="Version\Images\navbutton2.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_assistance.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_escalator_down.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_escalator_up.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_lift_down.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_lift_up.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_low_floor_vehicle.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_platform_access.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_ramp_down.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_ramp_up.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_stairs_down.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_stairs_up.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_walk.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_walk_1.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_walk_2.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_wheelchair_assistance.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_wheelchair_assistance_2.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_wheelchair_vehicle.png" />
+    <Content Include="Version\Images\presentation\button-blue-large-300.png" />
+    <Content Include="Version\Images\presentation\button-blue-large-disabled-300.png" />
+    <Content Include="Version\Images\presentation\button-pink-large-300.png" />
+    <Content Include="Version\Images\presentation\button-pink-large-disabled-300.png" />
+    <Content Include="Version\Images\presentation\HourGlass_small.gif" />
+    <Content Include="Version\Images\presentation\information-red.png" />
+    <Content Include="Version\Images\presentation\information.png" />
+    <Content Include="Version\Images\presentation\Journey_End.png" />
+    <Content Include="Version\Images\presentation\Journey_End_Medium.png" />
+    <Content Include="Version\Images\presentation\Journey_Line_Solid.png" />
+    <Content Include="Version\Images\presentation\Journey_Node.png" />
+    <Content Include="Version\Images\presentation\Journey_Node_ExtraLong.png" />
+    <Content Include="Version\Images\presentation\Journey_Node_Long.png" />
+    <Content Include="Version\Images\presentation\Journey_Node_Medium.png" />
+    <Content Include="Version\Images\presentation\Journey_Start.png" />
+    <Content Include="Version\Images\presentation\Journey_Start_Medium.png" />
+    <Content Include="Version\Images\presentation\JP_air.png" />
+    <Content Include="Version\Images\presentation\JP_bus.png" />
+    <Content Include="Version\Images\presentation\JP_cablecar.png" />
+    <Content Include="Version\Images\presentation\JP_car.png" />
+    <Content Include="Version\Images\presentation\JP_coach.png" />
+    <Content Include="Version\Images\presentation\JP_cycle.png" />
+    <Content Include="Version\Images\presentation\JP_dlr.png" />
+    <Content Include="Version\Images\presentation\JP_drt.png" />
+    <Content Include="Version\Images\presentation\JP_eurotunnel.png" />
+    <Content Include="Version\Images\presentation\JP_ferry.png" />
+    <Content Include="Version\Images\presentation\JP_metro.png" />
+    <Content Include="Version\Images\presentation\JP_overground.png" />
+    <Content Include="Version\Images\presentation\JP_queue.png" />
+    <Content Include="Version\Images\presentation\JP_rail.png" />
+    <Content Include="Version\Images\presentation\JP_rail_replacement_bus.png" />
+    <Content Include="Version\Images\presentation\JP_taxi.png" />
+    <Content Include="Version\Images\presentation\JP_tram.png" />
+    <Content Include="Version\Images\presentation\JP_underground.png" />
+    <Content Include="Version\Images\presentation\JP_walk.png" />
+    <Content Include="Version\Images\presentation\JP_walk_interchange.png" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_0_Buffet_Service.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_10_Reservations_Compulsory.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_11_Reservations_Recommended.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_12_Reservations_Available.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_13_Reservations _for_Cycles.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_1_Restaurant_in_First_Class_only_and_Buffet_Service.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_21_First_and_Standard_Class.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_22_First_Class_Only.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_2_Hot_Buffet.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_30_First_and_Standard_Class_Sleepers.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_31_First_Class_Sleepers_Only.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_32_Standard_Class_Sleepers_Only.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_3_Meal_Included_for_First_Class_Passengers.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_4_Restaurant_and_Buffet_Service.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_5_Trolley_Service.gif" />
+    <Content Include="Version\Images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Version\Images\zoom.png" />
+    <Content Include="Version\London2012\Images\Arrows\back.gif" />
+    <Content Include="Version\London2012\Images\Arrows\pink-arrow-down.png" />
+    <Content Include="Version\London2012\Images\Arrows\pink-arrow-down1.png" />
+    <Content Include="Version\London2012\Images\Arrows\pink-arrow-left.png" />
+    <Content Include="Version\London2012\Images\Arrows\pink-arrow-right.png" />
+    <Content Include="Version\London2012\Images\Arrows\pink-arrow-right1.png" />
+    <Content Include="Version\London2012\Images\Arrows\pink-arrow-up.png" />
+    <Content Include="Version\London2012\Images\Arrows\white-arrow-down.png" />
+    <Content Include="Version\London2012\Images\Arrows\white-arrow-left.png" />
+    <Content Include="Version\London2012\Images\Arrows\white-arrow-right.png" />
+    <Content Include="Version\London2012\Images\Arrows\white-arrow-up.png" />
+    <Content Include="Version\London2012\Images\Icons\favicon.ico" />
+    <Content Include="Version\London2012\Images\Logos\bg-olympics.png" />
+    <Content Include="Version\London2012\Images\Logos\bg-paralympics.png" />
+    <Content Include="Version\London2012\Images\Logos\logo-pink.png" />
+    <Content Include="Version\London2012\Images\Logos\sprite-locog.png" />
+    <Content Include="Version\Scripts\AccessibilityOptions.js" />
+    <Content Include="Version\Scripts\Common.js" />
+    <Content Include="Version\Scripts\Detail.js" />
+    <Content Include="Version\Scripts\Input.js" />
+    <Content Include="Version\Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Version\Scripts\LocationSuggest.js" />
+    <Content Include="Version\Scripts\Map.js" />
+    <Content Include="Version\Scripts\News.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_a.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_b.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_c.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_d.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_e.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_f.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_g.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_h.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_i.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_j.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_k.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_l.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_m.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_n.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_o.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_p.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_q.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_r.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_s.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_t.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_u.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_v.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_w.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_x.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_y.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_29112011_z.js" />
+    <Content Include="Version\Styles\Device\android-240.css" />
+    <Content Include="Version\Styles\Device\android-320.css" />
+    <Content Include="Version\Styles\Device\Default.css" />
+    <Content Include="Version\Styles\Device\iphone.css" />
+    <Content Include="Version\Styles\Device\windows-phone.css" />
+    <Content Include="Version\Styles\images\ajax-loader.png" />
+    <Content Include="Version\Styles\images\form-check-off.png" />
+    <Content Include="Version\Styles\images\form-check-on.png" />
+    <Content Include="Version\Styles\images\form-radio-off.png" />
+    <Content Include="Version\Styles\images\form-radio-on.png" />
+    <Content Include="Version\Styles\images\icon-search-black.png" />
+    <Content Include="Version\Styles\images\icons-18-black.png" />
+    <Content Include="Version\Styles\images\icons-18-white.png" />
+    <Content Include="Version\Styles\images\icons-36-black.png" />
+    <Content Include="Version\Styles\images\icons-36-white.png" />
+    <Content Include="Version\Styles\jquery.mobile-1.0.1.min.css" />
+    <Content Include="Version\Styles\jquery.mobile-1.1.0.min.css" />
+    <Content Include="Version\Styles\jquery.mobile-custom.css" />
+    <Content Include="Version\Styles\SJPMain.css" />
+    <Content Include="Version\Styles\SJPMain1.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessibilityOptions.aspx.cs">
+      <DependentUpon>AccessibilityOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessibilityOptions.aspx.designer.cs">
+      <DependentUpon>AccessibilityOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adapters\JourneyInputAdapter.cs" />
+    <Compile Include="Controls\AccessibleFeaturesControl.ascx.cs">
+      <DependentUpon>AccessibleFeaturesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AccessibleFeaturesControl.ascx.designer.cs">
+      <DependentUpon>AccessibleFeaturesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AccessibleOptionsControl.ascx.cs">
+      <DependentUpon>AccessibleOptionsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AccessibleOptionsControl.ascx.designer.cs">
+      <DependentUpon>AccessibleOptionsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AccessibleStopsControl.ascx.cs">
+      <DependentUpon>AccessibleStopsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AccessibleStopsControl.ascx.designer.cs">
+      <DependentUpon>AccessibleStopsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetailsCycleControl.ascx.cs">
+      <DependentUpon>DetailsCycleControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DetailsCycleControl.ascx.designer.cs">
+      <DependentUpon>DetailsCycleControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetailsLegControl.ascx.cs">
+      <DependentUpon>DetailsLegControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DetailsLegControl.ascx.designer.cs">
+      <DependentUpon>DetailsLegControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetailsLegsControl.ascx.cs">
+      <DependentUpon>DetailsLegsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DetailsLegsControl.ascx.designer.cs">
+      <DependentUpon>DetailsLegsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetailsSummaryControl.ascx.cs">
+      <DependentUpon>DetailsSummaryControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DetailsSummaryControl.ascx.designer.cs">
+      <DependentUpon>DetailsSummaryControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventDateControl.ascx.cs">
+      <DependentUpon>EventDateControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventDateControl.ascx.designer.cs">
+      <DependentUpon>EventDateControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FooterControl.ascx.cs">
+      <DependentUpon>FooterControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FooterControl.ascx.designer.cs">
+      <DependentUpon>FooterControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HeaderControl.ascx.cs">
+      <DependentUpon>HeaderControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\HeaderControl.ascx.designer.cs">
+      <DependentUpon>HeaderControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\JourneyInputControl.ascx.cs">
+      <DependentUpon>JourneyInputControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\JourneyInputControl.ascx.designer.cs">
+      <DependentUpon>JourneyInputControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\JourneyPageControl.ascx.cs">
+      <DependentUpon>JourneyPageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\JourneyPageControl.ascx.designer.cs">
+      <DependentUpon>JourneyPageControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LocationControl.ascx.cs">
+      <DependentUpon>LocationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LocationControl.ascx.designer.cs">
+      <DependentUpon>LocationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TravelNewsControl.ascx.cs">
+      <DependentUpon>TravelNewsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TravelNewsControl.ascx.designer.cs">
+      <DependentUpon>TravelNewsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TravelNewsDetailControl.ascx.cs">
+      <DependentUpon>TravelNewsDetailControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TravelNewsDetailControl.ascx.designer.cs">
+      <DependentUpon>TravelNewsDetailControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UndergroundStatusControl.ascx.cs">
+      <DependentUpon>UndergroundStatusControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UndergroundStatusControl.ascx.designer.cs">
+      <DependentUpon>UndergroundStatusControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UndergroundStatusDetailsControl.ascx.cs">
+      <DependentUpon>UndergroundStatusDetailsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UndergroundStatusDetailsControl.ascx.designer.cs">
+      <DependentUpon>UndergroundStatusDetailsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VehicleFeaturesControl.ascx.cs">
+      <DependentUpon>VehicleFeaturesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\VehicleFeaturesControl.ascx.designer.cs">
+      <DependentUpon>VehicleFeaturesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VenueMapControl.ascx.cs">
+      <DependentUpon>VenueMapControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\VenueMapControl.ascx.designer.cs">
+      <DependentUpon>VenueMapControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VenueSelectControl.ascx.cs">
+      <DependentUpon>VenueSelectControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\VenueSelectControl.ascx.designer.cs">
+      <DependentUpon>VenueSelectControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WaitControl.ascx.cs">
+      <DependentUpon>WaitControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\WaitControl.ascx.designer.cs">
+      <DependentUpon>WaitControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Direction.aspx.cs">
+      <DependentUpon>Direction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Direction.aspx.designer.cs">
+      <DependentUpon>Direction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Input.aspx.cs">
+      <DependentUpon>Input.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Input.aspx.designer.cs">
+      <DependentUpon>Input.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map.aspx.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map.aspx.designer.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SJPMobile.Master.cs">
+      <DependentUpon>SJPMobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SJPMobile.Master.designer.cs">
+      <DependentUpon>SJPMobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SorryPage.aspx.cs">
+      <DependentUpon>SorryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SorryPage.aspx.designer.cs">
+      <DependentUpon>SorryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Summary.aspx.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Summary.aspx.designer.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TravelNews.aspx.cs">
+      <DependentUpon>TravelNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TravelNews.aspx.designer.cs">
+      <DependentUpon>TravelNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TravelNewsDetail.aspx.cs">
+      <DependentUpon>TravelNewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TravelNewsDetail.aspx.designer.cs">
+      <DependentUpon>TravelNewsDetail.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Version\London2012\Scripts\" />
+    <Folder Include="Version\London2012\Styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Remoting.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonWeb\CommonWeb.csproj">
+      <Project>{D1182D81-3E17-441B-82E7-97AEBF9B8879}</Project>
+      <Name>CommonWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{2EF9DD6E-4BA7-46BF-84CB-7509A5099F44}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoordinateConvertorProvider\CoordinateConvertorProvider.csproj">
+      <Project>{C648ACE3-40CC-41FE-9B52-0ACF9C3BE5BC}</Project>
+      <Name>CoordinateConvertorProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CyclePlannerService\CyclePlannerService.csproj">
+      <Project>{5B98B72A-C603-4F55-9ACD-34B606AF2107}</Project>
+      <Name>CyclePlannerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Project>{348204EC-DDF7-4735-8DA0-341F206CCCD9}</Project>
+      <Name>DataServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLogging\EventLogging.csproj">
+      <Project>{4AED788E-EA9A-4C3F-BB8D-07A7F1FBE8AA}</Project>
+      <Name>EventLogging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extenders\Extenders.csproj">
+      <Project>{F82632FB-A7EB-4121-B4C9-338450D024AF}</Project>
+      <Name>Extenders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Initialisation\Initialisation.csproj">
+      <Project>{9CE678F8-33FE-4822-A596-4C3FA802C64F}</Project>
+      <Name>Initialisation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyControl\JourneyControl.csproj">
+      <Project>{3A2EB34A-A197-4426-AC2A-2CA4FDC38610}</Project>
+      <Name>JourneyControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyPlanRunner\JourneyPlanRunner.csproj">
+      <Project>{5F677F32-02CA-4462-A99E-162FD5266F18}</Project>
+      <Name>JourneyPlanRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LocationService\LocationService.csproj">
+      <Project>{D6BCFB92-FFF1-4BE9-9B95-8A7063258597}</Project>
+      <Name>LocationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyManager\PropertyManager.csproj">
+      <Project>{E3CBE746-9620-4433-9D53-6C334C9BBB7E}</Project>
+      <Name>PropertyManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyProviders\PropertyProviders.csproj">
+      <Project>{14ED9C55-9007-4689-8142-83B80CDCF6A9}</Project>
+      <Name>PropertyProviders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reporting\Events\Events.csproj">
+      <Project>{280E29DE-E83B-4F66-A06C-EAACF5CFA35F}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceManager\ResourceManager.csproj">
+      <Project>{2E16E3F2-5AE8-450E-9953-177FAB41554C}</Project>
+      <Name>ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Retail\Retail.csproj">
+      <Project>{5A992265-3A04-422C-872E-2C66A55A0D86}</Project>
+      <Name>Retail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenFlow\ScreenFlow.csproj">
+      <Project>{4D570070-A1E5-434B-81AA-CEA52294DA59}</Project>
+      <Name>ScreenFlow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Project>{81877B7C-61F6-46C5-B212-861065CD538F}</Project>
+      <Name>ServiceDiscovery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SessionManager\SessionManager.csproj">
+      <Project>{0E99A5BE-AAB2-4E72-80D9-D1A657553922}</Project>
+      <Name>SessionManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TravelNews\TravelNews.csproj">
+      <Project>{BC7DF30A-3F39-402E-9B06-C9AE1E0537F4}</Project>
+      <Name>TravelNews</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UndergroundNews\UndergroundNews.csproj">
+      <Project>{F6557D20-5328-48AB-BB0B-428A56E1AC6E}</Project>
+      <Name>UndergroundNews</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SJPMobile.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54269</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SJPMobile</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

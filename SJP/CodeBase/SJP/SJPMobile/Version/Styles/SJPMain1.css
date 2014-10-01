@@ -1,0 +1,1633 @@
+﻿/* Common styles */
+html,body,.error{font:100% Arial,Helvetica,sans-serif;}
+html,body,div,span,h1,h2,h3,h4,h5,h6,p{margin:0;padding:0;border:0;vertical-align:baseline;}
+html,body{width:100%;}
+html{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;}
+a,a:link,a:visited{text-decoration:none;}
+a:hover,a:active,a:focus{text-decoration:underline;}
+ul,ol,li{list-style:none;}
+img{border:none;}
+.floatleft{float:left;}
+.floatright{float:right;}
+.clear{clear:both;}
+.hide{display:none;}
+.show{display:block;}
+.jshide{display:none !important;}
+.jsshow{display:block !important;}
+div.collapsed{display:none;}
+div.expanded{display: block;}
+
+/* Page */
+div#MainContent{min-height:150px;}
+
+/* Headings */
+h1{font-size:1.3em;}
+.mobileerror h2,
+.mobilesorry h2,
+.mobilepagenotfound h2
+{font-size:1.1em;margin:5px 5px 10px 5px;}
+
+/* Messages and Errors */
+.contentMessages{margin: 10px 5px 0px 5px;}
+.contentMessages br{margin: 0px 0px 12px 0px;}
+.error {font-size: 0.9em;}
+.mobileerror .message,
+.mobilesorry .message,
+.mobilepagenotfound .message
+{font-size:0.9em;margin:5px;}
+.mobileerror .message .error,
+.mobilesorry .message .error,
+.mobilepagenotfound .message .error{font-size:1em;}
+
+/* Button */
+.buttonBlue,
+.buttonMag
+{
+    border: 0 none;
+    border-radius:0px;
+    cursor:pointer;
+    display:block;
+    font-weight:bold;
+    height: 38px;
+    margin:15px 40px 15px 10px;
+    padding: 18px 0px 0px 28px;
+    text-align: left;
+}
+.buttonBlue{background:url("../Images/presentation/button-blue-large-300.png") no-repeat scroll 0 0 transparent !important;}
+.buttonMag{background:url("../Images/presentation/button-pink-large-300.png") no-repeat scroll 0 0 transparent !important;}
+.buttonMagDisabled{background:url("../Images/presentation/button-pink-large-disabled-300.png") no-repeat scroll 0 0 transparent !important;}
+
+.buttonMagNonJS,.buttonBlueNonJS{padding:5px 5px 5px 15px;height:45px;font-weight:bold;font-size:1em;width:200px;}
+.buttonMagNonJS:hover,.buttonBlueNonJS:hover{text-decoration:underline;}
+
+/* Header and Footer styles */
+.header{margin: 2px 0px 0px 2px;height:40px;position:relative;}
+.logoWrap .logo { background-image: url("../London2012/Images/Logos/sprite-locog.png"); background-position: 0px -48px; margin: 5px 0px 0px 5px; }
+.logoWrap .logo a { display:block; width: 116px; height: 16px; font-size: .1px; letter-spacing: -9999px; text-indent: -9999px; }
+.menuWrap{padding-left:10px;bottom:0px;right:0px;position:absolute;}
+.menuWrap a{width:70px;height:40px;line-height:40px;}
+.menuWrap a{display:block;font-size:0.9em;font-weight:bold;text-transform:lowercase;}
+.menuWrap a .arrow{font-size:75%;line-height:100%;}
+.menuWrap a{background:transparent 42px 18px no-repeat;}
+
+.topNav{display:none;position:absolute;border-bottom:solid 2px;z-index:999;}
+.bottomNav{padding-bottom:10px;}
+
+.footer{margin-top:5px;}
+
+.navWrap{width:100%;overflow:hidden;}
+.navWrap .colNav{display:inline;float:left;width:50%;}
+.navWrap .navItem{font-size:0.9em;font-weight:bold;}
+.navWrap ul{padding-left:10px;}
+.backFooterDiv .navWrap ul{margin-bottom:0px;}
+.navWrap li{background:transparent 0 3px no-repeat;padding-left:12px;margin-bottom:15px;}
+.backFooterDiv .navWrap li{margin-bottom:0px;}
+.navWrap .language a,
+.navWrap .language a:link,
+.navWrap .language .sep{font-weight:normal;}
+.navWrap .language .languageLink{font-weight:bold;}
+.navWrap .language .current{font-weight:bold;}
+.navWrap .backBtnNonJS
+{
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor:pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin: -3px;
+    padding: 0;
+}
+.navWrap .backBtnNonJS:hover{text-decoration:underline;}
+
+.navWrap .colNav2 ul{margin:0px 0px;}
+.navWrap .ldn-para, 
+.navWrap .ldn-oly 
+{
+    background-color: transparent;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.navWrap .ldn-oly {height: 28px;background-image: url("../London2012/Images/Logos/bg-olympics.png");}
+.navWrap .ldn-para {height: 28px;background-image: url("../London2012/Images/Logos/bg-paralympics.png");}
+.navWrap .ldn-oly a,
+.navWrap .ldn-para a
+{
+    float: left;
+    font-weight: normal;
+    padding: 0;
+    width: 120px;
+}
+.navWrap .ldn-oly a{line-height:48px;}
+.navWrap .ldn-para a{line-height:48px;}
+
+.topNav .colNav{width:50%;}
+.topNav #linktop{display: none;}
+
+.fullsite{text-align:center;font-weight:bold;padding:0px 0 10px;}
+.fullsite a{text-decoration:underline;}
+.fullsite a:hover{text-decoration:none;}
+.bottomUrls{text-align:center;font-size:0.9em;padding-bottom:10px;}
+.bottomUrls  a,.bottomUrls a:link{font-weight:normal;}
+.copyright{text-align:center;font-weight:bold;font-size:0.9em;padding-bottom:10px;}
+
+/* Header - Page heading and Back */
+div.pageTitle{margin: 2px 0px 2px 0px;height:40px;}
+div.pageTitle h1{margin: 5px 0px 0px 20px;}
+div.pageBack{margin: 2px 0px 2px 0px;height:40px;}
+
+/* Back*/
+div.headerBack{
+    background: url("../Images/bgheader.png") no-repeat scroll right top #E6007E;
+    border: medium none;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+div.headerBack h2
+{
+    text-indent: -9999px;
+    color: #ffffff;   
+    display: block;
+    font-size: 16px;
+    margin: 0.6em 90px 0.8em;
+    min-height: 1.1em;
+    outline: 0 none !important;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+div.headerBack a.topNavLeft,
+div.headerBack input.topNavLeft
+{
+    display: inline-block;
+    background: url("../London2012/Images/Arrows/white-arrow-left.png") no-repeat scroll 8px 13px transparent;
+    border:0px;
+    border-radius:0px;
+    box-shadow:none;
+    color: #ffffff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 0.8em;
+    font-weight: bold !important;
+    padding: 10px 0px 0px 20px;
+    cursor:pointer;
+    text-align: left;    
+    height:100%;
+}
+div.headerBack a.topNavRight,
+div.headerBack input.topNavRight
+{
+    display: inline-block;
+    background: url("../Images/navbutton2.png") no-repeat scroll 0 0 #E6E6E6;
+    border:0px;
+    border-radius:0px;
+    box-shadow:none;
+    color: #1e1e1e;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 10px 15px 0px 0px;
+    cursor:pointer;
+    text-align: right;
+    height:100%;
+    width: 50%;
+}
+div.headerBackBlue
+{
+    background: url("../Images/bgheaderinfo.png") no-repeat scroll right top #007da8;
+}
+/* Back - Non JS */
+div.headerBack input.topNavLeft:hover,
+div.headerBack input.topNavRight:hover
+{
+    text-decoration:underline;
+    cursor:pointer;
+}
+div.headerBack input.topNavLeft
+{
+    padding: 0px 0px 0px 20px;
+    background-position:8px 16px;
+}
+div.headerBack input.topNavRight
+{
+    padding: 0px 20px 0px 0px;    
+}
+
+/* Input */
+div.screenReaderOnly,
+span.screenReaderOnly,
+legend.screenReaderOnly,
+h1.screenReaderOnly
+{
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    clip: rect(1px,1px,1px,1px);
+}
+div.jssettings{position:absolute;left:-100px;}
+
+/* Input - location */
+div.journeyInput{margin:10px 0px 0px 0px;}
+div.journeyInput div.locationRow{margin:5px 0px;}
+div.locationsDiv{width:278px;margin:0px 0px 0px 10px;float:left;}
+
+div.locationsDiv div.locationControl {position:relative;height:34px;overflow:hidden;}
+div.locationControl div.mylocation
+{
+    display:inline-block;
+    overflow:hidden;
+    position:absolute;
+    height:100%;
+}
+div.locationControl div.mylocation input
+{
+    background: url("../Images/location.png") no-repeat scroll center center #e6007e !important;
+    border:1px solid #aaaaaa;
+    border-right:0px;
+    border-radius:0px;
+    box-shadow:none;
+    cursor: pointer;
+    font-size:0.9em;
+    height:34px;
+    width:27px;    
+}
+div.locationsDiv .locationControl input.locationInput
+{
+    border:1px solid #aaaaaa;
+    border-right:0px;
+    border-radius:0px;
+    box-shadow:none;
+    display:inline-block;
+    font-size:0.9em;
+    margin:0px;
+    padding:0px 0px 0px 5px;
+    height:32px;
+    line-height:32px;
+    width:191px;
+}
+div.locationsDiv .locationControl span[role=application] input
+{ 
+    margin-left:26px;
+    width:165px;
+}
+div.locationsDiv .locationControl > input[id*=locationInput] { background-color: #e6e6e6; }
+
+div.locationsDiv input.locationInputNonJS{width:260px;font-size:0.9em;height:32px;line-height:32px;padding:0px 0px 0px 5px;border:1px inset #aaaaaa;}
+div.locationsDiv select.venueDropdownNonJS{width:268px;font-size:0.9em;height:34px;line-height:32px;padding:6px 0px 6px 0px;border:1px inset #aaaaaa;}
+
+div.locationsDiv .locationControl input.locationError
+{
+    /*border-color:#e6007e;
+    color:#e6007e;*/
+}
+
+/* Input - ambiguity */
+div.locationsDiv .locationControl div.ambiguityrow
+{
+    display:inline-block;
+    background:url("../London2012/Images/Arrows/pink-arrow-down.png") no-repeat scroll right center #FFFFFF !important;
+    margin-right:4px;
+    width:193px;
+}
+div.locationsDiv .locationControl div.ambiguityrow select
+{
+    background: transparent;
+    border:1px solid #aaaaaa;
+    border-radius:0px;
+    box-shadow:none;
+    color:#E6007E;
+    cursor:pointer;
+    font-size:0.9em;
+    font-weight:bold;
+    height:34px;
+    margin:0px;
+    padding:6px 0px 0px 2px;
+    text-decoration:none;
+    width:215px;
+}
+div.locationsDiv .locationControl div.ambiguityrow select option
+{
+    background-color:#ffffff;
+    border-bottom:1px solid #aaaaaa;
+    color:#E6007E;
+    margin:0px;
+    padding:5px;
+    max-width:215px;
+}
+div.locationsDiv .locationControl a.resetLink
+{
+    background-color:#e6007e;
+    bottom:0px;
+    color:#ffffff;
+    cursor:pointer;
+    display:inline-block;
+    font-size:0.9em;
+    font-weight:bold;
+    overflow:hidden;
+    margin:0px;
+    padding:7px 6px;
+    position:absolute;
+    text-align:center;
+    top:0px;
+    height:100%;
+    width:64px;
+}
+div.locationsDiv .locationControl a.resetLink:hover{text-decoration:underlne;}
+div.locationsDiv .locationControl input.resetLocationNonJS{background:#FFFFFF !important;border: 1px solid #E6007E;margin:0px 0px 0px 17px;padding:2px 2px 3px 2px;cursor:pointer;}
+
+div.locationsDiv .locationControl div.ambiguityrow select.locationError
+{
+    /*border-color:#e6007e;*/
+}
+
+/* Input - venues */
+div.venues a.venuesLink
+{
+    background-color:#e6007e;
+    bottom:0px;
+    color:#ffffff;
+    cursor:pointer;
+    display:inline-block;
+    font-size:0.9em;
+    font-weight:bold;
+    overflow:hidden;
+    margin:0px;
+    padding:7px 12px;
+    position:absolute;
+    text-align:center;
+    top:0px;
+}
+div.venues a.venuesLink:hover{text-decoration:underlne;}
+#venuespage {display: none; position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500;}
+#venuespage fieldset{margin:0px;padding:0px;border:0px;}
+#venuespage fieldset legend{color:#e6007e;font-weight:bold;font-size:1.5em;margin:5px 0px 0px 0px;text-align:center;width:100%;}
+#venuespage fieldset div.ui-grid-a input{margin-left:-50px;float:left;}
+#venuespage fieldset div.ui-grid-a label{display:block;cursor:pointer;font-weight:bold;padding:10px 10px 10px 10px;min-height:35px;}
+#venuespage fieldset div.ui-grid-a div{border:1px solid #cccccc;background-color:#eeeeee;margin:0px 5px;}
+#venuespage fieldset div.ui-grid-a div:hover{background-color:#dddddd;}
+#venuespage fieldset div.ui-grid-a .ui-block-a{float:left;width:47%;overflow:hidden;}
+#venuespage fieldset div.ui-grid-a .ui-block-b{float:left;width:47%;overflow:hidden;}
+#venuespage div.allVenuesDiv{border:1px solid #cccccc;background-color:#eeeeee;display:block;cursor:pointer;font-weight:bold;margin:5px 5px;text-align:center;width:95%;}
+#venuespage div.allVenuesDiv:hover{background-color:#dddddd;}
+#venuespage div.allVenuesDiv a{color:#1b1b1b;display:block;padding:15px 10px 15px 10px;width:100%;}
+#venuespage div.allVenuesDiv a:hover{text-decoration:none;}
+
+/* Input - toggle locations */
+div.travelFromToVenueDiv
+{
+    float:left;
+    text-align:right;
+    height:80px;
+    width:28px;
+    z-index:150;
+}
+div.travelFromToVenueDiv input
+{
+    background: url("../Images/arrows/Up_down_double_head.png") no-repeat scroll center center #ffffff !important;
+    border: 0px;
+    border-radius:0px;
+    box-shadow: none;
+    cursor: pointer;
+    width: 25px;
+    height:80px;
+}
+div.travelFromToVenueDiv div{border: 0px;margin: 0px;padding: 0px;}
+div.travelFromToVenueDiv .ui-btn-corner-all{border-radius: 0em;}
+div.travelFromToVenueDiv .ui-btn-hidden{background: none;width: auto;}
+
+/* Input - Location Suggest */
+div#MainContent
+{
+    overflow:visible;
+}
+div#MainContent ul.locationSuggestList li.locationSuggestListItem{
+    padding: 5px 0px 2px 3px;
+    display: block;
+    font-size:0.9em;
+    width: 100%;
+    border-bottom:1px solid #e0e0e0;
+    min-height:20px;
+}
+div#MainContent ul.locationSuggestList li.locationSuggestListItem a
+{
+    display: block;
+    width: 100%;
+}
+div#MainContent ul.locationSuggestList li.locationSuggestListItem a, 
+div#MainContent ul.locationSuggestList li.locationSuggestListItem a:hover
+{
+    text-decoration: none;
+}
+div#MainContent div.locationSuggest
+{
+    border-width: 1px;
+    border-style: solid;
+    z-index:99999;
+    overflow:auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -moz-box-shadow:0 3px 5px rgba(0,0,0,.5);
+    -webkit-box-shadow:0 3px 5px rgba(0,0,0,.5); 
+}
+div#MainContent ul.locationSuggestList
+{
+    border-width: 1px;
+    border-style: solid;
+    z-index:99999;
+    overflow:auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index:99999;
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    text-align:left;
+    cursor: pointer;
+    overflow: hidden;
+}
+div#MainContent ul.locationSuggestList
+{
+   border-color: #CFCFCF;
+   background-color:white;
+}
+div#MainContent ul.locationSuggestList li.locationSuggestListItem a
+{
+    color: #4C4C4C;   
+}
+div#MainContent ul.locationSuggestList li.locationSuggestSelectedItem
+{
+    background-color:#007da8;
+    color:#ffffff;
+}
+div#MainContent ul.locationSuggestList li.locationSuggestSelectedItem a
+{
+     color:#ffffff;
+}
+
+div#MainContent div.locationControl span.ambiguityinfo
+{
+    color:#DF0094;
+}
+
+/* Input - accessible drop */
+div.accessibilityOptionsRow {margin:0px 0px 0px 5px;}
+div.accessibilityOptionsRow div.accessibilityOptions{width:281px;padding-bottom:1px;}
+div.accessibilityOptionsRow div.accessibilityOptions h2
+{
+    font-size:0.9em;
+    cursor:pointer;
+    color:#ffffff;
+    background:url("../London2012/Images/Arrows/white-arrow-down.png") no-repeat scroll 256px center #e6007e !important;
+    border: 1px solid #E6007E;
+    margin:5px 3px 0px 5px;
+    padding: 10px 12px 10px 5px;
+    text-align:center;
+}
+div.accessibilityOptionsRow div.accessibilityOptions h2:hover{text-decoration:underline;}
+div.accessibilityOptionsRow div.accessibilityOptions input, 
+div.accessibilityOptionsRow div.accessibilityOptions label{cursor:pointer;font-size:0.9em;}
+div.accessibilityOptions fieldset{border:0px;margin:0px 3px 5px 5px;padding:0px;}
+div.accessibilityOptions fieldset .ui-controlgroup-controls{border: 1px solid #E6007E;border-top:0px;}
+div.accessibilityOptions fieldset input{display:inline-block;vertical-align:top;}
+div.accessibilityOptions fieldset label{display:inline-block;margin-bottom:4px;width:240px;vertical-align:bottom;}
+
+/* Input - accessible drop - non JS */
+.accessibilityOptionsBtnNonJS
+{
+    background:url("../London2012/Images/Arrows/pink-arrow-down.png") no-repeat scroll 255px center #FFFFFF !important;
+    border: 1px solid #E6007E;
+    margin:0px 0px 0px 5px;
+    min-height:32px;
+    line-height:32px;
+    padding: 0px 0px 0px 0px;
+    width:268px;
+    text-align:center;    
+}
+div.accessibilityOptions div.jsshow fieldset{margin: 0 8px 5px 5px;}
+
+/* Input - date and time picker */
+div.eventDateTime{margin:0px 0px 0px 10px;height:40px;overflow:hidden;}
+div.dateSelect{display:inline-block;margin:0px 4px 0px 0px;padding:0px;float:left;}
+div.dateSelect div.setdatebox{margin:0px 0px 0px 0px;padding:0px;width:auto !important;}
+div.dateSelect div.setdatebox input.dateEntry
+{
+    background-color: #E6007E;
+    cursor:pointer;
+    color: #ffffff;
+    border: 0px;
+    border-radius:0px;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight:bold;
+    margin: 0;
+    padding:3px;
+    height:34px;
+    line-height:34px;
+    text-align:center;
+    width: 97px;    
+}
+div.dateSelect div.setdatebox input.dateEntry:hover{text-decoration:underline;}
+#datepage{display: none; position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500;}
+#datepage fieldset{margin:0px;padding:0px;border:0px;}
+#datepage fieldset h3{color:#e6007e;cursor:pointer;font-size:1em;margin:5px 0px 8px 0px;padding:5px 0px 0px 24px;
+    background:url("../London2012/Images/Arrows/pink-arrow-down.png") no-repeat scroll 7px 14px #FFFFFF !important;}
+#datepage fieldset h3:hover{text-decoration:underline;}
+#datepage div.collapseDate {border-bottom:1px solid #444444;}
+#datepage div.collapseDate ul.week{margin:0px;padding:0px;width:100%;display:block;}
+#datepage div.collapseDate ul.week li{font-size:0.8em;text-align:center;width:13%;margin-right:4px;display:inline-block;}
+#datepage div.collapseDate div.day{font-weight:bold;text-align:center;margin:3px 0px;height:40px;width:13%;display:inline-block;overflow:hidden;}
+#datepage div.collapseDate div.day{background-color:#dddddd;}
+#datepage div.collapseDate div.day:hover{background-color:#e6007e;color:#ffffff;text-decoration:underline;}
+#datepage div.collapseDate div.dayDisabled{background-color:#eeeeee;color:#c0c0c0;cursor:default;}
+#datepage div.collapseDate div.dayDisabled:hover{background-color:#eeeeee;color:#c0c0c0;cursor:default;text-decoration:none;}
+#datepage div.collapseDate div.daySelected{background-color:#e6007e;color:#ffffff;}
+#datepage div.collapseDate div.daySelected:hover{background-color:#e6007e;color:#ffffff;text-decoration:none;}
+#datepage div.collapseDate div.day input{position:absolute; left:-100px;}
+#datepage div.collapseDate div.day label{display:block;padding:9px;cursor:pointer;}
+#datepage div.collapseDate div.day label:selected{background-color:Red;}
+#datepage div.collapseDate div.dayDisabled label{cursor:default;}
+#datepage div.collapseDate div.dayDisabled:hover label{cursor:default;}
+
+div.timePicker{display:inline-block;margin:0px 4px 0px 0px;padding:0px;float:left;}
+div.timePicker div.settimebox{margin:0px 0px 0px 0px;padding:0px;width:auto !important;}
+div.timePicker div.settimebox input.timeInput
+{
+    background-color: #E6007E;
+    cursor:pointer;
+    color: #ffffff;
+    border: 0px;
+    border-radius:0px;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight:bold;
+    margin: 0;
+    padding:3px;
+    height: 34px;
+    line-height: 34px;
+    text-align:center;
+    width: 110px;    
+}
+div.timePicker div.settimebox input.timeInput:hover{text-decoration:underline;}
+#timepage{display: none; position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500;}
+#timepage table {width: 100%;margin: 0px;}
+#timepage table tr {margin:1px;padding:0;height:35px;}
+#timepage table td {margin:1px;padding:0;border-bottom:1px solid #cccccc;}
+#timepage table td input{cursor:pointer;padding:5px;}
+#timepage table td label{cursor:pointer;color:#e6007e;font-size:1em;padding:5px 150px 5px 5px;}
+#timepage table td label:hover{text-decoration:underline;}
+
+/* Input - date and time picker - Non JS*/
+div.dateSelect div.setdatebox input.jsinput, 
+div.timePicker div.settimebox input.jsinput
+{
+    background-color: #ffffff;
+    border:1px inset #aaaaaa;
+    color:inherit;
+    cursor:text;
+    font-weight: inherit;
+    height: 32px;
+    line-height: 32px;
+    padding:0px 0px 0px 5px;
+    text-align:left;
+}
+div.dateSelect div.setdatebox input.jsinput:hover{text-decoration:none;}
+div.timePicker div.settimebox input.jsinput:hover{text-decoration:none;}
+
+/* Input - now */
+div.nowSelect{display:inline-block;margin:0px;padding:1px 0px;width:46px;}
+div.nowSelect a
+{
+    background-color: #E6007E;
+    border:0px;
+    border-radius: 0px;
+    color: #ffffff;
+    cursor:pointer;
+    display:block;
+    font-size:0.9em;
+    font-weight:bold;
+    margin:0px;
+    padding:12px 7px;
+    height:100%;
+    text-align:center;
+}
+div.nowSelect .nowLinkNonJS
+{
+    background:#E6007E !important;
+    border: 1px solid #E6007E;
+    color:#ffffff;
+    cursor:pointer;
+    font-weight:bold;
+    margin:3px;
+    padding:2px;
+    width:70px;
+}
+div.nowSelect .nowLinkNonJS:hover{text-decoration:underline;}
+
+div.eventDateTitleDiv{display:inline-block;margin:0px 5px;}
+div.eventDateTitleDiv .eventDateLabel {
+    display: inline-block !important;
+    font-size: 0.9em;
+    margin-right: 0px;
+    width: 35px !important;
+}
+
+/* Input - cycle park option */
+div.locationParkRow
+{
+    overflow:hidden;
+    margin: 0px 0px 5px 0px;
+    width: 273px;
+}
+div.locationParkRow #park
+{
+    background-color: #E6007E;   
+    padding: 12px 0px;
+}
+div.locationParkRow a.cycleParkLink 
+{
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin:0px;
+    overflow: hidden;
+    text-align: center;
+    width:100%;
+}
+div.locationParkRowDisabled #park
+{
+    background-color: #FF96FF;
+}
+div.locationParkRowDisabled a.cycleParkLinkDisabled,
+div.locationParkRowDisabled a.cycleParkLinkDisabled:hover
+{
+    cursor: default;
+    text-decoration:none;
+}
+
+/* Cycle park map */
+div.cycleParkMapPage{ display: none; position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500; }
+div.cycleParkMapPage div.locationParkMapDiv div.locationParkInfoDiv{font-size:0.9em;padding:5px 5px;}
+div.cycleParkMapPage div.locationParkMapDiv a:hover{border:3px solid #e6007e;}
+#wrapper 
+{
+	top:65px;
+	left:0;
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	-webkit-overflow-scrolling: touch!important;
+	background-color:#bacfe7!important;
+}
+#wrapper div.paks 
+{
+    background: url("../Images/cycle/CyclePark.png") no-repeat center center #FFFFFF !important;
+	border:solid 2px #ffffff;
+	color:transparent;
+    cursor:pointer;
+    display: block;
+    position: absolute;
+    overflow:hidden;
+	height: 40px;
+    width: 40px;
+	z-index:1000;
+    -webkit-box-shadow:4px 4px 3px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:4px 4px 3px 1px rgba(0, 0, 0, 0.3);
+    box-shadow:4px 4px 3px 1px rgba(0, 0, 0, 0.3);
+}
+#wrapper div.paks input
+{
+    height: 100%;
+    left:-20px;
+    top: 0px;
+    position:absolute;
+}
+#wrapper div.paks label
+{
+    cursor:pointer;    
+    display: block;
+    z-index:1001;
+    font-size:0em;
+    padding:25px;
+}
+div.menuZoom {position:absolute; top:65px; right:20px; z-index:1000;}
+div.menuZoom a {background:#E6007E url(../Images/zoom.png) no-repeat;color:#ffffff; width:31px; height:31px; display:block; border:2px solid #000; text-indent:-2000px; overflow:hidden;}
+div.menuZoom #zoomin {margin-top:6px; background-position:top left;}
+div.menuZoom #zoomout {margin-top:6px; background-position:bottom left;}
+div.menuZoom .active{opacity:0.5!important;}
+#wrapper img {width:320px; height:284px; max-width:none!important;}
+#wrapper .contentMap{ width:240px; height:284px; position:absolute; display:block;}
+#wrapper.zoomIn img {width:720px; height:640px;}
+#wrapper.zoomIn .contentMap{ width:720px; height:640px;}
+
+#wrapper img[id*=venueMap] { width: 320px; height: auto; }
+#wrapper.zoomIn img[id*=venueMap] { width: auto; height: auto; }
+
+/* Cycle park icon - BND */
+div[id*=BNDCY01] {left:96px; top:182px;}
+#wrapper.zoomIn div[id*=BNDCY01] {left:273px; top:443px;}
+/* Cycle park icon - OPK */
+div[id*=OPKCYC01] {left:183px; top:238px;}
+#wrapper.zoomIn div[id*=OPKCYC01] {left:475px; top:590px;}
+div[id*=OPKCYC02] {left:4px; top:224px;}
+#wrapper.zoomIn div[id*=OPKCYC02] {left:31px; top:503px;}
+div[id*=OPKCYC03] {left:260px; top:79px;}
+#wrapper.zoomIn div[id*=OPKCYC03] {left:636px; top:177px;}
+/* Cycle park icon - VPL */
+div[id*=VPLCYC01] {left:186px; top:218px;}
+#wrapper.zoomIn div[id*=VPLCYC01] {left:473px; top:488px;}
+/* Cycle park icon - EAR */
+div[id*=EARCY01] {left:227px; top:128px;}
+#wrapper.zoomIn div[id*=EARCY01] {left:536px; top:291px;}
+/* Cycle park icon - ETD */
+div[id*=ETDCY02] {left:4px; top:132px;}
+#wrapper.zoomIn div[id*=ETDCY02] {left:47px; top:270px;}
+div[id*=ETDCY01] {left:160px; top:177px;}
+#wrapper.zoomIn div[id*=ETDCY01] {left:383px; top:400px;}
+/* Cycle park icon - EXL */
+div[id*=EXLCY01] {left:198px; top:57px;}
+#wrapper.zoomIn div[id*=EXLCY01] {left:473px; top:127px;}
+/* Cycle park icon - GRP */
+div[id*=GRPCYC02] {left:128px; top:22px;}
+#wrapper.zoomIn div[id*=GRPCYC02] {left:268px; top:6px;}
+div[id*=GRPCYC03_BH1] {left:190px; top:236px;}
+#wrapper.zoomIn div[id*=GRPCYC03_BH1] {left:561px; top:599px;}
+div[id*=GRPCYC03_BH6] {left:190px; top:236px;}
+#wrapper.zoomIn div[id*=GRPCYC03_BH6] {left:561px; top:599px;}
+/* Cycle park icon - HAD */
+div[id*=HADCY01] {left:113px; top:106px;}
+#wrapper.zoomIn div[id*=HADCY01] {left:244px; top:267px;}
+div[id*=HADCY02] {left:70px; top:192px;}
+#wrapper.zoomIn div[id*=HADCY02] {left:223px; top:466px;}
+/* Cycle park icon - HAM */
+div[id*=HAMCY01] {left:237px; top:126px;}
+#wrapper.zoomIn div[id*=HAMCY01] {left:558px; top:286px;}
+/* Cycle park icon - HGP */
+div[id*=HGPCY01] {left:218px; top:234px;}
+#wrapper.zoomIn div[id*=HGPCY01] {left:489px; top:536px;}
+/* Cycle park icon - HYD */
+div[id*=HYDCY01] {left:140px; top:29px;}
+#wrapper.zoomIn div[id*=HYDCY01] {left:345px; top:126px;}
+div[id*=HYDCY02] {left:257px; top:158px;}
+#wrapper.zoomIn div[id*=HYDCY02] {left:612px; top:356px;}
+div[id*=HYDCY03] {left:100px; top:206px;}
+#wrapper.zoomIn div[id*=HYDCY03] {left:270px; top:463px;}
+/* Cycle park icon - HPL */
+div[id*=HPLCY01] {left:140px; top:29px;}
+#wrapper.zoomIn div[id*=HPLCY01] {left:345px; top:126px;}
+div[id*=HPLCY02] {left:257px; top:158px;}
+#wrapper.zoomIn div[id*=HPLCY02] {left:612px; top:356px;}
+div[id*=HPLCY03] {left:100px; top:206px;}
+#wrapper.zoomIn div[id*=HPLCY03] {left:270px; top:463px;}
+/* Cycle park icon - LCG */
+div[id*=LCGCY01] {left:159px; top:175px;}
+#wrapper.zoomIn div[id*=LCGCY01] {left:386px; top:450px;}
+/* Cycle park icon - LVC */
+div[id*=LVCCY01] {left:146px; top:139px;}
+#wrapper.zoomIn div[id*=LVCCY01] {left:352px; top:314px;}
+/* Cycle park icon - MIL */
+div[id*=MILCY01] {left:52px; top:3px;}
+#wrapper.zoomIn div[id*=MILCY01] {left:143px; top:33px;}
+/* Cycle park icon - MLN */
+div[id*=MLNCY01] {left:201px; top:141px;}
+#wrapper.zoomIn div[id*=MLNCY01] {left:446px; top:321px;}
+div[id*=MLNCY02] {left:226px; top:162px;}
+#wrapper.zoomIn div[id*=MLNCY02] {left:491px; top:321px;}
+/* Cycle park icon - MLS */
+div[id*=MLSCY01] {left:217px; top:227px;}
+#wrapper.zoomIn div[id*=MLSCY01] {left:489px; top:534px;}
+/* Cycle park icon - NGA */
+div[id*=NGACY01] {left:227px; top:222px;}
+#wrapper.zoomIn div[id*=NGACY01] {left:511px; top:501px;}
+/* Cycle park icon - OLD */
+div[id*=OLDCY01] {left:139px; top:148px;}
+#wrapper.zoomIn div[id*=OLDCY01] {left:339px; top:395px;}
+/* Cycle park icon - RAB */
+div[id*=RABCY01] {left:80px; top:224px;}
+#wrapper.zoomIn div[id*=RABCY01] {left:240px; top:534px;}
+/* Cycle park icon - WAP */
+div[id*=WAPCY01] {left:118px; top:3px;}
+#wrapper.zoomIn div[id*=WAPCY01] {left:297px; top:6px;}
+div[id*=WAPCY02] {left:128px; top:228px;}
+#wrapper.zoomIn div[id*=WAPCY02] {left:311px; top:551px;}
+div[id*=WAPCY03] {left:28px; top:68px;}
+#wrapper.zoomIn div[id*=WAPCY03] {left:84px; top:153px;}
+div[id*=WAPCY04] {left:132px; top:1px;}
+#wrapper.zoomIn div[id*=WAPCY04] {left:289px; top:1px;}
+div[id*=WAPCY05] {left:25px; top:142px;}
+#wrapper.zoomIn div[id*=WAPCY05] {left:102px; top:322px;}
+/* Cycle park icon - WLB */
+div[id*=WLBCY01] {left:118px; top:3px;}
+#wrapper.zoomIn div[id*=WLBCY01] {left:297px; top:6px;}
+div[id*=WLBCY02] {left:128px; top:228px;}
+#wrapper.zoomIn div[id*=WLBCY02] {left:311px; top:551px;}
+div[id*=WLBCY03] {left:28px; top:68px;}
+#wrapper.zoomIn div[id*=WLBCY03] {left:84px; top:153px;}
+div[id*=WLBCY04] {left:132px; top:1px;}
+#wrapper.zoomIn div[id*=WLBCY04] {left:289px; top:1px;}
+div[id*=WLBCY05] {left:25px; top:142px;}
+#wrapper.zoomIn div[id*=WLBCY05] {left:102px; top:322px;}
+/* Cycle park icon - WEM */
+div[id*=WEACY01] {left:188px; top:171px;}
+#wrapper.zoomIn div[id*=WEACY01] {left:425px; top:431px;}
+/* Cycle park icon - WEM */
+div[id*=WEMCY01] {left:188px; top:171px;}
+#wrapper.zoomIn div[id*=WEMCY01] {left:425px; top:431px;}
+/* Cycle park icon - WIM */
+div[id*=WIMCY01] {left:153px; top:133px;}
+#wrapper.zoomIn div[id*=WIMCY01] {left:372px; top:300px;}
+
+/* Input - journey type*/
+div.journeyTypeRow {margin:0px 0px 0px 5px;}
+div.journeyTypeRow div.cycling{width:281px;padding-bottom:1px;}
+div.journeyTypeRow div.cycling h2
+{
+    font-size:0.9em;
+    cursor:pointer;
+    color:#ffffff;
+    background:url("../London2012/Images/Arrows/white-arrow-down.png") no-repeat scroll 250px center #e6007e !important;
+    border: 1px solid #E6007E;
+    margin:5px 3px 0px 5px;
+    min-height:25px;
+    padding: 10px 3px 3px 0px;
+    text-align:center;
+}
+div.journeyTypeRow div.cycling h2:hover{text-decoration:underline;}
+div.journeyTypeRow div.cycling input, 
+div.journeyTypeRow div.cycling label{cursor:pointer;font-size:0.9em;}
+div.journeyTypeRow div.cycling fieldset{border:0px;margin:0px 3px 5px 5px !important;padding:0px;}
+div.journeyTypeRow div.cycling fieldset .ui-controlgroup-controls{border: 1px solid #E6007E;border-top:0px;}
+div.journeyTypeRow div.cycling fieldset .ui-controlgroup-controls table td{padding-bottom:9px;}
+div.journeyTypeRow div.cycling fieldset div{padding: 10px 0px 5px 0px;}
+div.journeyTypeRow div.cycling fieldset input{display:inline-block;margin:0px 5px;vertical-align:middle;}
+div.journeyTypeRow div.cycling fieldset label{display:inline-block;margin:0px;width:235px;vertical-align:middle;}
+
+/* Accessible stops */
+#accessibility h3{margin:10px 10px;font-size:1em;}
+#accessibility div.accessibilityStops {margin:10px 10px;}
+#accessibility div.accessibilityStops h4{font-size:0.95em;font-weight:normal;margin:5px 0px}
+#accessibility div.accessibilityStops .accessibleStopsInfoDiv{font-size:0.9em;margin:10px 0px;}
+#accessibility div.accessibilityStops fieldset{border:1px solid #e6007e;margin:5px 0px;padding:5px;}
+#accessibility div.accessibilityStops .accessibleCheck .ui-grid-a{font-size:0.9em;}
+#accessibility div.accessibilityStops .accessibleCheck .ui-block-a{width:125px;float:left;}
+#accessibility div.accessibilityStops .accessibleCheck .ui-block-b{width:125px;float:left;}
+#accessibility div.accessibilityStops .accessibleCheck .ui-grid-a span
+{
+    display:block;
+}
+#accessibility div.accessibilityStops .accessibleCheck .ui-grid-a input
+{
+    display:inline-block;
+}
+#accessibility div.accessibilityStops .accessibleCheck .ui-grid-a label
+{
+    display:inline-block;
+    width:100px;
+    margin-bottom:10px;
+}
+#accessibility div.accessibilityStops .accessibleStopsDrop {width:100%;}
+
+#accessibility div.accessibilityStops .updateBtnNonJS
+{
+    background:#E6007E !important;
+    border: 1px solid #E6007E;
+    color:#ffffff;
+    cursor:pointer;
+    font-weight:bold;
+    margin:5px 0px;
+    padding:5px;
+    width:200px;
+}
+#accessibility div.accessibilityStops .updateBtnNonJS:hover{text-decoration:underline;}
+
+/* Journey progress */
+div.journeyProgress
+{
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+div.journeyProgress div.loadingMessageDiv
+{
+    margin: 0px;
+}
+div.journeyProgress div.loadingImageDiv 
+{
+    padding:10px;
+}
+
+/* Journey summary */
+div.journeySummary
+{
+    margin: 20px 0px 10px 0px;
+}
+div.journeySummary div.journeySummaryHead
+{
+    min-height: 25px;
+    overflow:hidden;
+}
+/* Journey summary - earlier later */
+#navresults{background-color:#e6e6e6;display:block;}
+#navresults div{display:inline-block;}
+#navresults .ui-block-a{float:left;}
+#navresults .ui-block-b{width:100%;text-align:center;color:#e6007e;font-size:0.8em;font-weight:bold;padding-top:4px;position:absolute;left:0px;
+    z-index:1;}
+#navresults .ui-block-c{float:right;}
+
+div.journeySummary #navresults .earlier,
+div.journeySummary #navresults .later
+{
+    border: 1px solid #E6007E;
+    color: #ffffff;
+    cursor:pointer;
+    display:block;
+    font-weight:bold;
+    margin:0px;
+    min-height: 20px;
+    text-align:center;
+    padding:2px 5px;
+    width:90px;
+}
+div.journeySummary #navresults .earlier{background: url("../London2012/Images/Arrows/white-arrow-left.png") no-repeat 5px center #E6007E !important;
+    position:absolute;
+    left:0px;
+    z-index:2;}
+div.journeySummary #navresults .later{background: url("../London2012/Images/Arrows/white-arrow-right.png") no-repeat 90px center #E6007E !important;
+    position:absolute;
+    right:0px;
+    z-index:2;}
+    
+/* Journey summary - earlier later - non JS*/
+div.journeySummary #navresults .earlierNonJS,
+div.journeySummary #navresults .laterNonJS
+{
+    border: 1px solid #E6007E;
+    color: #ffffff;
+    cursor:pointer;
+    font-weight:bold;
+    margin:0px;
+    padding:2px 5px;
+    width:75px;
+}
+div.journeySummary #navresults .earlierNonJS{background: url("../London2012/Images/Arrows/white-arrow-left.png") no-repeat 5px 6px #E6007E !important;
+    position:absolute;
+    left:0px;
+    z-index:2;}
+div.journeySummary #navresults .laterNonJS{background: url("../London2012/Images/Arrows/white-arrow-right.png") no-repeat 60px 7px #E6007E !important;
+    position: absolute;
+    right: 0;
+    z-index:2;}
+div.journeySummary #navresults .earlierNonJS:hover,
+div.journeySummary #navresults .laterNonJS:hover
+{
+    text-decoration:underline;
+}
+
+/* Journey details - previoud next */
+.mobiledetail .journeyNav
+{
+    height: 27px;
+    padding: 5px;
+}
+.mobiledetail #navresults .earlier,
+.mobiledetail #navresults .later
+{
+    border: 1px solid #E6007E;
+    color: #ffffff;
+    cursor:pointer;
+    display:block;
+    font-weight:bold;
+    margin-left:0px;
+    min-height: 20px;
+    text-align:center;
+    padding:2px 5px;
+    width:18px;
+}
+.mobiledetail #navresults .earlier{background: url("../London2012/Images/Arrows/white-arrow-left.png") no-repeat center center #E6007E !important;
+    position:absolute;
+    left:5px;
+    z-index:300;}
+.mobiledetail #navresults .later{background: url("../London2012/Images/Arrows/white-arrow-right.png") no-repeat center center #E6007E !important;
+    position:absolute;
+    right:5px;
+    z-index:300;}
+
+/* Journey details - previoud next */
+.mobiledetail #navresults .earlierNonJS,
+.mobiledetail #navresults .laterNonJS
+{
+    border: 1px solid #E6007E;
+    color: #ffffff;
+    cursor:pointer;
+    font-weight:bold;
+    margin:0px;
+    padding:2px;
+    width:22px;
+    overflow:hidden;
+}
+.mobiledetail #navresults .earlierNonJS{background: url("../London2012/Images/Arrows/white-arrow-left.png") no-repeat 7px center #E6007E !important;
+    position:absolute;
+    left:5px;
+    z-index:300;}
+.mobiledetail #navresults .laterNonJS{background: url("../London2012/Images/Arrows/white-arrow-right.png") no-repeat center center #E6007E !important;
+    position:absolute;
+    right:5px;
+    z-index:300;}
+
+/* Journey summary - results */
+div.journeySummary #results ul{margin:0px;padding:0px;font-size:0.8em;}
+div.journeySummary #results ul li{margin:0px;padding:0px;border-bottom:1px solid #E8E8E8;color:#2F3E46;min-height:45px;}
+div.journeySummary #results ul li:hover{background-color:#007DA8;color:#ffffff;}
+div.journeySummary #results ul li:hover a{color:#ffffff;}
+div.journeySummary #results ul li a{padding:3px 5px 0px 5px;color:#2F3E46;text-decoration:none;display:inline-block;width:95%;min-height:45px;}
+div.journeySummary #results ul li a:hover{color:#ffffff;cursor:pointer;}
+div.journeySummary #results ul li a .ui-grid-b{padding:3px 0px 0px 0px;font-size:0.85em;}
+
+div.journeySummary #results ul .ui-grid-b .ui-block-a{width:50%;display:inline-block;}
+div.journeySummary #results ul .ui-grid-b .ui-block-b{width:27%;display:inline-block;}
+div.journeySummary #results ul .ui-grid-b .ui-block-c{width:18%;display:inline-block;}
+
+div.journeySummary div.jsshow #results ul li a{width:90%;}
+div.journeySummary div.jsshow #results ul li a:hover{cursor:default;}
+div.journeySummary div.jsshow #results ul li input
+{
+    background: url("../London2012/Images/Arrows/white-arrow-right.png") no-repeat 58px center #E6007E !important;
+    border: 1px solid #E6007E;
+    color:#ffffff;
+    cursor:pointer;
+    display:inline-block;
+    font-weight:bold;
+    margin:9px 3px 3px 3px;
+    padding:5px 2px;
+    width:70px;
+    position:absolute;
+    right:2px;
+}
+div.journeySummary div.jsshow #results ul li input:hover{text-decoration:underline;}
+
+/* Journey leg rows */
+div.legsDetail div.leg
+{
+    width: 100%;
+    font-size:0.8em;
+}
+* html div.legsDetail div.leg div.row div.row1 { display:inline; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row1{ display:inline; } /* for IE 7 */
+* html div.legsDetail div.leg div.row div.row2{ display:inline; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row2{ display:inline; } /* for IE 7 */
+
+div.legsDetail div.leg div.row div.row1 div
+{
+    display:inline-block;
+}
+* html div.legsDetail div.leg div.row div.row1 div { display:inline; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row1 div{ display:inline; } /* for IE 7 */
+
+div.legsDetail div.leg div.row div.row2 > div
+{
+    display:inline-block;
+}
+* html div.legsDetail div.leg div.row div.row2 div { display:inline; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row2 div{ display:inline; } /* for IE 7 */
+
+/* Journey leg rows - row 1 */
+div.legsDetail div.leg div.row div.row1 div.columnEmpty
+{
+    width: 1%;
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.row1 div.columnTime
+{
+    width: 14%;
+    vertical-align: middle;
+    text-align: right;
+}
+div.legsDetail div.leg div.row div.row1 div.columnNode
+{
+    width: 20px;
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.row1 div.columnLocation
+{
+    width: 54% !important;
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.timeArrive,
+div.legsDetail div.leg div.row div.timeDepart
+{
+    min-height: 15px;
+}
+
+/* Journey leg rows - row 2 */
+div.legsDetail div.leg div.row div.row2 div.columnMode
+{
+    width: 14%;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.1em;
+}
+div.legsDetail div.leg div.row div.row2 div.columnEmpty
+{
+    width: 1%;
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.row2 div.columnLine
+{
+    width: 20px;
+    vertical-align: middle;
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail,
+.legsDetail .columnLocation
+{
+    width: 54% !important;
+    vertical-align: middle;
+}
+
+div.legsDetail div.leg div.row div.row2 div.columnDetail div.bookTicketDiv
+{
+    display:block;
+    min-height: 16px;
+    margin-top: 3px;
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail div.arrow_btn
+{
+    float: left;
+    clear: left;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 0px 2px 0px;
+    position: relative;
+    vertical-align: top;
+    height: 14px;
+    width: 14px;
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail div.arrow_btn input
+{
+    height: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail input.detailLinkButton
+{
+    height: 14px;
+    margin-left: 1px;
+}
+div.legsDetail div.leg div.row div.row2 div.columnDetail span.frequencyduration
+{
+    display: block;
+}
+div.legsDetail div.leg div.row div.row2 div.vehicleFeatures
+{
+    margin: 5px 0px;
+    display: block;
+}
+div.legsDetail div.leg div.row div.row2 div.vehicleFeatures div
+{
+    display: inline-block;
+}
+div.legsDetail div.leg div.row div.row2 div.jsLegLinks
+{
+    margin-top: 5px;
+}
+div.detailNotes
+{
+    margin-top: 5px;
+}
+div.detailNote
+{
+    margin-bottom: 3px;
+}
+a.travelNotesLink, 
+a.bookTicketInfo, 
+a.bookTicketLink
+{
+    cursor: pointer;
+}
+a.travelNotesLink span.linkText, 
+a.bookTicketInfo span.linkText, 
+a.bookTicketLink span.linkText
+{
+    vertical-align: middle;
+}
+a.travelNotesLink img.linkType, 
+a.bookTicketInfo img.linkType, 
+a.bookTicketLink img.linkType
+{
+    vertical-align: middle;
+}
+a.bookTicketInfo span.linkText
+{
+    width: auto;
+    height: auto;
+}
+div.legsDetail div.leg div.row div.row1 div.accessibleLinkDiv
+{
+    margin: 1px 0px 0px 1px;
+    display: block;
+}
+div.accessibleInfoDiv
+{
+    margin-top: 7px;
+}
+.columnDetail a:link, .columnDetail a:visited
+{
+    text-decoration:none;
+}
+.columnDetail a:hover
+{
+    text-decoration:underline;
+}
+/* IMPORTANT - Sorting out the space issues in ie6 and ie7 */
+/* Row 1*/
+* html div.legsDetail div.leg div.row div.row1 div.columnNode div.nodeImage img{ vertical-align: bottom; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row1 div.columnNode div.nodeImage img{  vertical-align: bottom; } /* for IE 7 */
+/* Row 2*/
+* html div.legsDetail div.leg div.row div.row2 div.columnLine div.lineImage img{ vertical-align: bottom; }  /* for IE 6 */
+* + html div.legsDetail div.leg div.row div.row2 div.columnLine div.lineImage img{  vertical-align: bottom; } /* for IE 7 */
+
+/* Journey leg rows - row map buttons */
+div.rowMap
+{
+    border: 0px solid red;
+    height: 30px;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;   
+}
+div.rowEndMap
+{
+    margin: 0px;
+}
+div.rowMap .buttonMap
+{
+    height: auto;   
+    margin: 0px 5px 0px 0px;
+    padding: 6px;
+}
+.buttonMap 
+{
+    background-color: #E6007E;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: normal;
+    height: 27px;
+    margin: 10px 10px 0 0;
+    overflow: hidden;
+    padding: 8px 5px 0 5px;
+    width: 80px;
+    text-align: center;
+    float: right;
+}
+.LogoContainer
+{
+    display:none;
+}
+
+/* Additional notes dialog */
+div#additionalInfoPage {position:absolute; top: 0px; left: 0px; width: 100%; height:100%; overflow: auto; background: rgba(0, 0, 0, 0.5); z-index: 500; }
+div#additionaInfoDialog  
+{
+    width: 210px;
+    height: 310px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -155px;
+    margin-left: -105px;
+    overflow: auto;
+    background: white;
+    z-index: 500;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+div#additionaInfoDialog .headerBack {border-radius:3px;background:#e6007e !important;}
+div#additionaInfoDialog .headerBack h2 {font-size:0.9em;margin:5px;text-align:left;padding-left: 5px;text-indent:0px;}
+div.headerBack a.additionalNotesClose  
+{
+    background: url("../images/ui-icons_ffffff_256x240.png") no-repeat -96px -128px #e6007e;
+    border:1px solid #e6007e;
+    cursor: pointer;
+    height: 18px;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 18px;
+}
+div.headerBack a.additionalNotesClose:hover{border:1px solid #ffffff;border-radius:3px;}
+div#additionalInfoNotes {padding:6px 3px;font-size:0.8em;}
+
+/* Journey directions */
+div.cycleLeg {font-size:0.9em;}
+div.cycleLeg div.summary{background-color: #E6E6E6;display: block;padding: 5px 5px 5px;text-align: center;}
+div.cycleLeg div.detail{padding: 2px;}
+div.cycleLeg div.detail table{width:100%;}
+div.cycleLeg div.detail table td{padding: 3px 2px;}
+div.cycleLeg div.detail table td.distance{text-align: center;}
+div.cycleLeg div.detail table td.infoimage{text-align: center;}
+div.cycleLeg div.detail table td.arrive{text-align: center;}
+
+/* Journey venue map */
+div[id*=venueMapPage]{ display: none; position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500; }
+div.venueMapTitleDiv{display:none;font-size:0.9em;padding-left:5px;}
+div.venueMapDiv #wrapper{top:45px;}
+
+/* Map */
+.mapContainer{padding:5px 5px 0px 5px;height:450px;}
+.mapContainer div.myLocationMap
+{
+    display:block;
+    margin:10px;
+    overflow:hidden;
+    position:absolute;
+    z-index:500;
+}
+.mapContainer div.myLocationMap input
+{
+    background: url("../Images/location.png") no-repeat scroll center center #e6007e !important;
+    border:0px solid #aaaaaa;
+    border-radius:0px;
+    box-shadow:none;
+    cursor:pointer;
+    font-size:0.9em;
+    height:30px;
+    width:30px;    
+}
+.mapContainer .useLocationDiv
+{
+    display:none;
+    margin:10px 0px 0px 50px;
+    height:30px;
+    overflow:hidden;
+    position:absolute;
+    z-index:500;
+}
+.mapContainer .useLocationDiv a.useLocation
+{
+    background:#e6007e;
+    color:#ffffff;
+    display:block;
+    font-weight:bold;
+    padding:6px 20px 5px 20px;
+}
+.mapContainer .viewJourneyDiv 
+{
+    display:block;
+    margin:10px;
+    overflow:hidden;
+    position:absolute;
+    right:5px;
+    z-index:500;
+}
+.mapContainer .viewJourneyDiv input
+{
+    background: #e6007e;
+    border:0px solid #aaaaaa;
+    border-radius:0px;
+    box-shadow:none;
+    color:#ffffff;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:0.9em;
+    height:30px;
+    margin:0px;
+    padding:0px;
+    width:110px;
+    -webkit-appearance: none;
+}
+.map{position:relative; width:auto; height:450px;}
+.mapPushPin img{cursor:pointer;}
+.mapPushPin div{color:#1b1b1b !important;text-align:left;}  
+.labelPushPin div{color:#1b1b1b !important;text-align:left;}  
+.labelPushPin img{display:none;}
+
+.mapLoading{z-index:500;position:absolute;margin:110px 10px 0px 10px;width:95%;height:120px;text-align:center;font-weight:bold;background-color:#ffffff;opacity:0.8;}
+.copyrightfront{color:black; left:7px; top:524px; position:absolute; font-size:0.7em;}
+.copyrightback{color:white; left:8px; top:525px; position:absolute; font-size:0.7em;}
+.infobox{background-color:black; color:white !important; width:150px;}
+.infobox_pointer{}
+.infobox_close{
+    background: url("../images/ui-icons_ffffff_256x240.png") no-repeat -95px -127px transparent;
+    cursor: pointer;
+    display:block;
+    height: 19px;
+    position: absolute;
+    right: 5px;
+    text-indent: -8000px;
+    top: 5px;
+    width: 19px;
+}
+.infobox_content{padding-left:10px; padding-right:20px; padding-top:10px; padding-bottom:10px; font-size:0.8em;}
+.infobox_content a{text-decoration:underline !important; color:white !important;}
+.infoboxLocationImg{display:inline-block;width:30px;vertical-align:bottom;}
+.infoboxLocationImg img{width:30px;height:30px;}
+.infoboxLocationLink{display:inline-block;padding:0px 3px;width:80px;}
+
+/* Travel news */
+div.mobiletravelnews{min-height:200px;}
+
+.travelNewsUnavailable{text-align:center;margin:15px 0px;}
+.travelNewsLastUpdated{text-align:center;margin:2px 0px;padding: 8px 0px;color:#ffffff;background-color:#007da8;}
+.travelNewsLastUpdated span{font-weight: bold;font-size:0.8em;}
+
+/* Travel news filter */
+div.tnFilter{}
+div.tnFilter .collapseMagenta{border: 1px solid #cccccc;border-bottom:0xp;margin:0px;padding:0px;overflow:hidden;}
+div.tnFilter .collapseMagenta h2
+{
+    font-size:0.9em;
+    cursor:pointer;
+    background:url("../London2012/Images/Arrows/pink-arrow-down.png") no-repeat scroll 4px center #ffffff;
+    border-bottom: 1px solid #cccccc;
+    margin:0px 0px 0px 0px;
+    min-height:25px;
+    padding: 10px 3px 3px 20px;
+}
+div.tnFilter .collapseMagenta legend{text-indent:-1000px;}
+div.tnFilter .collapseMagenta input, 
+div.tnFilter .collapseMagenta label{cursor:pointer;font-size:0.9em;}
+div.tnFilter .collapseMagenta fieldset{border:0px;margin:0px 0px 0px 0px;padding:0px;}
+div.tnFilter .collapseMagenta fieldset .ui-controlgroup-controls{border: 0px solid #ffffff;border-top:0px;}
+div.tnFilter .collapseMagenta fieldset input{margin:0px 0px 0px -20px;float:left;width:0px;height:0px;vertical-align:middle;}
+div.tnFilter .collapseMagenta fieldset label{display:inline-block;border-bottom:1px solid #cccccc;padding:10px 19px;width:98%;vertical-align:middle;}
+div.tnFilter .collapseMagenta fieldset label:hover{background-color:#eeeeee;}
+div.tnFilter span.tnFilterVenue{display:block;text-align:center;margin:2px 0px;line-height:32px;color:#ffffff;background-color:#e6007e;font-weight: bold;font-size:0.8em;}
+
+/* Travel news filter - non JS */
+div.tnFilter .jsshow h2{display:none;}
+div.tnFilter .jsshow fieldset .tnFilterOptions{display:inline-block;float:left;}
+div.tnFilter .jsshow fieldset .tnFilterOptions br{display:inline-block;margin:10px;}
+div.tnFilter .jsshow fieldset input{margin:0px 0px 0px 10px;float:none;}
+div.tnFilter .jsshow fieldset label{border-bottom:0px;padding:5px 5px;width:auto;}
+div.tnFilter .jsshow fieldset label:hover{background-color:#ffffff;}
+div.tnFilter .jsshow input.tnFilterBtnNonJS
+{
+    background: url("../London2012/Images/Arrows/white-arrow-right.png") no-repeat 58px center #E6007E !important;
+    border: 1px solid #E6007E;
+    color:#ffffff;
+    cursor:pointer;
+    display:block;
+    font-weight:bold;
+    height:32px;   
+    margin:5px 0px 0px 0px;
+    padding:3px 2px;
+    width:70px;
+}
+div.tnFilter .jsshow input.tnFilterBtnNonJS:hover{text-decoration:underline;}
+
+/* Travel news auto refresh */
+div.refreshLinkDiv{text-align:right;font-size:0.9em;font-weight:bold;margin:5px;}
+
+/* Travel news control*/
+div.travelNews div.news ul{margin:0px;padding:0px;}
+div.travelNews div.news ul li{border-bottom:1px solid #e0e0e0;}
+div.travelNews div.news ul li a{color:#1b1b1b;font-size:0.9em;display:inline-block;overflow:hidden;width:100%;}
+div.travelNews div.news ul li a:hover{background-color:#007da8;color:#ffffff;}
+div.travelNews div.news ul li a div.ui-grid-a{display:inline-block;min-height:45px;padding:5px 0px;width:100%;}
+div.travelNews div.news ul li a div.ui-grid-a div{display:inline-block;}
+
+div.travelNews div.news .newsTransportMode{width:62px;min-height:45px;padding:0px 0px 0px 3px;text-align:center;}
+div.travelNews div.news .newsTransportMode img.eurotunnel1{background-color:#ffffff;}
+div.travelNews div.news .ui-block-b{width:85%;}
+div.travelNews div.news .ui-block-b .newsHeadline{width:70%;white-space:normal;}
+div.travelNews div.news .ui-block-b .newsUpdated{width:15%;}
+
+.newsDetail {position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500;}
+.newsDetail span{white-space:normal;}
+.newsDetail h3{background-color: #E7E7E7;color: #007DA8;font-size:1em;padding:7px 10px;}
+.newsDetail .newsDetails{margin:0px 5px 0px 10px;font-size:0.9em;}
+.newsDetail .newsDetails div{border:0px solid red;}
+.newsDetail .newsDetails .newsDetailLabel{font-weight:bold;}
+.newsDetail .newsDetails .dates{margin:15px 0px;}
+.newsDetail .newsDetails .startDate, .newsDetail .newsDetails .statusDate{display:inline-block;margin-right:8px;}
+.newsDetail .newsDetails .operator{margin:5px 0px;}
+.newsDetail .newsDetails .severity{margin:5px 0px;}
+.newsDetail .newsDetails .incidentType{margin:5px 0px;}
+.newsDetail .newsDetails .venueAffected{margin:5px 0px;}
+.newsDetail .newsDetails .detail{margin:20px 0px;}
+.newsDetail .newsDetails .advice{margin:20px 0px;}
+
+.mobiletravelnewsdetail .newsDetail {position: relative;display:block;}
+.mobiletravelnewsdetail .newsDetail .headerBack {display:none;}
+
+.providedBy{font-weight:bold;font-size:0.9em;text-align: center;margin:15px 0px 15px 0px;}
+.providedBy a {text-decoration: underline;}
+
+/* Travel news control - non JS */
+.travelNews .jsshow input.showDetailsBtnNonJS
+{
+    background: url("../London2012/Images/Arrows/white-arrow-right.png") no-repeat 58px center #E6007E !important;
+    border: 1px solid #E6007E;
+    color:#ffffff;
+    cursor:pointer;
+    display:inline-block;
+    font-weight:bold;
+    margin:27px 3px 1px 3px;
+    padding:4px 2px;
+    width:70px;
+    position:absolute;
+    right:2px;
+}
+div.travelNews .jsshow ul li input.showDetailsBtnNonJS:hover{text-decoration:underline;}
+div.travelNews .jsshow ul li a div.ui-grid-a div.ui-block-b{display:inline-block;max-width:80%;width:auto;}
+
+/* Underground status control */
+.undergroundStatusUnavailable{text-align:center;margin:15px 0px;}
+.undergroundStatusLastUpdated{text-align:center;margin:2px 0px;padding: 8px 0px;color:#ffffff!important;background-color:#007da8;}
+.undergroundStatusLastUpdated span{font-weight: bold;font-size:0.8em;}
+
+div.undergroundStatus div.undergroundNews ul{margin:0px;padding:0px;} 
+div.undergroundStatus div.undergroundNews ul li{margin:0px;padding:0px;}
+div.undergroundStatus div.undergroundNews ul li br{display:none;}
+div.undergroundStatus div.undergroundNews ul li a{margin:0px 0px 1px 0px;padding:0px;color: #1b1b1b;display:block;}
+div.undergroundStatus div.undergroundNews .statusRow{display:inline-block;width:100%;border-bottom:1px solid #e0e0e0;}
+div.undergroundStatus div.undergroundNews .statusColour{width:30%;padding:7px 0px;margin-right:5px;text-align:center;font-weight:bold;font-size:0.9em;display:block;float:left;}
+div.undergroundStatus div.undergroundNews .statusInfo{width:60%;padding:7px 0px;display:block;float:left;font-weight:normal;font-size:0.9em;}
+div.undergroundStatus div.undergroundNews .statusInfo .highlight{font-weight:bold;}
+div.undergroundStatus div.undergroundNews .statusInfo .highlight:hover{text-decoration:underline;}
+
+.undergroundDetail {position: absolute; top: 0px; left: 0px; width: 100%; min-height: 100%; overflow: auto; background: white; z-index: 500;}
+.undergroundDetail span{white-space:normal;}
+.undergroundDetail h3{background-color: #E7E7E7;color: #007DA8;font-size:1em;margin-top:2px;padding:7px 10px;}
+.undergroundDetail .undergroundDetails{margin:0px 5px 0px 15px;font-size:0.9em;}
+.undergroundDetail .undergroundDetails div{border:0px solid red;}
+.undergroundDetail .undergroundDetails .description{margin:5px 0px;}
+.undergroundDetail .undergroundDetails .detail{margin:5px 0px;}
+
+.mobiletravelnewsdetail .undergroundDetail {position: relative;display:block;}
+.mobiletravelnewsdetail .undergroundDetail .headerBack {display:none;}
+
+/* Underground status control - non JS */
+div.undergroundStatus .jsshow ul a{cursor:default;text-decoration:none;}
+div.undergroundStatus .jsshow ul a:hover{text-decoration:none;}
+div.undergroundStatus .jsshow ul a:hover .statusInfo .highlight:hover{text-decoration:none;}
+div.undergroundStatus .jsshow input.showDetailsBtnNonJS
+{
+    background: url("../London2012/Images/Arrows/white-arrow-right.png") no-repeat 58px center #E6007E !important;
+    border: 1px solid #E6007E;
+    color:#ffffff;
+    cursor:pointer;
+    display:inline-block;
+    font-weight:bold;
+    margin:3px 3px 1px 3px;
+    padding:4px 2px;
+    width:70px;
+    position:absolute;
+    right:2px;
+}
+div.undergroundStatus .jsshow input.showDetailsBtnNonJS:hover{text-decoration:underline;}
+
+/* Underground color code */
+.bakerloo, .undergroundDetail h3.bakerloo{ background-color: #AE6118 ; color: #ffffff; }
+.central, .undergroundDetail h3.central{ background-color: #E41F1F ; color: #ffffff; }
+.circle, .undergroundDetail h3.circle{ background-color: #F8D42D ; color: #000000; }
+.district, .undergroundDetail h3.district{ background-color: #00A575 ; color: #ffffff; }
+.hammersmithandcity, .undergroundDetail h3.hammersmithandcity{background-color:#E899A8; color:#113B92;}
+.jubilee, .undergroundDetail h3.jubilee{ background-color: #8F989E ; color: #ffffff; }
+.metropolitan, .undergroundDetail h3.metropolitan{ background-color: #893267 ; color: #ffffff; }
+.northern, .undergroundDetail h3.northern{ background-color: #000000 ; color: #ffffff; }
+.piccadilly, .undergroundDetail h3.piccadilly{ background-color: #0450A1 ; color: #ffffff; }
+.victoria, .undergroundDetail h3.victoria{ background-color: #009FE0 ; color: #ffffff; }
+.waterlooandcity, .undergroundDetail h3.waterlooandcity{ background-color: #70C3CE ; color: #113B92; }
+.overground, .undergroundDetail h3.overground{ background-color: #FF6600 ; color: #ffffff; }
+.dlr, .undergroundDetail h3.dlr{ background-color: #00BBB4 ; color: #ffffff; }
+
+/* SJPMobilePink styles - Must be at bottom to ensure this theme is applied */
+body{color:#1b1b1b;}
+h1{color:#ffffff;}
+h1.screenReaderOnly{color:#1b1b1b;}
+.menuWrap{background:#007da8;}
+.menuWrap a{color:#ffffff;}
+.menuWrap a{background-image:url(./../London2012/Images/Arrows/white-arrow-down.png);}
+.menuWrapUp a{background-image:url(./../London2012/Images/Arrows/white-arrow-up.png);}
+.topNav{background-color:#007da8;color:#ffffff;border-bottom-color:#ffffff;}
+.topNav a{color:#ffffff;}
+.footer{background-color:#e6007e;color:#ffffff;}
+.footer a{color:#ffffff;}
+.navWrap li{background-image:url(./../London2012/Images/Arrows/white-arrow-right.png);}
+.error{color: #e6007e;}
+.buttonBlue,.buttonMag{color:#ffffff;}
+.buttonBlue span{background-color:#007da8;}
+.buttonMag span{background-color:#e6007e;}
+.columnDetail a{color:#E6007E;}
+.bookTicketDiv span a{color:#007bcc;}
+.refreshLinkDiv a{color:#E6007E;}
+.providedBy a {color:#E6007E !important;}
+.processMessage a{color:#E6007E;font-weight:bold;}
+.undergroundStatus .statusInfo .highlight{color:#007da8;}
+.watermarkText {color:#aaa; }
+
+/* Debug */
+.debug{color: #00BA9C;font-size: 0.8em;}
+
+#newsModesList {display: none; position: absolute; top: 0px; left: 0px; width: 100%; overflow: auto; background: white; z-index: 500;}

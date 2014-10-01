@@ -1,0 +1,2 @@
+EventReceiver.bat  test
+pause

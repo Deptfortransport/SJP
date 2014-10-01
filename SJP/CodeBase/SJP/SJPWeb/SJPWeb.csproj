@@ -1,0 +1,1432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0ED93C9-BC53-4EFB-BCF2-371C51D57523}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SJP.UserPortal.SJPWeb</RootNamespace>
+    <AssemblyName>sjp.userportal.sjpweb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisLogFile>bin\sjp.userportal.sjpweb.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\sjp.userportal.sjpweb.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="td.CJPInterface">
+      <HintPath>..\..\..\ThirdParty\Atkins\CJP\td.CJPInterface.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\AccessibleFeaturesControl.ascx" />
+    <Content Include="Controls\BlueBadgeOptionsTab.ascx" />
+    <Content Include="Controls\BreadcrumbControl.ascx" />
+    <Content Include="Controls\Calendar.ascx" />
+    <Content Include="Controls\CalendarMonth.ascx" />
+    <Content Include="Controls\CycleJourneyLocations.ascx" />
+    <Content Include="Controls\CycleOptionsTab.ascx" />
+    <Content Include="Controls\DetailsCarControl.ascx" />
+    <Content Include="Controls\DetailsCycleControl.ascx" />
+    <Content Include="Controls\DetailsLegControl.ascx" />
+    <Content Include="Controls\DetailsLegsControl.ascx" />
+    <Content Include="Controls\DetailsSummaryControl.ascx" />
+    <Content Include="Controls\EventDateControl.ascx" />
+    <Content Include="Controls\FooterControl.ascx" />
+    <Content Include="Controls\GenericPromoWidget.ascx" />
+    <Content Include="Controls\GNATMapsWidget.ascx" />
+    <Content Include="Controls\HeaderControl.ascx" />
+    <Content Include="Controls\JourneyOptionTabContainer.ascx" />
+    <Content Include="Controls\JourneyPlannerWidget.ascx" />
+    <Content Include="Controls\JourneySelectControl.ascx" />
+    <Content Include="Controls\LanguageLinkControl.ascx" />
+    <Content Include="Controls\LocationControl.ascx" />
+    <Content Include="Controls\LoginLinkControl.ascx" />
+    <Content Include="Controls\ParkAndRideJourneyLocations.ascx" />
+    <Content Include="Controls\ParkAndRideOptionsTab.ascx" />
+    <Content Include="Controls\PublicJourneyOptionsTab.ascx" />
+    <Content Include="Controls\RiverSerivceResults.ascx" />
+    <Content Include="Controls\RiverServicesJourneyLocations.ascx" />
+    <Content Include="Controls\RiverServicesOptionsTab.ascx" />
+    <Content Include="Controls\SideBarLeftControl.ascx" />
+    <Content Include="Controls\SideBarRightControl.ascx" />
+    <Content Include="Controls\SkipToLinkControl.ascx" />
+    <Content Include="Controls\StyleLinkControl.ascx" />
+    <Content Include="Controls\TopTipsWidget.ascx" />
+    <Content Include="Controls\TravelNewsInfoWidget.ascx" />
+    <Content Include="Controls\TravelNewsItemControl.ascx" />
+    <Content Include="Controls\TravelNewsWidget.ascx" />
+    <Content Include="Controls\VehicleFeaturesControl.ascx" />
+    <Content Include="Controls\VenueMapsWidget.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Pages\AccessibilityOptions.aspx" />
+    <Content Include="Pages\CycleJourneyGPXDownload.aspx" />
+    <Content Include="Pages\ErrorPage.aspx" />
+    <Content Include="Pages\JourneyLocations.aspx" />
+    <Content Include="Pages\JourneyOptions.aspx" />
+    <Content Include="Pages\JourneyPlannerInput.aspx" />
+    <Content Include="Pages\Map1.aspx" />
+    <Content Include="Pages\Map2.aspx" />
+    <Content Include="Pages\PageNotFound.aspx" />
+    <Content Include="Pages\PrintableJourneyOptions.aspx" />
+    <Content Include="Pages\PrintableMap1.aspx" />
+    <Content Include="Pages\RetailerHandoff.aspx" />
+    <Content Include="Pages\Retailers.aspx" />
+    <Content Include="Pages\SorryPage.aspx" />
+    <Content Include="Pages\TravelNews.aspx" />
+    <Content Include="VersionGTW\Images\arrows\arrow_left_down.png" />
+    <Content Include="VersionGTW\Images\arrows\arrow_left_down_small.png" />
+    <Content Include="VersionGTW\Images\arrows\down_arrow.png" />
+    <Content Include="VersionGTW\Images\arrows\Drop_arrow_down.png" />
+    <Content Include="VersionGTW\Images\arrows\right_arrow.png" />
+    <Content Include="VersionGTW\Images\arrows\Up_down.png" />
+    <Content Include="VersionGTW\Images\arrows\white-arrow-left.png" />
+    <Content Include="VersionGTW\Images\arrows\white-arrow-right.png" />
+    <Content Include="VersionGTW\Images\cycle\CyclePark.png" />
+    <Content Include="VersionGTW\Images\cycle\CyclePath.gif" />
+    <Content Include="VersionGTW\Images\cycle\CycleRoute.gif" />
+    <Content Include="VersionGTW\Images\Jquery-ui\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <Content Include="VersionGTW\Images\Jquery-ui\ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <Content Include="VersionGTW\Images\Jquery-ui\ui-bg_flat_0_333333_40x100.png" />
+    <Content Include="VersionGTW\Images\Jquery-ui\ui-bg_flat_65__40x100.png" />
+    <Content Include="VersionGTW\Images\Jquery-ui\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="VersionGTW\Images\Jquery-ui\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <Content Include="VersionGTW\Images\Jquery-ui\ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+    <Content Include="VersionGTW\Images\Jquery-ui\ui-icons_004276_256x240.png" />
+    <Content Include="VersionGTW\Images\Jquery-ui\ui-icons_cc0000_256x240.png" />
+    <Content Include="VersionGTW\Images\Jquery-ui\ui-icons_ffffff_256x240.png" />
+    <Content Include="VersionGTW\Images\Maps\Blue-flag.png" />
+    <Content Include="VersionGTW\Images\Maps\Blue-flag_no-shadow.png" />
+    <Content Include="VersionGTW\Images\Maps\box-hill.jpg" />
+    <Content Include="VersionGTW\Images\Maps\brands-hatch-venue-jpg.jpg" />
+    <Content Include="VersionGTW\Images\Maps\city-of-coventry-stadium.jpg" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100BRH_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100EAR_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100ETD_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100EXL_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100GRP_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100HAD_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100HAM_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100HGP_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100HYD_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100LCG_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100LVC_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100MIL_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100MLL_CycleParksMapNorth.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100MLL_CycleParksMapSouth.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100NGA_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100OLD_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100OPK_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100RAB_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100VPL_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100WAP_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100WEA_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100WEM_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\CycleParksMaps\8100WIM_CycleParksMap.png" />
+    <Content Include="VersionGTW\Images\Maps\earls-court.jpg" />
+    <Content Include="VersionGTW\Images\Maps\eton-dorney.jpg" />
+    <Content Include="VersionGTW\Images\Maps\excel.jpg" />
+    <Content Include="VersionGTW\Images\Maps\greenwich-park.jpg" />
+    <Content Include="VersionGTW\Images\Maps\hadleigh-farm.jpg" />
+    <Content Include="VersionGTW\Images\Maps\hampden-park.jpg" />
+    <Content Include="VersionGTW\Images\Maps\hampton-court-palace.jpg" />
+    <Content Include="VersionGTW\Images\Maps\horse-guards-parade.jpg" />
+    <Content Include="VersionGTW\Images\Maps\hyde-park-live.jpg" />
+    <Content Include="VersionGTW\Images\Maps\hyde-park.jpg" />
+    <Content Include="VersionGTW\Images\Maps\lee-valley-white-water-centre.jpg" />
+    <Content Include="VersionGTW\Images\Maps\lord-s-cricket-ground.jpg" />
+    <Content Include="VersionGTW\Images\Maps\Map_Highlighted_EastAnglia.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Highlighted_EastMidlands.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Highlighted_London.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Highlighted_NorthEast.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Highlighted_NorthWest.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Highlighted_Scotland.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Highlighted_SouthEast.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Highlighted_SouthWest.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Highlighted_Wales.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Highlighted_WestMidlands.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Highlighted_Yorkshire.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_EastAnglia.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_EastAnglia.png" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_EastMidlands.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_EastMidlands.png" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_London.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_London.png" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_NorthEast.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_NorthEast.png" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_NorthWest.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_NorthWest.png" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_Scotland.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_Scotland.png" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_SouthEast.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_SouthEast.png" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_SouthWest.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_SouthWest.png" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_Wales.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_Wales.png" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_WestMidlands.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_WestMidlands.png" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_Yorkshire.gif" />
+    <Content Include="VersionGTW\Images\Maps\Map_Selected_Yorkshire.png" />
+    <Content Include="VersionGTW\Images\Maps\Map_UKRegionMap.gif" />
+    <Content Include="VersionGTW\Images\Maps\millennium-stadium.jpg" />
+    <Content Include="VersionGTW\Images\Maps\north-greenwich-arena.jpg" />
+    <Content Include="VersionGTW\Images\Maps\old-trafford.jpg" />
+    <Content Include="VersionGTW\Images\Maps\olympic-park.jpg" />
+    <Content Include="VersionGTW\Images\Maps\Pink-flag.png" />
+    <Content Include="VersionGTW\Images\Maps\Pink-flag_no-shadow.png" />
+    <Content Include="VersionGTW\Images\Maps\pointer.png" />
+    <Content Include="VersionGTW\Images\Maps\potters-field-live.jpg" />
+    <Content Include="VersionGTW\Images\Maps\RiverMaps\8100EAR_RiverMap.jpg" />
+    <Content Include="VersionGTW\Images\Maps\RiverMaps\8100GRP_RiverMap.jpg" />
+    <Content Include="VersionGTW\Images\Maps\RiverMaps\8100HGP_RiverMap.jpg" />
+    <Content Include="VersionGTW\Images\Maps\RiverMaps\8100HYD_RiverMap.jpg" />
+    <Content Include="VersionGTW\Images\Maps\RiverMaps\8100MAL_RiverMap.jpg" />
+    <Content Include="VersionGTW\Images\Maps\RiverMaps\8100NGA_RiverMap.jpg" />
+    <Content Include="VersionGTW\Images\Maps\RiverMaps\8100RAB_RiverMap.jpg" />
+    <Content Include="VersionGTW\Images\Maps\RiverMaps\9300BFR_9300GNW.png" />
+    <Content Include="VersionGTW\Images\Maps\RiverMaps\9300CAW_9300GNW.png" />
+    <Content Include="VersionGTW\Images\Maps\st-james-park.jpg" />
+    <Content Include="VersionGTW\Images\Maps\the-mall.jpg" />
+    <Content Include="VersionGTW\Images\Maps\the-royal-artillery-barracks.jpg" />
+    <Content Include="VersionGTW\Images\Maps\trafalgar-square-live.jpg" />
+    <Content Include="VersionGTW\Images\Maps\ui-icons_ffffff_256x240.png" />
+    <Content Include="VersionGTW\Images\Maps\victoria-park-live.jpg" />
+    <Content Include="VersionGTW\Images\Maps\wembley-arena.jpg" />
+    <Content Include="VersionGTW\Images\Maps\wembley-stadium.jpg" />
+    <Content Include="VersionGTW\Images\Maps\weymouth-and-portland.jpg" />
+    <Content Include="VersionGTW\Images\Maps\wimbledon.jpg" />
+    <Content Include="VersionGTW\Images\placeholders\accessible-travel-info.jpg" />
+    <Content Include="VersionGTW\Images\placeholders\faqs-promo.jpg" />
+    <Content Include="VersionGTW\Images\placeholders\games-travelcard.jpg" />
+    <Content Include="VersionGTW\Images\placeholders\getting-to-the-games.jpg" />
+    <Content Include="VersionGTW\Images\placeholders\Map of accessible stations in London.png" />
+    <Content Include="VersionGTW\Images\placeholders\Map of National Rail stations with staff assistance in south-east.png" />
+    <Content Include="VersionGTW\Images\placeholders\Map of National Rail stations with staff assistance in the UK.png" />
+    <Content Include="VersionGTW\Images\placeholders\Para_transparent.png" />
+    <Content Include="VersionGTW\Images\placeholders\Para_white.png" />
+    <Content Include="VersionGTW\Images\placeholders\walking-to-the-games.jpg" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_assistance.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_escalator_down.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_escalator_up.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_lift_down.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_lift_up.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_low_floor_vehicle.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_platform_access.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_ramp_down.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_ramp_up.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_stairs_down.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_stairs_up.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_walk.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_walk_1.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_walk_2.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_wheelchair_assistance.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_wheelchair_assistance_2.png" />
+    <Content Include="VersionGTW\Images\presentation\accessiblefeatures\Accessible_wheelchair_vehicle.png" />
+    <Content Include="VersionGTW\Images\presentation\button-pink-large-disabled.png" />
+    <Content Include="VersionGTW\Images\presentation\button-pink-large.png" />
+    <Content Include="VersionGTW\Images\presentation\button-pink-medium-disabled.png" />
+    <Content Include="VersionGTW\Images\presentation\button-pink-medium.png" />
+    <Content Include="VersionGTW\Images\presentation\button-pink-small-disabled.png" />
+    <Content Include="VersionGTW\Images\presentation\button-pink-small.png" />
+    <Content Include="VersionGTW\Images\presentation\dotted-border-grey.gif" />
+    <Content Include="VersionGTW\Images\presentation\HourGlass_medium.gif" />
+    <Content Include="VersionGTW\Images\presentation\information-red.png" />
+    <Content Include="VersionGTW\Images\presentation\information.png" />
+    <Content Include="VersionGTW\Images\presentation\invisible.png" />
+    <Content Include="VersionGTW\Images\presentation\Journey_End.png" />
+    <Content Include="VersionGTW\Images\presentation\Journey_End_Medium.png" />
+    <Content Include="VersionGTW\Images\presentation\Journey_Line_Dot.png" />
+    <Content Include="VersionGTW\Images\presentation\Journey_Line_Solid.png" />
+    <Content Include="VersionGTW\Images\presentation\Journey_Node.png" />
+    <Content Include="VersionGTW\Images\presentation\Journey_Node_ExtraLong.png" />
+    <Content Include="VersionGTW\Images\presentation\Journey_Node_Long.png" />
+    <Content Include="VersionGTW\Images\presentation\Journey_Node_Medium.png" />
+    <Content Include="VersionGTW\Images\presentation\Journey_Start.png" />
+    <Content Include="VersionGTW\Images\presentation\Journey_Start_Medium.png" />
+    <Content Include="VersionGTW\Images\presentation\JO_bluebadge_selected.png" />
+    <Content Include="VersionGTW\Images\presentation\JO_bluebadge_unavailable.png" />
+    <Content Include="VersionGTW\Images\presentation\JO_cycle_selected.png" />
+    <Content Include="VersionGTW\Images\presentation\JO_cycle_unavailable.png" />
+    <Content Include="VersionGTW\Images\presentation\JO_parkride_selected.png" />
+    <Content Include="VersionGTW\Images\presentation\JO_parkride_unavailable.png" />
+    <Content Include="VersionGTW\Images\presentation\JO_pt_selected.png" />
+    <Content Include="VersionGTW\Images\presentation\JO_pt_unavailable.png" />
+    <Content Include="VersionGTW\Images\presentation\JO_river_selected.png" />
+    <Content Include="VersionGTW\Images\presentation\JO_river_unavailable.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_air.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_bus.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_cableCar.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_car.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_coach.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_cycle.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_dlr.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_drt.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_eurotunnel.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_ferry.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_metro.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_overground.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_queue.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_rail.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_rail_replacement_bus.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_taxi.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_tram.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_underground.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_walk.png" />
+    <Content Include="VersionGTW\Images\presentation\JP_walk_interchange.png" />
+    <Content Include="VersionGTW\Images\presentation\Link_external_blue.gif" />
+    <Content Include="VersionGTW\Images\presentation\Link_external_pink.png" />
+    <Content Include="VersionGTW\Images\presentation\print_icon.gif" />
+    <Content Include="VersionGTW\Images\presentation\Retailer_coach.png" />
+    <Content Include="VersionGTW\Images\presentation\Retailer_ferry.png" />
+    <Content Include="VersionGTW\Images\presentation\Retailer_rail.png" />
+    <Content Include="VersionGTW\Images\presentation\roadexclamation.gif" />
+    <Content Include="VersionGTW\Images\presentation\Ticket_blue.png" />
+    <Content Include="VersionGTW\Images\presentation\Ticket_pink.png" />
+    <Content Include="VersionGTW\Images\presentation\TN_A_road.png" />
+    <Content Include="VersionGTW\Images\presentation\TN_motorway.png" />
+    <Content Include="VersionGTW\Images\presentation\TN_pt_engineering.png" />
+    <Content Include="VersionGTW\Images\presentation\TN_pt_incident.png" />
+    <Content Include="VersionGTW\Images\presentation\TN_roadworks.png" />
+    <Content Include="VersionGTW\Images\presentation\TN_road_incident.png" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_0_Buffet_Service.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_10_Reservations_Compulsory.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_11_Reservations_Recommended.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_12_Reservations_Available.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_13_Reservations _for_Cycles.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_1_Restaurant_in_First_Class_only_and_Buffet_Service.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_21_First_and_Standard_Class.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_22_First_Class_Only.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_2_Hot_Buffet.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_30_First_and_Standard_Class_Sleepers.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_31_First_Class_Sleepers_Only.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_32_Standard_Class_Sleepers_Only.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_3_Meal_Included_for_First_Class_Passengers.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_4_Restaurant_and_Buffet_Service.gif" />
+    <Content Include="VersionGTW\Images\presentation\vehiclefeatures\img_5_Trolley_Service.gif" />
+    <Content Include="VersionGTW\Images\tabs\Blue_Grey_Tabs_1.png" />
+    <Content Include="VersionGTW\Images\tabs\Blue_Grey_Tabs_1_large.png" />
+    <Content Include="VersionGTW\Images\tabs\Blue_Grey_Tabs_1_small.png" />
+    <Content Include="VersionGTW\Images\tabs\Tab_blue_Tall.png" />
+    <Content Include="VersionGTW\London2012\Images\Icons\favicon.ico" />
+    <Content Include="VersionGTW\London2012\Images\imgml\article\dash.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\article\quote\openquote.gif" />
+    <Content Include="VersionGTW\London2012\Images\imgml\box\box-related\aside-false\sprite-br-h.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\box\custom\top-bottom.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\box\lcg-acc\box-top-bottom.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\box\lcg-acc\sprite-bc.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\box\sprite-bc.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\box\sprite-bf.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\box\sprite-boxtop.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\box\sprite-countdown-h.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\countdown\omega.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\footer\footertop-mask.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\icons\iconprint.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\icons\sports\sprite_disc_22x22.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\icons\topmenubar\icon_bsl.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\icons\topmenubar\sprite_accinfo.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\logo\para\sprite-locog-small.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\logo\para\sprite-locog.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\logo\sprite-locog-small.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\logo\sprite-locog.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\logo\sprite-motto-fr.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\logo\sprite-motto.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\menulev0\bg-lcg-lev0menuwrap.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\menulev0\icon_olympicgames.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\menulev0\icon_paralympicgames.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\menulev0\icon_theshop.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\menulev0\icon_tickets.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\menulev0\lev0-separator.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\menulev0\menulev0-active.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\menulev0\menulev0-last.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\menulev0\menulev0-lastactive.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\menulev0\vertical-sep.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\promo\headerad.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\promo\mpu.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\lcg-dislexya\bg-lcg-wrap.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\lcg-highvisibility\bg-lcg-wrap.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\lcg-normal\bg-body.jpg" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\lcg-normal\bg-lcg-wrap.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\pink\box\more-custom.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\pink\box\more.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\pink\box\sprite-header-custom.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\pink\box\sprite-header.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\pink\icons\arrow-right-custom.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\pink\icons\arrow-right.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\pink\menulev2\separator.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\skin\pink\sectionheader\bg-sectionheader.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\spectators\sprite-spectators-acc.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\spectators\sprite-spectators.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\topmenubar\bg-topmenubar.png" />
+    <Content Include="VersionGTW\London2012\Images\imgml\topmenubar\topmenuseparator.gif" />
+    <Content Include="VersionGTW\London2012\Scripts\jquery.js" />
+    <Content Include="VersionGTW\London2012\Scripts\london2012base.js" />
+    <Content Include="VersionGTW\London2012\Styles\lang-fr.css" />
+    <Content Include="VersionGTW\London2012\Styles\london2012accessibility.css" />
+    <Content Include="VersionGTW\London2012\Styles\london2012base.css" />
+    <Content Include="VersionGTW\London2012\Styles\pink.css" />
+    <Content Include="VersionGTW\London2012\Styles\skin-pink-override.css" />
+    <Content Include="VersionGTW\London2012\Styles\skin-pink.css" />
+    <Content Include="VersionGTW\Scripts\AccessibilityOptions.js" />
+    <Content Include="VersionGTW\Scripts\Common.js" />
+    <Content Include="VersionGTW\Scripts\JourneyLocations.js" />
+    <Content Include="VersionGTW\Scripts\JourneyOptions.js" />
+    <Content Include="VersionGTW\Scripts\JourneyPlannerInput.js" />
+    <Content Include="VersionGTW\Scripts\jquery-ui-1.8.13.min.js" />
+    <Content Include="VersionGTW\Scripts\jquery.dateentry.min.js" />
+    <Content Include="VersionGTW\Scripts\jquery.qtip.min.js" />
+    <Content Include="VersionGTW\Scripts\jquery.scrollTo.js" />
+    <Content Include="VersionGTW\Scripts\jquery.serialScroll.js" />
+    <Content Include="VersionGTW\Scripts\jquery.ui.selectmenu.js" />
+    <Content Include="VersionGTW\Scripts\LocationSuggest.js" />
+    <Content Include="VersionGTW\Scripts\Map1.js" />
+    <Content Include="VersionGTW\Scripts\Map2.js" />
+    <Content Include="VersionGTW\Scripts\Retailers.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_a.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_b.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_c.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_d.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_e.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_f.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_g.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_h.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_i.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_j.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_k.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_l.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_m.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_n.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_o.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_p.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_q.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_r.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_s.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_t.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_u.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_v.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_w.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_x.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_y.js" />
+    <Content Include="VersionGTW\Scripts\TempScripts\Location_16042012_z.js" />
+    <Content Include="VersionGTW\Scripts\TravelNews.js" />
+    <Content Include="VersionGTW\Scripts\TravelNewsWidget.js" />
+    <Content Include="VersionGTW\Styles\jquery-ui-1.8.13.css" />
+    <Content Include="VersionGTW\Styles\jquery.qtip.min.css" />
+    <Content Include="VersionGTW\Styles\SJPAccessibility.css" />
+    <Content Include="VersionGTW\Styles\SJPBackgrounds.css" />
+    <Content Include="VersionGTW\Styles\SJPColours.css" />
+    <Content Include="VersionGTW\Styles\SJPFonts.css" />
+    <Content Include="VersionGTW\Styles\SJPMain.css" />
+    <Content Include="VersionGTW\Styles\SJPPrint.css" />
+    <Content Include="Version\Images\arrows\arrow_left_down.png" />
+    <Content Include="Version\Images\arrows\arrow_left_down_small.png" />
+    <Content Include="Version\Images\arrows\down_arrow.png" />
+    <Content Include="Version\Images\arrows\Drop_arrow_down.png" />
+    <Content Include="Version\Images\arrows\right_arrow.png" />
+    <Content Include="Version\Images\arrows\Up_down.png" />
+    <Content Include="Version\Images\cycle\CyclePath.gif" />
+    <Content Include="Version\Images\cycle\CycleRoute.gif" />
+    <Content Include="Version\Images\Jquery-ui\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <Content Include="Version\Images\Jquery-ui\ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <Content Include="Version\Images\Jquery-ui\ui-bg_flat_0_333333_40x100.png" />
+    <Content Include="Version\Images\Jquery-ui\ui-bg_flat_65__40x100.png" />
+    <Content Include="Version\Images\Jquery-ui\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Version\Images\Jquery-ui\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <Content Include="Version\Images\Jquery-ui\ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+    <Content Include="Version\Images\Jquery-ui\ui-icons_004276_256x240.png" />
+    <Content Include="Version\Images\Jquery-ui\ui-icons_cc0000_256x240.png" />
+    <Content Include="Version\Images\Jquery-ui\ui-icons_ffffff_256x240.png" />
+    <Content Include="Version\Images\Maps\box-hill.jpg" />
+    <Content Include="Version\Images\Maps\brands-hatch-venue-jpg.jpg" />
+    <Content Include="Version\Images\Maps\city-of-coventry-stadium.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100EAR_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100EAR_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100ETD_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100ETD_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100EXL_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100EXL_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100GRP_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100GRP_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100HAD_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100HAD_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100HAM_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100HAM_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100LCG_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100LCG_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100LVC_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100LVC_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100MIL_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100MIL_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100NGA_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100NGA_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100OLD_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100OLD_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100OPK_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100OPK_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100RAB_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100RAB_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100WAP_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100WAP_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100WEA_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100WEA_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100WEM_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100WEM_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100WIM_CycleParksMap.jpg" />
+    <Content Include="Version\Images\Maps\CycleParksMaps\8100WIM_CycleParksMap.png" />
+    <Content Include="Version\Images\Maps\earls-court.jpg" />
+    <Content Include="Version\Images\Maps\eton-dorney.jpg" />
+    <Content Include="Version\Images\Maps\excel.jpg" />
+    <Content Include="Version\Images\Maps\greenwich-park.jpg" />
+    <Content Include="Version\Images\Maps\hadleigh-farm.jpg" />
+    <Content Include="Version\Images\Maps\hampden-park.jpg" />
+    <Content Include="Version\Images\Maps\hampton-court-palace.jpg" />
+    <Content Include="Version\Images\Maps\horse-guards-parade.jpg" />
+    <Content Include="Version\Images\Maps\hyde-park.jpg" />
+    <Content Include="Version\Images\Maps\lee-valley-white-water-centre.jpg" />
+    <Content Include="Version\Images\Maps\lord-s-cricket-ground.jpg" />
+    <Content Include="Version\Images\Maps\Map_Highlighted_EastAnglia.gif" />
+    <Content Include="Version\Images\Maps\Map_Highlighted_EastMidlands.gif" />
+    <Content Include="Version\Images\Maps\Map_Highlighted_London.gif" />
+    <Content Include="Version\Images\Maps\Map_Highlighted_NorthEast.gif" />
+    <Content Include="Version\Images\Maps\Map_Highlighted_NorthWest.gif" />
+    <Content Include="Version\Images\Maps\Map_Highlighted_Scotland.gif" />
+    <Content Include="Version\Images\Maps\Map_Highlighted_SouthEast.gif" />
+    <Content Include="Version\Images\Maps\Map_Highlighted_SouthWest.gif" />
+    <Content Include="Version\Images\Maps\Map_Highlighted_Wales.gif" />
+    <Content Include="Version\Images\Maps\Map_Highlighted_WestMidlands.gif" />
+    <Content Include="Version\Images\Maps\Map_Highlighted_Yorkshire.gif" />
+    <Content Include="Version\Images\Maps\Map_Selected_EastAnglia.gif" />
+    <Content Include="Version\Images\Maps\Map_Selected_EastMidlands.gif" />
+    <Content Include="Version\Images\Maps\Map_Selected_London.gif" />
+    <Content Include="Version\Images\Maps\Map_Selected_NorthEast.gif" />
+    <Content Include="Version\Images\Maps\Map_Selected_NorthWest.gif" />
+    <Content Include="Version\Images\Maps\Map_Selected_Scotland.gif" />
+    <Content Include="Version\Images\Maps\Map_Selected_SouthEast.gif" />
+    <Content Include="Version\Images\Maps\Map_Selected_SouthWest.gif" />
+    <Content Include="Version\Images\Maps\Map_Selected_Wales.gif" />
+    <Content Include="Version\Images\Maps\Map_Selected_WestMidlands.gif" />
+    <Content Include="Version\Images\Maps\Map_Selected_Yorkshire.gif" />
+    <Content Include="Version\Images\Maps\Map_UKRegionMap.gif" />
+    <Content Include="Version\Images\Maps\millennium-stadium.jpg" />
+    <Content Include="Version\Images\Maps\north-greenwich-arena.jpg" />
+    <Content Include="Version\Images\Maps\old-trafford.jpg" />
+    <Content Include="Version\Images\Maps\olympic-park.jpg" />
+    <Content Include="Version\Images\Maps\RiverMaps\8100EAR_RiverMap.jpg" />
+    <Content Include="Version\Images\Maps\RiverMaps\8100GRP_RiverMap.jpg" />
+    <Content Include="Version\Images\Maps\RiverMaps\8100HGP_RiverMap.jpg" />
+    <Content Include="Version\Images\Maps\RiverMaps\8100HYD_RiverMap.jpg" />
+    <Content Include="Version\Images\Maps\RiverMaps\8100MAL_RiverMap.jpg" />
+    <Content Include="Version\Images\Maps\RiverMaps\8100NGA_RiverMap.jpg" />
+    <Content Include="Version\Images\Maps\RiverMaps\8100RAB_RiverMap.jpg" />
+    <Content Include="Version\Images\Maps\RiverMaps\9300BFR_9300GNW.png" />
+    <Content Include="Version\Images\Maps\RiverMaps\9300CAW_9300GNW.png" />
+    <Content Include="Version\Images\Maps\st-james-park.jpg" />
+    <Content Include="Version\Images\Maps\the-mall.jpg" />
+    <Content Include="Version\Images\Maps\the-royal-artillery-barracks.jpg" />
+    <Content Include="Version\Images\Maps\wembley-arena.jpg" />
+    <Content Include="Version\Images\Maps\wembley-stadium.jpg" />
+    <Content Include="Version\Images\Maps\weymouth-and-portland.jpg" />
+    <Content Include="Version\Images\Maps\wimbledon.jpg" />
+    <Content Include="Version\Images\placeholders\accessible-travel-info.jpg" />
+    <Content Include="Version\Images\placeholders\book-your-journey.jpg" />
+    <Content Include="Version\Images\placeholders\bus-coach.jpg" />
+    <Content Include="Version\Images\placeholders\charter-coach-parking.jpg" />
+    <Content Include="Version\Images\placeholders\cycling.jpg" />
+    <Content Include="Version\Images\placeholders\elton-dorney-thumb-map.gif" />
+    <Content Include="Version\Images\placeholders\eton-dorney.jpg" />
+    <Content Include="Version\Images\placeholders\faqs-promo.jpg" />
+    <Content Include="Version\Images\placeholders\games-blue-badge-parking.jpg" />
+    <Content Include="Version\Images\placeholders\games-coach-services.jpg" />
+    <Content Include="Version\Images\placeholders\games-park-and-ride-tickets.jpg" />
+    <Content Include="Version\Images\placeholders\games-river-bus-express.jpg" />
+    <Content Include="Version\Images\placeholders\games-river-tour-tickets.jpg" />
+    <Content Include="Version\Images\placeholders\games-train-ticket.jpg" />
+    <Content Include="Version\Images\placeholders\games-travelcard.jpg" />
+    <Content Include="Version\Images\placeholders\getting-to-the-games-new.jpg" />
+    <Content Include="Version\Images\placeholders\getting-to-the-games.jpg" />
+    <Content Include="Version\Images\placeholders\journey-planner.jpg" />
+    <Content Include="Version\Images\placeholders\keeping-updated.jpg" />
+    <Content Include="Version\Images\placeholders\locations-venues.jpg" />
+    <Content Include="Version\Images\placeholders\make-a-day-of-it.jpg" />
+    <Content Include="Version\Images\placeholders\Map of accessible stations in London.png" />
+    <Content Include="Version\Images\placeholders\Map of National Rail stations with staff assistance in south-east.png" />
+    <Content Include="Version\Images\placeholders\Map of National Rail stations with staff assistance in the UK.png" />
+    <Content Include="Version\Images\placeholders\map-smaller.jpg" />
+    <Content Include="Version\Images\placeholders\map-smallest.jpg" />
+    <Content Include="Version\Images\placeholders\map-thumb.jpg" />
+    <Content Include="Version\Images\placeholders\map.jpg" />
+    <Content Include="Version\Images\placeholders\park-and-ride.jpg" />
+    <Content Include="Version\Images\placeholders\plan-your-journey-new.jpg" />
+    <Content Include="Version\Images\placeholders\plan-your-journey.jpg" />
+    <Content Include="Version\Images\placeholders\plan-your-travel.jpg" />
+    <Content Include="Version\Images\placeholders\planning-your-travel.jpg" />
+    <Content Include="Version\Images\placeholders\river-service.jpg" />
+    <Content Include="Version\Images\placeholders\sa-travel-guidance.jpg" />
+    <Content Include="Version\Images\placeholders\sa-travel-options.jpg" />
+    <Content Include="Version\Images\placeholders\safety-security.jpg" />
+    <Content Include="Version\Images\placeholders\tickets-and-travelcards.jpg" />
+    <Content Include="Version\Images\placeholders\trains.jpg" />
+    <Content Include="Version\Images\placeholders\travel-across-uk.jpg" />
+    <Content Include="Version\Images\placeholders\travel-help-guidance.jpg" />
+    <Content Include="Version\Images\placeholders\travel-in-london.jpg" />
+    <Content Include="Version\Images\placeholders\travel-options-large.jpg" />
+    <Content Include="Version\Images\placeholders\travel-options.jpg" />
+    <Content Include="Version\Images\placeholders\travel-tickets.jpg" />
+    <Content Include="Version\Images\placeholders\underground.jpg" />
+    <Content Include="Version\Images\placeholders\walking-to-the-games.jpg" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_assistance.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_escalator_down.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_escalator_up.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_lift_down.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_lift_up.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_low_floor_vehicle.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_platform_access.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_ramp_down.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_ramp_up.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_stairs_down.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_stairs_up.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_walk.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_walk_1.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_walk_2.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_wheelchair_assistance.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_wheelchair_assistance_2.png" />
+    <Content Include="Version\Images\presentation\accessiblefeatures\Accessible_wheelchair_vehicle.png" />
+    <Content Include="Version\Images\presentation\Bullet.png" />
+    <Content Include="Version\Images\presentation\Bullet_cycle.png" />
+    <Content Include="Version\Images\presentation\button-pink-smaller.png" />
+    <Content Include="Version\Images\presentation\HourGlass_large.gif" />
+    <Content Include="Version\Images\presentation\HourGlass_medium.gif" />
+    <Content Include="Version\Images\presentation\HourGlass_small.gif" />
+    <Content Include="Version\Images\presentation\information.png" />
+    <Content Include="Version\Images\presentation\Journey_End_Medium.png" />
+    <Content Include="Version\Images\presentation\Journey_Node_ExtraLong.png" />
+    <Content Include="Version\Images\presentation\Journey_Node_Long.png" />
+    <Content Include="Version\Images\presentation\Journey_Node_Medium.png" />
+    <Content Include="Version\Images\presentation\Journey_Start_Medium.png" />
+    <Content Include="Version\Images\presentation\JO_bluebadge_selected.png" />
+    <Content Include="Version\Images\presentation\button-pink-large-disabled.png" />
+    <Content Include="Version\Images\presentation\button-pink-large.png" />
+    <Content Include="Version\Images\presentation\button-pink-medium-disabled.png" />
+    <Content Include="Version\Images\presentation\button-pink-medium.png" />
+    <Content Include="Version\Images\presentation\button-pink-small-disabled.png" />
+    <Content Include="Version\Images\presentation\button-pink-small.png" />
+    <Content Include="Version\Images\presentation\CheckBox.gif" />
+    <Content Include="Version\Images\presentation\JO_bluebadge_unavailable.png" />
+    <Content Include="Version\Images\presentation\JO_cycle_selected.png" />
+    <Content Include="Version\Images\presentation\DatePicker.png" />
+    <Content Include="Version\Images\presentation\diagonalHead.png" />
+    <Content Include="Version\Images\presentation\dotted-border-grey.gif" />
+    <Content Include="Version\Images\presentation\getting-to-the-games.jpg" />
+    <Content Include="Version\Images\presentation\Journey_End.png" />
+    <Content Include="Version\Images\presentation\Journey_Line_Dot.png" />
+    <Content Include="Version\Images\presentation\Journey_Line_Solid.png" />
+    <Content Include="Version\Images\presentation\Journey_Node.png" />
+    <Content Include="Version\Images\presentation\Journey_Start.png" />
+    <Content Include="Version\Images\presentation\JO_cycle_unavailable.png" />
+    <Content Include="Version\Images\presentation\JO_parkride_unavailable.png" />
+    <Content Include="Version\Images\presentation\JO_pt_unavailable.png" />
+    <Content Include="Version\Images\presentation\JO_river_unavailable.png" />
+    <Content Include="Version\Images\presentation\JP_air.png" />
+    <Content Include="Version\Images\presentation\JP_bus.png" />
+    <Content Include="Version\Images\presentation\JP_cableCar.png" />
+    <Content Include="Version\Images\presentation\JP_car.png" />
+    <Content Include="Version\Images\presentation\JP_coach.png" />
+    <Content Include="Version\Images\presentation\JP_cycle.png" />
+    <Content Include="Version\Images\presentation\JP_dlr.png" />
+    <Content Include="Version\Images\presentation\JP_drt.png" />
+    <Content Include="Version\Images\presentation\JP_ferry.png" />
+    <Content Include="Version\Images\presentation\JP_metro.png" />
+    <Content Include="Version\Images\presentation\JP_overground.png" />
+    <Content Include="Version\Images\presentation\JP_queue.png" />
+    <Content Include="Version\Images\presentation\JP_rail.png" />
+    <Content Include="Version\Images\presentation\JP_rail_replacement_bus.png" />
+    <Content Include="Version\Images\presentation\JP_taxi.png" />
+    <Content Include="Version\Images\presentation\JP_tram.png" />
+    <Content Include="Version\Images\presentation\JP_underground.png" />
+    <Content Include="Version\Images\presentation\JP_walk.png" />
+    <Content Include="Version\Images\presentation\JP_walk_interchange.png" />
+    <Content Include="Version\Images\presentation\Link_external_blue.gif" />
+    <Content Include="Version\Images\presentation\Link_external_pink.png" />
+    <Content Include="Version\Images\presentation\JO_parkride_selected.png" />
+    <Content Include="Version\Images\presentation\JO_pt_selected.png" />
+    <Content Include="Version\Images\presentation\JO_river_selected.png" />
+    <Content Include="Version\Images\presentation\print_icon.gif" />
+    <Content Include="Version\Images\presentation\Retailer_coach.png" />
+    <Content Include="Version\Images\presentation\Retailer_ferry.png" />
+    <Content Include="Version\Images\presentation\Retailer_rail.png" />
+    <Content Include="Version\Images\presentation\roadexclamation.gif" />
+    <Content Include="Version\Images\presentation\sidebar-bg.gif" />
+    <Content Include="Version\Images\presentation\stp-button-blue.png" />
+    <Content Include="Version\Images\presentation\stp-button-pink.png" />
+    <Content Include="Version\Images\presentation\stp-sidebar-blue.gif" />
+    <Content Include="Version\Images\presentation\Ticket_blue.png" />
+    <Content Include="Version\Images\presentation\Ticket_pink.png" />
+    <Content Include="Version\Images\presentation\TN_A_road.png" />
+    <Content Include="Version\Images\presentation\TN_motorway.png" />
+    <Content Include="Version\Images\presentation\TN_pt_engineering.png" />
+    <Content Include="Version\Images\presentation\TN_pt_incident.png" />
+    <Content Include="Version\Images\presentation\TN_roadworks.png" />
+    <Content Include="Version\Images\presentation\TN_road_incident.png" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_0_Buffet_Service.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_10_Reservations_Compulsory.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_11_Reservations_Recommended.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_12_Reservations_Available.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_13_Reservations _for_Cycles.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_1_Restaurant_in_First_Class_only_and_Buffet_Service.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_21_First_and_Standard_Class.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_22_First_Class_Only.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_2_Hot_Buffet.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_30_First_and_Standard_Class_Sleepers.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_31_First_Class_Sleepers_Only.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_32_Standard_Class_Sleepers_Only.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_3_Meal_Included_for_First_Class_Passengers.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_4_Restaurant_and_Buffet_Service.gif" />
+    <Content Include="Version\Images\presentation\vehiclefeatures\img_5_Trolley_Service.gif" />
+    <Content Include="Version\Images\tabs\Blue_Grey_Tabs_1.png" />
+    <Content Include="Version\Images\tabs\Blue_Grey_Tabs_1_large.png" />
+    <Content Include="Version\Images\tabs\Blue_Grey_Tabs_1_small.png" />
+    <Content Include="Version\Images\tabs\shadow_bg_rt.gif" />
+    <Content Include="Version\Images\tabs\tabs-bg_vertical.gif" />
+    <Content Include="Version\Images\tabs\Tab_blue_medium.png" />
+    <Content Include="Version\Images\tabs\Tab_blue_Tall.png" />
+    <Content Include="Version\Images\tabs\Tab_pink_medium.png" />
+    <Content Include="Version\Images\tabs\tntab_active.png" />
+    <Content Include="Version\Images\tabs\tntab_off.png" />
+    <Content Include="Version\London2012\Images\arrows\calendar-prev.png" />
+    <Content Include="Version\London2012\Images\arrows\next-sponsor.png" />
+    <Content Include="Version\London2012\Images\arrows\next-white-on-blue.gif" />
+    <Content Include="Version\London2012\Images\arrows\prev-white-on-blue.gif" />
+    <Content Include="Version\London2012\Images\Icons\favicon.ico" />
+    <Content Include="Version\London2012\Images\Icons\Grey\blog-grey.png" />
+    <Content Include="Version\London2012\Images\Icons\Grey\news-grey.png" />
+    <Content Include="Version\London2012\Images\Icons\Grey\photos-grey.png" />
+    <Content Include="Version\London2012\Images\Icons\Grey\videos-grey.png" />
+    <Content Include="Version\London2012\Images\Icons\Grey\virtual-tour-grey.png" />
+    <Content Include="Version\London2012\Images\Icons\Grey\webcams-grey.png" />
+    <Content Include="Version\London2012\Images\Icons\header-arrow-up-icon-over.gif" />
+    <Content Include="Version\London2012\Images\Icons\header-arrow-up-icon.gif" />
+    <Content Include="Version\London2012\Images\Icons\header-drop-down-icon-over.gif" />
+    <Content Include="Version\London2012\Images\Icons\header-drop-down-icon.gif" />
+    <Content Include="Version\London2012\Images\Icons\Pink\blog-pink.png" />
+    <Content Include="Version\London2012\Images\Icons\Pink\news-pink.png" />
+    <Content Include="Version\London2012\Images\Icons\Pink\photos-pink.png" />
+    <Content Include="Version\London2012\Images\Icons\Pink\videos-pink.png" />
+    <Content Include="Version\London2012\Images\Icons\Pink\virtual-tour-pink.png" />
+    <Content Include="Version\London2012\Images\Icons\Pink\webcams-pink.png" />
+    <Content Include="Version\London2012\Images\Icons\print-this-icon.gif" />
+    <Content Include="Version\London2012\Images\Icons\share-this-icon.gif" />
+    <Content Include="Version\London2012\Images\Icons\sign-up-icon.gif" />
+    <Content Include="Version\London2012\Images\Logos\logo-para.png" />
+    <Content Include="Version\London2012\Images\Logos\logo-pink.png" />
+    <Content Include="Version\London2012\Images\Presentation\bullet-content.gif" />
+    <Content Include="Version\London2012\Images\Presentation\dotted-border-grey.gif" />
+    <Content Include="Version\London2012\Images\Presentation\footer-bg.gif" />
+    <Content Include="Version\London2012\Images\Presentation\header-bg.gif" />
+    <Content Include="Version\London2012\Images\Presentation\header-bg.png" />
+    <Content Include="Version\London2012\Images\Presentation\logo-background-small.png" />
+    <Content Include="Version\London2012\Images\Presentation\primary-nav-bg.gif" />
+    <Content Include="Version\London2012\Images\Presentation\selected-nav.gif" />
+    <Content Include="Version\London2012\Images\Presentation\solid-list-border-grey.png" />
+    <Content Include="Version\London2012\Images\Presentation\tabs-bg.gif" />
+    <Content Include="Version\London2012\Images\Tabs\nav-extra-large-bg.png" />
+    <Content Include="Version\London2012\Images\Tabs\nav-large-bg.png" />
+    <Content Include="Version\London2012\Images\Tabs\nav-medium-bg.png" />
+    <Content Include="Version\London2012\Images\Tabs\nav-small-bg.png" />
+    <Content Include="Version\London2012\Images\Tabs\small-grey-bg.gif" />
+    <Content Include="Version\London2012\Images\Tabs\small-grey.png" />
+    <Content Include="Version\London2012\Images\Tabs\small-white-bg.gif" />
+    <Content Include="Version\London2012\Images\Tabs\small-white.png" />
+    <Content Include="Version\London2012\Images\travel-planning\light-bulb.gif" />
+    <Content Include="Version\London2012\Scripts\jquery.cycle.all.min.js" />
+    <Content Include="Version\London2012\Scripts\jquery.easing.1.1.1.js" />
+    <Content Include="Version\London2012\Scripts\jquery.min.js" />
+    <Content Include="Version\London2012\Scripts\jquery.pngfix.js" />
+    <Content Include="Version\London2012\Scripts\jquery.smoothdivscroll-0.9.js" />
+    <Content Include="Version\London2012\Scripts\theming.js" />
+    <Content Include="Version\London2012\Styles\dyslexia.css" />
+    <Content Include="Version\London2012\Styles\font-large.css" />
+    <Content Include="Version\London2012\Styles\font-medium.css" />
+    <Content Include="Version\London2012\Styles\high-vis.css" />
+    <Content Include="Version\London2012\Styles\merge.css" />
+    <Content Include="Version\Scripts\AccessibilityOptions.js" />
+    <Content Include="Version\Scripts\Common.js" />
+    <Content Include="Version\Scripts\JourneyLocations.js" />
+    <Content Include="Version\Scripts\JourneyOptions.js" />
+    <Content Include="Version\Scripts\JourneyPlannerInput.js" />
+    <Content Include="Version\Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Version\Scripts\jquery-1.4.1.js" />
+    <Content Include="Version\Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Version\London2012\Styles\additions.css" />
+    <Content Include="Version\London2012\Styles\colours.css" />
+    <Content Include="Version\London2012\Styles\font-small.css" />
+    <Content Include="Version\London2012\Styles\main.css" />
+    <Content Include="Version\Scripts\jquery-ui-1.8.13.min.js" />
+    <Content Include="Version\Scripts\jquery.checkbox.js" />
+    <Content Include="Version\Scripts\jquery.dateentry.min.js" />
+    <Content Include="Version\Scripts\jquery.qtip.min.js" />
+    <Content Include="Version\Scripts\jquery.sb.min.js" />
+    <Content Include="Version\Scripts\jquery.scrollTo.js" />
+    <Content Include="Version\Scripts\jquery.serialScroll.js" />
+    <Content Include="Version\Scripts\jquery.ui.selectmenu.js" />
+    <Content Include="Version\Scripts\LocationSuggest.js" />
+    <Content Include="Version\Scripts\Retailers.js" />
+    <Content Include="Version\Scripts\SJPCalendar.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_a.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_b.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_c.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_d.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_e.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_f.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_g.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_h.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_i.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_j.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_k.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_l.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_m.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_n.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_o.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_p.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_q.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_r.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_s.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_t.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_u.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_v.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_w.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_x.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_y.js" />
+    <Content Include="Version\Scripts\TempScripts\Location_0_z.js" />
+    <Content Include="Version\Scripts\TravelNews.js" />
+    <Content Include="Version\Scripts\TravelNewsWidget.js" />
+    <Content Include="Version\Styles\jquery-ui-1.8.13.css" />
+    <Content Include="Version\Styles\jquery.qtip.min.css" />
+    <Content Include="Version\Styles\SJPBackgrounds.css" />
+    <Content Include="Version\Styles\SJPColours.css" />
+    <Content Include="Version\Styles\SJPDyslexia.css" />
+    <Content Include="Version\Styles\SJPFonts.css" />
+    <Content Include="Version\Styles\SJPHighVis.css" />
+    <Content Include="Version\Styles\SJPMain.css" />
+    <Content Include="Version\Styles\SJPPrint.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapters\JourneyLocationsAdapter.cs" />
+    <Compile Include="Adapters\JourneyPlannerInputAdapter.cs" />
+    <Compile Include="Code\GenericPromoType.cs" />
+    <Compile Include="Code\IJourneyOptionsTab.cs" />
+    <Compile Include="Code\RemotePost.cs" />
+    <Compile Include="Controls\AccessibleFeaturesControl.ascx.cs">
+      <DependentUpon>AccessibleFeaturesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AccessibleFeaturesControl.ascx.designer.cs">
+      <DependentUpon>AccessibleFeaturesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BlueBadgeOptionsTab.ascx.cs">
+      <DependentUpon>BlueBadgeOptionsTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\BlueBadgeOptionsTab.ascx.designer.cs">
+      <DependentUpon>BlueBadgeOptionsTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BreadcrumbControl.ascx.cs">
+      <DependentUpon>BreadcrumbControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\BreadcrumbControl.ascx.designer.cs">
+      <DependentUpon>BreadcrumbControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Calendar.ascx.cs">
+      <DependentUpon>Calendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Calendar.ascx.designer.cs">
+      <DependentUpon>Calendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CalendarMonth.ascx.cs">
+      <DependentUpon>CalendarMonth.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CalendarMonth.ascx.designer.cs">
+      <DependentUpon>CalendarMonth.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CycleJourneyLocations.ascx.cs">
+      <DependentUpon>CycleJourneyLocations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CycleJourneyLocations.ascx.designer.cs">
+      <DependentUpon>CycleJourneyLocations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CycleOptionsTab.ascx.cs">
+      <DependentUpon>CycleOptionsTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CycleOptionsTab.ascx.designer.cs">
+      <DependentUpon>CycleOptionsTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetailsCarControl.ascx.cs">
+      <DependentUpon>DetailsCarControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DetailsCarControl.ascx.designer.cs">
+      <DependentUpon>DetailsCarControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetailsCycleControl.ascx.cs">
+      <DependentUpon>DetailsCycleControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DetailsCycleControl.ascx.designer.cs">
+      <DependentUpon>DetailsCycleControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetailsLegControl.ascx.cs">
+      <DependentUpon>DetailsLegControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DetailsLegControl.ascx.designer.cs">
+      <DependentUpon>DetailsLegControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetailsLegsControl.ascx.cs">
+      <DependentUpon>DetailsLegsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DetailsLegsControl.ascx.designer.cs">
+      <DependentUpon>DetailsLegsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetailsSummaryControl.ascx.cs">
+      <DependentUpon>DetailsSummaryControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DetailsSummaryControl.ascx.designer.cs">
+      <DependentUpon>DetailsSummaryControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventDateControl.ascx.cs">
+      <DependentUpon>EventDateControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EventDateControl.ascx.designer.cs">
+      <DependentUpon>EventDateControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FooterControl.ascx.cs">
+      <DependentUpon>FooterControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FooterControl.ascx.designer.cs">
+      <DependentUpon>FooterControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GenericPromoWidget.ascx.cs">
+      <DependentUpon>GenericPromoWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GenericPromoWidget.ascx.designer.cs">
+      <DependentUpon>GenericPromoWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GNATMapsWidget.ascx.cs">
+      <DependentUpon>GNATMapsWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GNATMapsWidget.ascx.designer.cs">
+      <DependentUpon>GNATMapsWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GroupRadioButton.cs" />
+    <Compile Include="Controls\HeaderControl.ascx.cs">
+      <DependentUpon>HeaderControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\HeaderControl.ascx.designer.cs">
+      <DependentUpon>HeaderControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageMapCircleRegion.cs" />
+    <Compile Include="Controls\ImageMapControl.cs" />
+    <Compile Include="Controls\ImageMapPolygonRegion.cs" />
+    <Compile Include="Controls\ImageMapPropertyKeys.cs" />
+    <Compile Include="Controls\ImageMapRectangleRegion.cs" />
+    <Compile Include="Controls\ImageMapRegion.cs" />
+    <Compile Include="Controls\JourneyOptionTabContainer.ascx.cs">
+      <DependentUpon>JourneyOptionTabContainer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\JourneyOptionTabContainer.ascx.designer.cs">
+      <DependentUpon>JourneyOptionTabContainer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\JourneyPlannerWidget.ascx.cs">
+      <DependentUpon>JourneyPlannerWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\JourneyPlannerWidget.ascx.designer.cs">
+      <DependentUpon>JourneyPlannerWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\JourneySelectControl.ascx.cs">
+      <DependentUpon>JourneySelectControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\JourneySelectControl.ascx.designer.cs">
+      <DependentUpon>JourneySelectControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LanguageLinkControl.ascx.cs">
+      <DependentUpon>LanguageLinkControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LanguageLinkControl.ascx.designer.cs">
+      <DependentUpon>LanguageLinkControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LocationControl.ascx.cs">
+      <DependentUpon>LocationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LocationControl.ascx.designer.cs">
+      <DependentUpon>LocationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoginLinkControl.ascx.cs">
+      <DependentUpon>LoginLinkControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginLinkControl.ascx.designer.cs">
+      <DependentUpon>LoginLinkControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ParkAndRideJourneyLocations.ascx.cs">
+      <DependentUpon>ParkAndRideJourneyLocations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ParkAndRideJourneyLocations.ascx.designer.cs">
+      <DependentUpon>ParkAndRideJourneyLocations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ParkAndRideOptionsTab.ascx.cs">
+      <DependentUpon>ParkAndRideOptionsTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ParkAndRideOptionsTab.ascx.designer.cs">
+      <DependentUpon>ParkAndRideOptionsTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PublicJourneyOptionsTab.ascx.cs">
+      <DependentUpon>PublicJourneyOptionsTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PublicJourneyOptionsTab.ascx.designer.cs">
+      <DependentUpon>PublicJourneyOptionsTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RiverSerivceResults.ascx.cs">
+      <DependentUpon>RiverSerivceResults.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RiverSerivceResults.ascx.designer.cs">
+      <DependentUpon>RiverSerivceResults.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RiverServicesJourneyLocations.ascx.cs">
+      <DependentUpon>RiverServicesJourneyLocations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RiverServicesJourneyLocations.ascx.designer.cs">
+      <DependentUpon>RiverServicesJourneyLocations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RiverServicesOptionsTab.ascx.cs">
+      <DependentUpon>RiverServicesOptionsTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RiverServicesOptionsTab.ascx.designer.cs">
+      <DependentUpon>RiverServicesOptionsTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SideBarLeftControl.ascx.cs">
+      <DependentUpon>SideBarLeftControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SideBarLeftControl.ascx.designer.cs">
+      <DependentUpon>SideBarLeftControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SideBarRightControl.ascx.cs">
+      <DependentUpon>SideBarRightControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SideBarRightControl.ascx.designer.cs">
+      <DependentUpon>SideBarRightControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SkipToLinkControl.ascx.cs">
+      <DependentUpon>SkipToLinkControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SkipToLinkControl.ascx.designer.cs">
+      <DependentUpon>SkipToLinkControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StyleLinkControl.ascx.cs">
+      <DependentUpon>StyleLinkControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\StyleLinkControl.ascx.designer.cs">
+      <DependentUpon>StyleLinkControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TopTipsWidget.ascx.cs">
+      <DependentUpon>TopTipsWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TopTipsWidget.ascx.designer.cs">
+      <DependentUpon>TopTipsWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TravelNewsInfoWidget.ascx.cs">
+      <DependentUpon>TravelNewsInfoWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TravelNewsInfoWidget.ascx.designer.cs">
+      <DependentUpon>TravelNewsInfoWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TravelNewsItemControl.ascx.cs">
+      <DependentUpon>TravelNewsItemControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TravelNewsItemControl.ascx.designer.cs">
+      <DependentUpon>TravelNewsItemControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TravelNewsWidget.ascx.cs">
+      <DependentUpon>TravelNewsWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TravelNewsWidget.ascx.designer.cs">
+      <DependentUpon>TravelNewsWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VehicleFeaturesControl.ascx.cs">
+      <DependentUpon>VehicleFeaturesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\VehicleFeaturesControl.ascx.designer.cs">
+      <DependentUpon>VehicleFeaturesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VenueMapsWidget.ascx.cs">
+      <DependentUpon>VenueMapsWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\VenueMapsWidget.ascx.designer.cs">
+      <DependentUpon>VenueMapsWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AccessibilityOptions.aspx.cs">
+      <DependentUpon>AccessibilityOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AccessibilityOptions.aspx.designer.cs">
+      <DependentUpon>AccessibilityOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CycleJourneyGPXDownload.aspx.cs">
+      <DependentUpon>CycleJourneyGPXDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CycleJourneyGPXDownload.aspx.designer.cs">
+      <DependentUpon>CycleJourneyGPXDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\JourneyLocations.aspx.cs">
+      <DependentUpon>JourneyLocations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\JourneyLocations.aspx.designer.cs">
+      <DependentUpon>JourneyLocations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\JourneyOptions.aspx.cs">
+      <DependentUpon>JourneyOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\JourneyOptions.aspx.designer.cs">
+      <DependentUpon>JourneyOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\JourneyPlannerInput.aspx.cs">
+      <DependentUpon>JourneyPlannerInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\JourneyPlannerInput.aspx.designer.cs">
+      <DependentUpon>JourneyPlannerInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Map1.aspx.cs">
+      <DependentUpon>Map1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Map1.aspx.designer.cs">
+      <DependentUpon>Map1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Map2.aspx.cs">
+      <DependentUpon>Map2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Map2.aspx.designer.cs">
+      <DependentUpon>Map2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PrintableJourneyOptions.aspx.cs">
+      <DependentUpon>PrintableJourneyOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PrintableJourneyOptions.aspx.designer.cs">
+      <DependentUpon>PrintableJourneyOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PrintableMap1.aspx.cs">
+      <DependentUpon>PrintableMap1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PrintableMap1.aspx.designer.cs">
+      <DependentUpon>PrintableMap1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RetailerHandoff.aspx.cs">
+      <DependentUpon>RetailerHandoff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\RetailerHandoff.aspx.designer.cs">
+      <DependentUpon>RetailerHandoff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Retailers.aspx.cs">
+      <DependentUpon>Retailers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Retailers.aspx.designer.cs">
+      <DependentUpon>Retailers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SorryPage.aspx.cs">
+      <DependentUpon>SorryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SorryPage.aspx.designer.cs">
+      <DependentUpon>SorryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TravelNews.aspx.cs">
+      <DependentUpon>TravelNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TravelNews.aspx.designer.cs">
+      <DependentUpon>TravelNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SJPWeb.Master.cs">
+      <DependentUpon>SJPWeb.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SJPWeb.Master.designer.cs">
+      <DependentUpon>SJPWeb.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="VersionGTW\Images\Maps\ParkAndRideMaps\" />
+    <Folder Include="Version\Images\Maps\ParkAndRideMaps\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SJPWeb.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonWeb\CommonWeb.csproj">
+      <Project>{D1182D81-3E17-441B-82E7-97AEBF9B8879}</Project>
+      <Name>CommonWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{2EF9DD6E-4BA7-46BF-84CB-7509A5099F44}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CyclePlannerService\CyclePlannerService.csproj">
+      <Project>{5B98B72A-C603-4F55-9ACD-34B606AF2107}</Project>
+      <Name>CyclePlannerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Project>{348204EC-DDF7-4735-8DA0-341F206CCCD9}</Project>
+      <Name>DataServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLogging\EventLogging.csproj">
+      <Project>{4AED788E-EA9A-4C3F-BB8D-07A7F1FBE8AA}</Project>
+      <Name>EventLogging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extenders\Extenders.csproj">
+      <Project>{F82632FB-A7EB-4121-B4C9-338450D024AF}</Project>
+      <Name>Extenders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Initialisation\Initialisation.csproj">
+      <Project>{9CE678F8-33FE-4822-A596-4C3FA802C64F}</Project>
+      <Name>Initialisation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyControl\JourneyControl.csproj">
+      <Project>{3A2EB34A-A197-4426-AC2A-2CA4FDC38610}</Project>
+      <Name>JourneyControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JourneyPlanRunner\JourneyPlanRunner.csproj">
+      <Project>{5F677F32-02CA-4462-A99E-162FD5266F18}</Project>
+      <Name>JourneyPlanRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LocationService\LocationService.csproj">
+      <Project>{D6BCFB92-FFF1-4BE9-9B95-8A7063258597}</Project>
+      <Name>LocationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyManager\PropertyManager.csproj">
+      <Project>{E3CBE746-9620-4433-9D53-6C334C9BBB7E}</Project>
+      <Name>PropertyManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PropertyProviders\PropertyProviders.csproj">
+      <Project>{14ED9C55-9007-4689-8142-83B80CDCF6A9}</Project>
+      <Name>PropertyProviders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reporting\Events\Events.csproj">
+      <Project>{280E29DE-E83B-4F66-A06C-EAACF5CFA35F}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceManager\ResourceManager.csproj">
+      <Project>{2E16E3F2-5AE8-450E-9953-177FAB41554C}</Project>
+      <Name>ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Retail\Retail.csproj">
+      <Project>{5A992265-3A04-422C-872E-2C66A55A0D86}</Project>
+      <Name>Retail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScreenFlow\ScreenFlow.csproj">
+      <Project>{4D570070-A1E5-434B-81AA-CEA52294DA59}</Project>
+      <Name>ScreenFlow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj">
+      <Project>{81877B7C-61F6-46C5-B212-861065CD538F}</Project>
+      <Name>ServiceDiscovery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SessionManager\SessionManager.csproj">
+      <Project>{0E99A5BE-AAB2-4E72-80D9-D1A657553922}</Project>
+      <Name>SessionManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TravelNews\TravelNews.csproj">
+      <Project>{BC7DF30A-3F39-402E-9B06-C9AE1E0537F4}</Project>
+      <Name>TravelNews</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UndergroundNews\UndergroundNews.csproj">
+      <Project>{F6557D20-5328-48AB-BB0B-428A56E1AC6E}</Project>
+      <Name>UndergroundNews</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Remoting.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Schemas\SJPBookingSystemHandoff.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJPBookingSystemHandoff.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53356</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SJPWeb</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

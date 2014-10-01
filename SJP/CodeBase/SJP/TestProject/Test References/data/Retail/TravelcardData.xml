@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TravelcardData>
+<SJPZones>
+<SJPZones ZoneID="Z1" ZoneName="Zone 1" />
+<SJPZones ZoneID="Z2"	ZoneName="Zone 2" />
+<SJPZones ZoneID="Z3"	ZoneName="Zone 3 - 2 points only" />
+<SJPZones ZoneID="Z4"	ZoneName="Zone 4" />
+</SJPZones>
+<SJPZoneAreas>
+<SJPZoneAreas ZoneAreaID="Z1_OUT" ZoneID="Z1" IsOuterZoneArea="1" />
+<SJPZoneAreas ZoneAreaID="Z1_IN" ZoneID="Z1" IsOuterZoneArea="0" />
+<SJPZoneAreas ZoneAreaID="Z2_OUT" ZoneID="Z2" IsOuterZoneArea="1" />
+<SJPZoneAreas ZoneAreaID="Z3_OUT" ZoneID="Z3" IsOuterZoneArea="1" />
+<SJPZoneAreas ZoneAreaID="Z4_OUT" ZoneID="Z4" IsOuterZoneArea="1" />
+</SJPZoneAreas>
+<SJPZoneAreaPoints>
+<SJPZoneAreaPoints ZoneAreaID="Z1_OUT" Easting="100000" Northing="100000" />
+<SJPZoneAreaPoints ZoneAreaID="Z1_OUT" Easting="100000" Northing="200000" />
+<SJPZoneAreaPoints ZoneAreaID="Z1_OUT" Easting="200000" Northing="200000" />
+<SJPZoneAreaPoints ZoneAreaID="Z1_OUT" Easting="200000" Northing="100000" />
+<SJPZoneAreaPoints ZoneAreaID="Z1_IN" Easting="180000" Northing="180000" />
+<SJPZoneAreaPoints ZoneAreaID="Z1_IN" Easting="180000" Northing="190000" />
+<SJPZoneAreaPoints ZoneAreaID="Z1_IN" Easting="190000" Northing="190000" />
+<SJPZoneAreaPoints ZoneAreaID="Z1_IN" Easting="190000" Northing="180000" />
+<SJPZoneAreaPoints ZoneAreaID="Z2_OUT" Easting="200001" Northing="100000" />
+<SJPZoneAreaPoints ZoneAreaID="Z2_OUT" Easting="200001" Northing="200000" />
+<SJPZoneAreaPoints ZoneAreaID="Z2_OUT" Easting="300000" Northing="100000" />
+<SJPZoneAreaPoints ZoneAreaID="Z3_OUT" Easting="100000" Northing="100000" />
+<SJPZoneAreaPoints ZoneAreaID="Z3_OUT" Easting="100000" Northing="200000" />
+<SJPZoneAreaPoints ZoneAreaID="Z4_OUT" Easting="150000" Northing="150000" />
+<SJPZoneAreaPoints ZoneAreaID="Z4_OUT" Easting="150000" Northing="160000" />
+<SJPZoneAreaPoints ZoneAreaID="Z4_OUT" Easting="160000" Northing="160000" />
+<SJPZoneAreaPoints ZoneAreaID="Z4_OUT" Easting="160000" Northing="150000" />
+</SJPZoneAreaPoints>
+<SJPZoneStops>
+<SJPZoneStops ZoneID="Z1" NaPTAN="9100TEST1" IsExcluded="0" />
+<SJPZoneStops ZoneID="Z1" NaPTAN="9100TEST2" IsExcluded="0" />
+<SJPZoneStops ZoneID="Z1" NaPTAN="9100TEST3" IsExcluded="1" />
+</SJPZoneStops>
+<SJPZoneModes>
+<SJPZoneModes ZoneID="Z1" ModeOfTransport="bus" IsExcluded="1" />
+<SJPZoneModes ZoneID="Z1" ModeOfTransport="coach" IsExcluded="1" />
+<SJPZoneModes ZoneID="Z1" ModeOfTransport="ferry" IsExcluded="0" />
+<SJPZoneModes ZoneID="Z1" ModeOfTransport="rail" IsExcluded="0" />
+</SJPZoneModes>
+<SJPRoutes>
+<SJPRoutes RouteID="R1" RouteName="Route 1" />
+<SJPRoutes RouteID="R2" RouteName="Route 2" />
+</SJPRoutes>
+<SJPRouteEndZones>
+<SJPRouteEndZones RouteID="R1" ZoneID="Z1" IsEndA="1" />
+<SJPRouteEndZones RouteID="R1" ZoneID="Z4" IsEndA="1" />
+<SJPRouteEndZones RouteID="R1" ZoneID="Z2" IsEndA="0" />
+</SJPRouteEndZones>
+<SJPRouteEndStops>
+<SJPRouteEndStops RouteID="R1" NaPTAN="9100TEST5" IsEndA="1" />
+<SJPRouteEndStops RouteID="R1" NaPTAN="9100TEST6" IsEndA="0" />
+<SJPRouteEndStops RouteID="R2" NaPTAN="9100TEST7" IsEndA="1" />
+<SJPRouteEndStops RouteID="R2" NaPTAN="9100TEST8" IsEndA="0" />
+</SJPRouteEndStops>
+<SJPRouteModes>
+<SJPRouteModes RouteID="R1" ModeOfTransport="bus" IsExcluded="0" />
+<SJPRouteModes RouteID="R1" ModeOfTransport="rail" IsExcluded="0" />
+<SJPRouteModes RouteID="R1" ModeOfTransport="tram" IsExcluded="1" />
+</SJPRouteModes>
+<SJPTravelcards>
+<SJPTravelcards TravelCardID="TC1" TravelCardName="Travelcard 1" ValidFrom="2012-01-01 00:00:00.000" ValidTo="2012-12-31 00:00:00.000" />
+<SJPTravelcards TravelCardID="TC2" TravelCardName="Travelcard 2" ValidFrom="2013-01-01 00:00:00.000" ValidTo="2013-12-31 00:00:00.000" />
+</SJPTravelcards>
+<SJPTravelcardZones>
+<SJPTravelcardZones TravelCardID="TC1" ZoneID="Z1" IsExcluded="0" />
+<SJPTravelcardZones TravelCardID="TC1" ZoneID="Z2" IsExcluded="1" />
+<SJPTravelcardZones TravelCardID="TC2" ZoneID="Z3" IsExcluded="0" />
+</SJPTravelcardZones>
+<SJPTravelcardRoutes>
+<SJPTravelcardRoutes TravelCardID="TC1" RouteID="R1" IsExcluded="0" />
+<SJPTravelcardRoutes TravelCardID="TC1" RouteID="R2" IsExcluded="1" />
+</SJPTravelcardRoutes>
+</TravelcardData>

@@ -1,0 +1,2124 @@
+﻿/* SJP main content area */
+#lgc-main .row,
+#lgc-main .row #articleBody
+{
+    overflow: visible;
+}
+/* SJP- logo */
+/* Common */
+.floatleft, input.floatleft
+{
+    float: left;
+}
+.floatright, input.floatright
+{
+    float: right;
+}
+.clearboth
+{
+    clear: both;
+}
+.displaynone, input.displaynone
+{
+    display: none;
+}
+
+/* Header */
+#lcg-boxesWrap .sjpCountdownBox
+{
+    height: 100px;
+}
+
+/* Buttons */
+.sjpContent input.btnSmallerPink,
+.sjpContent input.btnSmallPink,
+.sjpContent input.btnMediumPink,
+.sjpContent input.btnLargePink
+{
+    border: medium none;
+    height: 35px;
+    width: 150px;
+    padding-top: 3px;
+    cursor: pointer;
+    right: 10px;
+}
+.sjpContent input.btnDisabled, .sjpContent input[disabled]
+{
+    cursor: default;
+}
+.sjpContent .submit
+{
+    cursor: pointer;
+}
+.sjpContent input,
+.sjpContent select,
+.sjpContent textarea,
+.sjpContent button
+{
+    font-size: 105%;
+}
+.sjpContent input.linkButton
+{
+    border: medium none;
+    cursor: pointer;
+    padding: 1px 0px;
+}
+.sjpContent input.linkButtonMouseOver
+{
+    text-decoration: underline;
+}
+
+.sjpContent .sectionSubHeader
+{
+    margin: 0px 0px 10px 10px;
+}
+
+/* Error messages panel */
+.sjpContent div.contentMessages
+{
+    margin: 0px 0px 12px 10px;
+    clear: both;
+}
+.sjpContent div.mainSection div.contentMessages
+{
+    margin: 0px 0px 12px 0px;
+    clear: both;   
+}
+
+/* Journey Planner Input */
+div.journeyplannerinput div.sjpContent 
+{
+}
+div.travelBetweenVenuesDiv
+{
+    position:relative;
+    z-index: 1;
+    margin: 10px 0px 10px -4px;    
+}
+div.journeyParams
+{
+}
+div.journeyParams input.travelBetweenVenues
+{
+    float:left;
+    position:relative;
+    left: -1px;
+    z-index: 1;
+    text-align: left;
+    white-space: pre-wrap;
+}
+div.journeyParams div.travelFromToVenueDiv
+{
+    margin: 0px 7px 5px 0px;
+    position:relative;
+    left: 365px;
+}
+.locationRow
+{
+    clear: both;
+    min-height: 27px;
+}
+* html .locationRow { display:inline; }  /* for IE 6 */
+* + html .locationRow { display:inline; } /* for IE 7 */
+
+#fromLocation, #fromLocation div
+{
+    position: relative;
+    z-index: 1;
+}
+#fromLocation
+{
+    margin-top: 10px;
+}
+#fromLocation div.arrow_btn
+{
+    position: absolute;
+}
+.locationRow a.tooltip_information
+{
+    display: inline;
+    top: 4px;
+    vertical-align: top;
+    position: relative;
+}
+.locationRow .locationLabel
+{
+    display: inline-block;
+    float: left;
+    left: 45px;
+    position: relative;
+    width: 95px;
+}
+* html .locationRow .locationLabel { display:inline; }  /* for IE 6 */
+* + html .locationRow .locationLabel { display:inline; } /* for IE 7 */
+
+.locationRow .locationBox
+{
+    width: 270px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;   
+}
+* html .locationRow .locationBox { display:inline; }  /* for IE 6 */
+* + html .locationRow .locationBox { display:inline; } /* for IE 7 */
+
+.locationRow select.locationDrop 
+{
+    width: 270px;
+}
+.locationRow div.locationDrop
+{
+    width: 243px;
+    display: block;
+    clear: both;
+}
+a.ui-selectmenu,
+ui-selectmenu-status
+{
+    text-decoration:none;
+}
+ul.ui-selectmenu-menu li a
+{
+    text-decoration:none;
+}
+ul.ui-selectmenu-menu li a:hover
+{
+    text-decoration:none;
+}
+.sjpContent div.locationControl
+{
+    display: inline-block;
+    position:relative;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 272px;
+}
+* html .sjpContent div.locationControl { display:inline; margin: 0px 3px 0px 0px;}  /* for IE 6 */
+* + html .sjpContent div.locationControl { display:inline; margin: 0px 3px 0px 0px;} /* for IE 7 */
+
+.sjpContent div.locationControl span.ambiguityinfo
+{
+    padding: 0px 0px 0px 0px;
+    float:left;
+}
+.sjpContent div.locationControl input.locationreset::-moz-focus-inner /*Remove button padding in FF*/
+{ 
+    border: 0;
+    padding: 0;
+}
+
+/* Location Suggest */
+.sjpContent
+{
+    overflow:visible;
+}
+#articleBody .sjpContent ul.locationSuggestList li.locationSuggestListItem{
+    padding:3px;
+    margin:0px;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+
+#articleBody .sjpContent ul.locationSuggestList li.locationSuggestListItem a
+{
+    display: block;
+    width: 100%;
+}
+
+#articleBody .sjpContent ul.locationSuggestList li.locationSuggestListItem a, 
+#articleBody .sjpContent ul.locationSuggestList li.locationSuggestListItem a:hover
+{
+    text-decoration: none;
+}
+#articleBody .sjpContent div.locationSuggest
+{
+    border-width: 1px;
+    border-style: solid;
+    z-index:99999;
+    overflow:auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -moz-box-shadow:0 3px 5px rgba(0,0,0,.5);
+    -webkit-box-shadow:0 3px 5px rgba(0,0,0,.5);   
+}
+#articleBody .sjpContent ul.locationSuggestList
+{
+    border-width: 1px;
+    border-style: solid;
+    z-index:99999;
+    overflow:auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index:99999;
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    text-align:left;
+    cursor: default;
+    overflow: hidden;
+}
+
+
+/* Event Date Control */
+.sjpContent .eventDateTime div.eventDate
+{
+    display: block;  
+}
+.sjpContent .eventDateTime div.eventDate div.outward, 
+.sjpContent .eventDateTime div.eventDate div.return
+{
+    position: relative;
+}
+.sjpContent .eventDateTime div.eventDate div.row
+{
+    padding: 5px 0px;
+    display: block;
+    clear: both;
+}
+.sjpContent .eventDateTime div.eventDate div.row .dateLabel
+{
+    display: inline-block;
+    float: left;
+    left: 45px;
+    position: relative;
+    width: 95px;
+}
+.sjpContent .eventDateTime div.eventDate div.dateSelect
+{
+    display: inline-block;
+    float: left;
+    width: 122px;
+}
+.sjpContent .eventDateTime div.eventDate div.dateSelect input
+{
+    float:left;
+}
+img.ui-datepicker-trigger
+{
+    padding: 1px 0px 0px 2px;
+    cursor: pointer;
+}
+.sjpContent .eventDateTime div.eventDate div.return div.row .isReturn
+{
+    margin-left: 90px;
+    float: left;
+}
+.sjpContent .eventDateTime div.eventDate div.return div.row .isReturn label
+{
+    margin-left: 3px;
+}
+
+.sjpContent .eventDateTime div.eventDate div.timePicker
+{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+* html .sjpContent .eventDateTime div.eventDate div.timePicker { display:inline; }  /* for IE 6 */
+* + html .sjpContent .eventDateTime div.eventDate div.timePicker{ display:inline; } /* for IE 7 */
+
+.sjpContent .eventDateTime div.eventDate div.timePicker .timeLabel
+{
+    margin: 0px 20px;
+    float: left;
+}
+.sjpContent .eventDateTime div.eventDate div.timePicker .timePickerDrop
+{
+    width: auto;
+}
+.sjpContent .eventDateTime div.eventDate div.timePicker a.ui-selectmenu
+{
+    float: right;
+}
+.ui-datepicker {
+   margin-left: -70px;
+}
+#ui-datepicker-div
+{
+    font-size: 0.7em;
+}
+.sjpContent .eventDateTime div.eventDate a.tooltip_information
+{
+    display: inline;
+    top: 4px;
+    vertical-align: top;
+    position: relative;
+    margin-left: 3px;
+}
+
+/* Journey Options Tabs */
+div.sjp_jo_tab
+{
+    margin-top: 20px;
+    width:461px;
+}
+div.sjp_jo_tab div.instruction
+{
+    margin-bottom: 5px;
+}
+div.sjp_jo_tab div.sjp_tab_headers
+{
+    height:35px;
+}
+div.sjp_jo_tab .sjp_tab_headers ul
+{
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style:none outside none;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li
+{
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 33px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li input
+{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    white-space: normal;
+    margin: 8px 0px 0px 0px;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li a
+{
+    display: block;
+    padding: 10px 0;
+    text-indent: 0px;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li input:hover,
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li a:hover
+{
+    text-decoration: underline;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers .sjp_tab_highlight,
+.sjpContent div.sjp_jo_tab .sjp_tab_headers .sjp_tab_highlight div
+{
+    height: 5px;
+}
+/* Journey Options Tabs - Tab customisation */
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.pjTab
+{
+    width: 104px;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.rsTab
+{
+    width: 97px;    
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.prTab
+{
+    width: 97px;    
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.bbTab
+{
+    width: 97px;    
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.cyTab
+{
+    width: 65px;
+}
+
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.pjTab input
+{
+    padding-left: 0px;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.rsTab input
+{
+    padding-left: 1px;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.prTab input
+{
+    padding-left: 3px;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.bbTab input
+{
+    padding-left: 10px;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.cyTab input
+{
+    padding-left: 10px;
+}
+
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.pjTab a
+{
+    padding-left: 3px;
+}
+.fr .sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.pjTab a
+{
+    padding-top: 6px
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.rsTab a
+{
+    padding-left: 4px;
+}
+.fr .sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.rsTab a
+{
+    padding-top: 6px;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.prTab a
+{
+    padding-left: 7px;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.bbTab a
+{
+    padding-left: 13px;
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers ul li.cyTab a
+{
+    padding-left: 13px;
+}
+
+.sjpContent div.sjp_jo_tab .sjp_tab_headers .sjp_tab_highlight .pjTab
+{
+    margin-left: 0px;   /* left margin must be sum of previous tab widths */
+    width: 100px;       /* width must be align with the background image used */
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers .sjp_tab_highlight .rsTab
+{
+    margin-left: 104px; /* left margin must be sum of previous tab widths */
+    width: 93px;        /* width must be align with the background image used */
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers .sjp_tab_highlight .prTab
+{
+    margin-left: 201px; /* left margin must be sum of previous tab widths */
+    width: 93px;        /* width must be align with the background image used */
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers .sjp_tab_highlight .bbTab
+{
+    margin-left: 298px; /* left margin must be sum of previous tab widths */
+    width: 93px;        /* width must be align with the background image used */
+}
+.sjpContent div.sjp_jo_tab .sjp_tab_headers .sjp_tab_highlight .cyTab
+{
+    margin-left: 395px; /* left margin must be sum of previous tab widths */
+    width: 65px;        /* width must be align with the background image used */
+}
+
+/* Journey Options Tabs - Body content */
+div.sjp_jo_tab div.sjp_tab_body
+{
+    clear: both;
+    margin: 0px 0px 0px 1px;
+    padding: 5px 10px 5px 10px;
+    border-style: none;
+    border-width: 0px;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tab
+{
+    overflow: hidden;
+    display:none;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.active
+{
+    position:relative;
+    display:block;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent
+{
+    padding: 0px;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.tabHeader
+{
+    display: block;
+    float: left;
+    height: 30px;
+    width: 13%;   
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.tabHeader img
+{
+    clear:both;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.content
+{
+    float: left;
+    margin-top: 10px;
+    min-height: 60px;
+    position: relative;
+    width: 87%;
+}
+
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.content div.pjContent
+{
+    margin-bottom: 10px;
+}
+
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.active div.processMessage
+{
+    min-height: 140px;
+    opacity:0.75;
+    filter:alpha(opacity=75);
+    padding: 20px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+} 
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.submittab
+{
+    float:right;
+}
+
+/* Journey Options Tabs - Public Transport */
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.content div.pjOptionsHead div.arrow_btn
+{
+    height:1.66em;
+    padding:1px;
+    position:absolute;
+    top: -2px;
+    width:1.2em;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+}
+* html div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.content div.pjOptionsHead div.arrow_btn{ display:inline; }  /* for IE 6 */
+* + html div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.content div.pjOptionsHead div.arrow_btn{ display:inline; } /* for IE 7 */
+
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.content div.pjOptionsHead span
+{
+    cursor: pointer;    
+}
+
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.pjOptions
+{
+    padding-top: 5px;
+    padding-left: 25px;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.pjOptions p
+{
+    margin-bottom: 5px;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.pjOptions p.nestedOption
+{
+    width: 325px;
+    margin-right: 8px;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.pjOptions p.nestedOption .accessibleOption
+{
+    clear:both;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.pjOptions p.nestedOption .accessibleOption input
+{
+    margin: 1px 3px 1px 1px;
+    padding: 1px;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.pjOptions p.nestedOption .accessibleOptionCheckbox input
+{
+    margin: 1px 2px 1px 1px;
+    padding: 1px;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.pjOptions p.nestedOption .accessibleOption label
+{
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.pjOptions p.fewerInterchangeCheck
+{
+    margin-top: 2px;
+}
+div.sjp_jo_tab div.sjp_tab_body div.content_wrapper div.tabContent div.pjOptions a.tooltip_information1
+{
+    display: inline;  
+    top: 2px;
+    vertical-align: top;
+    position: relative;
+}
+
+/* Journey Progress Updater */
+.sjpContent div.journeyProgress
+{
+    text-align:center;
+}
+.sjpContent div.journeyProgress div.progressBackgroundFilter 
+{
+}
+.sjpContent div.journeyProgress div.processMessage 
+{
+    padding:30px;
+    width:85%;
+}
+
+/* Journey Info */
+div.journeyInfo1
+{
+    margin-bottom: 5px;
+}
+
+/* Journey Summary Heading */
+div.journeySummary div.header, 
+div.stopEventResult div.header,
+div.journeySummary div.header,
+.printablemapbing div.header,
+.mapbing div.header
+{
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    position: relative;
+}
+.printablemapbing div.cycleLeg div.header,
+.mapbing div.cycleLeg div.header
+{ line-height: 16px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;}
+div.journeySummary div.header div.journeyDirection, 
+div.stopEventResult div.header div.journeyDirection,
+.mapbing div.header div.journeyDirection,
+.printablemapbing div.header div.journeyDirection
+{
+    float: left;
+    width: 85px;   
+}
+* html div.journeySummary div.header div.journeyDirection, div.stopEventResult div.header div.journeyDirection, .mapbing div.header div.journeyDirection{ display:inline; }  /* for IE 6 */
+* + html div.journeySummary div.header div.journeyDirection, div.stopEventResult div.header div.journeyDirection, .mapbing div.header div.journeyDirection{ display:inline; } /* for IE 7 */
+
+div.journeySummary div.header div.journeyDirection span, 
+div.stopEventResult div.header div.journeyDirection span,
+.mapbing div.header div.journeyDirection span,
+.printablemapbing div.header div.journeyDirection span
+{
+    float: left;
+    padding: 12px 0px 5px 5px;
+}
+
+div.journeySummary div.header div.journeyHeading, 
+div.stopEventResult div.header div.journeyHeading,
+.mapbing div.header div.journeyHeading
+.printablemapbing div.header div.journeyHeading
+{
+    float: left;
+    width: 365px;   
+    padding: 2px 0px 3px 5px;   
+}
+* html div.journeySummary div.header div.journeyHeading, div.stopEventResult div.header div.journeyHeading, .mapbing div.header div.journeyHeading, .printablemapbing div.header div.journeyHeading{ display:inline;}  /* for IE 6 */
+* + html div.journeySummary div.header div.journeyHeading, div.stopEventResult div.header div.journeyHeading, .mapbing div.header div.journeyHeading, .printablemapbing div.header div.journeyHeading{ display:inline;} /* for IE 7 */
+
+/* Journey Summary */
+div.collapsed, 
+tr.collapsed div.rowDetail
+{
+    display: none;
+}
+div.expanded 
+{
+    display: block;
+}
+tr.expanded div.rowDetail
+{
+    display: block;
+}
+div.journeySummary
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.sjpContent div.journeySummary div.summary input.replanButton
+{
+    margin-top: 5px;
+    padding: 2px;
+    border-width: 1px;
+    border-style: solid;
+}
+div.journeySummary table.legSummary
+{
+    width: 100%;
+    table-layout: fixed;
+}
+
+div.journeySummary table.legSummary td.summaryCol,
+div.journeySummary table.legSummary th.summaryCol
+{
+    position: relative;
+    vertical-align:top;
+    padding: 2px 0;
+}
+
+div.journeySummary table.legSummary td.transport, 
+div.journeySummary table.legSummary th.transport
+{
+    text-align: left;
+}
+div.journeySummary table.legSummary td.transport div.arrow_btn
+{
+    margin: 0px 2px 0px 0px;
+    height:1.66em;
+    padding:1px;
+    position:absolute;
+    top: -2px;
+    width:14px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;    
+    float: left;  
+    clear:left;
+}
+* html div.journeySummary table.legSummary td.transport div.arrow_btn{ display:inline; }  /* for IE 6 */
+* + html div.journeySummary table.legSummary td.transport div.arrow_btn{ display:inline; } /* for IE 7 */
+
+div.journeySummary table.legSummary td.transport div.transportModes
+{
+    display: inline;
+}
+* html div.journeySummary table.legSummary td.transport div.transportModes{ display:inline; }  /* for IE 6 */
+* + html div.journeySummary table.legSummary td.transport div.transportModes{ display:inline; } /* for IE 7 */
+
+div.journeySummary table.legSummary td.changes, 
+div.journeySummary table.legSummary th.changes
+{
+    width: 12%;
+    text-align: center;
+    padding-right: 5px;
+}
+.fr div.journeySummary table.legSummary th.changes span
+{
+    margin-left: -50px;
+}
+div.journeySummary table.legSummary td.leave, 
+div.journeySummary table.legSummary th.leave
+{
+    width: 9%;
+}
+div.journeySummary table.legSummary td.arrive, 
+div.journeySummary table.legSummary th.arrive
+{
+    width: 9%;
+}
+div.journeySummary table.legSummary td.journeyTime, 
+div.journeySummary table.legSummary th.journeyTime
+{
+    width: 18%;
+}
+div.journeySummary table.legSummary td.select, 
+div.journeySummary table.legSummary th.select
+{
+    width: 4%;
+}
+
+div.journeySummary table.legSummary td.leave,
+div.journeySummary table.legSummary td.arrive, 
+div.journeySummary table.legSummary td.journeyTime
+{
+    padding-left: 2px;
+}
+div.journeySummary table.legSummary td.transport div.transportModes input.linkButton,
+div.journeySummary table.legSummary td.transport div.transportModes span
+{
+    text-align: left;
+    white-space: normal;
+    cursor: pointer;
+}
+div.journeySummary table.legSummary td.select input
+{
+    margin-top: 3px;
+}
+div.journeySummary table.legSummary tr.detailsRow div.rowDetail
+{
+    border-style: solid;
+    border-width: 1px;
+    border-top-width: 0px;   
+}
+
+/* Journey leg rows */
+div.journeySummary div.leg
+{
+    width: 100%;
+}
+
+* html div.journeySummary div.leg div.row div.row1 { display:inline; }  /* for IE 6 */
+* + html div.journeySummary div.leg div.row div.row1{ display:inline; } /* for IE 7 */
+* html div.journeySummary div.leg div.row div.row2{ display:inline; }  /* for IE 6 */
+* + html div.journeySummary div.leg div.row div.row2{ display:inline; } /* for IE 7 */
+
+div.journeySummary div.leg div.row div.row1 div
+{
+    display:inline-block;
+}
+* html div.journeySummary div.leg div.row div.row1 div { display:inline; }  /* for IE 6 */
+* + html div.journeySummary div.leg div.row div.row1 div{ display:inline; } /* for IE 7 */
+
+div.journeySummary div.leg div.row div.row2 div
+{
+    display:inline-block;
+}
+* html div.journeySummary div.leg div.row div.row2 div { display:inline; }  /* for IE 6 */
+* + html div.journeySummary div.leg div.row div.row2 div{ display:inline; } /* for IE 7 */
+
+/* Journey leg rows - row 1 */
+div.journeySummary div.leg div.row div.row1 div.columnEmpty
+{
+    width: 5%;
+    vertical-align: middle;
+}
+div.journeySummary div.leg div.row div.row1 div.columnTime
+{
+    width: 22%;
+    vertical-align: middle;
+    text-align: right;
+}
+div.journeySummary div.leg div.row div.row1 div.columnNode
+{
+    width: 5%;
+    vertical-align: middle;
+}
+div.journeySummary div.leg div.row div.row1 div.columnLocation
+{
+    width: 64%;
+    vertical-align: middle;
+}
+div.journeySummary div.leg div.row div.timeArrive,
+div.journeySummary div.leg div.row div.timeDepart
+{
+    min-height: 15px;
+}
+
+/* Journey leg rows - row 2 */
+div.journeySummary div.leg div.row div.row2 div.columnMode
+{
+    width: 22%;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.1em;
+}
+div.journeySummary div.leg div.row div.row2 div.columnEmpty
+{
+    width: 5%;
+    vertical-align: middle;
+}
+div.journeySummary div.leg div.row div.row2 div.columnLine
+{
+    width: 5%;
+    vertical-align: middle;
+}
+
+div.journeySummary div.leg div.row div.row2 div.columnDetail
+{
+    width: 64%;
+    vertical-align: middle;
+}
+div.journeySummary div.leg div.row div.row2 div.columnDetail .legInstruction
+{
+}
+div.journeySummary div.leg div.row div.row2 div.columnDetail div.bookTicketDiv
+{
+    display:block;
+    min-height: 16px;
+    margin-top: 3px;
+}
+
+div.journeySummary div.leg div.row div.row2 div.columnDetail div.arrow_btn
+{
+    float: left;
+    clear: left;
+    cursor: pointer;
+    display: inline-block;
+    margin: -1px 0px 0px 0px;
+    padding: 0px 0px 2px 0px;
+    position: relative;
+    vertical-align: top;
+    height: 14px;
+    width: 14px;
+    line-height:14px;
+}
+div.journeySummary div.leg div.row div.row2 div.columnDetail div.arrow_btn input
+{
+    height: 13px;
+    margin: 0px;
+    padding: 0px;
+}
+div.journeySummary div.leg div.row div.row2 div.columnDetail input.detailLinkButton
+{
+    height: 14px;
+    margin-left: 1px;
+}
+div.journeySummary div.leg div.row div.row2 div.columnDetail span.frequencyduration
+{
+    display:block;
+}
+div.journeySummary div.leg div.row div.row2 div.vehicleFeatures
+{
+    margin-top: 5px;
+    display: block;
+}
+div.journeySummary div.leg div.row div.row2 div.jsLegLinks
+{
+    display: block;
+}
+div.detailNotes
+{
+    margin-top: 5px;
+}
+div.detailNote
+{
+    margin-bottom: 3px;
+}
+a.travelNotesLink, 
+a.bookTicketInfo, 
+a.bookTicketLink
+{
+    cursor: pointer;
+}
+a.travelNotesLink:hover, 
+a.bookTicketInfo:hover, 
+a.bookTicketLink:hover
+{
+    text-decoration: none;
+}
+a.travelNotesLink span.linkText, 
+a.bookTicketInfo span.linkText, 
+a.bookTicketLink span.linkText
+{
+    vertical-align: middle;
+    line-height:1.1em;
+}
+a.travelNotesLink span.linkText:hover, 
+a.bookTicketInfo span.linkText:hover, 
+a.bookTicketLink span.linkText:hover
+{
+    text-decoration: underline;
+}
+a.travelNotesLink img.linkType, 
+a.bookTicketInfo img.linkType, 
+a.bookTicketLink img.linkType
+{
+    vertical-align: middle;
+}
+a.bookTicketInfo span.linkText
+{
+    width: auto;
+    height: auto;
+}
+div.journeySummary div.leg div.row div.row1 div.accessibleLinkDiv
+{
+    margin: 1px 0px 0px 1px;
+    display: block;
+}
+div.accessibleInfoDiv
+{
+    margin-top: 7px;
+}
+div.journeySummary div.leg div.row div.row2 div.columnDetail div.directionsMapLinkDiv
+{
+    margin-top: 2px;
+    display: block;    
+}
+div.journeySummary tr.detailsRow div.close input
+{
+    float: right;
+    padding: 5px;
+}
+
+div.journeySummary tr.detailsRow div.legsDetail
+{
+    clear:both;
+}
+
+/* IMPORTANT - Sorting out the space issues in ie6 and ie7 */
+/* Row 1*/
+* html div.journeySummary div.leg div.row div.row1 div.columnNode div.nodeImage img{ vertical-align: bottom; }  /* for IE 6 */
+* + html div.journeySummary div.leg div.row div.row1 div.columnNode div.nodeImage img{  vertical-align: bottom; } /* for IE 7 */
+/* Row 2*/
+* html div.journeySummary div.leg div.row div.row2 div.columnLine div.lineImage img{ vertical-align: bottom; }  /* for IE 6 */
+* + html div.journeySummary div.leg div.row div.row2 div.columnLine div.lineImage img{  vertical-align: bottom; } /* for IE 7 */
+
+div.selectJourneyDrop
+{
+    margin-top: 10px;
+}
+
+/* Car details and Cycle details legs */
+div.journeySummary div.leg div.legCar div.carLeg div.summary,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.summary
+{
+    padding: 5px 5px 2px 5px;
+    text-align: center;
+}
+
+div.journeySummary div.leg div.legCar div.carLeg div.detail,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail
+{
+    border-width: 1px;
+    border-top-width: 0px;
+    border-style: solid;
+    border-left:  0px;
+    border-right: 0px;
+}
+div.journeySummary div.leg div.legCar div.carLeg div.detail table,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail table
+{
+    table-layout: fixed;
+}
+div.journeySummary div.leg div.legCar div.carLeg div.detail table th,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail table th
+{
+    padding: 2px 2px 2px 2px;
+}
+div.journeySummary div.leg div.legCar div.carLeg div.detail table td,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail table td,
+table.cycleLegTable div.detail table td
+{
+    padding: 2px 2px 2px 2px;
+}
+div.journeySummary div.leg div.legCar div.carLeg div.detail table .distance,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail table .distance,
+table.cycleLegTable div.detail table .distance
+{
+    width: 15%;
+    text-align: center;
+}
+div.journeySummary div.leg div.legCar div.carLeg div.detail table .instruction,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail table .instruction,
+table.cycleLegTable div.detail table .instruction
+{
+}
+div.journeySummary div.leg div.legCar div.carLeg div.detail table .arrive,
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail table .arrive
+{
+    width: 10%;
+    text-align: center;
+}
+table.cycleLegTable div.detail table .arrive
+{
+    width: 15%;
+    text-align: center;
+}
+table.cycleLegTable div.detail table th.instruction
+{
+    padding-left: 4px;
+}
+/* specific for cycle because of extra image column */
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail table td.distance
+{
+    width: 10%;
+}
+.mapbing table.cycleLegTable div.detail table td.distance,
+.mapbing table.cycleLegTable div.detail table th.distance
+{
+    display:none;
+}
+div.journeySummary div.leg div.legCycle div.cycleLeg div.detail table td.infoimage
+{
+    width: 5%;
+    text-align: center;
+}
+.mapbing table.cycleLegTable div.detail table td.infoimage,
+.mapbing table.cycleLegTable div.detail table th.infoimage
+{
+    display:none;
+}
+div.journeySummary div.leg div.legCycle div.cycleLeg tr.detailRow div.row div.attributeText
+{
+    display: block;
+}
+
+/* SJP London Underground color code */
+.bakerloo,
+.central,
+.circle,
+.district,
+.jubilee,
+.metropolitan,
+.northern,
+.piccadilly,
+.victoria,
+.waterlooandcity,
+.dlr,
+.hammersmithandcity 
+{
+    padding: 3px;
+}
+
+/* Retailers */
+.sjpRetailer
+{
+    height: 50px;
+    padding: 5px 15px 5px 15px;
+    overflow: hidden;
+}
+.sjpRetailerIcon
+{
+    width: 30%;
+    text-align: center;
+}
+.sjpRetailerButton
+{
+    width: 40%;
+}
+
+
+/* Drop downs */
+
+/* applied to original <select> to hide */
+.has_sb{position:absolute;left:-999999em;text-indent:-999999em;}
+
+/* always visible styles */
+.selectbox{display:inline-block;*display:inline;position:relative;vertical-align:middle;zoom:1;}
+.selectbox .display{
+  border-style:solid;
+  border-width: 1px;
+  cursor:default;
+  display:block;
+  height:1.66em;
+  line-height:1.66em;
+  overflow:hidden;
+  outline:none;
+  padding:0 24px 0 3px;
+  position:relative;
+  text-decoration:none;
+  overflow:hidden;
+}
+
+.selectbox .hover
+{
+    cursor:pointer;
+}
+
+.sjpContent ul.selectbox
+{
+    max-height: 300px;
+}
+
+.sjpContent ul.selectbox, .sjpContent ul.selectbox li { padding: 0; margin: 0; } 
+
+.selectbox.focused .display .text{display:inline-block;*display:inline;zoom:1;}
+
+.selectbox .display .arrow_btn{
+    display:block;
+    height:1.66em;
+    line-height:1.66em;
+    padding:1px;
+    position:absolute;
+    right:0;
+    text-align:center;
+    top: 0px;
+    width:1.2em;
+}
+.selectbox .display .arrow_btn .arrow{
+    display:inline-block;*display:inline;
+    height:4px;
+    left:.33em;
+    position:absolute;
+    top:.5em;
+    width:7px;
+    zoom:1;
+}
+
+.selectbox .value{display:none;}
+
+/* Dropdown styles */
+.selectbox.items{
+  border-style: solid;
+  border-width: 1px;
+  display:block;
+  list-style-type:none;
+  margin:0;
+  overflow-x:hidden;
+  overflow-y:auto;
+  padding:0 0 1px 0;
+  z-index:99999;
+  -moz-box-shadow:0 3px 5px rgba(0,0,0,.5);
+  -webkit-box-shadow:0 3px 5px rgba(0,0,0,.5);
+}
+.selectbox.items.above{}
+.selectbox.items li{display:block;margin:0;padding:0;/*white-space:nowrap; maybe necessary if using fixedWidth: false */}
+.selectbox.items li.first{margin-top:0;}
+.selectbox.items li>.item{cursor:default;display:block;padding:1px 2px;text-decoration:none;}
+.selectbox.items li>.item>.text{display:inline-block;*display:inline;zoom:1;}
+
+.selectbox.items .value{display:none;}
+
+/* optgroup styles */
+.selectbox.items .optgroup .items{
+  border:none;
+  margin:0;
+  padding:0;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+}
+.selectbox.items .optgroup>.label{cursor:default;line-height:1em; padding-left: 4px;}
+.selectbox.items .optgroup ul.items
+{
+    margin-top: 5px;
+}
+.selectbox.items .optgroup .items li>.item{padding-left:1em;}
+
+div#JourneyLocations .options
+{
+   width: 450px;
+}
+
+
+/* Check Boxes */
+span.checkbox, span.checkbox span
+{
+    cursor: pointer;
+    display:inline;
+}
+
+span.checkbox span.box div
+{
+    display: inline-block;
+    height: 18px;
+    vertical-align: text-bottom;
+    width: 20px;
+    overflow: hidden;
+    float: none;
+}
+
+* html span.checkbox span.box div{ display:inline; }  /* for IE 6 */
+* + html span.checkbox span.box div{ display:inline; } /* for IE 7 */
+
+/* Non Javascript - Calendar - start */
+.sjpContent #sjp-calendar-tabs ul.tabbed-headers li input.monthTab
+{
+    border: none;
+    height: 33px;
+    line-height: 1.4em;
+    padding-left: 0 !important;
+    padding-top: 2px;
+    width: 72px !important;
+    cursor: pointer;
+}
+
+.sjpContent #sjp-calendar-tabs #BlogCalendar table td input
+{
+    border:none;
+    cursor: pointer;
+    padding:0px; 
+}
+
+.sjpContent #sjp-calendar-tabs #BlogCalendar table th, .sjpContent #sjp-calendar-tabs #BlogCalendar table td
+{
+    padding: 0px;
+}
+/* Non Javascript - Calendar - end */
+
+/* JourneyLocations */
+.JourneyLocations,
+.journeyLocationsSubmit
+{
+    width: 450px;
+}
+.JourneyLocations div.venueMap
+{
+    width: 450px;
+    min-height: 300px;
+    position:relative;
+}
+.JourneyLocations div.preferredParks span.label, 
+.JourneyLocations div.preferredParks select.options,
+.JourneyLocations div.parkAndRideTimeSlot span.label, 
+.JourneyLocations div.parkAndRideTimeSlot select.options,
+.JourneyLocations div.typeOfRoute span.label, 
+.JourneyLocations div.typeOfRoute select.options
+{
+    clear:both;
+    width: 100%;
+    display: block;
+    padding: 5px 0px;
+}
+
+.JourneyLocations div.preferredParks span.labelInfo
+{
+    clear:both;
+    width: 100%;
+    display: block;
+    padding: 0px 0px 5px 0px;
+}
+
+.JourneyLocations div.preferredParks, 
+.JourneyLocations div.parkAndRideTimeSlot,
+.JourneyLocations div.parkAndRideBooking,
+.JourneyLocations div.typeOfRoute
+{
+     margin: 10px 0px;
+     width: 100%;
+}
+.JourneyLocations div.parkAndRideBooking div.bookingUrl
+{
+    text-align: right;
+}
+.JourneyLocations div.timeSlotNote
+{
+    margin-bottom: 10px;
+}
+
+/* River Services */
+div.JourneyLocations div.serviceRoutes
+{
+    margin: 10px 0px 0px 0px;
+}
+div.JourneyLocations div.serviceRoutes div.sb, div.JourneyLocations div.serviceRoutes a.options
+{
+    margin: 5px 0px 5px 0px;
+}
+div.JourneyLocations div.serviceRoutes div.submit
+{
+    margin: 20px 0px 0px 0px;
+}
+div.JourneyLocations div.serviceResults
+{
+    margin: 10px 0px 0px 0px;
+}
+
+div.JourneyLocations div.serviceResults div.stopEventResult
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+div.JourneyLocations div.serviceResults div.stopEventResult div.header div.journeyHeading
+{
+    width: 360px;
+}
+.sjpContent div.JourneyLocations div.serviceResults div.stopEventResult div.summary input.replanButton
+{
+    margin-top: 5px;
+    padding: 2px;
+    border-width: 1px;
+    border-style: solid;
+}
+div.JourneyLocations div.serviceResults div.stopEventResult table.stopEventResultTable
+{
+    table-layout: fixed;
+    width: 100%;
+}
+div.JourneyLocations div.serviceResults div.stopEventResult table.stopEventResultTable td.select,
+div.JourneyLocations div.serviceResults div.stopEventResult table.stopEventResultTable th.select
+{
+    width: 20%;
+}
+div.JourneyLocations div.serviceResults div.stopEventResult table.stopEventResultTable td.departure,
+div.JourneyLocations div.serviceResults div.stopEventResult table.stopEventResultTable th.departure
+{
+    width: 25%;
+}
+div.JourneyLocations div.serviceResults div.stopEventResult table.stopEventResultTable td.arrive,
+div.JourneyLocations div.serviceResults div.stopEventResult table.stopEventResultTable th.arrive
+{
+    width: 20%;
+}
+
+div.JourneyLocations div.serviceResults div.stopEventResult table.stopEventResultTable td.summaryCol,
+div.JourneyLocations div.serviceResults div.stopEventResult table.stopEventResultTable th.summaryCol
+{
+    text-align: left;
+}
+
+/* Bing Map page */
+.cycleHeader{padding-bottom: 5px;}
+.mapbing .map{position:relative; height:600px; width:660px;}
+.printablemapbing .map{position:relative; height:550px; width:550px;}
+.mapCycleInstructions{font-size:1.07em !important; padding-right:0px; width:320px; overflow:hidden;}
+.printablemapbing .mapCycleInstructions{font-size:1.0em !important; padding-right:0px; width:400px;}
+.mapbing .cycleLegTable div.cycleLeg div.detail tr.headerRow {display:none;}
+.mapbing .cycleLegTable div.cycleLeg div.summary {display:none;}
+.mapbing .cycleLegTable div.cycleLeg div.header {display:none;}
+.mapbing div.divCycleInstructionsHeader {font-weight:bold; padding:3px;}
+.mapbing div.divCycleInstructionsHeader td.arriveHeading {width:15%; text-align:center;}
+table.cycleLegTable
+{ font-size:0.7em; width:1000px;}
+.mapbing div.cycleLeg {height:655px; overflow:auto;}
+.printablemapbing table.cycleLegTable
+{ font-size:0.7em; width:550px;}
+table.cycleLegTable div.summary
+{ text-align:center; }
+.cycleJourney div
+{
+    display:block;
+}
+.mapbing .instructionHeading,
+.mapbing .arriveHeading
+{
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    position: relative;
+}
+.mapButtonDiv{padding-top:10px;}
+.mapbing .mapButtonDiv .btnSmallPink {font-size:0.79em;}
+.cycleLegTable{display:block;}
+.copyrightdiv{position:absolute; top:660px;}
+.printablemapbing .copyrightdiv{position:absolute; top:585px;}
+.copyrightfront{color:black; left:7px; top:0px; position:absolute; font-size:0.8em; width:200px;}
+.copyrightback{color:white; left:8px; top:1px; position:absolute; font-size:0.8em; width:200px;}
+.LogoContainer
+{
+    display:none;
+}
+.mapbing .divCycleInstructions{height:675px;}
+.printablemapbing .divCycleInstructions{height:auto; overflow:visible; width:550px;}
+.mapPushPin img{cursor:pointer;}
+.mapPushPin div{color:#1b1b1b !important;text-align:left;}  
+.labelPushPin div{color:#1b1b1b !important;text-align:left;}  
+.labelPushPin img{display:none;}
+.mapLoading{z-index:500;position:absolute;margin:110px 10px 0px 10px;width:95%;height:120px;text-align:center;font-weight:bold;background-color:#ffffff;opacity:0.8;}
+.infobox{background-color:black; color:white !important; width:150px;}
+.infobox_pointer{}
+.infobox_close{
+    background: url("../images/maps/ui-icons_ffffff_256x240.png") no-repeat -95px -127px transparent;
+    cursor: pointer;
+    display:block;
+    height: 19px;
+    position: absolute;
+    right: 5px;
+    text-indent: -8000px;
+    top: 5px;
+    width: 19px;
+}
+.infobox_content{padding-left:10px; padding-right:20px; padding-top:10px; padding-bottom:10px; font-size:0.8em;}
+.infobox_content a{text-decoration:underline !important; color:white !important;}
+.infoboxLocationImg{display:inline-block;width:30px;vertical-align:bottom;}
+.infoboxLocationImg img{width:30px;height:30px;}
+.infoboxLocationLink{display:inline-block;padding:0px 3px;width:80px;}
+
+.mapbing #sectionHeader
+{
+    display:none;
+}
+.mapbing .basicThreeCols
+{
+    padding-bottom: 140px;
+    width:980px;
+}
+.mapbing .basicThreeCols #lcg-left,
+.mapbing .basicThreeCols #lcg-3rdrail
+{
+    display: none;
+}
+
+.mapbing div.mapLegend
+{
+    vertical-align:middle;
+    color:White;
+    height:75px;
+    width:660px;
+}
+.printablemapbing div.mapLegend
+{
+    vertical-align:middle;
+    color:White;
+    height:75px;
+    width:550px;
+}
+
+.mapbing div.mapLegend td,
+.printablemapbing div.mapLegend td
+{
+    padding-left:5px;
+    padding-top:5px;
+    vertical-align:middle;
+}
+.mapbing .mapcontainer
+{
+    position:relative;
+}
+
+
+/* Map Google */
+.mapgoogle
+{
+    margin:0px;
+    min-height:500px;
+    overflow: hidden;
+}
+.mapgoogle #sectionHeader
+{
+    display:none;
+}
+.mapgoogle .basicThreeCols
+{
+    padding-bottom: 10px;
+}
+.mapgoogle .basicThreeCols #lcg-left,
+.mapgoogle .basicThreeCols #lcg-3rdrail
+{
+    display: none;
+}
+.mapgoogle .basicThreeCols #lgc-main,
+.mapgoogle .basicThreeCols #lgc-main .grid_6,
+.mapgoogle .basicThreeCols #lgc-main .grid_6 .articleBox,
+.mapgoogle .basicThreeCols #lgc-main .grid_6 .articleBox .article, 
+.mapgoogle .basicThreeCols #lgc-main .grid_6 .articleBox .article #articleBody,
+.mapgoogle .basicThreeCols #lgc-main .grid_6 .articleBox .article #articleBody .sjpContent
+{
+    margin:0px;
+    padding:0px;
+    position:inherit;
+    width: 100%;
+    height: 100%;
+    min-height:100%;
+}
+.mapgoogle .basicThreeCols #lgc-main .grid_6 .articleBox .article #articleBody .sjpContent
+{
+    overflow: hidden;
+}
+.mapgoogle .mapContainer
+{
+    overflow:hidden;
+    width:100%;
+}
+.mapgoogle .mapContainer .directions
+{
+    height:100%;
+    overflow:auto;
+    padding:0px 5px 0px 15px;
+    position:absolute;
+    left: 0px;
+    top:0px;
+    width:28%;
+}
+.mapgoogle .mapContainer .map
+{
+    height:100%;
+    overflow: hidden;   
+    position:absolute;
+    right:0px;
+    top: 0px;
+    width:68%;
+}
+
+/* Travel News Page */
+.sjpContent div.tnfilter
+{
+    width: 60%;
+}
+.sjpContent div.tnfilter div.refreshLinkDiv
+{
+    margin-top: -25px;
+    text-align: right;
+}
+#articleBody .sjpContent div.tnfilter div.refreshLinkDiv a:hover
+{
+    text-decoration: underline;
+}
+.sjpContent div.tnfilter, .sjpContent div.regionSelector  
+{
+    padding: 0px 10px 10px 10px;
+}
+.sjpContent div.tnfilter div.row
+{
+    display: block;
+    clear:both;
+    padding: 5px 2px 7px 2px;
+}
+.sjpContent div.tnfilter div.row div.tnCalendar
+{
+    clear:both;
+}
+.sjpContent div.tnfilter div.row div.label, 
+.sjpContent div.tnfilter div.row div.options
+{
+    float: left;
+}
+.sjpContent div.tnfilter div.row div.label label,
+.sjpContent div.tnfilter div.row div.options label
+{
+    display: inline-block;
+    margin-top: 1px;
+    vertical-align: top;
+}
+.sjpContent div.tnfilter div.row div.options span.transportType
+{
+    clear:both;
+}
+.sjpContent div.tnfilter div.row div.label
+{
+    width : 35%;
+}
+.sjpContent div.tnfilter div.row .transportType
+{
+    display: block;
+    width: 100%;
+}
+.sjpContent div.tnfilter div.tnphrase div.label, div.tnfilter div.tnphrase div.options
+{
+    display: block;
+    width: 100%;
+}
+.sjpContent div.tnfilter div.tnphrase div.options input
+{
+    width: 100%;
+}
+.sjpContent div.tnfilter div.tndate div.options input
+{
+    float:left;
+}
+.sjpContent div.newsProgress 
+{
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+.sjpContent div.newsProgress div.loadingMessageDiv
+{
+    margin: 0px;
+}
+.sjpContent div.newsProgress div.loadingImageDiv 
+{
+    padding:10px;
+}
+.sjpContent div.travelnews
+{
+    display:block;
+}
+.sjpContent div.travelnews div.severity
+{
+    padding-bottom: 5px;
+    
+}
+.sjpContent div.travelnews div.severity div.severityHeading
+{
+    padding: 0px;
+    position: relative;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: Silver;
+}
+.sjpContent div.travelnews div.severity div.severityHeading .arrow_btn{
+    display: block;
+    cursor: pointer;
+    height: 1.26em;
+    left: 0;
+    padding: 1px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 1.00em;
+}
+.sjpContent div.travelnews div.severity div.severityHeading .text
+{
+    height: 1.4em;
+    left: 1.26em;
+    position: relative;
+}
+.sjpContent div.travelnews div.impact
+{
+    padding-bottom: 5px;
+    
+}
+.sjpContent div.travelnews div.impact div.imContainer
+{
+    width: 98%;
+    padding-left: 2%;
+    padding-top: 5px;
+}
+.sjpContent div.travelnews div.impact div.impactHeading
+{
+    padding: 0px;
+    position: relative;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: Silver;
+}
+.sjpContent div.travelnews div.impact div.impactHeading .arrow_btn{
+    display: block;
+    cursor: pointer;
+    height: 1.26em;
+    left: 0;
+    padding: 1px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 1.00em;
+}
+.sjpContent div.travelnews div.impact div.impactHeading .text
+{
+    height: 1.4em;
+    left: 1.26em;
+    position: relative;
+}
+.sjpContent div.tnItem
+{
+    display: block;
+     padding: 7px 2px;
+}
+.sjpContent div.tnItem div.affected, .sjpContent div.tnItem div.body, .sjpContent div.tnItem div.incidenttype
+{
+    float:left;
+}
+.sjpContent div.tnItem div.affected
+{
+    width: 10%;
+    text-align:center;
+}
+.sjpContent div.tnItem div.affected div.affectedImage 
+{
+    width: 100%;
+}
+.sjpContent div.tnItem div.affected div.affectedImage img
+{
+    width: 28px;
+}
+.sjpContent div.tnItem div.affected div.affectedImage img.M,
+.sjpContent div.tnItem div.affected div.affectedImage img.A,
+.sjpContent div.tnItem div.affected div.affectedImage img.AM
+{
+    width: 23px;
+}
+.sjpContent div.tnItem div.affected div.affectedImage img.walk
+{
+    width: auto;
+    height: 25px;
+}
+.sjpContent div.tnItem div.incidenttype 
+{
+    text-align:center;
+    display:block;
+}
+.sjpContent div.tnItem div.incidenttype div.incidentImage 
+{
+    width: 100%;
+}
+.sjpContent div.tnItem div.incidenttype
+{
+    display:block;
+    width: 20%;
+    text-align:center;
+}
+.sjpContent div.tnItem div.body
+{
+    width: 80%;
+}
+.sjpContent div.tnItem div.body div.summary input.linkButton
+{
+    text-align : left;
+    white-space: normal;
+}
+.sjpContent div.tnItem div.tnAffectedVenues
+{
+    text-align : left;
+    white-space: normal;
+    padding: 3px 0px;
+    clear: both;
+}
+.sjpContent div.tnItem span.tnBoldLabel
+{
+    font-weight: bold;
+}
+.sjpContent span.travelAdvice
+{
+    display: block;
+    padding: 4px 0px;
+}
+div.tnItem div.body div.summary
+{
+    margin: 0px;
+}
+div.tnItem div.body div.status
+{
+    margin-top: 5px;
+    clear:both;
+}
+.sjpContent div.tnItem div.body div.summary span.location,
+.sjpContent div.tnItem div.body div.detail span.detailText
+{
+    display:block;
+    clear: both;
+}
+
+/* Printer friendly */
+.sjpContent div.printerFriendly input.linkButton, .sjpContent div.printerFriendly a
+{
+    padding-left: 22px;
+}
+
+/* Top Tips */
+div#top-tips div.navigation .prev 
+{
+    height: 16px;
+    width: 15px;
+}
+div#top-tips div.navigation .next 
+{
+    height: 16px;
+    width: 15px;
+}
+div#top-tips div.navigation .prev span.hide-content,
+div#top-tips div.navigation .next span.hide-content,
+div#top-tips div.slider div.content
+{
+    display: none;
+}
+
+/* Generic Promo Widget */
+div.genericPromo div.bC,
+div.venueMapsWidget div.bC,
+div.gnatMapsWidget div.bC
+{
+    text-align: center;
+}
+div.genericPromo div.bC p,
+div.venueMapsWidget div.bC p,
+div.gnatMapsWidget div.bC p
+{
+    text-align: left;
+}
+div.genericPromo div.bC img,
+div.venueMapsWidget div.bC a,
+div.gnatMapsWidget div.bC a
+{
+    margin-bottom: 5px;
+}
+
+/* Journey Plan widget */
+div.journeyPlannerWidget div.jpPromoImageDiv
+{    
+    overflow:hidden;
+}
+div.journeyPlannerWidget div.jpPromoContentDiv
+{
+    margin: 5px 0px 0px 0px;
+}
+div.journeyPlannerWidget div.jpPromoContentDiv .promoContent
+{    
+    padding: 0px;
+}
+
+/* Travel News widget */
+div.travelNewsWidget div.navigation .prev 
+{
+    padding: 5px 8px 5px 5px;
+}
+div.travelNewsWidget div.navigation .next 
+{
+    padding: 5px 5px 5px 8px;
+}
+div.travelNewsWidget div.tnHeadlinesContainer
+{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 320px;
+}
+div.travelNewsWidget div.tnHeadlinesContainer ul.PagerContainer 
+{
+    clear: left;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 10000px;
+    z-index: 99999;
+}
+div.travelNewsWidget div.tnHeadlinesContainer ul.PagerContainer li.pageItem
+{
+    display: none;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 324px;
+    z-index: 99999;
+}
+div.travelNewsWidget div.tnHeadlinesContainer ul.PagerContainer li.active 
+{
+    display: block;
+}
+
+div.travelNewsWidget div.tnHeadlinesContainer span.noincidents
+{
+    display: inline-block;    
+    margin: 0px 10px 0px 10px;
+}
+
+/* External links */
+.externalLink
+{
+    padding-right: 20px;
+}
+a.bullet
+{
+    width: 10px;
+    height: 10px;
+    background: url("./../images/presentation/bullet.png") no-repeat scroll 0px 0px #FFFFFF;
+    z-index: 9999;
+}
+a.cycleBullet
+{
+    width: 38px;
+    height: 25px;
+    background: url("./../images/presentation/bullet_cycle.png") no-repeat scroll 0px 0px #FFFFFF;
+    z-index: 9999;
+}
+img.riverRoute
+{
+    z-index: 500;
+}
+
+/* Further accessiblity needs */
+.sjpContent input.js_accessiblity_btn
+{
+    padding-left: 20px;
+    display:block;
+    float: none;
+    clear: both;
+}
+
+* html .sjpContent input.js_accessiblity_btn{ padding: 0px; }  /* for IE 6 */
+* + html .sjpContent input.js_accessiblity_btn{ padding: 0px; } /* for IE 7 */
+
+/* Information icon on the result page next to book travel button */
+a.bookTicketsInfo
+{
+    position: relative;
+    top: 10px;
+    margin-right: 3px;
+}
+img.retailerInNewWindow
+{
+    position:relative;
+    float:right;
+    top:10px;    
+}
+
+
+/* Further Accessibility page */
+div.mapInfo
+{
+    line-height: 1.5em;
+    margin-bottom: 5px;
+}
+div.selectedJourney
+{
+    line-height: 1.5em;
+}
+div.selectedJourney div.row
+{
+    display:block;
+    clear: left;
+}
+div.selectedJourney div.row span.label
+{
+    width: 30%;
+    text-align: right;
+    float:left;
+}
+div.selectedJourney div.row span.options
+{
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    text-align: left;
+    width: 65%;
+}
+div.selectedJourney div.journeyInfo
+{
+    width: 70%;
+    margin: 0 auto;
+}
+div.selectedJourney div.accessibilityMessage
+{
+    padding: 10px 0px 0px 0px;
+}
+span.accessiblityInfo
+{
+    display: block;
+    clear: both;
+    margin: 10px 0;
+}
+div.stopSelection
+{
+    padding: 7px;
+}
+div.journeySubmit
+{
+    padding: 15px 0;
+}
+div.stopSelection .accissibleStopType, div.stopSelection .stopSelectInfo
+{
+    display: block;
+    clear: both;
+}
+div.stopSelection div.stopTypes
+{
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    width: 85%;
+}
+div.stopSelection div.stopTypes input
+{
+    float: none;
+    margin: 10px;
+    vertical-align: middle;
+}
+div.stopSelection div.stopTypes label
+{
+    display: inline-block;
+    margin: 17px 10px 10px 0;
+    position: relative;
+    width: 65px;
+    vertical-align: middle;
+    
+}
+
+* html div.stopSelection div.stopTypes label{ display:inline; }  /* for IE 6 */
+* + html div.stopSelection div.stopTypes label{ display:inline; } /* for IE 7 */
+
+div.stopSelectDrops div.row
+{
+    display: block;
+    clear: both;
+}
+div.stopSelectDrops div.row div.label
+{
+    width: 39%;
+    display: inline-block;
+    margin: 5px 0;
+    position: relative;
+   
+}
+
+* html div.stopSelectDrops div.row div.label{ display:inline; }  /* for IE 6 */
+* + html div.stopSelectDrops div.row div.label{ display:inline; } /* for IE 7 */
+
+div.stopSelectDrops div.row div.options
+{
+    width: 60%;
+    display: inline-block;
+    position: relative;
+}
+
+* html div.stopSelectDrops div.row div.options{ display:inline; }  /* for IE 6 */
+* + html div.stopSelectDrops div.row div.options{ display:inline; } /* for IE 7 */
+
+div.stopSelectDrops div.row div.options select
+{
+    display: inline-block;
+    clear: both;
+    margin: 5px 0;
+    width: 230px;
+}
+
+* html div.stopSelectDrops div.row div.options select{ display:inline; }  /* for IE 6 */
+* + html div.stopSelectDrops div.row div.options select{ display:inline; } /* for IE 7 */
+
+div.stopSelectDrops div.row div.options div.dropList
+{
+    width: 243px;
+}
+div.stopSelectDrops div.row div.options select.jsGNATList, div.stopSelectDrops div.row div.options a.jsGNATList
+{
+    display: none;
+}
+.sjpContent div.screenReaderOnly {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    clip: rect(1px,1px,1px,1px);
+}
+.sjpContent a.js_arrow_btn_link
+{
+    height:1.66em;
+    width: 14px;
+    display: block;   
+}
+
+
+/* Debug */
+.debugInfoDiv
+{
+    clear: both;
+}
+.debugInfoDivCycle
+{
+    width: 300px;
+}
+

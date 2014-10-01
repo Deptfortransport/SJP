@@ -1,0 +1,65 @@
+﻿div#Page
+{
+    display:block;
+}
+div#page-2012 #header-2012,
+div#page-2012 #nav-secondary,
+div#page-2012 #consistent-links,
+div#page-2012 div.featured-article dl,
+div#page-2012 div.sidebar-right-2012,
+div#page-2012 #footer-2012
+{
+    display: none;
+}
+
+.sjpContent input.btnSmallPink,
+.sjpContent input.btnMediumPink,
+.sjpContent input.btnLargePink,
+.sjpContent div.printerFriendly,
+.sjpContent img.bookTicketsInfo,
+.sjpContent div.journeySummary table.legSummary td.select input,
+.sjpContent div.journeySummary div.leg div.row div.row2 div.columnDetail div.bookTicketDiv,
+.sjpContent div.journeySummary div.leg div.row div.row2 div.columnDetail a
+{
+    display: none;
+}
+
+div#Content,
+div#sidebar-left-2012
+{
+    margin: 0px;
+}
+div#sidebar-left-2012
+{
+    width: 125px;
+}
+div#sidebar-left-2012 div#flash-logo
+{
+    height: 135px;
+    width: 120px;
+}
+div#sidebar-left-2012 div#flash-logo img
+{
+    margin: 0px;
+    height: 132px;
+    width: 116px;
+}
+div#MainContent
+{
+    width: 530px;
+}
+
+/**** NOTE:- Following is added as Firefox has problems with long floated elements *****/
+/****        causing the whatever on next page doesn't print at all                *****/
+@-moz-document url-prefix() {
+
+    div#page-2012, div#Content, div.sjpPageContent, div#header-2012, div#content-left-2012
+    {
+        float: none;
+    }
+    
+    div#sidebar-left-2012, div#sjpPageContent
+    {
+        display: block;
+    }
+}

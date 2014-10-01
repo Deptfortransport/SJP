@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VenuesAccessData xmlns="http://www.transportdirect.info/SJPVenueAccessData"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.transportdirect.info/SJPVenueAccessData VenueAccessData_v02.xsd">
+
+    <!-- 
+        V0.1
+            -   Initial data release for testing, including Millennium Stadium and Hampden Park only
+        
+        CHANGES IN V0.2
+            -   Added Old Trafford, City of Coventry and St James Park (Newcastle). 
+            -   Amend Millennium & Hampden in light of comments from Accessibility Team
+            
+        CHANGES IN V0.3
+            - Corrected date error (referred to 2011 instead of 2012)
+            
+        CHANGES IN V0.4
+            - Removed CDATA elements because of compatibility issues and replace html markup with &lt;TAG&gt;
+            
+        CHANGES IN V0.5
+            - Removed apostrophe from St James Park
+            
+        CHANGES IN V0.6
+            - Corrected NaPTAN for Cardiff Central Rail Station
+            
+        CHANGES IN V0.7
+            - Minor textual alterations
+            
+        V1.0 is a pseudo-number representing the released version of the data to PROD. It is equivalent to v0.7
+        
+        CHANGES IN V1.1
+            - Amended to use v2 schema, with descriptive text for the return journey.
+        
+        CHANGES IN V1.2
+            - Included Brands Hatch as a commented out section for completeness. New Paralympic Venue, but within MDV are so can have accessible journeys planned to it
+            
+        CHANGES IN V1.3
+            - Amended to include shuttle services from Manchester Piccadilly to Old Trafford and from Buchanan Bus Station to Hampden Park
+    -->
+
+    <DataDate>2011-08-30T17:00:00</DataDate>
+    <DataVersion>1.3</DataVersion>
+
+    <!-- Most venues below are within MDV journey planning region. Leave XML here for completeness and future completion if required -->
+    <!-- OLYMPIC PARK -->   
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100OPK</VenueNaPTAN>
+        <VenueName>Olympic Park</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- RIVER ZONE VENUES -->
+    <!-- EXCEL -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100EXL</VenueNaPTAN>
+        <VenueName>ExCeL</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- GREENWICH PARK -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100GRP</VenueNaPTAN>
+        <VenueName>Greenwich Park</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- NORTH GREENWICH ARENA -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100NGA</VenueNaPTAN>
+        <VenueName>North Greenwich Arena</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- ROYAL ARTILLERY BARRACKS -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100RAB</VenueNaPTAN>
+        <VenueName>Royal Artillery Barracks</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>    
+    -->
+    
+    <!-- LONDON VENUES -->
+    <!-- EARLS COURT -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100EAR</VenueNaPTAN>
+        <VenueName>Earls Court</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- LORDS CRICKET GROUND -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100LCG</VenueNaPTAN>
+        <VenueName>Lords Cricket Ground</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- WIMBLEDON -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100WIM</VenueNaPTAN>
+        <VenueName>Wimbledon</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- HORSE GUARDS PARADE -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100HGP</VenueNaPTAN>
+        <VenueName>Horse Guards Parade</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+    </Venue>
+    -->
+    
+    <!-- THE MALL -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100MAL</VenueNaPTAN>
+        <VenueName>The Mall</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- HYDE PARK -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100HYD</VenueNaPTAN>
+        <VenueName>Hyde Park</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- WEMBLEY ARENA -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100WEA</VenueNaPTAN>
+        <VenueName>Wembley Arena</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>   
+    -->
+    
+    <!-- OUT OF LONDON VENUES -->
+    <!-- LEE VALLEY -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100LVC</VenueNaPTAN>
+        <VenueName>Lee Valley White Water Centre</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- HADLEIGH FARM -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100HAD</VenueNaPTAN>
+        <VenueName>Hadleigh Farm</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- ETON DORNEY -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100ETD</VenueNaPTAN>
+        <VenueName>Eton Dorney</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- WEYMOUTH AND PORTLAND -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100WAP</VenueNaPTAN>
+        <VenueName>Weymouth and Portland</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>    
+    -->
+    
+    <!-- BRANDS HATCH (PARALYMPIC VENUE) -->
+    <!--
+        <Venue>
+        <VenueNaPTAN>8100BND</VenueNaPTAN>
+        <VenueName>Brands Hatch (Paralympics Only)</VenueName>
+        <VenueAccessPeriod>
+        <AccessPeriodFromDate></AccessPeriodFromDate>
+        <AccessPeriodUntilDate></AccessPeriodUntilDate>
+        <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+        </Venue>    
+    -->
+    
+    <!-- FOOTBALL VENUES -->
+    <!-- WEMBLEY STADIUM -->
+    <!--
+    <Venue>
+        <VenueNaPTAN>8100WEM</VenueNaPTAN>
+        <VenueName>Wembley Stadium</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate></AccessPeriodFromDate>
+            <AccessPeriodUntilDate></AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>true</AccessibleJourneyToVenue>
+        </VenueAccessPeriod>
+    </Venue>
+    -->
+    
+    <!-- MILLENNIUM STADIUM -->
+    <Venue>
+        <VenueNaPTAN>8100MIL</VenueNaPTAN>
+        <VenueName>Millennium Stadium</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate>2012-07-25T00:00:00</AccessPeriodFromDate>
+            <AccessPeriodUntilDate>2012-08-12T23:59:00</AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>false</AccessibleJourneyToVenue>
+            <VenueAccessGatewayStations>
+                <AccessToVenueDuration>00:10:00</AccessToVenueDuration>         <!-- Estimated duration -->
+                <VenueStation>
+                    <VenueAccessStationNaPTAN>9100CRDFCEN</VenueAccessStationNaPTAN>
+                    <VenueAccessStationName>Cardiff Central Rail Station</VenueAccessStationName>
+                    <VenueAccessStationOutwardDescription>
+                        <VenueAccessDescription>Leave the station's main entrance to the north and bear left at the exit for Gates 5, 6 and 7 via Wood Street
+                        or bear straight ahead from the exit to Westgate Street for Gates 4, 3, 2 continuing around to Gate 1 on Castle Street&lt;P&gt;
+                        At peak times, you may be asked to leave the station to the south, in which case bear left out of the station and then left again to pass under the railway
+                        bridge and then proceed as above.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationOutwardDescription>
+                    <VenueAccessStationReturnDescription>
+                        <VenueAccessDescription>Leave the venue by the same gate that you used to enter. From Gate 1, walk east along Castle Street to Westgate Street,
+                        and then south along Westgate Street to the station. From Gates 2, 3 and 4, exit to Westgate Street and then as above. From Gates 5, 6 and 7 bear
+                        left onto Wood Street and continue to the station.&lt;P&gt;At peak times you may be directed to the south of the station for trains to West Wales. 
+                        In this case continue heading east and turn right under the railway bridge, and then immediately right again.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationReturnDescription>
+                </VenueStation>
+            </VenueAccessGatewayStations>
+        </VenueAccessPeriod>
+    </Venue>
+    
+    <!-- HAMPDEN PARK -->
+    <Venue>
+        <VenueNaPTAN>8100HAM</VenueNaPTAN>
+        <VenueName>Hampden Park</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate>2012-07-25T00:00:00</AccessPeriodFromDate>
+            <AccessPeriodUntilDate>2012-08-12T23:59:00</AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>false</AccessibleJourneyToVenue>
+            <VenueAccessGatewayStations>
+                <AccessToVenueDuration>00:15:00</AccessToVenueDuration>
+                <VenueStation>
+                    <VenueAccessStationNaPTAN>9100MTFL</VenueAccessStationNaPTAN>
+                    <VenueAccessStationName>Mount Florida Rail Station</VenueAccessStationName>
+                    <VenueAccessStationOutwardDescription>
+                        <VenueAccessDescription>Exit the station to the north (Glasgow end) using the lift. Turn right onto Prospecthill Road and then right again into Cathcart Road.  
+                        In approximately 0.2 miles bear left onto Carmunnock Road, and then left into the venue.&lt;P&gt;Spectators are able to get in and out of the stadium by accessing 
+                        the underground West (exit 46) or East (exit 33) tunnels, avoiding turnstile congestion and any stairways. You will be directed to a lift from this area 
+                        if your ticket is for the spectating section in the rear of the East or West stand. Stewards will be on duty to advise and assist you.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationOutwardDescription>
+                    <VenueAccessStationReturnDescription>
+                        <VenueAccessDescription>Exit the venue using the same gates that you used to enter the venue (via exit 33 or exit 46 tunnels). Leave the venue grounds to the west 
+                        and turn right onto Carmunnock Road. Continue north into Cathcart Road, and then in approximately 0.2 miles turn left into Prospecthill Road. The station is accessed
+                        via the further entrance, and then by lift onto the platform.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationReturnDescription>
+                </VenueStation>
+                <VenueStation>
+                    <VenueAccessStationNaPTAN>9100GLGQHL</VenueAccessStationNaPTAN>
+                    <VenueAccessStationName>Glasgow Queen Street Rail Station</VenueAccessStationName>
+                    <VenueAccessStationOutwardDescription>
+                        <VenueAccessDescription>Frequent shuttle buses for the stadium will depart from Buchanan Bus Station which is signposted from the station. The shuttle buses are 
+                            fully accessible. At the stadium, Spectators are able to get in and out of the stadium by accessing the underground West (exit 46) or East (exit 33) tunnels, 
+                            avoiding turnstile congestion and any stairways. You will be directed to a lift from this area if your ticket is for the spectating section in the rear of 
+                            the East or West stand. Stewards will be on duty to advise and assist you.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationOutwardDescription>
+                    <VenueAccessStationReturnDescription>
+                        <VenueAccessDescription>Exit the venue using the same gates that you used to enter the venue (via exit 33 or exit 46 tunnels). Frequent shuttle buses for the station
+                            will depart from the stadium, dropping off at Buchanan Bus Station. The shuttle buses are fully accessible. Signposts from Buchanan Street Bus Station will direct
+                            you to Glasgow Queen Street rail station.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationReturnDescription>
+                </VenueStation>
+                <VenueStation>
+                    <VenueAccessStationNaPTAN>9100GLGQLL</VenueAccessStationNaPTAN>
+                    <VenueAccessStationName>Glasgow Queen Street Low Level Rail Station</VenueAccessStationName>
+                    <VenueAccessStationOutwardDescription>
+                        <VenueAccessDescription>Frequent shuttle buses for the stadium will depart from Buchanan Bus Station which is signposted from the upper station which is accessed by lift 
+                            from the low level platforms. The shuttle buses are fully accessible. At the stadium, Spectators are able to get in and out of the stadium by accessing the underground 
+                            West (exit 46) or East (exit 33) tunnels, avoiding turnstile congestion and any stairways. You will be directed to a lift from this area if your ticket is for the 
+                            spectating section in the rear of the East or West stand. Stewards will be on duty to advise and assist you.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationOutwardDescription>
+                    <VenueAccessStationReturnDescription>
+                        <VenueAccessDescription>Exit the venue using the same gates that you used to enter the venue (via exit 33 or exit 46 tunnels). Frequent shuttle buses for the station
+                            will depart from the stadium, dropping off at Buchanan Bus Station. The shuttle buses are fully accessible. Signposts from Buchanan Street Bus Station will direct
+                            you to Glasgow Queen Street rail station. From there, take the lifts to the low level platforms.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationReturnDescription>
+                </VenueStation>
+                <VenueStation>
+                    <VenueAccessStationNaPTAN>9100GLGC</VenueAccessStationNaPTAN>
+                    <VenueAccessStationName>Glasgow Central Rail Station</VenueAccessStationName>
+                    <VenueAccessStationOutwardDescription>
+                        <VenueAccessDescription>Frequent shuttle buses for the stadium will depart from Buchanan Bus Station which can be reached by taking a direct bus from the front of the 
+                            station. The shuttle buses are fully accessible. At the stadium, Spectators are able to get in and out of the stadium by accessing the underground West (exit 46) 
+                            or East (exit 33) tunnels, avoiding turnstile congestion and any stairways. You will be directed to a lift from this area if your ticket is for the spectating section 
+                            in the rear of the East or West stand. Stewards will be on duty to advise and assist you.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationOutwardDescription>
+                    <VenueAccessStationReturnDescription>
+                        <VenueAccessDescription>Exit the venue using the same gates that you used to enter the venue (via exit 33 or exit 46 tunnels). Frequent shuttle buses for the station
+                            will depart from the stadium, dropping off at Buchanan Bus Station. The shuttle buses are fully accessible. Take the bus from Buchanan Street Bus Station direct
+                            to the front of Glasgow Central rail station.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationReturnDescription>
+                </VenueStation>
+                <VenueStation>
+                    <VenueAccessStationNaPTAN>9100GLGCLL</VenueAccessStationNaPTAN>
+                    <VenueAccessStationName>Glasgow Central Low Level Rail Station</VenueAccessStationName>
+                    <VenueAccessStationOutwardDescription>
+                        <VenueAccessDescription>Frequent shuttle buses for the stadium will depart from Buchanan Bus Station which can be reached by taking a direct bus from the front of the 
+                            upper station, accessed via lifts from the low level platforms. The shuttle buses are fully accessible. At the stadium, Spectators are able to get in and out of the
+                            stadium by accessing the underground West (exit 46) or East (exit 33) tunnels, avoiding turnstile congestion and any stairways. You will be directed to a lift from 
+                            this area if your ticket is for the spectating section in the rear of the East or West stand. Stewards will be on duty to advise and assist you.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationOutwardDescription>
+                    <VenueAccessStationReturnDescription>
+                        <VenueAccessDescription>Exit the venue using the same gates that you used to enter the venue (via exit 33 or exit 46 tunnels). Frequent shuttle buses for the station
+                            will depart from the stadium, dropping off at Buchanan Bus Station. The shuttle buses are fully accessible. Take the bus from Buchanan Street Bus Station direct
+                            to the front of Glasgow Central rail station. From there, take the lift to the low level platforms.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationReturnDescription>
+                </VenueStation>
+            </VenueAccessGatewayStations>
+        </VenueAccessPeriod>
+    </Venue>
+
+    <!-- OLD TRAFFORD -->
+    <Venue>
+        <VenueNaPTAN>8100OLD</VenueNaPTAN>
+        <VenueName>Old Trafford</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate>2012-07-25T00:00:00</AccessPeriodFromDate>
+            <AccessPeriodUntilDate>2012-08-12T23:59:00</AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>false</AccessibleJourneyToVenue>
+            <VenueAccessGatewayStations>
+                <AccessToVenueDuration>00:30:00</AccessToVenueDuration>
+                <VenueStation>
+                    <VenueAccessStationNaPTAN>9100MNCRPIC</VenueAccessStationNaPTAN>
+                    <VenueAccessStationName>Manchester Piccadilly Rail Station</VenueAccessStationName>
+                    <VenueAccessStationOutwardDescription>
+                        <VenueAccessDescription>Frequent shuttle buses for the stadium will depart from outside the station. The shuttle buses are fully accessible. 
+                            There is then a short walk to the stadium.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationOutwardDescription>
+                    <VenueAccessStationReturnDescription>
+                        <VenueAccessDescription>Frequent shuttle buses for the station will depart from close to the stadium, dropping off outside the station. 
+                            The shuttle buses are fully accessible.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationReturnDescription>
+                    <!--
+                    <VenueAccessStationOutwardDescription>
+                        <VenueAccessDescription>Cross station to Metrolink platforms and take the Manchester Metrolink towards Altrincham and get off at Old Trafford Station. 
+                        Exit the station to the north, and walk up Warwick Road and Sir Matt Busby Way to the stadium.&lt;P&gt;All Metrolink trains are accessible by means of a lift or ramp, and  
+                        the central section of the tram is an area specifically designed for wheelchairs and prams. The sign on the platform (disabled access) will tell you where to wait 
+                        to board at the correct doors on the vehicle.&lt;P&gt;For a shorter walk, get off the Metrolink at Piccadilly Gardens (one stop) and catch the 250 bus towards the Trafford 
+                        Centre. The bus runs every 15 minutes at peak times, and is fully accessible. Drop off is just to the north of the stadium on Trafford Park Road. Buses 255 and 263 also serve 
+                        Chester Road to the south of the stadium</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationOutwardDescription>
+                    <VenueAccessStationReturnDescription>
+                        <VenueAccessDescription>Walk south from the venue along Sir Matt Busby Way and Warwick Avenue to Old Trafford Station. Take the Manchester Metrolink towards Manchester Piccadilly. 
+                        On Monday to Saturday, every other tram goes via Piccadilly, while on Sundays every tram does. Alight at Manchester Piccadilly for trains.&lt;P&gt;All Metrolink trains are 
+                        accessible by means of a lift or ramp, and the central section of the tram is an area specifically designed for wheelchairs and prams. The sign on the platform (disabled 
+                        access) will tell you where to wait to board at the correct doors on the vehicle.&lt;P&gt;For a shorter walk, catch the 250 bus towards Manchester Piccadilly Gardens. 
+                        The bus runs every 15 minutes at peak times, half hourly from approximately 2100 until midnight, and is fully accessible. Pick up is from just north of the stadium on 
+                        Trafford Park Road. Alight at Piccadilly Gardens and take the Metrolink one stop to Manchester Piccadilly station. Alternatively, buses 255 and 263 serve Chester Road to 
+                        the south of the stadium and also offer services to Piccadilly Gardens.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationReturnDescription>
+                    -->
+                </VenueStation>
+            </VenueAccessGatewayStations>
+        </VenueAccessPeriod>
+    </Venue>
+    
+    <!-- CITY OF COVENTRY STADIUM -->
+    <Venue>
+        <VenueNaPTAN>8100COV</VenueNaPTAN>
+        <VenueName>City of Coventry Stadium</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate>2012-07-25T00:00:00</AccessPeriodFromDate>
+            <AccessPeriodUntilDate>2012-08-12T23:59:00</AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>false</AccessibleJourneyToVenue>
+            <VenueAccessGatewayStations>
+                <AccessToVenueDuration>00:20:00</AccessToVenueDuration>
+                <VenueStation>
+                    <VenueAccessStationNaPTAN>9100COVNTRY</VenueAccessStationNaPTAN>
+                    <VenueAccessStationName>Coventry Rail Station</VenueAccessStationName>
+                    <VenueAccessStationOutwardDescription>
+                        <VenueAccessDescription>Frequent shuttle buses for the stadium will depart from outside the station. The shuttle buses are fully accessible. 
+                        There is then a short walk to the stadium.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationOutwardDescription>
+                    <VenueAccessStationReturnDescription>
+                        <VenueAccessDescription>Frequent shuttle buses for the station will depart from close to the stadium, dropping off outside the station. 
+                        The shuttle buses are fully accessible.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationReturnDescription>
+                </VenueStation>
+            </VenueAccessGatewayStations>
+        </VenueAccessPeriod>
+    </Venue>
+    
+    <!-- ST JAMES PARK (NEWCASTLE) -->
+    <Venue>
+        <VenueNaPTAN>8100SJP</VenueNaPTAN>
+        <VenueName>St James Park (Newcastle)</VenueName>
+        <VenueAccessPeriod>
+            <AccessPeriodFromDate>2012-07-25T00:00:00</AccessPeriodFromDate>
+            <AccessPeriodUntilDate>2012-08-12T23:59:00</AccessPeriodUntilDate>
+            <AccessibleJourneyToVenue>false</AccessibleJourneyToVenue>
+            <VenueAccessGatewayStations>
+                <AccessToVenueDuration>00:25:00</AccessToVenueDuration>
+                <VenueStation>
+                    <VenueAccessStationNaPTAN>9100NWCSTLE</VenueAccessStationNaPTAN>
+                    <VenueAccessStationName>Newcastle Rail Station</VenueAccessStationName>
+                    <VenueAccessStationOutwardDescription>
+                        <VenueAccessDescription>Spectators should take the Metro from Newcastle Rail Station to St James Metro station, changing at Monument. St James Metro is 
+                        located approximately 250 metres from the main venue entrance, and some of the route is sloped. Assistance will be provided as appropriate.  Exit the station 
+                        and follow the signs, or the direction from the marshals.</VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationOutwardDescription>
+                    <VenueAccessStationReturnDescription>
+                        <VenueAccessDescription>Spectators should follow signs, or the direction from the marshals, to St James Metro station approximately 250 metres from the main venue
+                            exit. Then take the Metro to Newcastle Rail Station, changing at Monument. Some of the route is sloped, and assistance will be provided as appropriate. </VenueAccessDescription>
+                        <VenueAccessTextLanguage>en</VenueAccessTextLanguage>
+                    </VenueAccessStationReturnDescription>
+                </VenueStation>
+            </VenueAccessGatewayStations>
+        </VenueAccessPeriod>
+    </Venue>
+</VenuesAccessData>
+

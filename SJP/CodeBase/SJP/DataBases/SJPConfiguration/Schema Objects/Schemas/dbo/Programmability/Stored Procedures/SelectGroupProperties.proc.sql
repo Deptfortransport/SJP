@@ -1,0 +1,8 @@
+﻿CREATE PROCEDURE [dbo].[SelectGroupProperties]
+	@GID char(50)
+AS
+
+SELECT PNAME, PVALUE FROM PROPERTIES P
+	WHERE P.GID = @GID
+
+RETURN 0

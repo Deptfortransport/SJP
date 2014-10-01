@@ -1,0 +1,303 @@
+div#header-2012 div#header-list-container ul#accessibility-styles-list li a span.normal-style {
+  font-size: 1em;
+  font-weight: normal;
+  height: 1.3em;
+  width: 1.2em;
+  background-color: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  text-align: center;
+  color: #000000;
+  padding: 0 5px;
+}
+
+div#header-2012 div#header-list-container ul#accessibility-styles-list li a span.dyslexic-style {
+  font-size: 1em;
+  font-weight: normal;
+  height: 1.3em;
+  width: 1.2em;
+  background-color: #C4F3FF;
+  border: 1px solid #CFCFCF;
+  text-align: center;
+  color: #4E5BB4;
+  padding: 0 5px;
+}
+
+div#header-2012 div#header-list-container ul#accessibility-styles-list li a span.high-vis-style {
+  font-size: 1em;
+  font-weight: normal;
+  height: 1.3em;
+  width: 1.2em;
+  background-color: #000000;
+  border: 1px solid #CFCFCF;
+  text-align: center;
+  color: #E9D05B;
+  padding: 0 5px;
+}
+
+.header-dropdown,
+.nav-secondary-container,
+#font-size-list,
+.navigation,
+feature-margin-bottom,
+.hide-high-vis {
+  display: none !important;
+}
+
+.show-high-vis {
+  display: block !important;
+}
+
+div#page-2012 div#virtual-tours div.content,
+div#page-2012 div#related-images div.content
+{
+  display: none;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+* { margin:0; padding:0; }
+
+body {
+    margin:0 36px 10em 36px;
+    color:#fff;
+    background-color:#123;
+    background-image:none;
+    font-family: arial, helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 100%;
+    text-align: left;
+}
+
+
+div#Page { width:auto; font-size: 1em !important; line-height: 1.5em;}
+
+a { color:#fc3; text-decoration: underline;}
+a:hover { text-decoration:none; }
+img { border:none; }
+
+ul { margin: 0 0 0.5em 1em; }
+
+div#header-list-container { padding: 1em 0 0 0; font-size:0.9em; }
+div#header-list-container ul { margin-left:0; list-style-type:none; clear: left; }
+div#header-list-container ul li { display:inline; }
+div#header-list-container ul#page-option-list li,
+div#header-list-container ul#font-size-list li { border-left:2px solid #fff; padding:0 10px 0 8px; }
+div#header-list-container li.first { border-left:none !important; padding-left:0 !important; }
+div#header-search-container {
+  border-bottom: 1px solid #888888;
+  padding-bottom: 2em;
+  margin-bottom: 0.5em;
+}
+
+div#footer-2012 {
+  border-top: 6px solid #888888; padding-top: 1em; margin-top: 1em;  
+}
+
+div#header-list-container div { margin:0.5em 0; }
+
+div#header-list-container ul.schemes { display:block; margin-top:0.5em; }
+div#header-list-container ul.schemes li { margin:0; border-left:0; padding:0 3px 0 0; }
+
+div#TopNavigation { margin-bottom:2em; border-top:1px solid #888; padding-top:1em; }
+
+div#breadcrumb-2012 { margin:0 0 2em 0; }
+div#breadcrumb-2012 ul { display:inline; margin:0; }
+div#breadcrumb-2012 li { display:inline; }
+div#breadcrumb-2012  a { padding-right:13px; color:#fcf;  background:url(../img/css/bg-arrow-right-white-alt.gif) no-repeat right  center; }
+
+div#searchForm { margin:0 0 2em 0; }
+
+div#SecondaryNavigation { display:block; margin:0 0 2em 0; font-size:1em; }
+div#SecondaryNavigation h2 { margin:0 0 0.3em 0; }
+
+ul.contentOptions { margin:2em 0 2em 0; border-top:1px solid #888; padding-top:1.8em; list-style-type:none; }
+ul.contentOptions li { display:inline; border-left:2px solid #fff; padding:0 10px 0 8px; }
+ul.contentOptions li.first { border-left:none; padding-left:0; }
+
+div#MainContent h1 { font-size:4em; }
+div#MainContent form { margin:1em 0 2em 0; }
+div#MainContent select { border:1px solid #fff; background-color:transparent; color:#fff; }
+
+div.contentHeaderRight { margin:2em 0 2em 0; }
+
+div.midAdditionalContent { margin:1em 0 2em 0; }
+
+h2 { margin:0 0 0.5em 0; color:#cfc; font-size:2em; }
+ul, p { font-size:1.2em; line-height:1.5em; }
+p {
+  margin:0 0 1em 0; 
+}
+img { margin:0.2em 0 1.5em 0; }
+h3 { margin:0.2em 0 0.5em 0; font-size:1.5em; }
+
+div.additionalContent { margin:2em 0 2em 0; border-top:1px solid #888; padding-top:1.8em;  }
+div.microFeature img { margin:0 0 1em 0; }
+div.microFeature p { margin:0 0 1em 0; font-size:1em; line-height:1.5em; font-weight:normal; }
+
+div#RelatedContent { margin-bottom:1em; }
+div#RelatedContent h2 { color:#cfc; }
+div.snippet { margin:2em 0 2em 0; border-top:1px solid #888; padding-top:1.8em;  }
+
+div#TopLink { border-top:1px solid #888; border-bottom:6px solid #888; padding:1em 0; }
+a#BackToTop { }
+div#Footer ul { margin-bottom:1em; }
+a.bottom-link {
+  background-color: transparent;
+  }
+
+p.caption { text-align: left; }
+
+div.hentry {
+    margin:40px 0;
+}
+
+table {
+    border-collapse:collapse;
+}
+table th {
+    text-align:left;
+}
+table th,
+table td {
+    vertical-align:top;
+    padding:4px;
+}
+
+form label {
+    
+}
+form input,
+form select {
+    display:block;
+    margin:0 0 1em;
+}
+form label.radio input,
+form span.multi-option input {
+    display:inline;
+    margin:0;
+}
+
+form#header-2012-search-form * {
+  float: left
+}
+
+/* --------- New CSS for addition of BT Logo 09/04/2008 (To be put at the end of high-contrast.css)---------*/
+
+#Footer {
+    padding:0;
+}
+#Footer p {
+    margin:1em 0 0;
+}
+#powered-by-bt-logo {
+    float:none;
+    margin:0;
+}
+
+/* --------- Hompage fixes */
+
+.feature-content img {
+    clear: both;
+    float: left;
+}
+
+.feature-content-text {
+    margin: 10px;
+    float: left;
+}
+
+img.transparent {
+    visibility: hidden;
+    clear: both;
+    width: 100%:
+}
+
+.feature-content img {
+    clear: both;
+    float: left;
+}
+
+.feature-content-text {
+    margin: 10px;
+    float: left;
+}
+
+img.transparent,
+#pager,
+.scrollable-content-tiny,
+#feature-margin-bottom,
+.homepage-2012-content-container {
+    clear: both;
+    width: 100%:
+    height: 1px !important;
+    overflow: hidden !important;
+}
+
+h3.show-high-vis {
+    clear: both;
+}
+
+
+/* Volunteering Section addon -28july2010-lrs */
+#section-volunteering a {color: #ffcc33 !important;}
+#section-volunteering #sidebar-left-2012 { background: none !important;}
+#section-volunteering #podplayer {left: 0px !important;}
+#section-volunteering h2 { line-height: 1.1em;}
+#section-volunteering .tabcontent #communityTweets li {color: #3875d7; width: 500px !important;}
+
+#section-volunteering #summaryWrap h2 {color: white !important; font-size: 1.3em !important; line-height: 1.2em;}
+
+#section-volunteering #volunteeringTab {background: none !important;}
+#section-volunteering #communityTweets {height: a  uto; background: none; width: 500px !important;}
+
+#section-volunteering #volunteeringTab { width: auto !important;}
+#section-volunteering .tabname {color: white !Important;}
+#section-volunteering .tabcontent {width: 500px !important; background: none !important; }
+
+#section-volunteering .tabcontent #communityTweets li {color: white !important; font-size: 0.9em; width: 410px !important;}
+
+#section-volunteering #volunteeringTab .tabfoot,
+#section-volunteering  #volunteeringTab .tabfoot .tabfootinner { background: none !important;  width: 475px !important; margin-left: -10px !important;}
+
+#section-volunteering #moduleContentFormats .moduleContentFormats{ border: 0px !important;}
+#section-volunteering #moduleContentFormatsHL { background: none !important; }
+#section-volunteering #moduleContentFormats { width: 400px;}
+
+#section-volunteering #moduleGeneric .moduleGeneric-copy {width: 182px; background: none !important;} 
+#section-volunteering #moduleOtherOpp-copy { width: 200px; background: none !important;} 
+
+#section-volunteering .footer-column-2012 a {color: red !important;}
+
+#section-volunteering #footer-2012 { background: none !important;}
+#section-volunteering #footer-2012 ul#footer-2012-main-link-bar {background: none !important; font-size: 0.9em;}
+
+#section-volunteering #nav-secondary { width: 500px !important; margin-bottom: 30px;}
+#section-volunteering #modulePink, #modulePink * { background: none !important;}
+#section-volunteering #volunteeringTab { font-size: 0.9em;}
+
+.compSchedulePage .data { color: black; width: 100%; }
+#compForm #searchBtn { margin-left: 180px;}
+#compForm .formRow select { background: white; color: black; }
+
+/*** TRAVEL PLANNING ***/
+
+.stp-side-box-content, .madoi-options, .stp-getting-there-container, div#top-tips { background: none !important; }
+.stp-venue-selector-container, .stp-side-box-content, .madoi-options, .stp-getting-there-container, div#top-tips { background: none !important; }
+
+/*** GLOBAL ADDITIONS ***/
+
+h1 { line-height: 1em; }
+h2 { background-color: transparent ! important; }
+
+/*** HEADER ***/
+
+div#Page div#page-2012 div#header-2012 { background: none !important; }
+
+/*** FOOTER ***/
+
+div#footer-2012 { background: none ! important; }
+div#footer-2012 a { color: #FFFFFF; }
+
+

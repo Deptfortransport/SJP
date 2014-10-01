@@ -1,0 +1,99 @@
+﻿/* Styles override for SJP Dyslexia accessible */
+
+/********** COLOURS ***********/
+
+/* Buttons */
+div#MainContent input.linkButton
+{
+    color: #000000;
+}
+
+/* Journey Planner Input */
+div#page-2012 div.journeyplannerinput div#MainContent,
+div#MainContent .eventDateTime div.eventDate div.return
+{
+   background-color: #F6F2D3 !important;
+}
+
+/* Journey Options Tabs */
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li a
+{
+    color: #FFFFFF;
+}
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li.active a
+{
+    color: #FFFFFF;
+}
+
+/* Journey Summary */
+div.journeySummary table.legSummary tr.odd,
+div.stopEventResult table.stopEventResultTable tr.odd
+{
+    background-color: #F6F2D3;
+}
+div.journeySummary table.legSummary tr.selected
+{
+    background-color: #108AFF;
+}
+
+/* -- SJP right hand side box --*/
+div#page-2012 div.sidebar-right-2012 div.sjp-stp-side-box h2 a, 
+div#page-2012 div.sidebar-right-2012 div.sjp-stp-side-box h2 a:hover,
+div#page-2012 div.sidebar-right-2012 div.stp-side-box h2.blue a
+{
+    color: #000000;
+}
+
+/********** BACKGROUNDS *******/
+
+/* Journey Options Tabs */
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li input
+{
+    background: none;
+}
+
+/* Further Accessibility page */
+div.stopSelection
+{
+    background: none;
+}
+
+/********** FONTS *************/
+
+/* Journey Options Tabs */
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li input,
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li a
+{
+    font-weight: normal;
+}
+
+/* Journey Summary */
+div.journeySummary table.legSummary th
+{
+    font-size: 0.9em;
+}
+
+/********** MAIN **************/
+
+/* Buttons */
+div#MainContent input.linkButton
+{
+    text-decoration: underline;
+}
+
+/* Journey Planner Input */
+div.sjpHeading
+{
+    padding: 0px 15px 0px 15px;
+}
+div#MainContent .eventDateTime div.eventDate div.timePicker .timeLabel
+{
+    margin: 0px 10px;
+}
+
+/* Journey Options Tabs */
+div#MainContent #PageContent div.sjp_jo_tab .sjp_tab_headers ul li a:hover
+{
+    text-decoration: underline;
+}

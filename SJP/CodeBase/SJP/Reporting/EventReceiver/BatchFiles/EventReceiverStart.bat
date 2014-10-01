@@ -1,0 +1,2 @@
+EventReceiver.bat  start
+pause

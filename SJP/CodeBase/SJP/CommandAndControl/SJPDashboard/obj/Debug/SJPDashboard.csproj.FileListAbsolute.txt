@@ -1,0 +1,6 @@
+D:\SJP\CodeBase\SJP\CommandAndControl\SJPDashboard\bin\CCDashboard.dll
+D:\SJP\CodeBase\SJP\CommandAndControl\SJPDashboard\bin\CCDashboard.pdb
+D:\SJP\CodeBase\SJP\CommandAndControl\SJPDashboard\bin\CCDashboard.dll.CodeAnalysisLog.xml
+D:\SJP\CodeBase\SJP\CommandAndControl\SJPDashboard\bin\CCDashboard.dll.lastcodeanalysissucceeded
+D:\SJP\CodeBase\SJP\CommandAndControl\SJPDashboard\obj\Debug\CCDashboard.dll
+D:\SJP\CodeBase\SJP\CommandAndControl\SJPDashboard\obj\Debug\CCDashboard.pdb

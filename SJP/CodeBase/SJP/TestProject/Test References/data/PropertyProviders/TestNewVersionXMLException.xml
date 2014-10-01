@@ -1,0 +1,6 @@
+﻿<?xml version="abc" encoding="utf-8" ?>
+<lookup>
+  <property name="propertyservice.refreshrate" GID="" AID="">30000</property>
+  <property name="propertyservice.version" GID="" AID="">2</property>
+  <property name="DefaultDB" GID="TestGroup" AID="TestApp">Server=.\SQLExpress;Initial Catalog=SJPConfiguration;Trusted_Connection=true;</property>
+</lookup>

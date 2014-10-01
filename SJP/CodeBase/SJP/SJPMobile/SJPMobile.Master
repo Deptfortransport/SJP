@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SJPMobile.master.cs" Inherits="SJP.UserPortal.SJPMobile.SJPMobile" %>
+<%@ Import Namespace="SJP.UserPortal.SJPMobile" %>
+<%@ Register TagPrefix="uc1" TagName="HeaderControl" Src="~/Controls/HeaderControl.ascx" %>
+<%@ Register TagPrefix="uc1" TagName="FooterControl" Src="~/Controls/FooterControl.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder ID="contentHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="formSJP" runat="server" class="sjpForm">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true" ScriptMode="Release">
+    </asp:ScriptManager>
+    <div class="sjpPage" data-role="page">
+        <uc1:HeaderControl id="headerControl" runat="server" EnableViewState="false"></uc1:HeaderControl>
+
+        <div id="MainContent">
+            <div id="SJPPageContent" class="sjpPageContent" runat="server">
+
+                <asp:ContentPlaceHolder ID="contentHeading" runat="server">
+                    <div id="sjpHeadingDiv" runat="server" enableviewstate="false" class="headerBack pageTitle">
+                        <h1 id="sjpHeading" runat="server" enableviewstate="false"></h1>
+                    </div>
+                </asp:ContentPlaceHolder>
+
+                <asp:ContentPlaceHolder ID="contentNavigation" runat="server">
+                    <div id="sjpBackDiv" runat="server" enableviewstate="false" class="headerBack pageBack">
+                        <h2 id="navigationTitle" runat="server" enableviewstate="false"></h2>
+                        <div class="jshide">
+                            <asp:LinkButton ID="backBtn" runat="server" OnClick="backBtn_Click" CssClass="topNavLeft" EnableViewState="false" ></asp:LinkButton>
+                            <asp:LinkButton ID="nextBtn" runat="server" OnClick="nextBtn_Click" CssClass="topNavRight" EnableViewState="false" ></asp:LinkButton>
+                        </div>
+                        <noscript>
+                            <asp:Button ID="backBtnNonJS" runat="server" OnClick="backBtn_Click" CssClass="topNavLeft" EnableViewState="false"></asp:Button>
+                            <asp:Button ID="nextBtnNonJS" runat="server" OnClick="nextBtn_Click" CssClass="topNavRight" EnableViewState="false"></asp:Button>
+                        </noscript>
+	                </div>
+                </asp:ContentPlaceHolder>
+                
+                <div class="clear"></div>
+
+                
+                                
+                <div class="clear"></div>
+
+                <asp:ContentPlaceHolder ID="contentMain" runat="server">
+        
+                </asp:ContentPlaceHolder>
+
+                <div class="clear"></div>
+                
+                <asp:ContentPlaceHolder ID="contentMessages" runat="server">
+                    <asp:UpdatePanel ID="contentMessagesUpdater" runat="server" UpdateMode="Always">
+                        <ContentTemplate>
+                                <asp:Panel ID="pnlMessages" runat="server" EnableViewState="false" CssClass="contentMessages">
+
+                                    <asp:Repeater ID="rptrMessages" runat="server" EnableViewState="false" 
+                                        OnItemDataBound="rptrMessages_ItemDataBound">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblMessage" runat="server" EnableViewState="false" ></asp:Label>
+                                            <br />
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+
+                                </asp:Panel>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+        <uc1:FooterControl id="footerControl" runat="server" EnableViewState="false"></uc1:FooterControl>
+            
+        <asp:HiddenField id="hdnSiteVersion" runat="server" EnableViewState="false" />
+
+    </div>
+    </form>
+</body>
+</html>

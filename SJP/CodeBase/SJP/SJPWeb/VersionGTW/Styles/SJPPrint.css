@@ -1,0 +1,48 @@
+﻿div.sjpForm
+{
+    display:block;
+}
+#lcg-masthead,
+#lcg-lev0menuWrap,
+#lcg-lev2menuWrap,
+#sectionHeader,
+#lcg-left,
+#lcg-3rdrail,
+#lcg-footer
+{
+    display: none;
+}
+.sjpContent input.btnSmallPink,
+.sjpContent input.btnMediumPink,
+.sjpContent input.btnLargePink,
+.sjpContent div.printerFriendly,
+.sjpContent img.bookTicketsInfo,
+.sjpContent div.journeySummary table.legSummary td.select input,
+.sjpContent div.journeySummary div.leg div.row div.row2 div.columnDetail div.bookTicketDiv,
+.sjpContent div.journeySummary div.leg div.row div.row2 div.columnDetail a
+{
+    display: none;
+}
+.basicThreeCols
+{
+    background: none;
+}
+div.detailNotes
+{
+    font-size:1.0em;
+}
+
+/**** NOTE:- Following is added as Firefox has problems with long floated elements *****/
+/****        causing the whatever on next page doesn't print at all                *****/
+@-moz-document url-prefix() {
+
+    div.sjpPageContent
+    {
+        float: none;
+    }
+    
+    div.sjpPageContent
+    {
+        display: block;
+    }
+}

@@ -1,0 +1,9 @@
+D:\SJP\CodeBase\SJP\CommandAndControl\HashGenerator\bin\Debug\WebSupportHashGenerator.exe
+D:\SJP\CodeBase\SJP\CommandAndControl\HashGenerator\bin\Debug\WebSupportHashGenerator.pdb
+D:\SJP\CodeBase\SJP\CommandAndControl\HashGenerator\bin\Debug\WebSupportHashGenerator.exe.CodeAnalysisLog.xml
+D:\SJP\CodeBase\SJP\CommandAndControl\HashGenerator\bin\Debug\WebSupportHashGenerator.exe.lastcodeanalysissucceeded
+D:\SJP\CodeBase\SJP\CommandAndControl\HashGenerator\bin\Debug\ChecksumHelper.dll
+D:\SJP\CodeBase\SJP\CommandAndControl\HashGenerator\bin\Debug\ChecksumHelper.pdb
+D:\SJP\CodeBase\SJP\CommandAndControl\HashGenerator\obj\Debug\HashGenerator.csprojResolveAssemblyReference.cache
+D:\SJP\CodeBase\SJP\CommandAndControl\HashGenerator\obj\Debug\WebSupportHashGenerator.exe
+D:\SJP\CodeBase\SJP\CommandAndControl\HashGenerator\obj\Debug\WebSupportHashGenerator.pdb

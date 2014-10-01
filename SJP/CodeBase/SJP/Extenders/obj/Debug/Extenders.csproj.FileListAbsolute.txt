@@ -1,0 +1,6 @@
+D:\SJP\CodeBase\SJP\Extenders\bin\Debug\sjp.common.extenders.dll
+D:\SJP\CodeBase\SJP\Extenders\bin\Debug\sjp.common.extenders.pdb
+D:\SJP\CodeBase\SJP\Extenders\bin\Debug\sjp.common.extenders.dll.CodeAnalysisLog.xml
+D:\SJP\CodeBase\SJP\Extenders\bin\Debug\sjp.common.extenders.dll.lastcodeanalysissucceeded
+D:\SJP\CodeBase\SJP\Extenders\obj\Debug\sjp.common.extenders.dll
+D:\SJP\CodeBase\SJP\Extenders\obj\Debug\sjp.common.extenders.pdb

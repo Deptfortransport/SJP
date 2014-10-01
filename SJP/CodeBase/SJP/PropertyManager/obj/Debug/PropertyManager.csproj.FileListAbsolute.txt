@@ -1,0 +1,11 @@
+D:\SJP\CodeBase\SJP\PropertyManager\bin\Debug\sjp.common.propertymanager.dll
+D:\SJP\CodeBase\SJP\PropertyManager\bin\Debug\sjp.common.propertymanager.pdb
+D:\SJP\CodeBase\SJP\PropertyManager\bin\Debug\sjp.common.propertymanager.dll.CodeAnalysisLog.xml
+D:\SJP\CodeBase\SJP\PropertyManager\bin\Debug\sjp.common.propertymanager.dll.lastcodeanalysissucceeded
+D:\SJP\CodeBase\SJP\PropertyManager\bin\Debug\sjp.common.dll
+D:\SJP\CodeBase\SJP\PropertyManager\bin\Debug\sjp.common.servicediscovery.dll
+D:\SJP\CodeBase\SJP\PropertyManager\bin\Debug\sjp.common.pdb
+D:\SJP\CodeBase\SJP\PropertyManager\bin\Debug\sjp.common.servicediscovery.pdb
+D:\SJP\CodeBase\SJP\PropertyManager\obj\Debug\PropertyManager.csprojResolveAssemblyReference.cache
+D:\SJP\CodeBase\SJP\PropertyManager\obj\Debug\sjp.common.propertymanager.dll
+D:\SJP\CodeBase\SJP\PropertyManager\obj\Debug\sjp.common.propertymanager.pdb
